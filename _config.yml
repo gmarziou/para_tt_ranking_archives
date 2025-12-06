@@ -1,0 +1,19 @@
+# site configuration
+
+theme: jekyll-theme-chirpy
+
+lang: en
+
+# jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
+
+# main title
+title: Para TT Rankings Archive
+
+github:
+  username: gmarziou
+
+theme_mode: dark
+
+# global switch for TOC in posts (boolean)
+toc: false
+
