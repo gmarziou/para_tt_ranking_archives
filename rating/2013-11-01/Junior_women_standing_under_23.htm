@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>ITTF Para Table Tennis Rating Audits - Junior women standing (under 23) as of 2013-11-01</title>
+<link rel='stylesheet' href='../../css/normal.css' type='text/css' />
+<link rel="stylesheet" href="../rating.css" type="text/css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<script type="text/javascript" charset="utf-8" src="../../media/js/jquery.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../media/js/jquery.dataTables.min.js"></script>
+<script language="JavaScript" type="text/javascript">
+$(document).ready(function() {
+	var oTable = $('.lists').dataTable( {
+        "bPaginate": false,
+        "aoColumns": [
+                /* Rank */{"bSearchable": false},
+                /* Player ID */{"bSearchable": false},
+                /* Name */ null,
+	            /* Country */{"bSearchable": false, "bSortable": false },
+	            /* Region */{"bSearchable": false, "bSortable": false },
+                /* Class */ {"bSearchable": false, "bSortable": false },
+                /* Rating */{"bSearchable": false}		]
+	} );           
+	$('select#country').change(function () {
+            oTable.fnFilter($(this).val(), 3);
+    });
+	$('select#region').change(function () {
+            oTable.fnFilter($(this).val(), 4);
+    });
+  $('select#class').change(function () {
+            oTable.fnFilter($(this).val(), 5);
+    });
+} );
+</script>
+
+</head>
+<body>
+<div class="banner">
+  <div class='logo'><a href='../..'><img src='../../logos/colour/PTT-110px.png' alt='ITTF-PTT Logo' width='116' height='110' border='0' /></a></div>
+  <div class="banner_title">ITTF Para Table Tennis Rating Audits<br />Junior women standing (under 23) as of 2013-11-01</div>
+</div><br />
+<div class="help">You can sort this table by clicking on column headers and filter data by searching on part of player's name.</div>
+<table class="lists"><thead>
+<tr><th>Rank</th><th>Player ID</th><th>Name</th><th>Country <select name="country" id="country"><option value="" selected="selected">Show all</option><optgroup label="Show only:"><option>ARG</option><option>AUS</option><option>BRA</option><option>CAN</option><option>CHN</option><option>CRO</option><option>CZE</option><option>DEN</option><option>EGY</option><option>FRA</option><option>GER</option><option>HUN</option><option>INA</option><option>IND</option><option>IRI</option><option>JPN</option><option>KOR</option><option>LAT</option><option>NED</option><option>NOR</option><option>PHI</option><option>POL</option><option>ROU</option><option>RUS</option><option>SVK</option><option>SWE</option><option>THA</option><option>TPE</option><option>TUR</option><option>UKR</option><option>USA</option><option>VIE</option></select></th><th>Region <select name="region" id="region"><option value="" selected="selected">Show all</option><optgroup label="Show only:"><option>Africa</option><option>Americas</option><option>Asia</option><option>Europe</option><option>Oceania</option></select></th><th>Class <select name="class" id="class"><option value="" selected="selected">Show all</option><optgroup label="Show only:"><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option></select></th><th>Rating</th><th>Previous Rating</th></tr>
+</thead><tbody>
+<tr><td>1</td><td>3759</td><td><a href='moves_F10.htm#p3759'>YANG Qian</a></td><td>CHN</td><td>Asia</td><td>10</td><td>1745</td><td>1740</td></tr>
+<tr><td>2</td><td>3846</td><td>ALEXANDRE Bruna</td><td>BRA</td><td>Americas</td><td>10</td><td>1655</td><td>1655</td></tr>
+<tr><td>3</td><td>3022</td><td>ERTIS Umran</td><td>TUR</td><td>Europe</td><td>10</td><td>1562</td><td>1562</td></tr>
+<tr><td>4</td><td>4716</td><td>WALLOE Sophie</td><td>DEN</td><td>Europe</td><td>10</td><td>1524</td><td>1524</td></tr>
+<tr><td>5</td><td>3758</td><td><a href='moves_F8.htm#p3758'>MAO Jingdian</a></td><td>CHN</td><td>Asia</td><td>8</td><td>1521</td><td>1521</td></tr>
+<tr><td>6</td><td>3887</td><td>PEK Karolina</td><td>POL</td><td>Europe</td><td>9</td><td>1516</td><td>1516</td></tr>
+<tr><td>7</td><td>3996</td><td><a href='moves_F9.htm#p3996'>LIU Meng</a></td><td>CHN</td><td>Asia</td><td>9</td><td>1497</td><td>1524</td></tr>
+<tr><td>8</td><td>3169</td><td>TURKKAN Hilal</td><td>TUR</td><td>Europe</td><td>10</td><td>1428</td><td>1428</td></tr>
+<tr><td>9</td><td>2584</td><td>CAN Ebru</td><td>TUR</td><td>Europe</td><td>10</td><td>1386</td><td>1386</td></tr>
+<tr><td>10</td><td>4163</td><td>SARATOVA Daria</td><td>RUS</td><td>Europe</td><td>10</td><td>1346</td><td>1346</td></tr>
+<tr><td>11</td><td>3582</td><td>JASTRZEBSKA Dajana</td><td>POL</td><td>Europe</td><td>8</td><td>1343</td><td>1343</td></tr>
+<tr><td>12</td><td>3019</td><td>KORKUT Kubra</td><td>TUR</td><td>Europe</td><td>7</td><td>1342</td><td>1342</td></tr>
+<tr><td>13</td><td>4347</td><td><a href='moves_F10.htm#p4347'>TIAN Shiau-Wen</a></td><td>TPE</td><td>Asia</td><td>10</td><td>1337</td><td>1336</td></tr>
+<tr><td>14</td><td>4594</td><td>KRAMM Lena</td><td>GER</td><td>Europe</td><td>9</td><td>1300</td><td>1300</td></tr>
+<tr><td>15</td><td>4448</td><td>DEMIR Merve</td><td>TUR</td><td>Europe</td><td>10</td><td>1298</td><td>1298</td></tr>
+<tr><td>16</td><td>4589</td><td><a href='moves_F10.htm#p4589'>RADAYANA Sella Dwi</a></td><td>INA</td><td>Asia</td><td>10</td><td>1276</td><td>1269</td></tr>
+<tr><td>17</td><td>3570</td><td>BICSAK Bettina</td><td>HUN</td><td>Europe</td><td>10</td><td>1273</td><td>1273</td></tr>
+<tr><td>18</td><td>4810</td><td><a href='moves_F10.htm#p4810'>MOHAMMADI Fatemeh</a></td><td>IRI</td><td>Asia</td><td>10</td><td>1259</td><td></td></tr>
+<tr><td>19</td><td>4595</td><td>REEG Marlene</td><td>GER</td><td>Europe</td><td>10</td><td>1214</td><td>1214</td></tr>
+<tr><td>20</td><td>4107</td><td>PARINOS Jennyfer</td><td>BRA</td><td>Americas</td><td>9</td><td>1166</td><td>1166</td></tr>
+<tr><td>21</td><td>4597</td><td>MITUTA Dorota</td><td>POL</td><td>Europe</td><td>10</td><td>1164</td><td>1164</td></tr>
+<tr><td>22</td><td>4646</td><td><a href='moves_F7.htm#p4646'>WANG Rui</a></td><td>CHN</td><td>Asia</td><td>7</td><td>1133</td><td>1121</td></tr>
+<tr><td>23</td><td>4401</td><td>LYTOVCHENKO Maryna</td><td>UKR</td><td>Europe</td><td>6</td><td>1104</td><td>1104</td></tr>
+<tr><td>24</td><td>4691</td><td>KUMAR Nikita</td><td>IND</td><td>Asia</td><td>10</td><td>1049</td><td>1049</td></tr>
+<tr><td>25</td><td>4120</td><td>MARTON Evelin</td><td>HUN</td><td>Europe</td><td>10</td><td>1028</td><td>1028</td></tr>
+<tr><td>26</td><td>4346</td><td><a href='moves_F9.htm#p4346'>YEN Wei-Ting</a></td><td>TPE</td><td>Asia</td><td>9</td><td>1009</td><td>1009</td></tr>
+<tr><td>27</td><td>4445</td><td>KLOMP Suzan</td><td>NED</td><td>Europe</td><td>8</td><td>932</td><td>932</td></tr>
+</tbody></table>
+<br /><div class="footer">Generated on 2013-11-08 at 00:28</div><br />
+<!--#include virtual="/footer.htm" -->
+</body></html>

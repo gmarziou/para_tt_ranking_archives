@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en"><head><title>ITTF Para Table Tennis Ranking Lists - Men standing as of 2015-11-01</title>
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href='../../media/css/bootstrap.min.css' rel='stylesheet' type='text/css' />
+<link href='../../media/css/bootstrap-theme.min.css' rel='stylesheet' type='text/css' />
+<link href='../../media/css/footable/footable.core.min.css' rel='stylesheet' type='text/css' />
+<link rel='stylesheet' href='../../css/styles.css' type='text/css' />
+<link rel="stylesheet" href="../rating.css" type="text/css" />
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+   <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<script src="../../media/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../media/js/jquery.dataTables.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../media/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../media/js/footable.all.min.js" type="text/javascript" charset="utf-8"></script>
+
+<script language="JavaScript" type="text/javascript">
+$(document).ready(function() {
+	var oTable = $('.lists').dataTable( {
+        "bPaginate": false,
+        "aoColumns": [
+            /* Rank */ {"bSearchable": false},
+            /* Player ID */ {"bSearchable": false},
+            /* Name */ null,
+            /* Country */ {"bSearchable": false, "bSortable": false },
+            /* Region */ {"bSearchable": false, "bSortable": false },
+            /* Class */ {"bSearchable": false, "bSortable": false },
+            /* Rating */ {"bSearchable": false},
+            /* Previous Rating */ {"bSearchable": false}
+    		]
+	} );           
+	$('select#country').change(function () {
+            oTable.fnFilter($(this).val(), 3);
+    });
+	$('select#region').change(function () {
+            oTable.fnFilter($(this).val(), 4);
+    });
+  $('select#class').change(function () {
+            oTable.fnFilter($(this).val(), 5);
+    });
+} );
+</script>
+
+</head>
+<body>
+  <!--#include virtual="/navbar.htm" -->
+
+  <div class="container-fluid">  
+     <div class="row">  
+        <div class="col-lg-2 col-sm-2 col-md-4 col-xs-4">  
+           <a href="/" title="Back to ITTF PTT home page"><div class="ptt-logo"></div></a>  
+   </div>
+   <h1 class='col-lg-10 col-sm-10 col-md-8 col-xs-8'>ITTF Para Table Tennis Ranking Lists<br/><small>Men standing as of 2015-11-01</small></h1>
+   </div>
+</div>
+<br/>
+<div class="text-muted">You can sort this table by clicking on column headers and filter data by searching on part of player's name.</div>
+<table class="lists table table-striped table-condensed table-bordered"><thead>
+<tr><th>Rank</th><th class="hidden-xs">Player ID</th><th>Name</th><th>Country <select name="country" id="country"><option value="" selected="selected">Show all</option><optgroup label="Show only:" /><option>ARG</option><option>AUS</option><option>AUT</option><option>BEL</option><option>BIH</option><option>BRA</option><option>BUL</option><option>CAN</option><option>CHI</option><option>CHN</option><option>CIV</option><option>COL</option><option>CRC</option><option>CRO</option><option>CUB</option><option>CZE</option><option>DEN</option><option>DOM</option><option>ECU</option><option>EGY</option><option>ESA</option><option>ESP</option><option>FIJ</option><option>FIN</option><option>FRA</option><option>GBR</option><option>GER</option><option>GRE</option><option>HKG</option><option>HUN</option><option>INA</option><option>IND</option><option>IRI</option><option>IRL</option><option>IRQ</option><option>ISR</option><option>ITA</option><option>JOR</option><option>JPN</option><option>KAZ</option><option>KOR</option><option>KSA</option><option>KUW</option><option>MAR</option><option>MAS</option><option>MEX</option><option>MGL</option><option>MNE</option><option>NED</option><option>NGR</option><option>NOR</option><option>NZL</option><option>POL</option><option>POR</option><option>PRK</option><option>PUR</option><option>ROU</option><option>RSA</option><option>RUS</option><option>SAM</option><option>SIN</option><option>SLO</option><option>SRB</option><option>SRI</option><option>SUI</option><option>SVK</option><option>SWE</option><option>THA</option><option>TPE</option><option>UKR</option><option>URU</option><option>USA</option><option>VEN</option></select></th><th class="hidden-xs">Region <select name="region" id="region"><option value="" selected="selected">Show all</option><optgroup label="Show only:" /><option>Africa</option><option>Americas</option><option>Asia</option><option>Europe</option><option>Oceania</option></select></th><th>Class <select name="class" id="class"><option value="" selected="selected">Show all</option><optgroup label="Show only:" /><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option></select></th>
+<th>Rating</th><th class="hidden-xs">Previous Rating</th></tr>
+</thead><tbody>
+<tr><td>1</td><td class="hidden-xs">4166</td><td><a href='moves_M10.htm#p4166'>CHOJNOWSKI Patryk</a></td><td>POL</td><td class="hidden-xs">Europe</td><td>10</td><td>2029</td><td class="hidden-xs">2014</td></tr>
+<tr><td>2</td><td class="hidden-xs">4011</td><td><a href='moves_M10.htm#p4011'>JACOBS   David </a></td><td>INA</td><td class="hidden-xs">Asia</td><td>10</td><td>1943</td><td class="hidden-xs">1921</td></tr>
+<tr><td>3</td><td class="hidden-xs">2101</td><td><a href='moves_M9.htm#p2101'>MA Lin</a></td><td>CHN</td><td class="hidden-xs">Asia</td><td>9</td><td>1901</td><td class="hidden-xs">1880</td></tr>
+<tr><td>4</td><td class="hidden-xs">318</td><td><a href='moves_M10.htm#p318'>GE Yang</a></td><td>CHN</td><td class="hidden-xs">Asia</td><td>10</td><td>1853</td><td class="hidden-xs">1845</td></tr>
+<tr><td>5</td><td class="hidden-xs">4738</td><td><a href='moves_M8.htm#p4738'>DIDUKH Viktor</a></td><td>UKR</td><td class="hidden-xs">Europe</td><td>8</td><td>1843</td><td class="hidden-xs">1855</td></tr>
+<tr><td>6</td><td class="hidden-xs">136</td><td><a href='moves_M9.htm#p136'>FRACZYK Stanislaw</a></td><td>AUT</td><td class="hidden-xs">Europe</td><td>9</td><td>1829</td><td class="hidden-xs">1829</td></tr>
+<tr><td>7</td><td class="hidden-xs">4928</td><td><a href='moves_M10.htm#p4928'>KODJABASHEV Denislav Stefanov</a></td><td>BUL</td><td class="hidden-xs">Europe</td><td>10</td><td>1818</td><td class="hidden-xs">1806</td></tr>
+<tr><td>8</td><td class="hidden-xs">478</td><td><a href='moves_M10.htm#p478'>RUIZ REYES Jose Manuel</a></td><td>ESP</td><td class="hidden-xs">Europe</td><td>10</td><td>1807</td><td class="hidden-xs">1862</td></tr>
+<tr><td>9</td><td class="hidden-xs">403</td><td><a href='moves_M10.htm#p403'>KARABEC Ivan</a></td><td>CZE</td><td class="hidden-xs">Europe</td><td>10</td><td>1792</td><td class="hidden-xs">1771</td></tr>
+<tr><td>10</td><td class="hidden-xs">3754</td><td><a href='moves_M10.htm#p3754'>LIAN Hao</a></td><td>CHN</td><td class="hidden-xs">Asia</td><td>10</td><td>1781</td><td class="hidden-xs">1746</td></tr>
+<tr><td>11</td><td class="hidden-xs">2290</td><td><a href='moves_M9.htm#p2290'>NOZDRUNOV Iurii</a></td><td>RUS</td><td class="hidden-xs">Europe</td><td>9</td><td>1748</td><td class="hidden-xs">1733</td></tr>
+<tr><td>12</td><td class="hidden-xs">3907</td><td><a href='moves_M9.htm#p3907'>CABESTANY Cedrik</a></td><td>FRA</td><td class="hidden-xs">Europe</td><td>9</td><td>1747</td><td class="hidden-xs">1731</td></tr>
+<tr><td>13</td><td class="hidden-xs">4498</td><td><a href='moves_M10.htm#p4498'>BOHEAS Mateo</a></td><td>FRA</td><td class="hidden-xs">Europe</td><td>10</td><td>1746</td><td class="hidden-xs">1725</td></tr>
+<tr><td>13</td><td class="hidden-xs">4938</td><td><a href='moves_M9.htm#p4938'>DEVOS Laurens</a></td><td>BEL</td><td class="hidden-xs">Europe</td><td>9</td><td>1746</td><td class="hidden-xs">1703</td></tr>
+<tr><td>15</td><td class="hidden-xs">4717</td><td><a href='moves_M9.htm#p4717'>PEREZ GONZALEZ Juan Bautista</a></td><td>ESP</td><td class="hidden-xs">Europe</td><td>9</td><td>1744</td><td class="hidden-xs">1742</td></tr>
+<tr><td>16</td><td class="hidden-xs">3021</td><td><a href='moves_M10.htm#p3021'>DAYBELL Kim</a></td><td>GBR</td><td class="hidden-xs">Europe</td><td>10</td><td>1737</td><td class="hidden-xs">1737</td></tr>
+<tr><td>17</td><td class="hidden-xs">303</td><td><a href='moves_M8.htm#p303'>YE Chao Qun</a></td><td>CHN</td><td class="hidden-xs">Asia</td><td>8</td><td>1732</td><td class="hidden-xs">1711</td></tr>
+<tr><td>18</td><td class="hidden-xs">2680</td><td><a href='moves_M10.htm#p2680'>CARDONA Jorge</a></td><td>ESP</td><td class="hidden-xs">Europe</td><td>10</td><td>1728</td><td class="hidden-xs">1754</td></tr>
+<tr><td>19</td><td class="hidden-xs">3720</td><td>HERGELINK Bas</td><td>NED</td><td class="hidden-xs">Europe</td><td>10</td><td>1725</td><td class="hidden-xs">1725</td></tr>
+<tr><td>20</td><td class="hidden-xs">1951</td><td>LEIBOVITZ Tahl</td><td>USA</td><td class="hidden-xs">Americas</td><td>9</td><td>1722</td><td class="hidden-xs">1722</td></tr>
+<tr><td>21</td><td class="hidden-xs">1428</td><td><a href='moves_M9.htm#p1428'>LAST Gerben</a></td><td>NED</td><td class="hidden-xs">Europe</td><td>9</td><td>1714</td><td class="hidden-xs">1724</td></tr>
+<tr><td>22</td><td class="hidden-xs">3574</td><td><a href='moves_M8.htm#p3574'>BOUVAIS Thomas</a></td><td>FRA</td><td class="hidden-xs">Europe</td><td>8</td><td>1708</td><td class="hidden-xs">1733</td></tr>
+<tr><td>23</td><td class="hidden-xs">3753</td><td><a href='moves_M8.htm#p3753'>ZHAO Shuai</a></td><td>CHN</td><td class="hidden-xs">Asia</td><td>8</td><td>1702</td><td class="hidden-xs">1671</td></tr>
+<tr><td>24</td><td class="hidden-xs">1681</td><td><a href='moves_M10.htm#p1681'>LUKYANOV Pavel</a></td><td>RUS</td><td class="hidden-xs">Europe</td><td>10</td><td>1693</td><td class="hidden-xs">1702</td></tr>
+<tr><td>25</td><td class="hidden-xs">2580</td><td><a href='moves_M8.htm#p2580'>GRUDZIEN Piotr</a></td><td>POL</td><td class="hidden-xs">Europe</td><td>8</td><td>1690</td><td class="hidden-xs">1704</td></tr>
+<tr><td>25</td><td class="hidden-xs">2098</td><td>SHCHEPANSKYY Yuriy</td><td>UKR</td><td class="hidden-xs">Europe</td><td>9</td><td>1690</td><td class="hidden-xs">1690</td></tr>
+<tr><td>27</td><td class="hidden-xs">4647</td><td><a href='moves_M10.htm#p4647'>KONG Weijie</a></td><td>CHN</td><td class="hidden-xs">Asia</td><td>10</td><td>1683</td><td class="hidden-xs">1667</td></tr>
+<tr><td>28</td><td class="hidden-xs">859</td><td><a href='moves_M8.htm#p859'>CSONKA Andras</a></td><td>HUN</td><td class="hidden-xs">Europe</td><td>8</td><td>1682</td><td class="hidden-xs">1688</td></tr>
+<tr><td>29</td><td class="hidden-xs">5096</td><td><a href='moves_M10.htm#p5096'>PITIYAGE DON SILVA Dinesh Deshappriya</a></td><td>SRI</td><td class="hidden-xs">Asia</td><td>10</td><td>1677</td><td class="hidden-xs">1685</td></tr>
+<tr><td>30</td><td class="hidden-xs">2771</td><td><a href='moves_M7.htm#p2771'>BAYLEY William John</a></td><td>GBR</td><td class="hidden-xs">Europe</td><td>7</td><td>1676</td><td class="hidden-xs">1670</td></tr>
+<tr><td>31</td><td class="hidden-xs">3119</td><td><a href='moves_M8.htm#p3119'>ANDERSSON Emil</a></td><td>SWE</td><td class="hidden-xs">Europe</td><td>8</td><td>1673</td><td class="hidden-xs">1666</td></tr>
+<tr><td>32</td><td class="hidden-xs">3750</td><td><a href='moves_M9.htm#p3750'>ZHAO Yi Qing</a></td><td>CHN</td><td class="hidden-xs">Asia</td><td>9</td><td>1664</td><td class="hidden-xs">1671</td></tr>
+<tr><td>33</td><td class="hidden-xs">474</td><td><a href='moves_M6.htm#p474'>VALERA Alvaro</a></td><td>ESP</td><td class="hidden-xs">Europe</td><td>6</td><td>1661</td><td class="hidden-xs">1641</td></tr>
+<tr><td>34</td><td class="hidden-xs">2778</td><td><a href='moves_M7.htm#p2778'>NIKOLENKO Maksym</a></td><td>UKR</td><td class="hidden-xs">Europe</td><td>7</td><td>1657</td><td class="hidden-xs">1662</td></tr>
+<tr><td>35</td><td class="hidden-xs">4010</td><td>BAKAR Mohamad Azwar</td><td>MAS</td><td class="hidden-xs">Asia</td><td>10</td><td>1656</td><td class="hidden-xs">1656</td></tr>
+<tr><td>36</td><td class="hidden-xs">2776</td><td>KARLSSON Linus</td><td>SWE</td><td class="hidden-xs">Europe</td><td>8</td><td>1653</td><td class="hidden-xs">1653</td></tr>
+<tr><td>37</td><td class="hidden-xs">4730</td><td><a href='moves_M10.htm#p4730'>GLAZOV Vladimir</a></td><td>RUS</td><td class="hidden-xs">Europe</td><td>10</td><td>1651</td><td class="hidden-xs">1654</td></tr>
+<tr><td>38</td><td class="hidden-xs">4391</td><td><a href='moves_M10.htm#p4391'>COGILL Theo</a></td><td>RSA</td><td class="hidden-xs">Africa</td><td>10</td><td>1649</td><td class="hidden-xs">1660</td></tr>
+<tr><td>39</td><td class="hidden-xs">3050</td><td>CARBINATTI JUNIOR Carlos Alberto</td><td>BRA</td><td class="hidden-xs">Americas</td><td>10</td><td>1645</td><td class="hidden-xs">1645</td></tr>
+<tr><td>40</td><td class="hidden-xs">1744</td><td><a href='moves_M8.htm#p1744'>CSEJTEY Richard</a></td><td>SVK</td><td class="hidden-xs">Europe</td><td>8</td><td>1641</td><td class="hidden-xs">1600</td></tr>
+<tr><td>41</td><td class="hidden-xs">4485</td><td>IWABUCHI Koyo</td><td>JPN</td><td class="hidden-xs">Asia</td><td>9</td><td>1638</td><td class="hidden-xs">1638</td></tr>
+<tr><td>42</td><td class="hidden-xs">4466</td><td><a href='moves_M10.htm#p4466'>AKBAR Komet</a></td><td>INA</td><td class="hidden-xs">Asia</td><td>10</td><td>1637</td><td class="hidden-xs">1622</td></tr>
+<tr><td>42</td><td class="hidden-xs">4119</td><td><a href='moves_M10.htm#p4119'>RADOVIC Filip</a></td><td>MNE</td><td class="hidden-xs">Europe</td><td>10</td><td>1637</td><td class="hidden-xs">1560</td></tr>
+<tr><td>44</td><td class="hidden-xs">5184</td><td><a href='moves_M10.htm#p5184'>GARDOS Krisztian</a></td><td>AUT</td><td class="hidden-xs">Europe</td><td>10</td><td>1636</td><td class="hidden-xs">1611</td></tr>
+<tr><td>45</td><td class="hidden-xs">4112</td><td><a href='moves_M8.htm#p4112'>WILSON Ross William </a></td><td>GBR</td><td class="hidden-xs">Europe</td><td>8</td><td>1629</td><td class="hidden-xs">1597</td></tr>
+<tr><td>46</td><td class="hidden-xs">422</td><td><a href='moves_M6.htm#p422'>ROSENMEIER Peter</a></td><td>DEN</td><td class="hidden-xs">Europe</td><td>6</td><td>1620</td><td class="hidden-xs">1612</td></tr>
+<tr><td>47</td><td class="hidden-xs">5100</td><td><a href='moves_M10.htm#p5100'>LIN Chun Ting</a></td><td>TPE</td><td class="hidden-xs">Asia</td><td>10</td><td>1616</td><td class="hidden-xs">1627</td></tr>
+<tr><td>48</td><td class="hidden-xs">874</td><td><a href='moves_M9.htm#p874'>BERECKI Dezso</a></td><td>HUN</td><td class="hidden-xs">Europe</td><td>9</td><td>1615</td><td class="hidden-xs">1634</td></tr>
+<tr><td>49</td><td class="hidden-xs">2416</td><td><a href='moves_M10.htm#p2416'>BOUMEDOUHA Karim</a></td><td>FRA</td><td class="hidden-xs">Europe</td><td>10</td><td>1614</td><td class="hidden-xs">1620</td></tr>
+<tr><td>50</td><td class="hidden-xs">865</td><td><a href='moves_M8.htm#p865'>ZBORAI Gyula</a></td><td>HUN</td><td class="hidden-xs">Europe</td><td>8</td><td>1610</td><td class="hidden-xs">1564</td></tr>
+<tr><td>50</td><td class="hidden-xs">3698</td><td><a href='moves_M10.htm#p3698'>MISZTAL Igor</a></td><td>POL</td><td class="hidden-xs">Europe</td><td>10</td><td>1610</td><td class="hidden-xs">1581</td></tr>
+<tr><td>52</td><td class="hidden-xs">2424</td><td><a href='moves_M9.htm#p2424'>BELLAIS Frederic</a></td><td>FRA</td><td class="hidden-xs">Europe</td><td>9</td><td>1603</td><td class="hidden-xs">1608</td></tr>
+<tr><td>53</td><td class="hidden-xs">1894</td><td><a href='moves_M7.htm#p1894'>POPOV Mykhaylo</a></td><td>UKR</td><td class="hidden-xs">Europe</td><td>7</td><td>1598</td><td class="hidden-xs">1624</td></tr>
+<tr><td>54</td><td class="hidden-xs">2583</td><td><a href='moves_M9.htm#p2583'>MIETTINEN Esa</a></td><td>FIN</td><td class="hidden-xs">Europe</td><td>9</td><td>1596</td><td class="hidden-xs">1583</td></tr>
+<tr><td>54</td><td class="hidden-xs">2898</td><td><a href='moves_M8.htm#p2898'>SUN Churen</a></td><td>CHN</td><td class="hidden-xs">Asia</td><td>8</td><td>1596</td><td class="hidden-xs">1594</td></tr>
+<tr><td>56</td><td class="hidden-xs">5171</td><td><a href='moves_M9.htm#p5171'>CHUKWUEMEKA Francis</a></td><td>NGR</td><td class="hidden-xs">Africa</td><td>9</td><td>1586</td><td class="hidden-xs">1537</td></tr>
+<tr><td>57</td><td class="hidden-xs">5187</td><td><a href='moves_M9.htm#p5187'>KALEM Mohamed Amine</a></td><td>ITA</td><td class="hidden-xs">Europe</td><td>9</td><td>1582</td><td class="hidden-xs">1574</td></tr>
+<tr><td>58</td><td class="hidden-xs">4708</td><td><a href='moves_M10.htm#p4708'>SILLAPAKONG Bunpot</a></td><td>THA</td><td class="hidden-xs">Asia</td><td>10</td><td>1578</td><td class="hidden-xs">1612</td></tr>
+<tr><td>58</td><td class="hidden-xs">3675</td><td><a href='moves_M9.htm#p3675'>THOMPSON Ashley Facey</a></td><td>GBR</td><td class="hidden-xs">Europe</td><td>9</td><td>1578</td><td class="hidden-xs">1552</td></tr>
+<tr><td>60</td><td class="hidden-xs">3676</td><td><a href='moves_M8.htm#p3676'>MC KIBBIN Aaron</a></td><td>GBR</td><td class="hidden-xs">Europe</td><td>8</td><td>1577</td><td class="hidden-xs">1577</td></tr>
+<tr><td>61</td><td class="hidden-xs">2710</td><td><a href='moves_M10.htm#p2710'>ABDELWAHAB Abdelrahman</a></td><td>EGY</td><td class="hidden-xs">Africa</td><td>10</td><td>1575</td><td class="hidden-xs">1539</td></tr>
+<tr><td>61</td><td class="hidden-xs">2017</td><td><a href='moves_M9.htm#p2017'>KUBOV Vadym</a></td><td>UKR</td><td class="hidden-xs">Europe</td><td>9</td><td>1575</td><td class="hidden-xs">1630</td></tr>
+<tr><td>63</td><td class="hidden-xs">188</td><td><a href='moves_M8.htm#p188'>LEDOUX Marc</a></td><td>BEL</td><td class="hidden-xs">Europe</td><td>8</td><td>1574</td><td class="hidden-xs">1583</td></tr>
+<tr><td>64</td><td class="hidden-xs">1427</td><td><a href='moves_M9.htm#p1427'>HEIJNEN Tonnie</a></td><td>NED</td><td class="hidden-xs">Europe</td><td>9</td><td>1573</td><td class="hidden-xs">1586</td></tr>
+<tr><td>65</td><td class="hidden-xs">3156</td><td>KAKITA Nariaki</td><td>JPN</td><td class="hidden-xs">Asia</td><td>10</td><td>1565</td><td class="hidden-xs">1565</td></tr>
+<tr><td>66</td><td class="hidden-xs">189</td><td><a href='moves_M8.htm#p189'>LOICQ Mathieu</a></td><td>BEL</td><td class="hidden-xs">Europe</td><td>8</td><td>1564</td><td class="hidden-xs">1571</td></tr>
+<tr><td>67</td><td class="hidden-xs">3851</td><td><a href='moves_M7.htm#p3851'>MONTANUS Jean-paul</a></td><td>NED</td><td class="hidden-xs">Europe</td><td>7</td><td>1561</td><td class="hidden-xs">1486</td></tr>
+<tr><td>68</td><td class="hidden-xs">883</td><td>MASSAD Claudio</td><td>BRA</td><td class="hidden-xs">Americas</td><td>10</td><td>1559</td><td class="hidden-xs">1559</td></tr>
+<tr><td>69</td><td class="hidden-xs">1546</td><td><a href='moves_M8.htm#p1546'>SKRZYNECKI Marcin</a></td><td>POL</td><td class="hidden-xs">Europe</td><td>8</td><td>1553</td><td class="hidden-xs">1568</td></tr>
+<tr><td>70</td><td class="hidden-xs">473</td><td><a href='moves_M7.htm#p473'>MORALES Jordi</a></td><td>ESP</td><td class="hidden-xs">Europe</td><td>7</td><td>1552</td><td class="hidden-xs">1575</td></tr>
+<tr><td>71</td><td class="hidden-xs">4996</td><td><a href='moves_M9.htm#p4996'>GORDON Aviv</a></td><td>ISR</td><td class="hidden-xs">Europe</td><td>9</td><td>1550</td><td class="hidden-xs">1557</td></tr>
+<tr><td>72</td><td class="hidden-xs">5169</td><td><a href='moves_M8.htm#p5169'>MAI Ivan</a></td><td>UKR</td><td class="hidden-xs">Europe</td><td>8</td><td>1537</td><td class="hidden-xs">1501</td></tr>
+<tr><td>73</td><td class="hidden-xs">3974</td><td><a href='moves_M7.htm#p3974'>YAN Shuo</a></td><td>CHN</td><td class="hidden-xs">Asia</td><td>7</td><td>1535</td><td class="hidden-xs">1519</td></tr>
+<tr><td>73</td><td class="hidden-xs">3972</td><td><a href='moves_M7.htm#p3972'>LIAO Keli</a></td><td>CHN</td><td class="hidden-xs">Asia</td><td>7</td><td>1535</td><td class="hidden-xs">1522</td></tr>
+<tr><td>75</td><td class="hidden-xs">2479</td><td><a href='moves_M8.htm#p2479'>RIGNELL Fabian Nils</a></td><td>SWE</td><td class="hidden-xs">Europe</td><td>8</td><td>1533</td><td class="hidden-xs">1543</td></tr>
+<tr><td>75</td><td class="hidden-xs">2380</td><td><a href='moves_M7.htm#p2380'>SAYED MOAHMED Ahmed</a></td><td>EGY</td><td class="hidden-xs">Africa</td><td>7</td><td>1533</td><td class="hidden-xs">1524</td></tr>
+<tr><td>77</td><td class="hidden-xs">4019</td><td><a href='moves_M9.htm#p4019'>WONG Chi Yin</a></td><td>HKG</td><td class="hidden-xs">Asia</td><td>9</td><td>1523</td><td class="hidden-xs">1509</td></tr>
+<tr><td>78</td><td class="hidden-xs">1802</td><td><a href='moves_M6.htm#p1802'>THAINIYOM Rungroj</a></td><td>THA</td><td class="hidden-xs">Asia</td><td>6</td><td>1521</td><td class="hidden-xs">1528</td></tr>
+<tr><td>79</td><td class="hidden-xs">2758</td><td>DOURBECKER Kevin</td><td>FRA</td><td class="hidden-xs">Europe</td><td>7</td><td>1518</td><td class="hidden-xs">1518</td></tr>
+<tr><td>80</td><td class="hidden-xs">764</td><td><a href='moves_M7.htm#p764'>WOLLMERT Jochen </a></td><td>GER</td><td class="hidden-xs">Europe</td><td>7</td><td>1516</td><td class="hidden-xs">1511</td></tr>
+<tr><td>80</td><td class="hidden-xs">1309</td><td>KIM Kwang-jin</td><td>KOR</td><td class="hidden-xs">Asia</td><td>8</td><td>1516</td><td class="hidden-xs">1516</td></tr>
+<tr><td>82</td><td class="hidden-xs">2092</td><td><a href='moves_M9.htm#p2092'>VIJVERBERG Ronald</a></td><td>NED</td><td class="hidden-xs">Europe</td><td>9</td><td>1514</td><td class="hidden-xs">1504</td></tr>
+<tr><td>83</td><td class="hidden-xs">559</td><td><a href='moves_M7.htm#p559'>MESSI Stephane</a></td><td>FRA</td><td class="hidden-xs">Europe</td><td>7</td><td>1511</td><td class="hidden-xs">1494</td></tr>
+<tr><td>84</td><td class="hidden-xs">4247</td><td>VAZQUEZ CAN Miguel  Ariff</td><td>MEX</td><td class="hidden-xs">Americas</td><td>9</td><td>1509</td><td class="hidden-xs">1509</td></tr>
+<tr><td>85</td><td class="hidden-xs">2104</td><td><a href='moves_M9.htm#p2104'>KOH Zhi Liang</a></td><td>MAS</td><td class="hidden-xs">Asia</td><td>9</td><td>1505</td><td class="hidden-xs">1505</td></tr>
+<tr><td>86</td><td class="hidden-xs">1883</td><td><a href='moves_M10.htm#p1883'>LEE Yao-tang</a></td><td>TPE</td><td class="hidden-xs">Asia</td><td>10</td><td>1503</td><td class="hidden-xs">1482</td></tr>
+<tr><td>87</td><td class="hidden-xs">901</td><td><a href='moves_M9.htm#p901'>GUMILAR Supriyatna</a></td><td>INA</td><td class="hidden-xs">Asia</td><td>9</td><td>1486</td><td class="hidden-xs">1442</td></tr>
+<tr><td>88</td><td class="hidden-xs">3933</td><td>SUZUKI Nobuyuki</td><td>JPN</td><td class="hidden-xs">Asia</td><td>9</td><td>1481</td><td class="hidden-xs">1481</td></tr>
+<tr><td>89</td><td class="hidden-xs">1863</td><td><a href='moves_M8.htm#p1863'>HU Ming-Fu</a></td><td>TPE</td><td class="hidden-xs">Asia</td><td>8</td><td>1474</td><td class="hidden-xs">1459</td></tr>
+<tr><td>90</td><td class="hidden-xs">5241</td><td>TAMAI Hideo</td><td>JPN</td><td class="hidden-xs">Asia</td><td>8</td><td>1467</td><td class="hidden-xs">1467</td></tr>
+<tr><td>91</td><td class="hidden-xs">4846</td><td><a href='moves_M8.htm#p4846'>SHILTON Billy</a></td><td>GBR</td><td class="hidden-xs">Europe</td><td>8</td><td>1464</td><td class="hidden-xs">1401</td></tr>
+<tr><td>92</td><td class="hidden-xs">386</td><td><a href='moves_M7.htm#p386'>HORUT Daniel</a></td><td>CZE</td><td class="hidden-xs">Europe</td><td>7</td><td>1460</td><td class="hidden-xs">1429</td></tr>
+<tr><td>93</td><td class="hidden-xs">3742</td><td><a href='moves_M6.htm#p3742'>PARK Hong Kyu</a></td><td>KOR</td><td class="hidden-xs">Asia</td><td>6</td><td>1457</td><td class="hidden-xs">1459</td></tr>
+<tr><td>94</td><td class="hidden-xs">773</td><td><a href='moves_M7.htm#p773'>SCHWINN Thorsten</a></td><td>GER</td><td class="hidden-xs">Europe</td><td>7</td><td>1456</td><td class="hidden-xs">1437</td></tr>
+<tr><td>95</td><td class="hidden-xs">3693</td><td>KONSTANTYN Pawel</td><td>POL</td><td class="hidden-xs">Europe</td><td>9</td><td>1451</td><td class="hidden-xs">1451</td></tr>
+<tr><td>96</td><td class="hidden-xs">3646</td><td><a href='moves_M8.htm#p3646'>URBAN Johanes</a></td><td>GER</td><td class="hidden-xs">Europe</td><td>8</td><td>1448</td><td class="hidden-xs">1450</td></tr>
+<tr><td>97</td><td class="hidden-xs">4123</td><td><a href='moves_M8.htm#p4123'>VAN AMERONGEN Max</a></td><td>NED</td><td class="hidden-xs">Europe</td><td>8</td><td>1447</td><td class="hidden-xs">1436</td></tr>
+<tr><td>98</td><td class="hidden-xs">4223</td><td><a href='moves_M9.htm#p4223'>RUDDENKLAU Yannik Klaus</a></td><td>GER</td><td class="hidden-xs">Europe</td><td>9</td><td>1446</td><td class="hidden-xs">1381</td></tr>
+<tr><td>99</td><td class="hidden-xs">644</td><td><a href='moves_M6.htm#p644'>KARABARDAK Paul</a></td><td>GBR</td><td class="hidden-xs">Europe</td><td>6</td><td>1443</td><td class="hidden-xs">1460</td></tr>
+<tr><td>100</td><td class="hidden-xs">3733</td><td>SALMIN FILHO Paulo Sergio</td><td>BRA</td><td class="hidden-xs">Americas</td><td>7</td><td>1438</td><td class="hidden-xs">1438</td></tr>
+<tr><td>101</td><td class="hidden-xs">5009</td><td>DAVIS Thomas Anthony</td><td>IRL</td><td class="hidden-xs">Europe</td><td>10</td><td>1436</td><td class="hidden-xs">1436</td></tr>
+<tr><td>102</td><td class="hidden-xs">3844</td><td>GUARNIERI MANARA Luiz Filipe</td><td>BRA</td><td class="hidden-xs">Americas</td><td>8</td><td>1435</td><td class="hidden-xs">1435</td></tr>
+<tr><td>102</td><td class="hidden-xs">5361</td><td><a href='moves_M8.htm#p5361'>PRAHASTA  Mohamad Rian</a></td><td>INA</td><td class="hidden-xs">Asia</td><td>8</td><td>1435</td><td class="hidden-xs"></td></tr>
+<tr><td>104</td><td class="hidden-xs">4211</td><td>ANDERSSON Anders Niklas Tobias</td><td>SWE</td><td class="hidden-xs">Europe</td><td>8</td><td>1434</td><td class="hidden-xs">1434</td></tr>
+<tr><td>105</td><td class="hidden-xs">3013</td><td>FLEURY Yannick</td><td>FRA</td><td class="hidden-xs">Europe</td><td>8</td><td>1427</td><td class="hidden-xs">1427</td></tr>
+<tr><td>106</td><td class="hidden-xs">5250</td><td>SHIN Seung Weon</td><td>KOR</td><td class="hidden-xs">Asia</td><td>10</td><td>1422</td><td class="hidden-xs">1422</td></tr>
+<tr><td>107</td><td class="hidden-xs">1743</td><td><a href='moves_M7.htm#p1743'>JAMBOR Miroslav</a></td><td>SVK</td><td class="hidden-xs">Europe</td><td>7</td><td>1421</td><td class="hidden-xs">1410</td></tr>
+<tr><td>108</td><td class="hidden-xs">4492</td><td>STROH Israel</td><td>BRA</td><td class="hidden-xs">Americas</td><td>7</td><td>1419</td><td class="hidden-xs">1419</td></tr>
+<tr><td>109</td><td class="hidden-xs">1868</td><td><a href='moves_M8.htm#p1868'>HOU Ting-sung</a></td><td>TPE</td><td class="hidden-xs">Asia</td><td>8</td><td>1417</td><td class="hidden-xs">1413</td></tr>
+<tr><td>110</td><td class="hidden-xs">2481</td><td><a href='moves_M6.htm#p2481'>WETHERILL David</a></td><td>GBR</td><td class="hidden-xs">Europe</td><td>6</td><td>1410</td><td class="hidden-xs">1370</td></tr>
+<tr><td>111</td><td class="hidden-xs">2518</td><td>CHOE Chang-ho</td><td>KOR</td><td class="hidden-xs">Asia</td><td>10</td><td>1409</td><td class="hidden-xs">1409</td></tr>
+<tr><td>112</td><td class="hidden-xs">5167</td><td><a href='moves_M9.htm#p5167'>LALLO Ismo Sakari</a></td><td>FIN</td><td class="hidden-xs">Europe</td><td>9</td><td>1408</td><td class="hidden-xs"></td></tr>
+<tr><td>113</td><td class="hidden-xs">4655</td><td>NAGASHITA Naoya</td><td>JPN</td><td class="hidden-xs">Asia</td><td>10</td><td>1406</td><td class="hidden-xs">1406</td></tr>
+<tr><td>114</td><td class="hidden-xs">1581</td><td><a href='moves_M6.htm#p1581'>SIMION Bobi</a></td><td>ROU</td><td class="hidden-xs">Europe</td><td>6</td><td>1397</td><td class="hidden-xs">1396</td></tr>
+<tr><td>115</td><td class="hidden-xs">3859</td><td><a href='moves_M8.htm#p3859'>ALI Saeed Mousa</a></td><td>IRQ</td><td class="hidden-xs">Asia</td><td>8</td><td>1396</td><td class="hidden-xs">1435</td></tr>
+<tr><td>116</td><td class="hidden-xs">2293</td><td><a href='moves_M7.htm#p2293'>DESPINEUX Ben Ashok </a></td><td>BEL</td><td class="hidden-xs">Europe</td><td>7</td><td>1392</td><td class="hidden-xs">1386</td></tr>
+<tr><td>117</td><td class="hidden-xs">4631</td><td>EREKEYEV Talgat</td><td>KAZ</td><td class="hidden-xs">Asia</td><td>9</td><td>1386</td><td class="hidden-xs">1386</td></tr>
+<tr><td>118</td><td class="hidden-xs">3641</td><td><a href='moves_M6.htm#p3641'>RAU  Thomas</a></td><td>GER</td><td class="hidden-xs">Europe</td><td>6</td><td>1384</td><td class="hidden-xs">1408</td></tr>
+<tr><td>119</td><td class="hidden-xs">5037</td><td>WATERMAN Rajan Alexander</td><td>GBR</td><td class="hidden-xs">Europe</td><td>10</td><td>1381</td><td class="hidden-xs">1381</td></tr>
+<tr><td>120</td><td class="hidden-xs">2994</td><td>MANSO SALAZAR Erich</td><td>CUB</td><td class="hidden-xs">Americas</td><td>10</td><td>1376</td><td class="hidden-xs">1376</td></tr>
+<tr><td>121</td><td class="hidden-xs">4191</td><td><a href='moves_M8.htm#p4191'>KEEREERUT Parinya Chuaigate</a></td><td>THA</td><td class="hidden-xs">Asia</td><td>8</td><td>1368</td><td class="hidden-xs">1354</td></tr>
+<tr><td>121</td><td class="hidden-xs">3045</td><td>GRUNDELER Bastien</td><td>FRA</td><td class="hidden-xs">Europe</td><td>6</td><td>1368</td><td class="hidden-xs">1368</td></tr>
+<tr><td>123</td><td class="hidden-xs">2980</td><td>TATEISHI Arufuahirokazu</td><td>JPN</td><td class="hidden-xs">Asia</td><td>8</td><td>1361</td><td class="hidden-xs">1361</td></tr>
+<tr><td>124</td><td class="hidden-xs">5249</td><td>SHIN Myungkook</td><td>KOR</td><td class="hidden-xs">Asia</td><td>8</td><td>1359</td><td class="hidden-xs">1359</td></tr>
+<tr><td>125</td><td class="hidden-xs">4185</td><td>KIM Keyong Seop</td><td>KOR</td><td class="hidden-xs">Asia</td><td>10</td><td>1358</td><td class="hidden-xs">1358</td></tr>
+<tr><td>125</td><td class="hidden-xs">2106</td><td>TING Ing Hock</td><td>MAS</td><td class="hidden-xs">Asia</td><td>9</td><td>1358</td><td class="hidden-xs">1358</td></tr>
+<tr><td>127</td><td class="hidden-xs">2741</td><td><a href='moves_M8.htm#p2741'>BECH Kenneth Mesnickow</a></td><td>DEN</td><td class="hidden-xs">Europe</td><td>8</td><td>1356</td><td class="hidden-xs">1369</td></tr>
+<tr><td>128</td><td class="hidden-xs">4018</td><td><a href='moves_M7.htm#p4018'>LEE Ming Yip</a></td><td>HKG</td><td class="hidden-xs">Asia</td><td>7</td><td>1354</td><td class="hidden-xs">1350</td></tr>
+<tr><td>129</td><td class="hidden-xs">4483</td><td>INOUE Masachika</td><td>JPN</td><td class="hidden-xs">Asia</td><td>7</td><td>1352</td><td class="hidden-xs">1346</td></tr>
+<tr><td>130</td><td class="hidden-xs">2062</td><td><a href='moves_M6.htm#p2062'>ESAULOV Alexander</a></td><td>RUS</td><td class="hidden-xs">Europe</td><td>6</td><td>1345</td><td class="hidden-xs">1332</td></tr>
+<tr><td>130</td><td class="hidden-xs">3644</td><td>WAGNER Joshua</td><td>GER</td><td class="hidden-xs">Europe</td><td>8</td><td>1345</td><td class="hidden-xs">1345</td></tr>
+<tr><td>132</td><td class="hidden-xs">4489</td><td><a href='moves_M7.htm#p4489'>DEIGSLER Michal</a></td><td>POL</td><td class="hidden-xs">Europe</td><td>7</td><td>1344</td><td class="hidden-xs">1349</td></tr>
+<tr><td>133</td><td class="hidden-xs">1005</td><td><a href='moves_M7.htm#p1005'>SHUR Samuel</a></td><td>ISR</td><td class="hidden-xs">Europe</td><td>7</td><td>1343</td><td class="hidden-xs">1350</td></tr>
+<tr><td>134</td><td class="hidden-xs">4269</td><td>HIGA Erik</td><td>BRA</td><td class="hidden-xs">Americas</td><td>9</td><td>1337</td><td class="hidden-xs">1337</td></tr>
+<tr><td>135</td><td class="hidden-xs">1004</td><td><a href='moves_M6.htm#p1004'>BOBROV Danny</a></td><td>ISR</td><td class="hidden-xs">Europe</td><td>6</td><td>1336</td><td class="hidden-xs">1324</td></tr>
+<tr><td>136</td><td class="hidden-xs">468</td><td><a href='moves_M6.htm#p468'>SEOANE ALCAZAR Alberto</a></td><td>ESP</td><td class="hidden-xs">Europe</td><td>6</td><td>1333</td><td class="hidden-xs">1347</td></tr>
+<tr><td>137</td><td class="hidden-xs">4630</td><td>KORPETAYEV Nurzhan</td><td>KAZ</td><td class="hidden-xs">Asia</td><td>9</td><td>1332</td><td class="hidden-xs">1332</td></tr>
+<tr><td>138</td><td class="hidden-xs">5180</td><td>YAGI Katsuyoshi</td><td>JPN</td><td class="hidden-xs">Asia</td><td>7</td><td>1329</td><td class="hidden-xs">1329</td></tr>
+<tr><td>139</td><td class="hidden-xs">4437</td><td><a href='moves_M7.htm#p4437'>KARP Viktor</a></td><td>UKR</td><td class="hidden-xs">Europe</td><td>7</td><td>1324</td><td class="hidden-xs">1327</td></tr>
+<tr><td>140</td><td class="hidden-xs">4927</td><td><a href='moves_M8.htm#p4927'>DE CHIARA Samuel</a></td><td>ITA</td><td class="hidden-xs">Europe</td><td>8</td><td>1321</td><td class="hidden-xs">1303</td></tr>
+<tr><td>141</td><td class="hidden-xs">3108</td><td>CHUI Lim Ming</td><td>USA</td><td class="hidden-xs">Americas</td><td>8</td><td>1320</td><td class="hidden-xs">1320</td></tr>
+<tr><td>142</td><td class="hidden-xs">3685</td><td><a href='moves_M8.htm#p3685'>LORENZINI Francesco</a></td><td>ITA</td><td class="hidden-xs">Europe</td><td>8</td><td>1318</td><td class="hidden-xs">1314</td></tr>
+<tr><td>143</td><td class="hidden-xs">4172</td><td><a href='moves_M7.htm#p4172'>PUNPOO Chalermpong</a></td><td>THA</td><td class="hidden-xs">Asia</td><td>7</td><td>1310</td><td class="hidden-xs">1265</td></tr>
+<tr><td>144</td><td class="hidden-xs">4497</td><td>DALBY Lewis</td><td>FRA</td><td class="hidden-xs">Europe</td><td>8</td><td>1307</td><td class="hidden-xs">1307</td></tr>
+<tr><td>145</td><td class="hidden-xs">2055</td><td>ALONSO David</td><td>ESP</td><td class="hidden-xs">Europe</td><td>8</td><td>1301</td><td class="hidden-xs">1301</td></tr>
+<tr><td>146</td><td class="hidden-xs">4198</td><td>ANIKANOV Vladimir</td><td>RUS</td><td class="hidden-xs">Europe</td><td>7</td><td>1300</td><td class="hidden-xs">1300</td></tr>
+<tr><td>147</td><td class="hidden-xs">2987</td><td>DOMINGUEZ CARLON Rene Guillermo</td><td>MEX</td><td class="hidden-xs">Americas</td><td>10</td><td>1299</td><td class="hidden-xs">1299</td></tr>
+<tr><td>148</td><td class="hidden-xs">4701</td><td>CHEE Chao Ming  </td><td>MAS</td><td class="hidden-xs">Asia</td><td>9</td><td>1298</td><td class="hidden-xs">1298</td></tr>
+<tr><td>149</td><td class="hidden-xs">3852</td><td><a href='moves_M6.htm#p3852'>JOZIC Pavao</a></td><td>CRO</td><td class="hidden-xs">Europe</td><td>6</td><td>1295</td><td class="hidden-xs">1321</td></tr>
+<tr><td>149</td><td class="hidden-xs">2262</td><td>KENT Ian</td><td>CAN</td><td class="hidden-xs">Americas</td><td>8</td><td>1295</td><td class="hidden-xs">1295</td></tr>
+<tr><td>151</td><td class="hidden-xs">4482</td><td>ARITONANG Leonardo</td><td>INA</td><td class="hidden-xs">Asia</td><td>8</td><td>1294</td><td class="hidden-xs">1294</td></tr>
+<tr><td>152</td><td class="hidden-xs">5307</td><td>WERNER Gerd Helmut Rino</td><td>GER</td><td class="hidden-xs">Europe</td><td>10</td><td>1290</td><td class="hidden-xs">1290</td></tr>
+<tr><td>153</td><td class="hidden-xs">3065</td><td><a href='moves_M6.htm#p3065'>CHEN Chao  </a></td><td>CHN</td><td class="hidden-xs">Asia</td><td>6</td><td>1289</td><td class="hidden-xs">1287</td></tr>
+<tr><td>153</td><td class="hidden-xs">2913</td><td><a href='moves_M6.htm#p2913'>ALECCI Raimondo</a></td><td>ITA</td><td class="hidden-xs">Europe</td><td>6</td><td>1289</td><td class="hidden-xs">1286</td></tr>
+<tr><td>153</td><td class="hidden-xs">5101</td><td>JON Ju Hyon</td><td>PRK</td><td class="hidden-xs">Asia</td><td>6</td><td>1289</td><td class="hidden-xs">1289</td></tr>
+<tr><td>156</td><td class="hidden-xs">2993</td><td>VARGAS PIRAJAN Jose David</td><td>COL</td><td class="hidden-xs">Americas</td><td>7</td><td>1281</td><td class="hidden-xs">1281</td></tr>
+<tr><td>157</td><td class="hidden-xs">4858</td><td><a href='moves_M7.htm#p4858'>WESTERBERG Nicklas Thomas </a></td><td>SWE</td><td class="hidden-xs">Europe</td><td>7</td><td>1277</td><td class="hidden-xs">1247</td></tr>
+<tr><td>158</td><td class="hidden-xs">4795</td><td><a href='moves_M6.htm#p4795'>HUANG Jiaxin</a></td><td>CHN</td><td class="hidden-xs">Asia</td><td>6</td><td>1274</td><td class="hidden-xs">1215</td></tr>
+<tr><td>158</td><td class="hidden-xs">2209</td><td>DETTONI Cristian</td><td>CHI</td><td class="hidden-xs">Americas</td><td>6</td><td>1274</td><td class="hidden-xs">1274</td></tr>
+<tr><td>160</td><td class="hidden-xs">5110</td><td>SCHNEIDER  Jorg Detlef</td><td>GER</td><td class="hidden-xs">Europe</td><td>7</td><td>1273</td><td class="hidden-xs">1273</td></tr>
+<tr><td>160</td><td class="hidden-xs">5185</td><td><a href='moves_M10.htm#p5185'>CORDUA Lorenzo</a></td><td>ITA</td><td class="hidden-xs">Europe</td><td>10</td><td>1273</td><td class="hidden-xs">1273</td></tr>
+<tr><td>162</td><td class="hidden-xs">4180</td><td>CHARITSAT Komkrit</td><td>THA</td><td class="hidden-xs">Asia</td><td>8</td><td>1272</td><td class="hidden-xs">1272</td></tr>
+<tr><td>163</td><td class="hidden-xs">5032</td><td>GARRIDO Angel </td><td>ESP</td><td class="hidden-xs">Europe</td><td>10</td><td>1270</td><td class="hidden-xs">1270</td></tr>
+<tr><td>164</td><td class="hidden-xs">5181</td><td>KITA Hiromoto</td><td>JPN</td><td class="hidden-xs">Asia</td><td>7</td><td>1269</td><td class="hidden-xs">1269</td></tr>
+<tr><td>165</td><td class="hidden-xs">5112</td><td>MOREIRA Diego</td><td>BRA</td><td class="hidden-xs">Americas</td><td>9</td><td>1268</td><td class="hidden-xs">1268</td></tr>
+<tr><td>166</td><td class="hidden-xs">4501</td><td>THOMAS Nathan</td><td>GBR</td><td class="hidden-xs">Europe</td><td>10</td><td>1266</td><td class="hidden-xs">1266</td></tr>
+<tr><td>166</td><td class="hidden-xs">3834</td><td>NEIRA Dario Andres</td><td>ARG</td><td class="hidden-xs">Americas</td><td>10</td><td>1266</td><td class="hidden-xs">1266</td></tr>
+<tr><td>168</td><td class="hidden-xs">252</td><td>DE MELO Francisco Wellington</td><td>BRA</td><td class="hidden-xs">Americas</td><td>8</td><td>1257</td><td class="hidden-xs">1257</td></tr>
+<tr><td>169</td><td class="hidden-xs">389</td><td>LAMBERT Zbynek</td><td>CZE</td><td class="hidden-xs">Europe</td><td>7</td><td>1252</td><td class="hidden-xs">1252</td></tr>
+<tr><td>170</td><td class="hidden-xs">3664</td><td>NAMSAGA Yuttana</td><td>THA</td><td class="hidden-xs">Asia</td><td>7</td><td>1251</td><td class="hidden-xs">1251</td></tr>
+<tr><td>171</td><td class="hidden-xs">3046</td><td>RIGGIO IFANGER Guilherme</td><td>BRA</td><td class="hidden-xs">Americas</td><td>9</td><td>1249</td><td class="hidden-xs">1249</td></tr>
+<tr><td>172</td><td class="hidden-xs">2915</td><td>KRSIAK Jozef</td><td>SVK</td><td class="hidden-xs">Europe</td><td>8</td><td>1246</td><td class="hidden-xs">1246</td></tr>
+<tr><td>172</td><td class="hidden-xs">4583</td><td>PEREIRA ALFON Alexandre</td><td>BRA</td><td class="hidden-xs">Americas</td><td>10</td><td>1246</td><td class="hidden-xs">1246</td></tr>
+<tr><td>174</td><td class="hidden-xs">5176</td><td>DINCA Daniel- Alexandru</td><td>ROU</td><td class="hidden-xs">Europe</td><td>9</td><td>1244</td><td class="hidden-xs">1244</td></tr>
+<tr><td>175</td><td class="hidden-xs">421</td><td><a href='moves_M6.htm#p421'>JENSEN Michael</a></td><td>DEN</td><td class="hidden-xs">Europe</td><td>6</td><td>1242</td><td class="hidden-xs">1217</td></tr>
+<tr><td>176</td><td class="hidden-xs">2979</td><td>KANEKO Kazuya</td><td>JPN</td><td class="hidden-xs">Asia</td><td>7</td><td>1239</td><td class="hidden-xs">1239</td></tr>
+<tr><td>177</td><td class="hidden-xs">4359</td><td>VAZQUEZ Xavier J.</td><td>PUR</td><td class="hidden-xs">Americas</td><td>10</td><td>1236</td><td class="hidden-xs">1236</td></tr>
+<tr><td>177</td><td class="hidden-xs">4148</td><td>MIZRACHI Barak</td><td>AUS</td><td class="hidden-xs">Oceania</td><td>8</td><td>1236</td><td class="hidden-xs">1236</td></tr>
+<tr><td>179</td><td class="hidden-xs">2658</td><td><a href='moves_M7.htm#p2658'>KIM Young Sung</a></td><td>KOR</td><td class="hidden-xs">Asia</td><td>7</td><td>1234</td><td class="hidden-xs">1238</td></tr>
+<tr><td>180</td><td class="hidden-xs">4395</td><td>KIM Myung Rae</td><td>KOR</td><td class="hidden-xs">Asia</td><td>10</td><td>1229</td><td class="hidden-xs">1229</td></tr>
+<tr><td>180</td><td class="hidden-xs">4427</td><td>QUAGLIARDI Hugo Franco</td><td>ARG</td><td class="hidden-xs">Americas</td><td>10</td><td>1229</td><td class="hidden-xs">1229</td></tr>
+<tr><td>182</td><td class="hidden-xs">334</td><td><a href='moves_M6.htm#p334'>GREGOROVIC Vjekoslav</a></td><td>CRO</td><td class="hidden-xs">Europe</td><td>6</td><td>1227</td><td class="hidden-xs">1235</td></tr>
+<tr><td>183</td><td class="hidden-xs">243</td><td>DI FRANCO MICHELL Carlo</td><td>BRA</td><td class="hidden-xs">Americas</td><td>6</td><td>1225</td><td class="hidden-xs">1225</td></tr>
+<tr><td>184</td><td class="hidden-xs">3961</td><td>SAUNIN Aleksei</td><td>RUS</td><td class="hidden-xs">Europe</td><td>8</td><td>1218</td><td class="hidden-xs">1218</td></tr>
+<tr><td>184</td><td class="hidden-xs">1308</td><td>KIM Jae Jin</td><td>KOR</td><td class="hidden-xs">Asia</td><td>7</td><td>1218</td><td class="hidden-xs">1218</td></tr>
+<tr><td>186</td><td class="hidden-xs">4408</td><td><a href='moves_M8.htm#p4408'>LAM Ka Wai</a></td><td>HKG</td><td class="hidden-xs">Asia</td><td>8</td><td>1214</td><td class="hidden-xs">1231</td></tr>
+<tr><td>187</td><td class="hidden-xs">5229</td><td>KARPOV Ivan</td><td>RUS</td><td class="hidden-xs">Europe</td><td>10</td><td>1208</td><td class="hidden-xs">1208</td></tr>
+<tr><td>188</td><td class="hidden-xs">2707</td><td>HOSSAM Hosny Afifi</td><td>EGY</td><td class="hidden-xs">Africa</td><td>9</td><td>1207</td><td class="hidden-xs">1207</td></tr>
+<tr><td>189</td><td class="hidden-xs">2145</td><td><a href='moves_M9.htm#p2145'>IBRAHIM Mohamed</a></td><td>EGY</td><td class="hidden-xs">Africa</td><td>9</td><td>1205</td><td class="hidden-xs">1202</td></tr>
+<tr><td>189</td><td class="hidden-xs">4905</td><td>HIDALGO HERRERA Alejandro</td><td>CRC</td><td class="hidden-xs">Americas</td><td>10</td><td>1205</td><td class="hidden-xs">1205</td></tr>
+<tr><td>191</td><td class="hidden-xs">3950</td><td>JIMENEZ VELANDIA Diego Armando</td><td>COL</td><td class="hidden-xs">Americas</td><td>9</td><td>1204</td><td class="hidden-xs">1204</td></tr>
+<tr><td>192</td><td class="hidden-xs">4150</td><td>SHUKUNOBE Takumi</td><td>JPN</td><td class="hidden-xs">Asia</td><td>8</td><td>1203</td><td class="hidden-xs">1203</td></tr>
+<tr><td>193</td><td class="hidden-xs">3955</td><td>COLOMBO DA SILVA Ramon</td><td>BRA</td><td class="hidden-xs">Americas</td><td>9</td><td>1202</td><td class="hidden-xs">1202</td></tr>
+<tr><td>193</td><td class="hidden-xs">3017</td><td>SAMSONOV Alexei</td><td>RUS</td><td class="hidden-xs">Europe</td><td>7</td><td>1202</td><td class="hidden-xs">1202</td></tr>
+<tr><td>193</td><td class="hidden-xs">3790</td><td>MIYAWAKI Susumu</td><td>JPN</td><td class="hidden-xs">Asia</td><td>7</td><td>1202</td><td class="hidden-xs">1202</td></tr>
+<tr><td>196</td><td class="hidden-xs">260</td><td>PEREIRA DE OLIVEIRA Basilio Fernando</td><td>BRA</td><td class="hidden-xs">Americas</td><td>10</td><td>1201</td><td class="hidden-xs">1201</td></tr>
+<tr><td>197</td><td class="hidden-xs">3934</td><td>SATO Hiromi</td><td>JPN</td><td class="hidden-xs">Asia</td><td>8</td><td>1200</td><td class="hidden-xs">1200</td></tr>
+<tr><td>198</td><td class="hidden-xs">4953</td><td>BALOBANOV Vladislav</td><td>RUS</td><td class="hidden-xs">Europe</td><td>9</td><td>1199</td><td class="hidden-xs">1199</td></tr>
+<tr><td>198</td><td class="hidden-xs">4484</td><td>TAKEDA Yoshihisa</td><td>JPN</td><td class="hidden-xs">Asia</td><td>8</td><td>1199</td><td class="hidden-xs">1199</td></tr>
+<tr><td>198</td><td class="hidden-xs">4842</td><td>JOHN Lawrence</td><td>GBR</td><td class="hidden-xs">Europe</td><td>10</td><td>1199</td><td class="hidden-xs">1199</td></tr>
+<tr><td>201</td><td class="hidden-xs">5062</td><td><a href='moves_M8.htm#p5062'>TYBIRK Louis August</a></td><td>DEN</td><td class="hidden-xs">Europe</td><td>8</td><td>1198</td><td class="hidden-xs">1201</td></tr>
+<tr><td>201</td><td class="hidden-xs">3115</td><td><a href='moves_M6.htm#p3115'>KNEUSS Valentin</a></td><td>SUI</td><td class="hidden-xs">Europe</td><td>6</td><td>1198</td><td class="hidden-xs">1177</td></tr>
+<tr><td>203</td><td class="hidden-xs">4193</td><td><a href='moves_M6.htm#p4193'>AZULAY Michael</a></td><td>SWE</td><td class="hidden-xs">Europe</td><td>6</td><td>1194</td><td class="hidden-xs">1168</td></tr>
+<tr><td>203</td><td class="hidden-xs">3734</td><td>JARA HERNANDEZ  Jaime</td><td>CHI</td><td class="hidden-xs">Americas</td><td>9</td><td>1194</td><td class="hidden-xs">1194</td></tr>
+<tr><td>205</td><td class="hidden-xs">4965</td><td>VEGA GUTIERREZ Alvaro Hernan</td><td>CHI</td><td class="hidden-xs">Americas</td><td>10</td><td>1192</td><td class="hidden-xs">1192</td></tr>
+<tr><td>206</td><td class="hidden-xs">4394</td><td>YANG Gui Nam</td><td>KOR</td><td class="hidden-xs">Asia</td><td>8</td><td>1187</td><td class="hidden-xs">1187</td></tr>
+<tr><td>206</td><td class="hidden-xs">760</td><td><a href='moves_M6.htm#p760'>KUSIAK Thomasz</a></td><td>GER</td><td class="hidden-xs">Europe</td><td>6</td><td>1187</td><td class="hidden-xs">1192</td></tr>
+<tr><td>208</td><td class="hidden-xs">427</td><td>GOMEZ VARGAS Odalis Leonel</td><td>DOM</td><td class="hidden-xs">Americas</td><td>8</td><td>1182</td><td class="hidden-xs">1182</td></tr>
+<tr><td>208</td><td class="hidden-xs">5228</td><td>PALIN Denis</td><td>RUS</td><td class="hidden-xs">Europe</td><td>7</td><td>1182</td><td class="hidden-xs">1176</td></tr>
+<tr><td>208</td><td class="hidden-xs">4111</td><td>PULPAN David</td><td>CZE</td><td class="hidden-xs">Europe</td><td>9</td><td>1182</td><td class="hidden-xs">1182</td></tr>
+<tr><td>211</td><td class="hidden-xs">4614</td><td><a href='moves_M8.htm#p4614'>OLCZAK Marius</a></td><td>POL</td><td class="hidden-xs">Europe</td><td>8</td><td>1181</td><td class="hidden-xs">1181</td></tr>
+<tr><td>212</td><td class="hidden-xs">4874</td><td>POLO ASTUDILLO Paul Leonardo</td><td>ECU</td><td class="hidden-xs">Americas</td><td>8</td><td>1180</td><td class="hidden-xs">1180</td></tr>
+<tr><td>213</td><td class="hidden-xs">3752</td><td>COUGHLAN Joel</td><td>AUS</td><td class="hidden-xs">Oceania</td><td>10</td><td>1177</td><td class="hidden-xs">1177</td></tr>
+<tr><td>214</td><td class="hidden-xs">4868</td><td>DA SILVA OLIVEIRA Nilson</td><td>BRA</td><td class="hidden-xs">Americas</td><td>8</td><td>1171</td><td class="hidden-xs">1171</td></tr>
+<tr><td>214</td><td class="hidden-xs">4354</td><td>RODRIGUEZ HIDALCO Jorge Felix</td><td>CUB</td><td class="hidden-xs">Americas</td><td>10</td><td>1171</td><td class="hidden-xs">1171</td></tr>
+<tr><td>216</td><td class="hidden-xs">5183</td><td>RETTER Barnabas</td><td>HUN</td><td class="hidden-xs">Europe</td><td>9</td><td>1170</td><td class="hidden-xs">1170</td></tr>
+<tr><td>217</td><td class="hidden-xs">2840</td><td>KIM Yong Woo</td><td>KOR</td><td class="hidden-xs">Asia</td><td>9</td><td>1169</td><td class="hidden-xs">1169</td></tr>
+<tr><td>218</td><td class="hidden-xs">5165</td><td>MONTOYA Luis Ferney</td><td>COL</td><td class="hidden-xs">Americas</td><td>9</td><td>1166</td><td class="hidden-xs">1166</td></tr>
+<tr><td>219</td><td class="hidden-xs">4831</td><td>RI Chol Song </td><td>PRK</td><td class="hidden-xs">Asia</td><td>9</td><td>1162</td><td class="hidden-xs">1162</td></tr>
+<tr><td>220</td><td class="hidden-xs">2786</td><td>SPEEK Hans</td><td>NED</td><td class="hidden-xs">Europe</td><td>7</td><td>1161</td><td class="hidden-xs">1161</td></tr>
+<tr><td>220</td><td class="hidden-xs">4349</td><td>CONCEICAO S. Flavio Alberto</td><td>BRA</td><td class="hidden-xs">Americas</td><td>9</td><td>1161</td><td class="hidden-xs">1161</td></tr>
+<tr><td>222</td><td class="hidden-xs">2825</td><td>COSTA RIBEIRO Mario Luis</td><td>BRA</td><td class="hidden-xs">Americas</td><td>9</td><td>1160</td><td class="hidden-xs">1160</td></tr>
+<tr><td>223</td><td class="hidden-xs">1312</td><td>CHOI Ki Hung</td><td>KOR</td><td class="hidden-xs">Asia</td><td>9</td><td>1157</td><td class="hidden-xs">1157</td></tr>
+<tr><td>224</td><td class="hidden-xs">4629</td><td>TAVROV Evgenii</td><td>RUS</td><td class="hidden-xs">Europe</td><td>10</td><td>1154</td><td class="hidden-xs">1154</td></tr>
+<tr><td>225</td><td class="hidden-xs">262</td><td>ALMEIDA Willian Gabriel</td><td>BRA</td><td class="hidden-xs">Americas</td><td>10</td><td>1153</td><td class="hidden-xs">1153</td></tr>
+<tr><td>226</td><td class="hidden-xs">4835</td><td>MYLONAS Adonis</td><td>BEL</td><td class="hidden-xs">Europe</td><td>10</td><td>1152</td><td class="hidden-xs">1152</td></tr>
+<tr><td>227</td><td class="hidden-xs">4252</td><td>ARRATIA Ari</td><td>USA</td><td class="hidden-xs">Americas</td><td>6</td><td>1151</td><td class="hidden-xs">1151</td></tr>
+<tr><td>228</td><td class="hidden-xs">5128</td><td>BERTHIER Clement</td><td>FRA</td><td class="hidden-xs">Europe</td><td>8</td><td>1150</td><td class="hidden-xs">1150</td></tr>
+<tr><td>229</td><td class="hidden-xs">4946</td><td>JABLONSKI Pawel</td><td>POL</td><td class="hidden-xs">Europe</td><td>9</td><td>1148</td><td class="hidden-xs">1148</td></tr>
+<tr><td>230</td><td class="hidden-xs">4685</td><td>MEYN Jackson</td><td>AUS</td><td class="hidden-xs">Oceania</td><td>9</td><td>1147</td><td class="hidden-xs">1147</td></tr>
+<tr><td>231</td><td class="hidden-xs">4203</td><td><a href='moves_M6.htm#p4203'>LAUE Tim</a></td><td>GER</td><td class="hidden-xs">Europe</td><td>6</td><td>1145</td><td class="hidden-xs">1139</td></tr>
+<tr><td>231</td><td class="hidden-xs">4515</td><td>PINO LORCA Matias Nicolas</td><td>CHI</td><td class="hidden-xs">Americas</td><td>6</td><td>1145</td><td class="hidden-xs">1145</td></tr>
+<tr><td>233</td><td class="hidden-xs">4177</td><td>NGOENKRACHANG Lertsak</td><td>THA</td><td class="hidden-xs">Asia</td><td>8</td><td>1143</td><td class="hidden-xs">1143</td></tr>
+<tr><td>234</td><td class="hidden-xs">2605</td><td>LIN Wo-chin</td><td>TPE</td><td class="hidden-xs">Asia</td><td>7</td><td>1142</td><td class="hidden-xs">1142</td></tr>
+<tr><td>234</td><td class="hidden-xs">3717</td><td>OSADCHEV Nikita</td><td>RUS</td><td class="hidden-xs">Europe</td><td>7</td><td>1142</td><td class="hidden-xs">1142</td></tr>
+<tr><td>236</td><td class="hidden-xs">4872</td><td>TORRES NAVARRETE Osvaldo</td><td>CHI</td><td class="hidden-xs">Americas</td><td>7</td><td>1141</td><td class="hidden-xs">1141</td></tr>
+<tr><td>237</td><td class="hidden-xs">2571</td><td>MORALES CORTES Ruperto Hernan</td><td>CHI</td><td class="hidden-xs">Americas</td><td>8</td><td>1138</td><td class="hidden-xs">1138</td></tr>
+<tr><td>238</td><td class="hidden-xs">4880</td><td>KAMIZONA Victor Claude</td><td>NZL</td><td class="hidden-xs">Oceania</td><td>8</td><td>1134</td><td class="hidden-xs">1134</td></tr>
+<tr><td>239</td><td class="hidden-xs">4955</td><td>PEREVOZCHIKOV Nikita</td><td>RUS</td><td class="hidden-xs">Europe</td><td>10</td><td>1132</td><td class="hidden-xs">1132</td></tr>
+<tr><td>240</td><td class="hidden-xs">3944</td><td>LETELIER MENDOZA Valentin Rene</td><td>CHI</td><td class="hidden-xs">Americas</td><td>9</td><td>1131</td><td class="hidden-xs">1131</td></tr>
+<tr><td>241</td><td class="hidden-xs">2548</td><td>MOJTAHED Masoud</td><td>CAN</td><td class="hidden-xs">Americas</td><td>7</td><td>1130</td><td class="hidden-xs">1130</td></tr>
+<tr><td>242</td><td class="hidden-xs">5214</td><td>HEMMI Kosuke</td><td>JPN</td><td class="hidden-xs">Asia</td><td>7</td><td>1129</td><td class="hidden-xs">1129</td></tr>
+<tr><td>243</td><td class="hidden-xs">4809</td><td><a href='moves_M8.htm#p4809'>HATEFI ARDEKANI Mahdi</a></td><td>IRI</td><td class="hidden-xs">Asia</td><td>8</td><td>1128</td><td class="hidden-xs"></td></tr>
+<tr><td>244</td><td class="hidden-xs">4751</td><td>MEDINA Luciano</td><td>ARG</td><td class="hidden-xs">Americas</td><td>8</td><td>1127</td><td class="hidden-xs">1127</td></tr>
+<tr><td>245</td><td class="hidden-xs">2714</td><td>STERLING Daryl</td><td>USA</td><td class="hidden-xs">Americas</td><td>7</td><td>1125</td><td class="hidden-xs">1125</td></tr>
+<tr><td>246</td><td class="hidden-xs">3831</td><td>DE VITO Tomas</td><td>ARG</td><td class="hidden-xs">Americas</td><td>6</td><td>1119</td><td class="hidden-xs">1119</td></tr>
+<tr><td>247</td><td class="hidden-xs">4683</td><td>HIRTH  Trevor</td><td>AUS</td><td class="hidden-xs">Oceania</td><td>6</td><td>1114</td><td class="hidden-xs">1114</td></tr>
+<tr><td>248</td><td class="hidden-xs">4518</td><td>KANIUKA Aleksy Nicolas</td><td>ARG</td><td class="hidden-xs">Americas</td><td>7</td><td>1111</td><td class="hidden-xs">1111</td></tr>
+<tr><td>249</td><td class="hidden-xs">2569</td><td>SEPULVEDA PARDO Jaun Carlos</td><td>CHI</td><td class="hidden-xs">Americas</td><td>6</td><td>1104</td><td class="hidden-xs">1104</td></tr>
+<tr><td>250</td><td class="hidden-xs">4208</td><td>SCHNEIDER Yannick</td><td>GER</td><td class="hidden-xs">Europe</td><td>9</td><td>1101</td><td class="hidden-xs">1101</td></tr>
+<tr><td>251</td><td class="hidden-xs">3767</td><td>CSEMY Gabriel</td><td>SVK</td><td class="hidden-xs">Europe</td><td>6</td><td>1099</td><td class="hidden-xs">1099</td></tr>
+<tr><td>252</td><td class="hidden-xs">4924</td><td>GABDULLIN Mars</td><td>RUS</td><td class="hidden-xs">Europe</td><td>6</td><td>1098</td><td class="hidden-xs">1098</td></tr>
+<tr><td>253</td><td class="hidden-xs">3929</td><td>HUANG Samuel Chang</td><td>USA</td><td class="hidden-xs">Americas</td><td>10</td><td>1097</td><td class="hidden-xs">1097</td></tr>
+<tr><td>254</td><td class="hidden-xs">441</td><td><a href='moves_M7.htm#p441'>ABDELMONEIM Abousteit</a></td><td>EGY</td><td class="hidden-xs">Africa</td><td>7</td><td>1092</td><td class="hidden-xs">1079</td></tr>
+<tr><td>255</td><td class="hidden-xs">2572</td><td>ARGUELLO GARCIA Domingo</td><td>CRC</td><td class="hidden-xs">Americas</td><td>6</td><td>1091</td><td class="hidden-xs">1091</td></tr>
+<tr><td>255</td><td class="hidden-xs">3636</td><td>HAMZAH Mohd Nazizul</td><td>MAS</td><td class="hidden-xs">Asia</td><td>7</td><td>1091</td><td class="hidden-xs">1091</td></tr>
+<tr><td>257</td><td class="hidden-xs">4819</td><td>MOHAMAD KAMAL SAUPI  AHMAD SYAHIR </td><td>MAS</td><td class="hidden-xs">Asia</td><td>10</td><td>1090</td><td class="hidden-xs">1090</td></tr>
+<tr><td>258</td><td class="hidden-xs">4836</td><td>MITEV Yordan</td><td>BUL</td><td class="hidden-xs">Europe</td><td>8</td><td>1089</td><td class="hidden-xs">1089</td></tr>
+<tr><td>258</td><td class="hidden-xs">4672</td><td>YANG  Gyu Tae</td><td>KOR</td><td class="hidden-xs">Asia</td><td>8</td><td>1089</td><td class="hidden-xs">1089</td></tr>
+<tr><td>260</td><td class="hidden-xs">4175</td><td>RUANGRUNG Amarit</td><td>THA</td><td class="hidden-xs">Asia</td><td>7</td><td>1079</td><td class="hidden-xs">1079</td></tr>
+<tr><td>261</td><td class="hidden-xs">3946</td><td>IAKOVLEV Artem</td><td>RUS</td><td class="hidden-xs">Europe</td><td>8</td><td>1076</td><td class="hidden-xs">1076</td></tr>
+<tr><td>262</td><td class="hidden-xs">3824</td><td>SELVAGGI Fabian</td><td>ARG</td><td class="hidden-xs">Americas</td><td>8</td><td>1075</td><td class="hidden-xs">1075</td></tr>
+<tr><td>263</td><td class="hidden-xs">4707</td><td>SAMEE Sukij</td><td>THA</td><td class="hidden-xs">Asia</td><td>9</td><td>1071</td><td class="hidden-xs">1071</td></tr>
+<tr><td>264</td><td class="hidden-xs">4612</td><td>PERRY Martin Robert</td><td>GBR</td><td class="hidden-xs">Europe</td><td>6</td><td>1064</td><td class="hidden-xs">1064</td></tr>
+<tr><td>265</td><td class="hidden-xs">2038</td><td>KONIG Karl Heinz</td><td>GER</td><td class="hidden-xs">Europe</td><td>7</td><td>1063</td><td class="hidden-xs">1063</td></tr>
+<tr><td>265</td><td class="hidden-xs">4274</td><td>CALDEIRA GOMES  Reginaldo</td><td>BRA</td><td class="hidden-xs">Americas</td><td>9</td><td>1063</td><td class="hidden-xs">1063</td></tr>
+<tr><td>267</td><td class="hidden-xs">3055</td><td>KROZTCH Pablo</td><td>ARG</td><td class="hidden-xs">Americas</td><td>8</td><td>1062</td><td class="hidden-xs">1062</td></tr>
+<tr><td>267</td><td class="hidden-xs">5107</td><td>KIM SunGil</td><td>KOR</td><td class="hidden-xs">Asia</td><td>6</td><td>1062</td><td class="hidden-xs">1062</td></tr>
+<tr><td>267</td><td class="hidden-xs">2784</td><td>ITAI Junki</td><td>JPN</td><td class="hidden-xs">Asia</td><td>6</td><td>1062</td><td class="hidden-xs">1062</td></tr>
+<tr><td>270</td><td class="hidden-xs">4856</td><td><a href='moves_M6.htm#p4856'>LJUNGGREN Roger</a></td><td>SWE</td><td class="hidden-xs">Europe</td><td>6</td><td>1059</td><td class="hidden-xs">1047</td></tr>
+<tr><td>270</td><td class="hidden-xs">3931</td><td>GUBBI VIJAYA KUMAR Ajay</td><td>IND</td><td class="hidden-xs">Asia</td><td>8</td><td>1059</td><td class="hidden-xs">1059</td></tr>
+<tr><td>272</td><td class="hidden-xs">4428</td><td>PEREZ Alejandro</td><td>ARG</td><td class="hidden-xs">Americas</td><td>8</td><td>1057</td><td class="hidden-xs">1057</td></tr>
+<tr><td>272</td><td class="hidden-xs">873</td><td>SZIGETI Bela</td><td>HUN</td><td class="hidden-xs">Europe</td><td>10</td><td>1057</td><td class="hidden-xs">1057</td></tr>
+<tr><td>274</td><td class="hidden-xs">4852</td><td>NAGY Alexander</td><td>SVK</td><td class="hidden-xs">Europe</td><td>6</td><td>1054</td><td class="hidden-xs">1054</td></tr>
+<tr><td>275</td><td class="hidden-xs">4774</td><td>SALAZAR PEREZ Gabriel Sebastian</td><td>ECU</td><td class="hidden-xs">Americas</td><td>8</td><td>1052</td><td class="hidden-xs">1052</td></tr>
+<tr><td>275</td><td class="hidden-xs">4600</td><td><a href='moves_M9.htm#p4600'>PONTES BRANDAO Nuno Jose</a></td><td>POR</td><td class="hidden-xs">Europe</td><td>9</td><td>1052</td><td class="hidden-xs">1052</td></tr>
+<tr><td>277</td><td class="hidden-xs">3888</td><td><a href='moves_M6.htm#p3888'>SAFIULLIN  Dinar</a></td><td>RUS</td><td class="hidden-xs">Europe</td><td>6</td><td>1048</td><td class="hidden-xs"></td></tr>
+<tr><td>278</td><td class="hidden-xs">2657</td><td>PARK Joon Soo</td><td>KOR</td><td class="hidden-xs">Asia</td><td>7</td><td>1047</td><td class="hidden-xs">1047</td></tr>
+<tr><td>279</td><td class="hidden-xs">4253</td><td>BROWN Michael</td><td>USA</td><td class="hidden-xs">Americas</td><td>6</td><td>1046</td><td class="hidden-xs">1046</td></tr>
+<tr><td>280</td><td class="hidden-xs">4807</td><td><a href='moves_M8.htm#p4807'>JAFARI NOSTRATABAD HOSSEIN</a></td><td>IRI</td><td class="hidden-xs">Asia</td><td>8</td><td>1039</td><td class="hidden-xs"></td></tr>
+<tr><td>281</td><td class="hidden-xs">4561</td><td>MAKKAR Marco Sephom</td><td>USA</td><td class="hidden-xs">Americas</td><td>8</td><td>1037</td><td class="hidden-xs">1037</td></tr>
+<tr><td>282</td><td class="hidden-xs">3764</td><td>DE SOUZA LACERDA Lincoln</td><td>BRA</td><td class="hidden-xs">Americas</td><td>6</td><td>1036</td><td class="hidden-xs">1036</td></tr>
+<tr><td>282</td><td class="hidden-xs">1583</td><td><a href='moves_M7.htm#p1583'>DOANA Victor</a></td><td>ROU</td><td class="hidden-xs">Europe</td><td>7</td><td>1036</td><td class="hidden-xs">1051</td></tr>
+<tr><td>282</td><td class="hidden-xs">245</td><td>MEDINA Luiz Henrique</td><td>BRA</td><td class="hidden-xs">Americas</td><td>6</td><td>1036</td><td class="hidden-xs">1036</td></tr>
+<tr><td>285</td><td class="hidden-xs">2338</td><td>FERRO Pablo</td><td>ARG</td><td class="hidden-xs">Americas</td><td>7</td><td>1034</td><td class="hidden-xs">1034</td></tr>
+<tr><td>286</td><td class="hidden-xs">2377</td><td>HOSSEIN HASSAN Hossein</td><td>EGY</td><td class="hidden-xs">Africa</td><td>9</td><td>1033</td><td class="hidden-xs">1033</td></tr>
+<tr><td>287</td><td class="hidden-xs">3736</td><td>GIRAUD GONZALEZ Jean-pierre</td><td>VEN</td><td class="hidden-xs">Americas</td><td>7</td><td>1029</td><td class="hidden-xs">1029</td></tr>
+<tr><td>288</td><td class="hidden-xs">4860</td><td>HUNG Fu Lung</td><td>TPE</td><td class="hidden-xs">Asia</td><td>9</td><td>1028</td><td class="hidden-xs">1028</td></tr>
+<tr><td>289</td><td class="hidden-xs">5023</td><td><a href='moves_M8.htm#p5023'>JOHANSEN Fredrik </a></td><td>NOR</td><td class="hidden-xs">Europe</td><td>8</td><td>1025</td><td class="hidden-xs">1025</td></tr>
+<tr><td>290</td><td class="hidden-xs">4706</td><td>THAPAENG Suriyone</td><td>THA</td><td class="hidden-xs">Asia</td><td>7</td><td>1024</td><td class="hidden-xs">1024</td></tr>
+<tr><td>291</td><td class="hidden-xs">4287</td><td>BOGACH Nikolay</td><td>RUS</td><td class="hidden-xs">Europe</td><td>6</td><td>1022</td><td class="hidden-xs">1022</td></tr>
+<tr><td>292</td><td class="hidden-xs">3921</td><td>REYES Nixon</td><td>CRC</td><td class="hidden-xs">Americas</td><td>9</td><td>1018</td><td class="hidden-xs">1018</td></tr>
+<tr><td>293</td><td class="hidden-xs">3092</td><td>ETCHE FATTOH Elleingand Aka Charles</td><td>CIV</td><td class="hidden-xs">Africa</td><td>9</td><td>1017</td><td class="hidden-xs">1017</td></tr>
+<tr><td>294</td><td class="hidden-xs">4984</td><td><a href='moves_M9.htm#p4984'>ALSANEA Ali</a></td><td>KUW</td><td class="hidden-xs">Asia</td><td>9</td><td>1016</td><td class="hidden-xs">1072</td></tr>
+<tr><td>295</td><td class="hidden-xs">4890</td><td>CARON Curtis </td><td>CAN</td><td class="hidden-xs">Americas</td><td>8</td><td>1015</td><td class="hidden-xs">1015</td></tr>
+<tr><td>296</td><td class="hidden-xs">3244</td><td>TABIB Boaz</td><td>ISR</td><td class="hidden-xs">Europe</td><td>7</td><td>1011</td><td class="hidden-xs">1011</td></tr>
+<tr><td>296</td><td class="hidden-xs">2832</td><td>FASANARO RUSSIAN Carlos Alberto</td><td>VEN</td><td class="hidden-xs">Americas</td><td>8</td><td>1011</td><td class="hidden-xs">1011</td></tr>
+<tr><td>298</td><td class="hidden-xs">1582</td><td>MIRON Mihai </td><td>ROU</td><td class="hidden-xs">Europe</td><td>8</td><td>1008</td><td class="hidden-xs">1008</td></tr>
+<tr><td>299</td><td class="hidden-xs">3885</td><td><a href='moves_M7.htm#p3885'>OTTE Patrick</a></td><td>DEN</td><td class="hidden-xs">Europe</td><td>7</td><td>1005</td><td class="hidden-xs">997</td></tr>
+<tr><td>300</td><td class="hidden-xs">4147</td><td>HUSSAINI Yaser</td><td>AUS</td><td class="hidden-xs">Oceania</td><td>6</td><td>1003</td><td class="hidden-xs">1003</td></tr>
+<tr><td>300</td><td class="hidden-xs">4181</td><td>SANTAYA Panupong</td><td>THA</td><td class="hidden-xs">Asia</td><td>8</td><td>1003</td><td class="hidden-xs">1003</td></tr>
+<tr><td>302</td><td class="hidden-xs">2142</td><td><a href='moves_M8.htm#p2142'>KOUADIO Kouame</a></td><td>CIV</td><td class="hidden-xs">Africa</td><td>8</td><td>1000</td><td class="hidden-xs">1030</td></tr>
+<tr><td>303</td><td class="hidden-xs">4888</td><td>LEE KIM PUEK</td><td>SIN</td><td class="hidden-xs">Asia</td><td>9</td><td>996</td><td class="hidden-xs">996</td></tr>
+<tr><td>303</td><td class="hidden-xs">4881</td><td><a href='moves_M7.htm#p4881'>BONOSO Joni Herlan</a></td><td>INA</td><td class="hidden-xs">Asia</td><td>7</td><td>996</td><td class="hidden-xs"></td></tr>
+<tr><td>305</td><td class="hidden-xs">4956</td><td>CHIRKOV Denis</td><td>RUS</td><td class="hidden-xs">Europe</td><td>9</td><td>987</td><td class="hidden-xs">987</td></tr>
+<tr><td>305</td><td class="hidden-xs">4344</td><td><a href='moves_M6.htm#p4344'>MOUCHTHIS Georgios</a></td><td>GRE</td><td class="hidden-xs">Europe</td><td>6</td><td>987</td><td class="hidden-xs">995</td></tr>
+<tr><td>307</td><td class="hidden-xs">4372</td><td>ALY Abdelrehim</td><td>EGY</td><td class="hidden-xs">Africa</td><td>8</td><td>985</td><td class="hidden-xs">985</td></tr>
+<tr><td>308</td><td class="hidden-xs">5076</td><td>DULAYAANUKIJ Thanapong</td><td>THA</td><td class="hidden-xs">Asia</td><td>6</td><td>983</td><td class="hidden-xs">983</td></tr>
+<tr><td>309</td><td class="hidden-xs">1860</td><td>CHANG Lei-ming</td><td>TPE</td><td class="hidden-xs">Asia</td><td>7</td><td>982</td><td class="hidden-xs">982</td></tr>
+<tr><td>309</td><td class="hidden-xs">4255</td><td>MC ALOOSE Hunter</td><td>USA</td><td class="hidden-xs">Americas</td><td>7</td><td>982</td><td class="hidden-xs">982</td></tr>
+<tr><td>311</td><td class="hidden-xs">2745</td><td>MURESAN Dorel</td><td>ROU</td><td class="hidden-xs">Europe</td><td>8</td><td>981</td><td class="hidden-xs">981</td></tr>
+<tr><td>312</td><td class="hidden-xs">5006</td><td>TIRIZICA Ioan</td><td>ROU</td><td class="hidden-xs">Europe</td><td>7</td><td>976</td><td class="hidden-xs">976</td></tr>
+<tr><td>313</td><td class="hidden-xs">2608</td><td>MEWES Klaus</td><td>GER</td><td class="hidden-xs">Europe</td><td>6</td><td>974</td><td class="hidden-xs">974</td></tr>
+<tr><td>313</td><td class="hidden-xs">4684</td><td>BALLESTRINO Jake</td><td>AUS</td><td class="hidden-xs">Oceania</td><td>7</td><td>974</td><td class="hidden-xs">974</td></tr>
+<tr><td>315</td><td class="hidden-xs">2907</td><td><a href='moves_M10.htm#p2907'>ABURUB  Khaled Abdel</a></td><td>JOR</td><td class="hidden-xs">Asia</td><td>10</td><td>973</td><td class="hidden-xs"></td></tr>
+<tr><td>316</td><td class="hidden-xs">4667</td><td>KIM Chang Hee</td><td>KOR</td><td class="hidden-xs">Asia</td><td>6</td><td>972</td><td class="hidden-xs">972</td></tr>
+<tr><td>317</td><td class="hidden-xs">5033</td><td><a href='moves_M8.htm#p5033'>SALOMONSEN Steffen</a></td><td>NOR</td><td class="hidden-xs">Europe</td><td>8</td><td>971</td><td class="hidden-xs">971</td></tr>
+<tr><td>318</td><td class="hidden-xs">2869</td><td>MONTEIRO Avelino</td><td>FRA</td><td class="hidden-xs">Europe</td><td>8</td><td>968</td><td class="hidden-xs">968</td></tr>
+<tr><td>319</td><td class="hidden-xs">4159</td><td>BHATNAGAR Ayush</td><td>NZL</td><td class="hidden-xs">Oceania</td><td>8</td><td>965</td><td class="hidden-xs">965</td></tr>
+<tr><td>320</td><td class="hidden-xs">5208</td><td>JOVANOVIC Bojan</td><td>SRB</td><td class="hidden-xs">Europe</td><td>10</td><td>961</td><td class="hidden-xs">961</td></tr>
+<tr><td>320</td><td class="hidden-xs">4459</td><td>MORGAN Josh</td><td>GBR</td><td class="hidden-xs">Europe</td><td>10</td><td>961</td><td class="hidden-xs">961</td></tr>
+<tr><td>322</td><td class="hidden-xs">2557</td><td>MARTINEZ PAZ Alger Benito</td><td>VEN</td><td class="hidden-xs">Americas</td><td>7</td><td>958</td><td class="hidden-xs">958</td></tr>
+<tr><td>323</td><td class="hidden-xs">4862</td><td>SICILIA Rafael</td><td>ARG</td><td class="hidden-xs">Americas</td><td>10</td><td>957</td><td class="hidden-xs">957</td></tr>
+<tr><td>324</td><td class="hidden-xs">5173</td><td><a href='moves_M7.htm#p5173'>BRAMMER Henrik  Korndahl</a></td><td>DEN</td><td class="hidden-xs">Europe</td><td>7</td><td>956</td><td class="hidden-xs">933</td></tr>
+<tr><td>325</td><td class="hidden-xs">3184</td><td>KOLEV Georgi</td><td>BUL</td><td class="hidden-xs">Europe</td><td>8</td><td>944</td><td class="hidden-xs">944</td></tr>
+<tr><td>326</td><td class="hidden-xs">2352</td><td>MONCADA Gerardo</td><td>CRC</td><td class="hidden-xs">Americas</td><td>7</td><td>940</td><td class="hidden-xs">940</td></tr>
+<tr><td>327</td><td class="hidden-xs">4149</td><td>JOHNSTONE  Connor</td><td>AUS</td><td class="hidden-xs">Oceania</td><td>8</td><td>936</td><td class="hidden-xs">936</td></tr>
+<tr><td>328</td><td class="hidden-xs">4757</td><td>FIGUEIREDO FORMENTIN Felipe</td><td>BRA</td><td class="hidden-xs">Americas</td><td>7</td><td>935</td><td class="hidden-xs">935</td></tr>
+<tr><td>328</td><td class="hidden-xs">5123</td><td><a href='moves_M7.htm#p5123'>HERRAULT Esteban</a></td><td>FRA</td><td class="hidden-xs">Europe</td><td>7</td><td>935</td><td class="hidden-xs">929</td></tr>
+<tr><td>328</td><td class="hidden-xs">2967</td><td>NICOLAE Alyn Lulian</td><td>ROU</td><td class="hidden-xs">Europe</td><td>8</td><td>935</td><td class="hidden-xs">935</td></tr>
+<tr><td>331</td><td class="hidden-xs">4146</td><td>CAWLEY Nathan</td><td>AUS</td><td class="hidden-xs">Oceania</td><td>6</td><td>918</td><td class="hidden-xs">918</td></tr>
+<tr><td>332</td><td class="hidden-xs">871</td><td>FARKAS Laszlo</td><td>HUN</td><td class="hidden-xs">Europe</td><td>9</td><td>915</td><td class="hidden-xs">915</td></tr>
+<tr><td>333</td><td class="hidden-xs">4257</td><td>XUE Alexander</td><td>USA</td><td class="hidden-xs">Americas</td><td>8</td><td>905</td><td class="hidden-xs">905</td></tr>
+<tr><td>334</td><td class="hidden-xs">3925</td><td>ARAYA Carlos</td><td>CRC</td><td class="hidden-xs">Americas</td><td>7</td><td>904</td><td class="hidden-xs">904</td></tr>
+<tr><td>335</td><td class="hidden-xs">4885</td><td>MU Yuguang </td><td>SIN</td><td class="hidden-xs">Asia</td><td>7</td><td>899</td><td class="hidden-xs">899</td></tr>
+<tr><td>335</td><td class="hidden-xs">5022</td><td><a href='moves_M7.htm#p5022'>KOTENG Markus</a></td><td>NOR</td><td class="hidden-xs">Europe</td><td>7</td><td>899</td><td class="hidden-xs">904</td></tr>
+<tr><td>335</td><td class="hidden-xs">4903</td><td>MENDEZ RAMIREZ Andres</td><td>CRC</td><td class="hidden-xs">Americas</td><td>8</td><td>899</td><td class="hidden-xs">899</td></tr>
+<tr><td>338</td><td class="hidden-xs">1142</td><td><a href='moves_M6.htm#p1142'>TAYEM  Mohammad</a></td><td>JOR</td><td class="hidden-xs">Asia</td><td>6</td><td>889</td><td class="hidden-xs"></td></tr>
+<tr><td>339</td><td class="hidden-xs">4453</td><td><a href='moves_M7.htm#p4453'>DAMKJEER HANSEN Rasmus</a></td><td>DEN</td><td class="hidden-xs">Europe</td><td>7</td><td>879</td><td class="hidden-xs"></td></tr>
+<tr><td>340</td><td class="hidden-xs">4244</td><td>ZHU Xiaoyang</td><td>CAN</td><td class="hidden-xs">Americas</td><td>9</td><td>878</td><td class="hidden-xs">878</td></tr>
+<tr><td>341</td><td class="hidden-xs">2692</td><td><a href='moves_M7.htm#p2692'>AL NAJADAT Mohammad Abed</a></td><td>JOR</td><td class="hidden-xs">Asia</td><td>7</td><td>876</td><td class="hidden-xs"></td></tr>
+<tr><td>342</td><td class="hidden-xs">4268</td><td>PICCOLIN Alexon</td><td>BRA</td><td class="hidden-xs">Americas</td><td>8</td><td>853</td><td class="hidden-xs">853</td></tr>
+<tr><td>343</td><td class="hidden-xs">3877</td><td><a href='moves_M8.htm#p3877'>ABUOBEAD  Asem</a></td><td>JOR</td><td class="hidden-xs">Asia</td><td>8</td><td>841</td><td class="hidden-xs"></td></tr>
+<tr><td>344</td><td class="hidden-xs">2085</td><td>CASCIOLA Augusto</td><td>ITA</td><td class="hidden-xs">Europe</td><td>7</td><td>839</td><td class="hidden-xs">839</td></tr>
+<tr><td>345</td><td class="hidden-xs">3171</td><td>THOMASBERGER Andreas</td><td>AUT</td><td class="hidden-xs">Europe</td><td>7</td><td>838</td><td class="hidden-xs">838</td></tr>
+<tr><td>346</td><td class="hidden-xs">5021</td><td><a href='moves_M8.htm#p5021'>JACOBSEN Pablo</a></td><td>NOR</td><td class="hidden-xs">Europe</td><td>8</td><td>831</td><td class="hidden-xs">831</td></tr>
+<tr><td>347</td><td class="hidden-xs">4642</td><td><a href='moves_M7.htm#p4642'>ADNAN Mohammed</a></td><td>IRQ</td><td class="hidden-xs">Asia</td><td>7</td><td>821</td><td class="hidden-xs"></td></tr>
+<tr><td>348</td><td class="hidden-xs">4904</td><td>ROMAN Steven</td><td>CRC</td><td class="hidden-xs">Americas</td><td>7</td><td>818</td><td class="hidden-xs">818</td></tr>
+<tr><td>349</td><td class="hidden-xs">4611</td><td>MCADAM Conor Kenneth</td><td>GBR</td><td class="hidden-xs">Europe</td><td>6</td><td>812</td><td class="hidden-xs">812</td></tr>
+<tr><td>350</td><td class="hidden-xs">2387</td><td><a href='moves_M6.htm#p2387'>IBRAHIM El Hossiny</a></td><td>EGY</td><td class="hidden-xs">Africa</td><td>6</td><td>787</td><td class="hidden-xs">813</td></tr>
+<tr><td>351</td><td class="hidden-xs">4512</td><td>MORALES Gustavo Hugo</td><td>URU</td><td class="hidden-xs">Americas</td><td>9</td><td>777</td><td class="hidden-xs">777</td></tr>
+<tr><td>352</td><td class="hidden-xs">4615</td><td>EIER Dustin</td><td>NED</td><td class="hidden-xs">Europe</td><td>7</td><td>754</td><td class="hidden-xs">754</td></tr>
+<tr><td>353</td><td class="hidden-xs">4665</td><td>YANG Tae Hwan</td><td>KOR</td><td class="hidden-xs">Asia</td><td>6</td><td>752</td><td class="hidden-xs">752</td></tr>
+<tr><td>354</td><td class="hidden-xs">2953</td><td>MILCIU Florin</td><td>ROU</td><td class="hidden-xs">Europe</td><td>6</td><td>741</td><td class="hidden-xs">741</td></tr>
+<tr><td>355</td><td class="hidden-xs">4844</td><td>MCLAUGHLIN Euan James</td><td>GBR</td><td class="hidden-xs">Europe</td><td>8</td><td>733</td><td class="hidden-xs">733</td></tr>
+<tr><td>356</td><td class="hidden-xs">4621</td><td>LANZA Michael</td><td>ITA</td><td class="hidden-xs">Europe</td><td>6</td><td>681</td><td class="hidden-xs">681</td></tr>
+<tr><td>357</td><td class="hidden-xs">4848</td><td>RYAN Des</td><td>IRL</td><td class="hidden-xs">Europe</td><td>6</td><td>656</td><td class="hidden-xs">656</td></tr>
+<tr><td>358</td><td class="hidden-xs">4800</td><td><a href='moves_M6.htm#p4800'>TONG CHI YUNG</a></td><td>HKG</td><td class="hidden-xs">Asia</td><td>6</td><td>641</td><td class="hidden-xs">641</td></tr>
+<tr><td>359</td><td class="hidden-xs">4901</td><td>SCRIVANO Daniel</td><td>USA</td><td class="hidden-xs">Americas</td><td>8</td><td>618</td><td class="hidden-xs">618</td></tr>
+<tr><td>360</td><td class="hidden-xs">4491</td><td>IONITA Gabriel - Daniel</td><td>ROU</td><td class="hidden-xs">Europe</td><td>9</td><td>483</td><td class="hidden-xs">483</td></tr>
+<tr><td>361</td><td class="hidden-xs">4997</td><td>SOWA Dawid Antoni</td><td>POL</td><td class="hidden-xs">Europe</td><td>9</td><td>65</td><td class="hidden-xs">65</td></tr>
+<tr><td>362</td><td class="hidden-xs">1638</td><td><a href='moves_M7.htm#p1638'>DU PLOOY  Johan</a></td><td>RSA</td><td class="hidden-xs">Africa</td><td>7</td><td>0</td><td class="hidden-xs"></td></tr>
+<tr><td>362</td><td class="hidden-xs">5309</td><td>ALTHAHER Abdullsh</td><td>KUW</td><td class="hidden-xs">Asia</td><td>9</td><td>0</td><td class="hidden-xs"></td></tr>
+<tr><td>362</td><td class="hidden-xs">5217</td><td>ROMERO PARRENO Pablo</td><td>ESP</td><td class="hidden-xs">Europe</td><td>7</td><td>0</td><td class="hidden-xs"></td></tr>
+<tr><td>362</td><td class="hidden-xs">5105</td><td>VASQUEZ CORRAL David Bernardo</td><td>ECU</td><td class="hidden-xs">Americas</td><td>8</td><td>0</td><td class="hidden-xs"></td></tr>
+<tr><td>362</td><td class="hidden-xs">4356</td><td>VASQUEZ M. Maximiliano S.</td><td>ESA</td><td class="hidden-xs">Americas</td><td>7</td><td>0</td><td class="hidden-xs"></td></tr>
+<tr><td>362</td><td class="hidden-xs">4376</td><td>EL MRABET Mohamed</td><td>MAR</td><td class="hidden-xs">Africa</td><td>9</td><td>0</td><td class="hidden-xs"></td></tr>
+<tr><td>362</td><td class="hidden-xs">278</td><td>PELLETIER Martin</td><td>CAN</td><td class="hidden-xs">Americas</td><td>9</td><td>0</td><td class="hidden-xs"></td></tr>
+<tr><td>362</td><td class="hidden-xs">5225</td><td>KUMAR Navin</td><td>USA</td><td class="hidden-xs">Americas</td><td>8</td><td>0</td><td class="hidden-xs"></td></tr>
+<tr><td>362</td><td class="hidden-xs">3141</td><td>HABSHAN Thamer</td><td>KSA</td><td class="hidden-xs">Asia</td><td>9</td><td>0</td><td class="hidden-xs"></td></tr>
+<tr><td>362</td><td class="hidden-xs">5258</td><td>TAN Hwai Wern</td><td>MAS</td><td class="hidden-xs">Asia</td><td>8</td><td>0</td><td class="hidden-xs"></td></tr>
+<tr><td>362</td><td class="hidden-xs">763</td><td>PERBEY Dominic</td><td>GER</td><td class="hidden-xs">Europe</td><td>7</td><td>0</td><td class="hidden-xs"></td></tr>
+<tr><td>362</td><td class="hidden-xs">5236</td><td>SAITO Masayuki</td><td>JPN</td><td class="hidden-xs">Asia</td><td>10</td><td>0</td><td class="hidden-xs"></td></tr>
+<tr><td>362</td><td class="hidden-xs">5038</td><td>ALLEN  Craig Mark</td><td>GBR</td><td class="hidden-xs">Europe</td><td>9</td><td>0</td><td class="hidden-xs"></td></tr>
+<tr><td>362</td><td class="hidden-xs">5301</td><td>SPALEK Vit</td><td>CZE</td><td class="hidden-xs">Europe</td><td>8</td><td>0</td><td class="hidden-xs"></td></tr>
+<tr><td>362</td><td class="hidden-xs">5313</td><td>KOSTAREV Aleksei</td><td>RUS</td><td class="hidden-xs">Europe</td><td>8</td><td>0</td><td class="hidden-xs"></td></tr>
+<tr><td>362</td><td class="hidden-xs">5308</td><td>MEYER Ralf</td><td>GER</td><td class="hidden-xs">Europe</td><td>10</td><td>0</td><td class="hidden-xs"></td></tr>
+<tr><td>362</td><td class="hidden-xs">5245</td><td>KWON Sangyong</td><td>KOR</td><td class="hidden-xs">Asia</td><td>9</td><td>0</td><td class="hidden-xs"></td></tr>
+<tr><td>362</td><td class="hidden-xs">4145</td><td>HOLDBACK Connor</td><td>AUS</td><td class="hidden-xs">Oceania</td><td>6</td><td>0</td><td class="hidden-xs"></td></tr>
+<tr><td>362</td><td class="hidden-xs">4777</td><td>RIVERA VICENTE Shaquille Joel</td><td>PUR</td><td class="hidden-xs">Americas</td><td>9</td><td>0</td><td class="hidden-xs"></td></tr>
+<tr><td>362</td><td class="hidden-xs">4245</td><td>SYED Asad Hussain</td><td>CAN</td><td class="hidden-xs">Americas</td><td>9</td><td>0</td><td class="hidden-xs"></td></tr>
+<tr><td>362</td><td class="hidden-xs">5248</td><td>SEO Junhyeong</td><td>KOR</td><td class="hidden-xs">Asia</td><td>6</td><td>0</td><td class="hidden-xs"></td></tr>
+<tr><td>362</td><td class="hidden-xs">5190</td><td>KRIVOKAPIC Duro</td><td>MNE</td><td class="hidden-xs">Europe</td><td>6</td><td>0</td><td class="hidden-xs"></td></tr>
+<tr><td>362</td><td class="hidden-xs">5235</td><td>DINIS DA SILVA Decio Manuel</td><td>POR</td><td class="hidden-xs">Europe</td><td>10</td><td>0</td><td class="hidden-xs"></td></tr>
+<tr><td>362</td><td class="hidden-xs">5192</td><td>PALJUSEVIC Pjetro</td><td>MNE</td><td class="hidden-xs">Europe</td><td>7</td><td>0</td><td class="hidden-xs"></td></tr>
+<tr><td>362</td><td class="hidden-xs">5141</td><td>LEE Se Ho</td><td>KOR</td><td class="hidden-xs">Asia</td><td>7</td><td>0</td><td class="hidden-xs"></td></tr>
+<tr><td>362</td><td class="hidden-xs">3140</td><td>SIRAJ Nasser Alhassan</td><td>KSA</td><td class="hidden-xs">Asia</td><td>8</td><td>0</td><td class="hidden-xs"></td></tr>
+<tr><td>362</td><td class="hidden-xs">2597</td><td>YEOM Ok Il</td><td>KOR</td><td class="hidden-xs">Asia</td><td>7</td><td>0</td><td class="hidden-xs"></td></tr>
+<tr><td>362</td><td class="hidden-xs">5379</td><td>ARORA Kunal</td><td>IND</td><td class="hidden-xs">Asia</td><td>8</td><td>0</td><td class="hidden-xs"></td></tr>
+<tr><td>362</td><td class="hidden-xs">3864</td><td>SAHARI Rami Hussain</td><td>KSA</td><td class="hidden-xs">Asia</td><td>10</td><td>0</td><td class="hidden-xs"></td></tr>
+<tr><td>362</td><td class="hidden-xs">1465</td><td>MORTENSEN Stig</td><td>NOR</td><td class="hidden-xs">Europe</td><td>8</td><td>0</td><td class="hidden-xs"></td></tr>
+<tr><td>362</td><td class="hidden-xs">4990</td><td>HABUSH  Islam Mohammad Abdelmjeed</td><td>JOR</td><td class="hidden-xs">Asia</td><td>9</td><td>0</td><td class="hidden-xs"></td></tr>
+<tr><td>362</td><td class="hidden-xs">5202</td><td>TOLEAFOA Milo </td><td>SAM</td><td class="hidden-xs">Oceania</td><td>8</td><td>0</td><td class="hidden-xs"></td></tr>
+<tr><td>362</td><td class="hidden-xs">5142</td><td>CHA Ju Yong</td><td>KOR</td><td class="hidden-xs">Asia</td><td>10</td><td>0</td><td class="hidden-xs"></td></tr>
+<tr><td>362</td><td class="hidden-xs">5072</td><td>NASSIKHAN Makhanbet</td><td>KAZ</td><td class="hidden-xs">Asia</td><td>10</td><td>0</td><td class="hidden-xs"></td></tr>
+<tr><td>362</td><td class="hidden-xs">4386</td><td>OBARETIN Omoruyi</td><td>NGR</td><td class="hidden-xs">Africa</td><td>8</td><td>0</td><td class="hidden-xs"></td></tr>
+<tr><td>362</td><td class="hidden-xs">5068</td><td>O CALLAGHAN Conor </td><td>IRL</td><td class="hidden-xs">Europe</td><td>6</td><td>0</td><td class="hidden-xs"></td></tr>
+<tr><td>362</td><td class="hidden-xs">5257</td><td>YAP Moo Onn</td><td>MAS</td><td class="hidden-xs">Asia</td><td>8</td><td>0</td><td class="hidden-xs"></td></tr>
+<tr><td>362</td><td class="hidden-xs">1635</td><td><a href='moves_M6.htm#p1635'>DU PLOOY  Petrus Jacob</a></td><td>RSA</td><td class="hidden-xs">Africa</td><td>6</td><td>0</td><td class="hidden-xs"></td></tr>
+<tr><td>362</td><td class="hidden-xs">5315</td><td>JOZIC Stipo</td><td>BIH</td><td class="hidden-xs">Europe</td><td>7</td><td>0</td><td class="hidden-xs"></td></tr>
+<tr><td>362</td><td class="hidden-xs">5374</td><td>AL MABIAREEK  Hassan Alia</td><td>KSA</td><td class="hidden-xs">Asia</td><td>10</td><td>0</td><td class="hidden-xs"></td></tr>
+<tr><td>362</td><td class="hidden-xs">5168</td><td>WASSINK Devin Albert Jos</td><td>NED</td><td class="hidden-xs">Europe</td><td>8</td><td>0</td><td class="hidden-xs"></td></tr>
+<tr><td>362</td><td class="hidden-xs">3989</td><td>KAMRANI Fereidoun</td><td>IRI</td><td class="hidden-xs">Asia</td><td>9</td><td>0</td><td class="hidden-xs"></td></tr>
+<tr><td>362</td><td class="hidden-xs">5017</td><td>OMELCHUK Bogdan</td><td>UKR</td><td class="hidden-xs">Europe</td><td>7</td><td>0</td><td class="hidden-xs"></td></tr>
+<tr><td>362</td><td class="hidden-xs">5251</td><td>WANG Soo Il </td><td>KOR</td><td class="hidden-xs">Asia</td><td>7</td><td>0</td><td class="hidden-xs"></td></tr>
+<tr><td>362</td><td class="hidden-xs">5186</td><td>TRTNIK Luka</td><td>SLO</td><td class="hidden-xs">Europe</td><td>7</td><td>0</td><td class="hidden-xs"></td></tr>
+<tr><td>362</td><td class="hidden-xs">1336</td><td>ROSENAST Thomas</td><td>SUI</td><td class="hidden-xs">Europe</td><td>7</td><td>0</td><td class="hidden-xs"></td></tr>
+<tr><td>362</td><td class="hidden-xs">5162</td><td>QUESADA  ROJAS Jose Angel</td><td>CRC</td><td class="hidden-xs">Americas</td><td>10</td><td>0</td><td class="hidden-xs"></td></tr>
+<tr><td>362</td><td class="hidden-xs">4887</td><td>KOH KIN YONG</td><td>SIN</td><td class="hidden-xs">Asia</td><td>9</td><td>0</td><td class="hidden-xs"></td></tr>
+<tr><td>362</td><td class="hidden-xs">3384</td><td>DOKIC Mitar</td><td>SRB</td><td class="hidden-xs">Europe</td><td>6</td><td>0</td><td class="hidden-xs"></td></tr>
+<tr><td>362</td><td class="hidden-xs">2383</td><td>ETIGUI Abderrazzak</td><td>MAR</td><td class="hidden-xs">Africa</td><td>9</td><td>0</td><td class="hidden-xs"></td></tr>
+<tr><td>362</td><td class="hidden-xs">5059</td><td><a href='moves_M9.htm#p5059'>ALKHALDI Abdullah</a></td><td>KUW</td><td class="hidden-xs">Asia</td><td>9</td><td>0</td><td class="hidden-xs"></td></tr>
+<tr><td>362</td><td class="hidden-xs">2550</td><td>ROJAS Edwin</td><td>PUR</td><td class="hidden-xs">Americas</td><td>8</td><td>0</td><td class="hidden-xs"></td></tr>
+<tr><td>362</td><td class="hidden-xs">3988</td><td>YAZDIRAVANDI Ali</td><td>IRI</td><td class="hidden-xs">Asia</td><td>9</td><td>0</td><td class="hidden-xs"></td></tr>
+<tr><td>362</td><td class="hidden-xs">5211</td><td>COJOCARU Nicusor</td><td>ROU</td><td class="hidden-xs">Europe</td><td>7</td><td>0</td><td class="hidden-xs"></td></tr>
+<tr><td>362</td><td class="hidden-xs">2960</td><td>BREHARIU Gheorghe</td><td>ROU</td><td class="hidden-xs">Europe</td><td>9</td><td>0</td><td class="hidden-xs"></td></tr>
+<tr><td>362</td><td class="hidden-xs">5092</td><td>KHASBAATAR Odbayar</td><td>MGL</td><td class="hidden-xs">Asia</td><td>10</td><td>0</td><td class="hidden-xs"></td></tr>
+<tr><td>362</td><td class="hidden-xs">5074</td><td>CHATZIKYRIAKOS Marios Kanellis</td><td>GRE</td><td class="hidden-xs">Europe</td><td>6</td><td>0</td><td class="hidden-xs"></td></tr>
+<tr><td>362</td><td class="hidden-xs">4867</td><td>NARUSAWA Ricardo Yukio</td><td>BRA</td><td class="hidden-xs">Americas</td><td>10</td><td>0</td><td class="hidden-xs"></td></tr>
+<tr><td>362</td><td class="hidden-xs">3624</td><td>JIMENEZ PIZON Jonathan Alfonso</td><td>COL</td><td class="hidden-xs">Americas</td><td>10</td><td>0</td><td class="hidden-xs"></td></tr>
+<tr><td>362</td><td class="hidden-xs">2318</td><td>CASTRO Angel</td><td>MEX</td><td class="hidden-xs">Americas</td><td>7</td><td>0</td><td class="hidden-xs"></td></tr>
+<tr><td>362</td><td class="hidden-xs">5330</td><td>ERSHADIFAR Mohammadreza</td><td>IRI</td><td class="hidden-xs">Asia</td><td>8</td><td>0</td><td class="hidden-xs"></td></tr>
+<tr><td>362</td><td class="hidden-xs">956</td><td>PERNAMBUCO Armando</td><td>BRA</td><td class="hidden-xs">Americas</td><td>10</td><td>0</td><td class="hidden-xs"></td></tr>
+<tr><td>362</td><td class="hidden-xs">1299</td><td>LETELIER POBLETE David Daniel</td><td>CHI</td><td class="hidden-xs">Americas</td><td>9</td><td>0</td><td class="hidden-xs"></td></tr>
+<tr><td>362</td><td class="hidden-xs">5195</td><td>CHRISTOPHER  John Tauni</td><td>FIJ</td><td class="hidden-xs">Oceania</td><td>8</td><td>0</td><td class="hidden-xs"></td></tr>
+<tr><td>362</td><td class="hidden-xs">4768</td><td>REQUENA BIAGGINI Marcos Antonio</td><td>CHI</td><td class="hidden-xs">Americas</td><td>9</td><td>0</td><td class="hidden-xs"></td></tr>
+<tr><td>362</td><td class="hidden-xs">5242</td><td>TSUKAZAKI Tomohiro</td><td>JPN</td><td class="hidden-xs">Asia</td><td>10</td><td>0</td><td class="hidden-xs"></td></tr>
+<tr><td>362</td><td class="hidden-xs">5262</td><td>GAN Harrison Zhi Hao</td><td>SIN</td><td class="hidden-xs">Asia</td><td>10</td><td>0</td><td class="hidden-xs"></td></tr>
+<tr><td>362</td><td class="hidden-xs">5161</td><td>ROJAS Hernan</td><td>CRC</td><td class="hidden-xs">Americas</td><td>7</td><td>0</td><td class="hidden-xs"></td></tr>
+<tr><td>362</td><td class="hidden-xs">5377</td><td>GUPTA Anuj</td><td>IND</td><td class="hidden-xs">Asia</td><td>8</td><td>0</td><td class="hidden-xs"></td></tr>
+<tr><td>362</td><td class="hidden-xs">5246</td><td>LEE Changsik</td><td>KOR</td><td class="hidden-xs">Asia</td><td>7</td><td>0</td><td class="hidden-xs"></td></tr>
+<tr><td>362</td><td class="hidden-xs">4966</td><td>AHUMADA SEYDEWITZ Cristian Danilo</td><td>CHI</td><td class="hidden-xs">Americas</td><td>10</td><td>0</td><td class="hidden-xs"></td></tr>
+<tr><td>362</td><td class="hidden-xs">4936</td><td>VAN DER BURG Roy</td><td>NED</td><td class="hidden-xs">Europe</td><td>8</td><td>0</td><td class="hidden-xs"></td></tr>
+<tr><td>362</td><td class="hidden-xs">5243</td><td>MATSUYAMA Junichi</td><td>JPN</td><td class="hidden-xs">Asia</td><td>10</td><td>0</td><td class="hidden-xs"></td></tr>
+<tr><td>362</td><td class="hidden-xs">5293</td><td>LIEN Chung Ching</td><td>TPE</td><td class="hidden-xs">Asia</td><td>8</td><td>0</td><td class="hidden-xs"></td></tr>
+<tr><td>362</td><td class="hidden-xs">5269</td><td>LAZAROV Iskren</td><td>BUL</td><td class="hidden-xs">Europe</td><td>10</td><td>0</td><td class="hidden-xs"></td></tr>
+<tr><td>362</td><td class="hidden-xs">5132</td><td>NAVARRETE  PEPINOS Wilson Ernesto</td><td>ECU</td><td class="hidden-xs">Americas</td><td>10</td><td>0</td><td class="hidden-xs"></td></tr>
+<tr><td>362</td><td class="hidden-xs">5040</td><td>PHAM Sy</td><td>AUS</td><td class="hidden-xs">Oceania</td><td>7</td><td>0</td><td class="hidden-xs"></td></tr>
+<tr><td>362</td><td class="hidden-xs">5375</td><td>ALMUTAIRI Ahmed Mutebk</td><td>KSA</td><td class="hidden-xs">Asia</td><td>10</td><td>0</td><td class="hidden-xs"></td></tr>
+<tr><td>362</td><td class="hidden-xs">5163</td><td>CASTILLO Ramon</td><td>CRC</td><td class="hidden-xs">Americas</td><td>9</td><td>0</td><td class="hidden-xs"></td></tr>
+<tr><td>362</td><td class="hidden-xs">3979</td><td>BROU-SEKA Botty Claude Desire</td><td>CIV</td><td class="hidden-xs">Africa</td><td>7</td><td>0</td><td class="hidden-xs"></td></tr>
+<tr><td>362</td><td class="hidden-xs">5210</td><td>WILKINSON  Lee - Andrew </td><td>GBR</td><td class="hidden-xs">Europe</td><td>7</td><td>0</td><td class="hidden-xs"></td></tr>
+</tbody></table>
+<div class="container-fluid"><div class="row"><div class="text-muted text-right">Generated on 2015-11-10 at 23:37</div></div></div>
+<!--#include virtual="/footer.htm" -->
+</body></html>

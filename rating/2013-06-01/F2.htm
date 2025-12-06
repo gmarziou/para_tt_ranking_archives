@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>ITTF Para Table Tennis Rating Audits - Women class 2 as of 2013-06-01</title>
+<link rel='stylesheet' href='../../css/normal.css' type='text/css' />
+<link rel="stylesheet" href="../rating.css" type="text/css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<script type="text/javascript" charset="utf-8" src="../../media/js/jquery.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../media/js/jquery.dataTables.min.js"></script>
+<script language="JavaScript" type="text/javascript">
+$(document).ready(function() {
+	var oTable = $('.lists').dataTable( {
+        "bPaginate": false,
+        "aoColumns": [
+                /* Rank */{"bSearchable": false},
+                /* Player ID */{"bSearchable": false},
+                /* Name */ null,
+	            /* Country */{"bSearchable": false, "bSortable": false },
+	            /* Region */{"bSearchable": false, "bSortable": false },
+                /* Rating */{"bSearchable": false}
+		]
+	} );
+	$('select#country').change(function () {
+            oTable.fnFilter($(this).val(), 3);
+    });
+	$('select#region').change(function () {
+            oTable.fnFilter($(this).val(), 4);
+    });
+} );
+</script>
+
+</head>
+<body>
+<div class="banner">
+  <div class='logo'><a href='../..'><img src='../../logos/colour/PTT-110px.png' alt='ITTF-PTT Logo' width='116' height='110' border='0' /></a></div>
+  <div class="banner_title">ITTF Para Table Tennis Rating Audits<br />Women class 2 as of 2013-06-01</div>
+</div><br />
+<div class="help">You can sort this table by clicking on column headers and filter data by searching on part of player's name.</div>
+<table class="lists"><thead>
+<tr><th>Rank</th><th>Player ID</th><th>Name</th><th>Country <select name="country" id="country"><option value="" selected="selected">Show all</option><optgroup label="Show only:"><option>BRA</option><option>CHN</option><option>FRA</option><option>GBR</option><option>GER</option><option>HUN</option><option>IRL</option><option>IRQ</option><option>ISR</option><option>ITA</option><option>NED</option><option>RUS</option><option>THA</option><option>USA</option></select></th><th>Region <select name="region" id="region"><option value="" selected="selected">Show all</option><optgroup label="Show only:"><option>Americas</option><option>Asia</option><option>Europe</option></select></th><th>Rating</th><th>Previous Rating</th></tr>
+</thead><tbody>
+<tr><td>1</td><td>2105</td><td>LIU Jing</td><td>CHN</td><td>Asia</td><td>1295</td><td>1295</td></tr>
+<tr><td>2</td><td>2486</td><td>PEZZUTTO Pamela</td><td>ITA</td><td>Europe</td><td>1249</td><td>1249</td></tr>
+<tr><td>3</td><td>1656</td><td><a href='moves_F2.htm#p1656'>PUSHPASHEVA Nadezda</a></td><td>RUS</td><td>Europe</td><td>1227</td><td>1210</td></tr>
+<tr><td>4</td><td>500</td><td><a href='moves_F2.htm#p500'>LAFAYE MARZIOU Isabelle</a></td><td>FRA</td><td>Europe</td><td>1128</td><td>1167</td></tr>
+<tr><td>5</td><td>1019</td><td><a href='moves_F2.htm#p1019'>PODDA Clara</a></td><td>ITA</td><td>Europe</td><td>1103</td><td>1077</td></tr>
+<tr><td>6</td><td>498</td><td><a href='moves_F2.htm#p498'>SIREAU Florence</a></td><td>FRA</td><td>Europe</td><td>1094</td><td>1100</td></tr>
+<tr><td>7</td><td>499</td><td><a href='moves_F2.htm#p499'>CLOT Genevieve</a></td><td>FRA</td><td>Europe</td><td>1038</td><td>995</td></tr>
+<tr><td>8</td><td>3874</td><td><a href='moves_F2.htm#p3874'>MAENPUAK Wachirapond</a></td><td>THA</td><td>Asia</td><td>1006</td><td>1003</td></tr>
+<tr><td>9</td><td>914</td><td>BREATHNACH Eimear</td><td>IRL</td><td>Europe</td><td>990</td><td>990</td></tr>
+<tr><td>10</td><td>920</td><td><a href='moves_F2.htm#p920'>MC CARRON ROONEY Rena</a></td><td>IRL</td><td>Europe</td><td>965</td><td>993</td></tr>
+<tr><td>11</td><td>574</td><td>NEIL Dzaier</td><td>GBR</td><td>Europe</td><td>937</td><td>937</td></tr>
+<tr><td>12</td><td>2297</td><td><a href='moves_F2.htm#p2297'>NEUBIG Bianca</a></td><td>GER</td><td>Europe</td><td>883</td><td></td></tr>
+<tr><td>13</td><td>2228</td><td>SALIH Salwa</td><td>IRQ</td><td>Asia</td><td>867</td><td>867</td></tr>
+<tr><td>14</td><td>2199</td><td>AZEVEDO Carla</td><td>BRA</td><td>Americas</td><td>860</td><td>860</td></tr>
+<tr><td>15</td><td>4224</td><td><a href='moves_F2.htm#p4224'>TUGENDHAFT ALBAG Yael</a></td><td>ISR</td><td>Europe</td><td>842</td><td>843</td></tr>
+<tr><td>16</td><td>3731</td><td>PROFITT Tara</td><td>USA</td><td>Americas</td><td>748</td><td>748</td></tr>
+<tr><td>17</td><td>831</td><td>KOVACS Ilona</td><td>HUN</td><td>Europe</td><td>729</td><td>729</td></tr>
+<tr><td>18</td><td>4221</td><td><a href='moves_F2.htm#p4221'>COBBEN Femke</a></td><td>NED</td><td>Europe</td><td>615</td><td>616</td></tr>
+</tbody></table>
+<br /><div class="footer">Generated on 2013-06-10 at 20:14</div><br />
+<!--#include virtual="/footer.htm" -->
+</body></html>

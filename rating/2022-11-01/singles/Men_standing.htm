@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en"><head><title>ITTF Para Table Tennis Ranking Lists - Men standing as of 2022-11-01 in singles</title>
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href='../../../media/css/footable/footable.core.min.css' rel='stylesheet' type='text/css' />
+<link rel='stylesheet' href='../../../css/styles.css' type='text/css' />
+<link rel='stylesheet' href='../../../rating/rating.css' type='text/css' />
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+   <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<script src="../../../media/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../../media/js/jquery.dataTables.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../../media/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../../media/js/footable.all.min.js" type="text/javascript" charset="utf-8"></script>
+
+<script language="JavaScript" type="text/javascript">
+$(document).ready(function() {
+	var oTable = $('.lists').dataTable( {
+        "bPaginate": false,
+        "aoColumns": [
+            /* Rank */ {"bSearchable": false},
+            /* Player ID */ {"bSearchable": false},
+            /* Name */ null,
+            /* Country */ {"bSearchable": false, "bSortable": false },
+            /* Region */ {"bSearchable": false, "bSortable": false },
+            /* Class */ {"bSearchable": false, "bSortable": false },
+            /* singles_rating */ {"bSearchable": false},
+            /* Previous singles_rating */ {"bSearchable": false}
+    		]
+	} );           
+	$('select#country').change(function () {
+            oTable.fnFilter($(this).val(), 3);
+    });
+	$('select#region').change(function () {
+            oTable.fnFilter($(this).val(), 4);
+    });
+  $('select#class').change(function () {
+            oTable.fnFilter($(this).val(), 5);
+    });
+} );
+</script>
+
+</head>
+<body>
+  <!--#include virtual="/navbar.htm" -->
+
+  <div class="container-fluid">  
+     <div class="row">  
+        <div class="col-lg-2 col-sm-2 col-md-4 col-xs-4">  
+           <a href="/" title="Back to ITTF PTT home page"><div class="ptt-logo"></div></a>  
+   </div>
+   <h1 class='col-lg-10 col-sm-10 col-md-8 col-xs-8'>ITTF Para Table Tennis Ranking Lists<br/><small>Men standing as of 2022-11-01 in singles</small></h1>
+   </div>
+</div>
+<br/>
+<div class="text-muted">You can sort this table by clicking on column headers and filter data by searching on part of player's name.</div>
+<table class="lists table table-striped table-condensed table-bordered"><thead>
+<tr><th>Rank</th><th class="hidden-xs">Player ID</th><th>Name</th><th>Country <select name="country" id="country"><option value="" selected="selected">Show all</option><optgroup label="Show only:" /><option>ARG</option><option>ARM</option><option>AUS</option><option>AUT</option><option>BEL</option><option>BIH</option><option>BRA</option><option>CAN</option><option>CHI</option><option>CIV</option><option>COL</option><option>CRC</option><option>CRO</option><option>CYP</option><option>CZE</option><option>DEN</option><option>ECU</option><option>EGY</option><option>ESA</option><option>ESP</option><option>EST</option><option>FIN</option><option>FRA</option><option>GBR</option><option>GER</option><option>GRE</option><option>GUA</option><option>GUY</option><option>HKG</option><option>HUN</option><option>INA</option><option>IND</option><option>IRI</option><option>IRL</option><option>IRQ</option><option>ISL</option><option>ISR</option><option>ITA</option><option>JOR</option><option>JPN</option><option>KAZ</option><option>KOR</option><option>KSA</option><option>KUW</option><option>LAT</option><option>LUX</option><option>MAS</option><option>MEX</option><option>MKD</option><option>MNE</option><option>NED</option><option>NGR</option><option>NOR</option><option>PAN</option><option>PER</option><option>PHI</option><option>POL</option><option>POR</option><option>PUR</option><option>ROU</option><option>SGP</option><option>SLO</option><option>SRB</option><option>SUI</option><option>SVK</option><option>SWE</option><option>THA</option><option>TPE</option><option>UGA</option><option>UKR</option><option>USA</option><option>UZB</option><option>VEN</option></select></th><th class="hidden-xs">Region <select name="region" id="region"><option value="" selected="selected">Show all</option><optgroup label="Show only:" /><option>Africa</option><option>Americas</option><option>Asia</option><option>Europe</option><option>Oceania</option></select></th><th>Class <select name="class" id="class"><option value="" selected="selected">Show all</option><optgroup label="Show only:" /><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option></select></th>
+<th>Rating</th><th class="hidden-xs">Previous rating</th></tr>
+</thead><tbody class="notranslate">
+<tr><td>1</td><td class="hidden-xs">4166</td><td><a href='moves_M10.htm#p4166'>CHOJNOWSKI Patryk</a></td><td>POL</td><td class="hidden-xs">Europe</td><td>10</td><td>1899</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#4166'>1926</a></td></tr>
+<tr><td>2</td><td class="hidden-xs">4738</td><td><a href='moves_M8.htm#p4738'>DIDUKH Viktor</a></td><td>UKR</td><td class="hidden-xs">Europe</td><td>8</td><td>1807</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#4738'>1831</a></td></tr>
+<tr><td>3</td><td class="hidden-xs">4011</td><td><a href='moves_M10.htm#p4011'>JACOBS Dian David Mickael</a></td><td>INA</td><td class="hidden-xs">Asia</td><td>10</td><td>1800</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#4011'>1795</a></td></tr>
+<tr><td>4</td><td class="hidden-xs">4938</td><td><a href='moves_M9.htm#p4938'>DEVOS Laurens</a></td><td>BEL</td><td class="hidden-xs">Europe</td><td>9</td><td>1787</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#4938'>1814</a></td></tr>
+<tr><td>5</td><td class="hidden-xs">4119</td><td><a href='moves_M10.htm#p4119'>RADOVIC Filip</a></td><td>MNE</td><td class="hidden-xs">Europe</td><td>10</td><td>1752</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#4119'>1776</a></td></tr>
+<tr><td>6</td><td class="hidden-xs">4498</td><td><a href='moves_M10.htm#p4498'>BOHEAS Mateo</a></td><td>FRA</td><td class="hidden-xs">Europe</td><td>10</td><td>1722</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#4498'>1740</a></td></tr>
+<tr><td>7</td><td class="hidden-xs">5019</td><td><a href='moves_M10.htm#p5019'>BAKIC Luka</a></td><td>MNE</td><td class="hidden-xs">Europe</td><td>10</td><td>1679</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#5019'>1703</a></td></tr>
+<tr><td>8</td><td class="hidden-xs">3698</td><td><a href='moves_M10.htm#p3698'>MISZTAL Igor</a></td><td>POL</td><td class="hidden-xs">Europe</td><td>10</td><td>1669</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#3698'>1696</a></td></tr>
+<tr><td>9</td><td class="hidden-xs">5184</td><td><a href='moves_M10.htm#p5184'>GARDOS Krisztian</a></td><td>AUT</td><td class="hidden-xs">Europe</td><td>10</td><td>1663</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#5184'>1666</a></td></tr>
+<tr><td>10</td><td class="hidden-xs">4112</td><td><a href='moves_M8.htm#p4112'>WILSON Ross William</a></td><td>GBR</td><td class="hidden-xs">Europe</td><td>8</td><td>1659</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#4112'>1668</a></td></tr>
+<tr><td>11</td><td class="hidden-xs">2778</td><td><a href='moves_M8.htm#p2778'>NIKOLENKO Maksym</a></td><td>UKR</td><td class="hidden-xs">Europe</td><td>8</td><td>1650</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#2778'>1653</a></td></tr>
+<tr><td>12</td><td class="hidden-xs">478</td><td><a href='moves_M10.htm#p478'>RUIZ REYES Jose Manuel</a></td><td>ESP</td><td class="hidden-xs">Europe</td><td>10</td><td>1647</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#478'>1650</a></td></tr>
+<tr><td>13</td><td class="hidden-xs">5426</td><td><a href='moves_M9.htm#p5426'>KATS Lev</a></td><td>UKR</td><td class="hidden-xs">Europe</td><td>9</td><td>1645</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#5426'>1654</a></td></tr>
+<tr><td>14</td><td class="hidden-xs">5858</td><td><a href='moves_M9.htm#p5858'>STACEY Joshua</a></td><td>GBR</td><td class="hidden-xs">Europe</td><td>9</td><td>1637</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#5858'>1648</a></td></tr>
+<tr><td>15</td><td class="hidden-xs">2101</td><td><a href='moves_M9.htm#p2101'>MA Lin</a></td><td>AUS</td><td class="hidden-xs">Oceania</td><td>9</td><td>1636</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#2101'>1645</a></td></tr>
+<tr><td>16</td><td class="hidden-xs">2580</td><td><a href='moves_M8.htm#p2580'>GRUDZIEN Piotr</a></td><td>POL</td><td class="hidden-xs">Europe</td><td>8</td><td>1628</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#2580'>1640</a></td></tr>
+<tr><td>17</td><td class="hidden-xs">5169</td><td><a href='moves_M9.htm#p5169'>MAI Ivan</a></td><td>UKR</td><td class="hidden-xs">Europe</td><td>9</td><td>1627</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#5169'>1639</a></td></tr>
+<tr><td>18</td><td class="hidden-xs">3676</td><td><a href='moves_M8.htm#p3676'>MC KIBBIN Aaron</a></td><td>GBR</td><td class="hidden-xs">Europe</td><td>8</td><td>1618</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#3676'>1601</a></td></tr>
+<tr><td>19</td><td class="hidden-xs">4485</td><td><a href='moves_M9.htm#p4485'>IWABUCHI Koyo</a></td><td>JPN</td><td class="hidden-xs">Asia</td><td>9</td><td>1611</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#4485'>1620</a></td></tr>
+<tr><td>20</td><td class="hidden-xs">2680</td><td>CARDONA Jorge</td><td>ESP</td><td class="hidden-xs">Europe</td><td>9</td><td>1595</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#2680'>1595</a></td></tr>
+<tr><td>21</td><td class="hidden-xs">3119</td><td><a href='moves_M8.htm#p3119'>ANDERSSON Emil</a></td><td>SWE</td><td class="hidden-xs">Europe</td><td>8</td><td>1591</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#3119'>1594</a></td></tr>
+<tr><td>22</td><td class="hidden-xs">4846</td><td><a href='moves_M8.htm#p4846'>SHILTON Billy</a></td><td>GBR</td><td class="hidden-xs">Europe</td><td>8</td><td>1589</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#4846'>1569</a></td></tr>
+<tr><td>23</td><td class="hidden-xs">5128</td><td><a href='moves_M8.htm#p5128'>BERTHIER Clement</a></td><td>FRA</td><td class="hidden-xs">Europe</td><td>8</td><td>1580</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#5128'>1609</a></td></tr>
+<tr><td>24</td><td class="hidden-xs">4717</td><td><a href='moves_M9.htm#p4717'>PEREZ GONZALEZ Juan Bautista</a></td><td>ESP</td><td class="hidden-xs">Europe</td><td>9</td><td>1568</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#4717'>1574</a></td></tr>
+<tr><td>25</td><td class="hidden-xs">2771</td><td><a href='moves_M7.htm#p2771'>BAYLEY William John</a></td><td>GBR</td><td class="hidden-xs">Europe</td><td>7</td><td>1566</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#2771'>1590</a></td></tr>
+<tr><td>26</td><td class="hidden-xs">3021</td><td><a href='moves_M10.htm#p3021'>DAYBELL Kim</a></td><td>GBR</td><td class="hidden-xs">Europe</td><td>10</td><td>1563</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#3021'>1566</a></td></tr>
+<tr><td>27</td><td class="hidden-xs">1951</td><td><a href='moves_M9.htm#p1951'>LEIBOVITZ Tahl</a></td><td>USA</td><td class="hidden-xs">Americas</td><td>9</td><td>1555</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#1951'>1564</a></td></tr>
+<tr><td>28</td><td class="hidden-xs">3574</td><td><a href='moves_M8.htm#p3574'>BOUVAIS Thomas</a></td><td>FRA</td><td class="hidden-xs">Europe</td><td>8</td><td>1552</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#3574'>1564</a></td></tr>
+<tr><td>29</td><td class="hidden-xs">3851</td><td><a href='moves_M7.htm#p3851'>MONTANUS Jean-paul</a></td><td>NED</td><td class="hidden-xs">Europe</td><td>7</td><td>1528</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#3851'>1555</a></td></tr>
+<tr><td>30</td><td class="hidden-xs">859</td><td><a href='moves_M8.htm#p859'>CSONKA Andras</a></td><td>HUN</td><td class="hidden-xs">Europe</td><td>8</td><td>1525</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#859'>1542</a></td></tr>
+<tr><td>30</td><td class="hidden-xs">5187</td><td><a href='moves_M9.htm#p5187'>KALEM Mohamed Amine</a></td><td>ITA</td><td class="hidden-xs">Europe</td><td>9</td><td>1525</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#5187'>1528</a></td></tr>
+<tr><td>32</td><td class="hidden-xs">6028</td><td><a href='moves_M9.htm#p6028'>CEPAS Ander</a></td><td>ESP</td><td class="hidden-xs">Europe</td><td>9</td><td>1519</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#6028'>1558</a></td></tr>
+<tr><td>33</td><td class="hidden-xs">188</td><td><a href='moves_M8.htm#p188'>LEDOUX Marc Philippe</a></td><td>BEL</td><td class="hidden-xs">Europe</td><td>8</td><td>1505</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#188'>1511</a></td></tr>
+<tr><td>34</td><td class="hidden-xs">5829</td><td><a href='moves_M8.htm#p5829'>WANGPHONPHATHANASIRI Phisit</a></td><td>THA</td><td class="hidden-xs">Asia</td><td>8</td><td>1495</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#5829'>1513</a></td></tr>
+<tr><td>35</td><td class="hidden-xs">874</td><td><a href='moves_M9.htm#p874'>BERECZKI Dezso</a></td><td>HUN</td><td class="hidden-xs">Europe</td><td>9</td><td>1487</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#874'>1493</a></td></tr>
+<tr><td>36</td><td class="hidden-xs">422</td><td><a href='moves_M6.htm#p422'>ROSENMEIER Peter</a></td><td>DEN</td><td class="hidden-xs">Europe</td><td>6</td><td>1475</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#422'>1499</a></td></tr>
+<tr><td>37</td><td class="hidden-xs">474</td><td><a href='moves_M6.htm#p474'>VALERA Alvaro</a></td><td>ESP</td><td class="hidden-xs">Europe</td><td>6</td><td>1474</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#474'>1501</a></td></tr>
+<tr><td>38</td><td class="hidden-xs">1744</td><td>CSEJTEY Richard</td><td>SVK</td><td class="hidden-xs">Europe</td><td>8</td><td>1473</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#1744'>1473</a></td></tr>
+<tr><td>39</td><td class="hidden-xs">4466</td><td><a href='moves_M10.htm#p4466'>AKBAR Komet</a></td><td>INA</td><td class="hidden-xs">Asia</td><td>10</td><td>1466</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#4466'>1455</a></td></tr>
+<tr><td>40</td><td class="hidden-xs">6502</td><td><a href='moves_M10.htm#p6502'>FUNAYAMA Mahiro</a></td><td>JPN</td><td class="hidden-xs">Asia</td><td>10</td><td>1452</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#6502'>1461</a></td></tr>
+<tr><td>41</td><td class="hidden-xs">6053</td><td><a href='moves_M10.htm#p6053'>SU Jin Sian</a></td><td>TPE</td><td class="hidden-xs">Asia</td><td>10</td><td>1448</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#6053'>1463</a></td></tr>
+<tr><td>42</td><td class="hidden-xs">473</td><td><a href='moves_M7.htm#p473'>MORALES Jordi</a></td><td>ESP</td><td class="hidden-xs">Europe</td><td>7</td><td>1446</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#473'>1464</a></td></tr>
+<tr><td>43</td><td class="hidden-xs">2380</td><td><a href='moves_M7.htm#p2380'>YOUSSEF Sayed</a></td><td>EGY</td><td class="hidden-xs">Africa</td><td>7</td><td>1442</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#2380'>1460</a></td></tr>
+<tr><td>44</td><td class="hidden-xs">1802</td><td><a href='moves_M6.htm#p1802'>THAINIYOM Rungroj</a></td><td>THA</td><td class="hidden-xs">Asia</td><td>6</td><td>1437</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#1802'>1467</a></td></tr>
+<tr><td>45</td><td class="hidden-xs">4708</td><td><a href='moves_M10.htm#p4708'>SILLAPAKONG Bunpot</a></td><td>THA</td><td class="hidden-xs">Asia</td><td>10</td><td>1430</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#4708'>1436</a></td></tr>
+<tr><td>46</td><td class="hidden-xs">5862</td><td><a href='moves_M9.htm#p5862'>DIDIER Lucas</a></td><td>FRA</td><td class="hidden-xs">Europe</td><td>9</td><td>1422</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#5862'>1446</a></td></tr>
+<tr><td>47</td><td class="hidden-xs">5180</td><td>YAGI Katsuyoshi</td><td>JPN</td><td class="hidden-xs">Asia</td><td>7</td><td>1419</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#5180'>1419</a></td></tr>
+<tr><td>48</td><td class="hidden-xs">559</td><td><a href='moves_M7.htm#p559'>MESSI Stephane</a></td><td>FRA</td><td class="hidden-xs">Europe</td><td>7</td><td>1417</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#559'>1435</a></td></tr>
+<tr><td>49</td><td class="hidden-xs">5185</td><td><a href='moves_M10.htm#p5185'>CORDUA Lorenzo</a></td><td>ITA</td><td class="hidden-xs">Europe</td><td>10</td><td>1414</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#5185'>1417</a></td></tr>
+<tr><td>50</td><td class="hidden-xs">6376</td><td><a href='moves_M7.htm#p6376'>SCHNAKE Bjoern</a></td><td>GER</td><td class="hidden-xs">Europe</td><td>7</td><td>1405</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#6376'>1413</a></td></tr>
+<tr><td>50</td><td class="hidden-xs">6346</td><td><a href='moves_M10.htm#p6346'>CHMELA Tibor</a></td><td>CZE</td><td class="hidden-xs">Europe</td><td>10</td><td>1405</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#6346'>1414</a></td></tr>
+<tr><td>52</td><td class="hidden-xs">4172</td><td><a href='moves_M7.htm#p4172'>PUNPOO Chalermpong</a></td><td>THA</td><td class="hidden-xs">Asia</td><td>7</td><td>1402</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#4172'>1420</a></td></tr>
+<tr><td>53</td><td class="hidden-xs">4387</td><td><a href='moves_M8.htm#p4387'>FARINLOYE Victor</a></td><td>NGR</td><td class="hidden-xs">Africa</td><td>8</td><td>1401</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#4387'>1407</a></td></tr>
+<tr><td>54</td><td class="hidden-xs">4492</td><td><a href='moves_M7.htm#p4492'>PEREIRA STROH Israel</a></td><td>BRA</td><td class="hidden-xs">Americas</td><td>7</td><td>1392</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#4492'>1393</a></td></tr>
+<tr><td>55</td><td class="hidden-xs">883</td><td><a href='moves_M10.htm#p883'>MASSAD Claudio</a></td><td>BRA</td><td class="hidden-xs">Americas</td><td>10</td><td>1389</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#883'>1393</a></td></tr>
+<tr><td>56</td><td class="hidden-xs">3050</td><td><a href='moves_M10.htm#p3050'>CARBINATTI JUNIOR Carlos Alberto</a></td><td>BRA</td><td class="hidden-xs">Americas</td><td>10</td><td>1385</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#3050'>1388</a></td></tr>
+<tr><td>57</td><td class="hidden-xs">4019</td><td><a href='moves_M9.htm#p4019'>WONG Chi Yin</a></td><td>HKG</td><td class="hidden-xs">Asia</td><td>9</td><td>1376</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#4019'>1400</a></td></tr>
+<tr><td>58</td><td class="hidden-xs">1015</td><td>GLIKMAN Zeev</td><td>ISR</td><td class="hidden-xs">Europe</td><td>8</td><td>1375</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#1015'>1375</a></td></tr>
+<tr><td>59</td><td class="hidden-xs">5100</td><td><a href='moves_M10.htm#p5100'>LIN Chun Ting</a></td><td>TPE</td><td class="hidden-xs">Asia</td><td>10</td><td>1358</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#5100'>1361</a></td></tr>
+<tr><td>60</td><td class="hidden-xs">5442</td><td><a href='moves_M7.htm#p5442'>CHUDZICKI Maksym Hubert</a></td><td>POL</td><td class="hidden-xs">Europe</td><td>7</td><td>1353</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#5442'>1377</a></td></tr>
+<tr><td>61</td><td class="hidden-xs">4123</td><td>VAN AMERONGEN Andrianus Johannes</td><td>NED</td><td class="hidden-xs">Europe</td><td>8</td><td>1351</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#4123'>1351</a></td></tr>
+<tr><td>62</td><td class="hidden-xs">1451</td><td>OLUFEMI Alabi Olabiyi</td><td>NGR</td><td class="hidden-xs">Africa</td><td>10</td><td>1350</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#1451'>1350</a></td></tr>
+<tr><td>63</td><td class="hidden-xs">6331</td><td><a href='moves_M8.htm#p6331'>RADUKIC Aleksej</a></td><td>SRB</td><td class="hidden-xs">Europe</td><td>8</td><td>1342</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#6331'>1348</a></td></tr>
+<tr><td>64</td><td class="hidden-xs">4701</td><td><a href='moves_M9.htm#p4701'>CHEE Chaoming</a></td><td>MAS</td><td class="hidden-xs">Asia</td><td>9</td><td>1340</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#4701'>1349</a></td></tr>
+<tr><td>65</td><td class="hidden-xs">3733</td><td><a href='moves_M7.htm#p3733'>SALMIN FILHO Paulo Sergio</a></td><td>BRA</td><td class="hidden-xs">Americas</td><td>7</td><td>1337</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#3733'>1339</a></td></tr>
+<tr><td>66</td><td class="hidden-xs">764</td><td><a href='moves_M7.htm#p764'>WOLLMERT Jochen</a></td><td>GER</td><td class="hidden-xs">Europe</td><td>7</td><td>1336</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#764'>1342</a></td></tr>
+<tr><td>67</td><td class="hidden-xs">6680</td><td><a href='moves_M10.htm#p6680'>DE OLIVEIRA ANTUNES Gabriel</a></td><td>BRA</td><td class="hidden-xs">Americas</td><td>10</td><td>1331</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#6680'>0</a></td></tr>
+<tr><td>68</td><td class="hidden-xs">2758</td><td><a href='moves_M7.htm#p2758'>DOURBECKER Kevin</a></td><td>FRA</td><td class="hidden-xs">Europe</td><td>7</td><td>1325</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#2758'>1328</a></td></tr>
+<tr><td>69</td><td class="hidden-xs">4489</td><td><a href='moves_M7.htm#p4489'>DEIGSLER Michal</a></td><td>POL</td><td class="hidden-xs">Europe</td><td>7</td><td>1323</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#4489'>1350</a></td></tr>
+<tr><td>69</td><td class="hidden-xs">865</td><td><a href='moves_M8.htm#p865'>ZBORAI Gyula Istvan</a></td><td>HUN</td><td class="hidden-xs">Europe</td><td>8</td><td>1323</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#865'>1329</a></td></tr>
+<tr><td>69</td><td class="hidden-xs">5579</td><td><a href='moves_M10.htm#p5579'>ECHAVEGUREN FARIAS Manuel Felipe</a></td><td>CHI</td><td class="hidden-xs">Americas</td><td>10</td><td>1323</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#5579'>1348</a></td></tr>
+<tr><td>72</td><td class="hidden-xs">5282</td><td><a href='moves_M6.htm#p5282'>PARENZAN Matteo</a></td><td>ITA</td><td class="hidden-xs">Europe</td><td>6</td><td>1319</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#5282'>1317</a></td></tr>
+<tr><td>73</td><td class="hidden-xs">1743</td><td><a href='moves_M7.htm#p1743'>JAMBOR Miroslav</a></td><td>SVK</td><td class="hidden-xs">Europe</td><td>7</td><td>1315</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#1743'>1336</a></td></tr>
+<tr><td>74</td><td class="hidden-xs">644</td><td><a href='moves_M6.htm#p644'>KARABARDAK Paul Arif</a></td><td>GBR</td><td class="hidden-xs">Europe</td><td>6</td><td>1311</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#644'>1326</a></td></tr>
+<tr><td>75</td><td class="hidden-xs">3157</td><td><a href='moves_M9.htm#p3157'>VAN DER ZANDEN Bart</a></td><td>NED</td><td class="hidden-xs">Europe</td><td>9</td><td>1305</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#3157'>1290</a></td></tr>
+<tr><td>76</td><td class="hidden-xs">6561</td><td><a href='moves_M9.htm#p6561'>HO Ka Sing</a></td><td>HKG</td><td class="hidden-xs">Asia</td><td>9</td><td>1296</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#6561'>1310</a></td></tr>
+<tr><td>77</td><td class="hidden-xs">1581</td><td><a href='moves_M6.htm#p1581'>SIMION Bobi</a></td><td>ROU</td><td class="hidden-xs">Europe</td><td>6</td><td>1295</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#1581'>1310</a></td></tr>
+<tr><td>78</td><td class="hidden-xs">4804</td><td><a href='moves_M8.htm#p4804'>MULYO Banyu Tri</a></td><td>INA</td><td class="hidden-xs">Asia</td><td>8</td><td>1289</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#4804'>1297</a></td></tr>
+<tr><td>79</td><td class="hidden-xs">6092</td><td><a href='moves_M10.htm#p6092'>WLODYKA Pawel</a></td><td>POL</td><td class="hidden-xs">Europe</td><td>10</td><td>1285</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#6092'>1300</a></td></tr>
+<tr><td>80</td><td class="hidden-xs">4996</td><td><a href='moves_M9.htm#p4996'>GORDON Aviv</a></td><td>ISR</td><td class="hidden-xs">Europe</td><td>9</td><td>1282</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#4996'>1291</a></td></tr>
+<tr><td>81</td><td class="hidden-xs">4223</td><td><a href='moves_M9.htm#p4223'>RUDDENKLAU Yannik Klaus</a></td><td>GER</td><td class="hidden-xs">Europe</td><td>9</td><td>1281</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#4223'>1284</a></td></tr>
+<tr><td>82</td><td class="hidden-xs">2293</td><td><a href='moves_M7.htm#p2293'>DESPINEUX Ben Ashok</a></td><td>BEL</td><td class="hidden-xs">Europe</td><td>7</td><td>1279</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#2293'>1257</a></td></tr>
+<tr><td>83</td><td class="hidden-xs">3641</td><td><a href='moves_M6.htm#p3641'>RAU Thomas</a></td><td>GER</td><td class="hidden-xs">Europe</td><td>6</td><td>1273</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#3641'>1276</a></td></tr>
+<tr><td>83</td><td class="hidden-xs">3852</td><td>JOZIC Pavao</td><td>CRO</td><td class="hidden-xs">Europe</td><td>7</td><td>1273</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#3852'>1273</a></td></tr>
+<tr><td>85</td><td class="hidden-xs">6041</td><td>DEHGHANPOUR Naser</td><td>IRI</td><td class="hidden-xs">Asia</td><td>9</td><td>1268</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#6041'>1268</a></td></tr>
+<tr><td>86</td><td class="hidden-xs">4564</td><td><a href='moves_M6.htm#p4564'>SEIDENFELD Ian Philip</a></td><td>USA</td><td class="hidden-xs">Americas</td><td>6</td><td>1263</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#4564'>1272</a></td></tr>
+<tr><td>87</td><td class="hidden-xs">4857</td><td><a href='moves_M7.htm#p4857'>HANSSON Jonas</a></td><td>SWE</td><td class="hidden-xs">Europe</td><td>7</td><td>1260</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#4857'>1260</a></td></tr>
+<tr><td>88</td><td class="hidden-xs">4111</td><td><a href='moves_M9.htm#p4111'>PULPAN David</a></td><td>CZE</td><td class="hidden-xs">Europe</td><td>9</td><td>1257</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#4111'>1230</a></td></tr>
+<tr><td>89</td><td class="hidden-xs">2710</td><td><a href='moves_M10.htm#p2710'>ABDELWAHAB Abdelrahman</a></td><td>EGY</td><td class="hidden-xs">Africa</td><td>10</td><td>1256</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#2710'>1265</a></td></tr>
+<tr><td>90</td><td class="hidden-xs">5755</td><td><a href='moves_M10.htm#p5755'>PUERTO ALVAREZ Alvaro Francisco</a></td><td>COL</td><td class="hidden-xs">Americas</td><td>10</td><td>1248</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#5755'>1254</a></td></tr>
+<tr><td>91</td><td class="hidden-xs">3693</td><td>KONSTANTYN Pawel</td><td>POL</td><td class="hidden-xs">Europe</td><td>9</td><td>1241</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#3693'>1241</a></td></tr>
+<tr><td>92</td><td class="hidden-xs">386</td><td><a href='moves_M7.htm#p386'>HORUT Daniel</a></td><td>CZE</td><td class="hidden-xs">Europe</td><td>7</td><td>1233</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#386'>1274</a></td></tr>
+<tr><td>93</td><td class="hidden-xs">2209</td><td>DETTONI Cristian</td><td>CHI</td><td class="hidden-xs">Americas</td><td>6</td><td>1230</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#2209'>1230</a></td></tr>
+<tr><td>94</td><td class="hidden-xs">4408</td><td><a href='moves_M8.htm#p4408'>LAM Ka Wai</a></td><td>HKG</td><td class="hidden-xs">Asia</td><td>8</td><td>1229</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#4408'>1214</a></td></tr>
+<tr><td>95</td><td class="hidden-xs">4858</td><td>WESTERBERG Nicklas Thomas</td><td>SWE</td><td class="hidden-xs">Europe</td><td>8</td><td>1223</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#4858'>1223</a></td></tr>
+<tr><td>96</td><td class="hidden-xs">2993</td><td><a href='moves_M7.htm#p2993'>VARGAS PIRAJAN Jose David</a></td><td>COL</td><td class="hidden-xs">Americas</td><td>7</td><td>1221</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#2993'>1215</a></td></tr>
+<tr><td>97</td><td class="hidden-xs">468</td><td><a href='moves_M6.htm#p468'>SEOANE ALCARAZ Alberto</a></td><td>ESP</td><td class="hidden-xs">Europe</td><td>6</td><td>1218</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#468'>1224</a></td></tr>
+<tr><td>98</td><td class="hidden-xs">4612</td><td><a href='moves_M6.htm#p4612'>PERRY Martin Robert</a></td><td>GBR</td><td class="hidden-xs">Europe</td><td>6</td><td>1214</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#4612'>1207</a></td></tr>
+<tr><td>99</td><td class="hidden-xs">5123</td><td><a href='moves_M6.htm#p5123'>HERRAULT Esteban</a></td><td>FRA</td><td class="hidden-xs">Europe</td><td>6</td><td>1212</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#5123'>1229</a></td></tr>
+<tr><td>100</td><td class="hidden-xs">4515</td><td><a href='moves_M6.htm#p4515'>PINO LORCA Matias Nicolas</a></td><td>CHI</td><td class="hidden-xs">Americas</td><td>6</td><td>1211</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#4515'>1234</a></td></tr>
+<tr><td>100</td><td class="hidden-xs">6477</td><td><a href='moves_M7.htm#p6477'>MEYER Henrik</a></td><td>GER</td><td class="hidden-xs">Europe</td><td>7</td><td>1211</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#6477'>1214</a></td></tr>
+<tr><td>102</td><td class="hidden-xs">2913</td><td><a href='moves_M6.htm#p2913'>ALECCI Raimondo</a></td><td>ITA</td><td class="hidden-xs">Europe</td><td>6</td><td>1207</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#2913'>1213</a></td></tr>
+<tr><td>103</td><td class="hidden-xs">5636</td><td><a href='moves_M10.htm#p5636'>SHAFEEQ Abdulrahman Hikmat</a></td><td>IRQ</td><td class="hidden-xs">Asia</td><td>10</td><td>1203</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#5636'>1209</a></td></tr>
+<tr><td>103</td><td class="hidden-xs">4344</td><td><a href='moves_M6.htm#p4344'>MOUCHTHIS Georgios</a></td><td>GRE</td><td class="hidden-xs">Europe</td><td>6</td><td>1203</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#4344'>1213</a></td></tr>
+<tr><td>105</td><td class="hidden-xs">6297</td><td><a href='moves_M10.htm#p6297'>KANKINGKAM Phitak</a></td><td>THA</td><td class="hidden-xs">Asia</td><td>10</td><td>1197</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#6297'>1200</a></td></tr>
+<tr><td>106</td><td class="hidden-xs">4180</td><td><a href='moves_M8.htm#p4180'>CHARITSAT Komkrit</a></td><td>THA</td><td class="hidden-xs">Asia</td><td>8</td><td>1196</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#4180'>1199</a></td></tr>
+<tr><td>106</td><td class="hidden-xs">6342</td><td><a href='moves_M10.htm#p6342'>WAGNER Mio</a></td><td>GER</td><td class="hidden-xs">Europe</td><td>10</td><td>1196</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#6342'>1205</a></td></tr>
+<tr><td>106</td><td class="hidden-xs">5171</td><td><a href='moves_M9.htm#p5171'>CHUKWUEMEKA Francis</a></td><td>NGR</td><td class="hidden-xs">Africa</td><td>9</td><td>1196</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#5171'>1199</a></td></tr>
+<tr><td>109</td><td class="hidden-xs">5186</td><td><a href='moves_M7.htm#p5186'>TRTNIK Luka</a></td><td>SLO</td><td class="hidden-xs">Europe</td><td>7</td><td>1195</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#5186'>1198</a></td></tr>
+<tr><td>110</td><td class="hidden-xs">3844</td><td><a href='moves_M8.htm#p3844'>GUARNIERI MANARA Luiz Filipe</a></td><td>BRA</td><td class="hidden-xs">Americas</td><td>8</td><td>1194</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#3844'>1183</a></td></tr>
+<tr><td>111</td><td class="hidden-xs">5625</td><td><a href='moves_M7.htm#p5625'>CHEN Silu</a></td><td>HKG</td><td class="hidden-xs">Asia</td><td>7</td><td>1179</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#5625'>1180</a></td></tr>
+<tr><td>112</td><td class="hidden-xs">5181</td><td><a href='moves_M7.htm#p5181'>KITA Hiromoto</a></td><td>JPN</td><td class="hidden-xs">Asia</td><td>7</td><td>1177</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#5181'>1180</a></td></tr>
+<tr><td>113</td><td class="hidden-xs">6283</td><td>EMPIS Edgar</td><td>FRA</td><td class="hidden-xs">Europe</td><td>8</td><td>1176</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#6283'>1176</a></td></tr>
+<tr><td>114</td><td class="hidden-xs">6714</td><td>MURODULLAEV Sunnatillo</td><td>UZB</td><td class="hidden-xs">Asia</td><td>8</td><td>1173</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#6714'>1173</a></td></tr>
+<tr><td>115</td><td class="hidden-xs">5536</td><td><a href='moves_M9.htm#p5536'>DOS SANTOS CARVALHO Lucas</a></td><td>BRA</td><td class="hidden-xs">Americas</td><td>9</td><td>1163</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#5536'>1172</a></td></tr>
+<tr><td>115</td><td class="hidden-xs">5663</td><td><a href='moves_M10.htm#p5663'>DIAKOUMAKOS Alexandros</a></td><td>GRE</td><td class="hidden-xs">Europe</td><td>10</td><td>1163</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#5663'>1166</a></td></tr>
+<tr><td>115</td><td class="hidden-xs">4631</td><td><a href='moves_M9.htm#p4631'>EREKEYEV Talgat</a></td><td>KAZ</td><td class="hidden-xs">Asia</td><td>9</td><td>1163</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#4631'>1228</a></td></tr>
+<tr><td>115</td><td class="hidden-xs">4193</td><td><a href='moves_M6.htm#p4193'>AZULAY Michael Robert Oskar</a></td><td>SWE</td><td class="hidden-xs">Europe</td><td>6</td><td>1163</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#4193'>1166</a></td></tr>
+<tr><td>119</td><td class="hidden-xs">5074</td><td><a href='moves_M6.htm#p5074'>CHATZIKYRIAKOS Marios Kanellis</a></td><td>GRE</td><td class="hidden-xs">Europe</td><td>6</td><td>1157</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#5074'>1163</a></td></tr>
+<tr><td>120</td><td class="hidden-xs">5912</td><td><a href='moves_M7.htm#p5912'>AL ADILEE Saeed</a></td><td>IRQ</td><td class="hidden-xs">Asia</td><td>7</td><td>1156</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#5912'>1159</a></td></tr>
+<tr><td>121</td><td class="hidden-xs">5944</td><td><a href='moves_M8.htm#p5944'>HOSSEINIPOUR Seyed Amirhossein</a></td><td>IRI</td><td class="hidden-xs">Asia</td><td>8</td><td>1150</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#5944'>1159</a></td></tr>
+<tr><td>122</td><td class="hidden-xs">5411</td><td><a href='moves_M6.htm#p5411'>TORRES OROSTICA Ignacio Hernan</a></td><td>CHI</td><td class="hidden-xs">Americas</td><td>6</td><td>1147</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#5411'>1114</a></td></tr>
+<tr><td>123</td><td class="hidden-xs">5802</td><td><a href='moves_M9.htm#p5802'>KUSNANTO Kusnanto</a></td><td>INA</td><td class="hidden-xs">Asia</td><td>9</td><td>1145</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#5802'>1056</a></td></tr>
+<tr><td>124</td><td class="hidden-xs">4904</td><td><a href='moves_M8.htm#p4904'>ROMAN CHINCHILLA Steven</a></td><td>CRC</td><td class="hidden-xs">Americas</td><td>8</td><td>1140</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#4904'>1155</a></td></tr>
+<tr><td>125</td><td class="hidden-xs">3646</td><td>URBAN Johannes</td><td>GER</td><td class="hidden-xs">Europe</td><td>8</td><td>1133</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#3646'>1133</a></td></tr>
+<tr><td>126</td><td class="hidden-xs">2980</td><td><a href='moves_M8.htm#p2980'>TATEISHI Arufuahirokazu</a></td><td>JPN</td><td class="hidden-xs">Asia</td><td>8</td><td>1132</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#2980'>1147</a></td></tr>
+<tr><td>127</td><td class="hidden-xs">3658</td><td><a href='moves_M8.htm#p3658'>PELLISSIER Nathan</a></td><td>AUS</td><td class="hidden-xs">Oceania</td><td>8</td><td>1129</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#3658'>1132</a></td></tr>
+<tr><td>128</td><td class="hidden-xs">3834</td><td><a href='moves_M10.htm#p3834'>NEIRA Dario Andres</a></td><td>ARG</td><td class="hidden-xs">Americas</td><td>10</td><td>1127</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#3834'>1157</a></td></tr>
+<tr><td>129</td><td class="hidden-xs">5859</td><td>KIM Hyeonggwon</td><td>KOR</td><td class="hidden-xs">Asia</td><td>8</td><td>1120</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#5859'>1120</a></td></tr>
+<tr><td>130</td><td class="hidden-xs">4518</td><td><a href='moves_M7.htm#p4518'>KANIUKA Aleksy Nicolas</a></td><td>ARG</td><td class="hidden-xs">Americas</td><td>7</td><td>1105</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#4518'>1061</a></td></tr>
+<tr><td>131</td><td class="hidden-xs">5680</td><td><a href='moves_M7.htm#p5680'>FONSECA Paulo Henrique</a></td><td>BRA</td><td class="hidden-xs">Americas</td><td>7</td><td>1104</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#5680'>1062</a></td></tr>
+<tr><td>132</td><td class="hidden-xs">1336</td><td>ROSENAST Thomas</td><td>SUI</td><td class="hidden-xs">Europe</td><td>7</td><td>1095</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#1336'>1095</a></td></tr>
+<tr><td>132</td><td class="hidden-xs">5021</td><td><a href='moves_M8.htm#p5021'>JACOBSEN Pablo</a></td><td>NOR</td><td class="hidden-xs">Europe</td><td>8</td><td>1095</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#5021'>1104</a></td></tr>
+<tr><td>134</td><td class="hidden-xs">5451</td><td><a href='moves_M6.htm#p5451'>SHICHINO Kazuki</a></td><td>JPN</td><td class="hidden-xs">Asia</td><td>6</td><td>1089</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#5451'>1098</a></td></tr>
+<tr><td>135</td><td class="hidden-xs">3115</td><td><a href='moves_M6.htm#p3115'>KNEUSS Valentin</a></td><td>SUI</td><td class="hidden-xs">Europe</td><td>6</td><td>1083</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#3115'>1083</a></td></tr>
+<tr><td>135</td><td class="hidden-xs">6181</td><td>RODRIGUEZ Gonzalo</td><td>ESP</td><td class="hidden-xs">Europe</td><td>7</td><td>1083</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#6181'>1083</a></td></tr>
+<tr><td>137</td><td class="hidden-xs">6097</td><td><a href='moves_M9.htm#p6097'>ABE Hayuma</a></td><td>JPN</td><td class="hidden-xs">Asia</td><td>9</td><td>1081</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#6097'>1090</a></td></tr>
+<tr><td>138</td><td class="hidden-xs">4437</td><td>KARP Viktor</td><td>UKR</td><td class="hidden-xs">Europe</td><td>6</td><td>1076</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#4437'>1076</a></td></tr>
+<tr><td>139</td><td class="hidden-xs">5034</td><td>SABIO RUIZ Ricard</td><td>ESP</td><td class="hidden-xs">Europe</td><td>8</td><td>1070</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#5034'>1070</a></td></tr>
+<tr><td>140</td><td class="hidden-xs">563</td><td>SCHALLER Michel</td><td>FRA</td><td class="hidden-xs">Europe</td><td>8</td><td>1068</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#563'>1068</a></td></tr>
+<tr><td>141</td><td class="hidden-xs">334</td><td>GREGOROVIC Vjekoslav</td><td>CRO</td><td class="hidden-xs">Europe</td><td>6</td><td>1065</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#334'>1065</a></td></tr>
+<tr><td>142</td><td class="hidden-xs">6676</td><td>CHIHARA Takuro</td><td>JPN</td><td class="hidden-xs">Asia</td><td>6</td><td>1063</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#6676'>1063</a></td></tr>
+<tr><td>143</td><td class="hidden-xs">5880</td><td>CHOUGULE Dattaprasad Jotiram</td><td>IND</td><td class="hidden-xs">Asia</td><td>9</td><td>1062</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#5880'>1062</a></td></tr>
+<tr><td>144</td><td class="hidden-xs">2707</td><td>ELSAYED Hossam</td><td>EGY</td><td class="hidden-xs">Africa</td><td>9</td><td>1057</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#2707'>1057</a></td></tr>
+<tr><td>145</td><td class="hidden-xs">5033</td><td>SALOMONSEN Steffen</td><td>NOR</td><td class="hidden-xs">Europe</td><td>8</td><td>1056</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#5033'>1056</a></td></tr>
+<tr><td>146</td><td class="hidden-xs">4245</td><td><a href='moves_M9.htm#p4245'>SYED Asad Hussain</a></td><td>CAN</td><td class="hidden-xs">Americas</td><td>9</td><td>1049</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#4245'>1055</a></td></tr>
+<tr><td>147</td><td class="hidden-xs">5660</td><td><a href='moves_M10.htm#p5660'>STOCKDALE Jack</a></td><td>GBR</td><td class="hidden-xs">Europe</td><td>10</td><td>1046</td><td class="hidden-xs"></td></tr>
+<tr><td>148</td><td class="hidden-xs">4428</td><td><a href='moves_M8.htm#p4428'>PEREZ Alejandro</a></td><td>ARG</td><td class="hidden-xs">Americas</td><td>8</td><td>1045</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#4428'>1050</a></td></tr>
+<tr><td>149</td><td class="hidden-xs">4706</td><td>THAPAENG Suriyone</td><td>THA</td><td class="hidden-xs">Asia</td><td>7</td><td>1042</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#4706'>1042</a></td></tr>
+<tr><td>149</td><td class="hidden-xs">6441</td><td>VRACAN Marko</td><td>CRO</td><td class="hidden-xs">Europe</td><td>8</td><td>1042</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#6441'>1042</a></td></tr>
+<tr><td>151</td><td class="hidden-xs">5334</td><td><a href='moves_M10.htm#p5334'>KOHLA Mahmoud</a></td><td>EGY</td><td class="hidden-xs">Africa</td><td>10</td><td>1041</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#5334'>1044</a></td></tr>
+<tr><td>152</td><td class="hidden-xs">5439</td><td>JENSEN WALLIN Axel</td><td>SWE</td><td class="hidden-xs">Europe</td><td>8</td><td>1038</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#5439'>1038</a></td></tr>
+<tr><td>153</td><td class="hidden-xs">5736</td><td><a href='moves_M7.htm#p5736'>VALACH Tomas</a></td><td>SVK</td><td class="hidden-xs">Europe</td><td>7</td><td>1035</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#5736'>1041</a></td></tr>
+<tr><td>154</td><td class="hidden-xs">5795</td><td><a href='moves_M10.htm#p5795'>MATARO Edgar</a></td><td>ESP</td><td class="hidden-xs">Europe</td><td>10</td><td>1034</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#5795'>1037</a></td></tr>
+<tr><td>155</td><td class="hidden-xs">253</td><td><a href='moves_M8.htm#p253'>FERNANTO NASCIMENTO JUNIOR Joao</a></td><td>BRA</td><td class="hidden-xs">Americas</td><td>8</td><td>1022</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#253'>1040</a></td></tr>
+<tr><td>156</td><td class="hidden-xs">5173</td><td>BRAMMER Henrik</td><td>DEN</td><td class="hidden-xs">Europe</td><td>7</td><td>1020</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#5173'>1020</a></td></tr>
+<tr><td>157</td><td class="hidden-xs">6183</td><td><a href='moves_M6.htm#p6183'>EMINOVIC Haris</a></td><td>BIH</td><td class="hidden-xs">Europe</td><td>6</td><td>1018</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#6183'>1021</a></td></tr>
+<tr><td>158</td><td class="hidden-xs">4482</td><td><a href='moves_M8.htm#p4482'>ARITONANG Leonardo</a></td><td>INA</td><td class="hidden-xs">Asia</td><td>8</td><td>1017</td><td class="hidden-xs"></td></tr>
+<tr><td>158</td><td class="hidden-xs">389</td><td><a href='moves_M7.htm#p389'>LAMBERT Zbynek</a></td><td>CZE</td><td class="hidden-xs">Europe</td><td>7</td><td>1017</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#389'>970</a></td></tr>
+<tr><td>160</td><td class="hidden-xs">2995</td><td><a href='moves_M10.htm#p2995'>MUNOZ BENITEZ Melvin</a></td><td>ESA</td><td class="hidden-xs">Americas</td><td>10</td><td>1012</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#2995'>1021</a></td></tr>
+<tr><td>161</td><td class="hidden-xs">4936</td><td><a href='moves_M8.htm#p4936'>VAN DER BURG Roy</a></td><td>NED</td><td class="hidden-xs">Europe</td><td>8</td><td>1006</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#4936'>1012</a></td></tr>
+<tr><td>162</td><td class="hidden-xs">5337</td><td>THAKKER Shae Sunjay</td><td>GBR</td><td class="hidden-xs">Europe</td><td>10</td><td>1004</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#5337'>1004</a></td></tr>
+<tr><td>163</td><td class="hidden-xs">2318</td><td>CASTRO Angel</td><td>MEX</td><td class="hidden-xs">Americas</td><td>7</td><td>995</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#2318'>995</a></td></tr>
+<tr><td>164</td><td class="hidden-xs">5464</td><td><a href='moves_M7.htm#p5464'>BLAND Alexander</a></td><td>GBR</td><td class="hidden-xs">Europe</td><td>7</td><td>991</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#5464'>997</a></td></tr>
+<tr><td>165</td><td class="hidden-xs">2145</td><td>IBRAHIM Mohamed</td><td>EGY</td><td class="hidden-xs">Africa</td><td>9</td><td>990</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#2145'>990</a></td></tr>
+<tr><td>165</td><td class="hidden-xs">5466</td><td><a href='moves_M8.htm#p5466'>HENRY Ryan Joseph</a></td><td>GBR</td><td class="hidden-xs">Europe</td><td>8</td><td>990</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#5466'>983</a></td></tr>
+<tr><td>167</td><td class="hidden-xs">3934</td><td>SATO Hiromi</td><td>JPN</td><td class="hidden-xs">Asia</td><td>8</td><td>987</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#3934'>987</a></td></tr>
+<tr><td>167</td><td class="hidden-xs">1152</td><td><a href='moves_M10.htm#p1152'>CASTRO SERRANO Gustavo Ignacio</a></td><td>CHI</td><td class="hidden-xs">Americas</td><td>10</td><td>987</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#1152'>996</a></td></tr>
+<tr><td>169</td><td class="hidden-xs">5654</td><td><a href='moves_M8.htm#p5654'>ZOHIL Borna</a></td><td>CRO</td><td class="hidden-xs">Europe</td><td>8</td><td>986</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#5654'>979</a></td></tr>
+<tr><td>170</td><td class="hidden-xs">5943</td><td><a href='moves_M9.htm#p5943'>GHOLAMI Mohammaderfan</a></td><td>IRI</td><td class="hidden-xs">Asia</td><td>9</td><td>985</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#5943'>994</a></td></tr>
+<tr><td>171</td><td class="hidden-xs">6424</td><td><a href='moves_M6.htm#p6424'>MANTURZ Piotr</a></td><td>POL</td><td class="hidden-xs">Europe</td><td>6</td><td>979</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#6424'>982</a></td></tr>
+<tr><td>172</td><td class="hidden-xs">4981</td><td><a href='moves_M8.htm#p4981'>ABDULLAH Abdul Malik</a></td><td>INA</td><td class="hidden-xs">Asia</td><td>8</td><td>976</td><td class="hidden-xs"></td></tr>
+<tr><td>172</td><td class="hidden-xs">6051</td><td><a href='moves_M9.htm#p6051'>CHIN Brady Zi Rong</a></td><td>MAS</td><td class="hidden-xs">Asia</td><td>9</td><td>976</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#6051'>985</a></td></tr>
+<tr><td>174</td><td class="hidden-xs">5839</td><td>MAXA Lukas</td><td>CZE</td><td class="hidden-xs">Europe</td><td>8</td><td>973</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#5839'>973</a></td></tr>
+<tr><td>175</td><td class="hidden-xs">6035</td><td>LEE Young Min</td><td>KOR</td><td class="hidden-xs">Asia</td><td>7</td><td>972</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#6035'>972</a></td></tr>
+<tr><td>175</td><td class="hidden-xs">5301</td><td><a href='moves_M8.htm#p5301'>SPALEK Vit</a></td><td>CZE</td><td class="hidden-xs">Europe</td><td>8</td><td>972</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#5301'>973</a></td></tr>
+<tr><td>177</td><td class="hidden-xs">5183</td><td>RETTER Barnabas</td><td>HUN</td><td class="hidden-xs">Europe</td><td>9</td><td>970</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#5183'>970</a></td></tr>
+<tr><td>178</td><td class="hidden-xs">6472</td><td><a href='moves_M8.htm#p6472'>DIAZ Alejandro</a></td><td>ESP</td><td class="hidden-xs">Europe</td><td>8</td><td>963</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#6472'>966</a></td></tr>
+<tr><td>179</td><td class="hidden-xs">5887</td><td><a href='moves_M8.htm#p5887'>GRANKVIST Anton</a></td><td>SWE</td><td class="hidden-xs">Europe</td><td>8</td><td>958</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#5887'>961</a></td></tr>
+<tr><td>180</td><td class="hidden-xs">5023</td><td>JOHANSEN Fredrik</td><td>NOR</td><td class="hidden-xs">Europe</td><td>8</td><td>957</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#5023'>957</a></td></tr>
+<tr><td>181</td><td class="hidden-xs">4349</td><td><a href='moves_M9.htm#p4349'>CONCEICAO SEIXAS Flavio Alberto</a></td><td>BRA</td><td class="hidden-xs">Americas</td><td>9</td><td>952</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#4349'>955</a></td></tr>
+<tr><td>182</td><td class="hidden-xs">4874</td><td><a href='moves_M8.htm#p4874'>POLO ASTUDILLO Paul Leonardo</a></td><td>ECU</td><td class="hidden-xs">Americas</td><td>8</td><td>948</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#4874'>971</a></td></tr>
+<tr><td>183</td><td class="hidden-xs">4683</td><td>HIRTH Trevor</td><td>AUS</td><td class="hidden-xs">Oceania</td><td>6</td><td>945</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#4683'>945</a></td></tr>
+<tr><td>184</td><td class="hidden-xs">5730</td><td>SCHEIBER Christian</td><td>AUT</td><td class="hidden-xs">Europe</td><td>7</td><td>944</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#5730'>944</a></td></tr>
+<tr><td>185</td><td class="hidden-xs">5162</td><td><a href='moves_M10.htm#p5162'>QUESADA ROJAS Jose Angel</a></td><td>CRC</td><td class="hidden-xs">Americas</td><td>10</td><td>937</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#5162'>940</a></td></tr>
+<tr><td>185</td><td class="hidden-xs">826</td><td>CHEUNG Ping Kwai Samuel</td><td>HKG</td><td class="hidden-xs">Asia</td><td>9</td><td>937</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#826'>937</a></td></tr>
+<tr><td>187</td><td class="hidden-xs">3310</td><td><a href='moves_M9.htm#p3310'>CHINCHILLA RAMOS Julian Andres</a></td><td>COL</td><td class="hidden-xs">Americas</td><td>9</td><td>930</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#3310'>945</a></td></tr>
+<tr><td>188</td><td class="hidden-xs">5851</td><td><a href='moves_M6.htm#p5851'>MULLER Benedikt</a></td><td>GER</td><td class="hidden-xs">Europe</td><td>6</td><td>926</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#5851'>935</a></td></tr>
+<tr><td>189</td><td class="hidden-xs">3955</td><td><a href='moves_M9.htm#p3955'>COLOMBO DA SILVA Ramon</a></td><td>BRA</td><td class="hidden-xs">Americas</td><td>9</td><td>920</td><td class="hidden-xs"></td></tr>
+<tr><td>190</td><td class="hidden-xs">4707</td><td>SAMEE Sukij</td><td>THA</td><td class="hidden-xs">Asia</td><td>9</td><td>917</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#4707'>917</a></td></tr>
+<tr><td>191</td><td class="hidden-xs">5715</td><td><a href='moves_M7.htm#p5715'>BAHAMONDES VEGA Claudio Benjamin</a></td><td>CHI</td><td class="hidden-xs">Americas</td><td>7</td><td>916</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#5715'>922</a></td></tr>
+<tr><td>192</td><td class="hidden-xs">4947</td><td>RADOVANOVIC Mihajlo</td><td>SRB</td><td class="hidden-xs">Europe</td><td>7</td><td>906</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#4947'>906</a></td></tr>
+<tr><td>193</td><td class="hidden-xs">6706</td><td><a href='moves_M6.htm#p6706'>AMORIM DE OLIVEIRA Felipe</a></td><td>BRA</td><td class="hidden-xs">Americas</td><td>6</td><td>899</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#6706'>0</a></td></tr>
+<tr><td>193</td><td class="hidden-xs">5038</td><td><a href='moves_M9.htm#p5038'>ALLEN Craig Mark</a></td><td>GBR</td><td class="hidden-xs">Europe</td><td>9</td><td>899</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#5038'>902</a></td></tr>
+<tr><td>195</td><td class="hidden-xs">4583</td><td><a href='moves_M10.htm#p4583'>PEREIRA ALFON Alexandre</a></td><td>BRA</td><td class="hidden-xs">Americas</td><td>10</td><td>894</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#4583'>897</a></td></tr>
+<tr><td>196</td><td class="hidden-xs">2548</td><td><a href='moves_M7.htm#p2548'>MOJTAHED Masoud</a></td><td>USA</td><td class="hidden-xs">Americas</td><td>7</td><td>892</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#2548'>895</a></td></tr>
+<tr><td>197</td><td class="hidden-xs">4561</td><td><a href='moves_M8.htm#p4561'>MAKKAR Marco Sephom</a></td><td>USA</td><td class="hidden-xs">Americas</td><td>8</td><td>891</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#4561'>897</a></td></tr>
+<tr><td>198</td><td class="hidden-xs">3055</td><td><a href='moves_M8.htm#p3055'>KROTSCH Pablo</a></td><td>ARG</td><td class="hidden-xs">Americas</td><td>8</td><td>890</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#3055'>896</a></td></tr>
+<tr><td>199</td><td class="hidden-xs">6451</td><td><a href='moves_M8.htm#p6451'>BROZEK Miroslav</a></td><td>CZE</td><td class="hidden-xs">Europe</td><td>8</td><td>886</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#6451'>889</a></td></tr>
+<tr><td>200</td><td class="hidden-xs">3734</td><td>JARA HERNANDEZ Jaime</td><td>CHI</td><td class="hidden-xs">Americas</td><td>8</td><td>883</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#3734'>883</a></td></tr>
+<tr><td>201</td><td class="hidden-xs">2825</td><td><a href='moves_M9.htm#p2825'>COSTA RIBEIRO Mario Luis</a></td><td>BRA</td><td class="hidden-xs">Americas</td><td>9</td><td>880</td><td class="hidden-xs"></td></tr>
+<tr><td>202</td><td class="hidden-xs">5682</td><td><a href='moves_M8.htm#p5682'>GRILO Lucas Fagundes</a></td><td>BRA</td><td class="hidden-xs">Americas</td><td>8</td><td>878</td><td class="hidden-xs"></td></tr>
+<tr><td>203</td><td class="hidden-xs">3046</td><td><a href='moves_M9.htm#p3046'>RIGGIO IFANGER Guilherme</a></td><td>BRA</td><td class="hidden-xs">Americas</td><td>9</td><td>877</td><td class="hidden-xs"></td></tr>
+<tr><td>204</td><td class="hidden-xs">5437</td><td>GUSTAFSSON Sam Carl</td><td>SWE</td><td class="hidden-xs">Europe</td><td>7</td><td>873</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#5437'>873</a></td></tr>
+<tr><td>204</td><td class="hidden-xs">4615</td><td><a href='moves_M7.htm#p4615'>EIER Dustin</a></td><td>NED</td><td class="hidden-xs">Europe</td><td>7</td><td>873</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#4615'>827</a></td></tr>
+<tr><td>206</td><td class="hidden-xs">4145</td><td>HOLDBACK Connor</td><td>AUS</td><td class="hidden-xs">Oceania</td><td>6</td><td>872</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#4145'>872</a></td></tr>
+<tr><td>207</td><td class="hidden-xs">5379</td><td>ARORA Kunal</td><td>IND</td><td class="hidden-xs">Asia</td><td>8</td><td>869</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#5379'>869</a></td></tr>
+<tr><td>208</td><td class="hidden-xs">6371</td><td><a href='moves_M7.htm#p6371'>PAREDIS Yannick</a></td><td>NED</td><td class="hidden-xs">Europe</td><td>7</td><td>868</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#6371'>871</a></td></tr>
+<tr><td>209</td><td class="hidden-xs">4984</td><td>ALSANEA Ali</td><td>KUW</td><td class="hidden-xs">Asia</td><td>9</td><td>865</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#4984'>911</a></td></tr>
+<tr><td>210</td><td class="hidden-xs">5054</td><td>LOTLIKAR Om Rajesh</td><td>IND</td><td class="hidden-xs">Asia</td><td>10</td><td>863</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#5054'>863</a></td></tr>
+<tr><td>211</td><td class="hidden-xs">5931</td><td><a href='moves_M7.htm#p5931'>TONG Chi Ming</a></td><td>HKG</td><td class="hidden-xs">Asia</td><td>7</td><td>854</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#5931'>868</a></td></tr>
+<tr><td>212</td><td class="hidden-xs">441</td><td>ABDELMONEIM Abousteit</td><td>EGY</td><td class="hidden-xs">Africa</td><td>7</td><td>853</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#441'>853</a></td></tr>
+<tr><td>213</td><td class="hidden-xs">6542</td><td>SANCHEZ CARDENAS Daniel</td><td>COL</td><td class="hidden-xs">Americas</td><td>7</td><td>850</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#6542'>850</a></td></tr>
+<tr><td>214</td><td class="hidden-xs">1299</td><td><a href='moves_M9.htm#p1299'>LETELIER POBLETE David Daniel</a></td><td>CHI</td><td class="hidden-xs">Americas</td><td>9</td><td>849</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#1299'>863</a></td></tr>
+<tr><td>215</td><td class="hidden-xs">2377</td><td>HUSSEIN HASSAN Hussein</td><td>EGY</td><td class="hidden-xs">Africa</td><td>9</td><td>844</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#2377'>844</a></td></tr>
+<tr><td>216</td><td class="hidden-xs">6096</td><td>HNIZDO Petr</td><td>CZE</td><td class="hidden-xs">Europe</td><td>6</td><td>842</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#6096'>842</a></td></tr>
+<tr><td>217</td><td class="hidden-xs">4687</td><td><a href='moves_M7.htm#p4687'>KHAN Naazim Javed</a></td><td>IND</td><td class="hidden-xs">Asia</td><td>7</td><td>839</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#4687'>842</a></td></tr>
+<tr><td>218</td><td class="hidden-xs">6256</td><td><a href='moves_M6.htm#p6256'>BASTARDO Mario Joao</a></td><td>POR</td><td class="hidden-xs">Europe</td><td>6</td><td>834</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#6256'>0</a></td></tr>
+<tr><td>219</td><td class="hidden-xs">4759</td><td><a href='moves_M8.htm#p4759'>LASKOSKY Gustavo Alexandre</a></td><td>BRA</td><td class="hidden-xs">Americas</td><td>8</td><td>830</td><td class="hidden-xs"></td></tr>
+<tr><td>220</td><td class="hidden-xs">4147</td><td>HUSSAINI Yaser</td><td>AUS</td><td class="hidden-xs">Oceania</td><td>6</td><td>814</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#4147'>814</a></td></tr>
+<tr><td>220</td><td class="hidden-xs">2572</td><td>ARGUELLO GARCIA Domingo</td><td>CRC</td><td class="hidden-xs">Americas</td><td>6</td><td>814</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#2572'>814</a></td></tr>
+<tr><td>222</td><td class="hidden-xs">4684</td><td>BALLESTRINO Jake</td><td>AUS</td><td class="hidden-xs">Oceania</td><td>7</td><td>804</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#4684'>804</a></td></tr>
+<tr><td>223</td><td class="hidden-xs">5949</td><td><a href='moves_M10.htm#p5949'>ZOLFAGHARI ASHEGHABADI Omid</a></td><td>IRI</td><td class="hidden-xs">Asia</td><td>10</td><td>801</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#5949'>804</a></td></tr>
+<tr><td>224</td><td class="hidden-xs">2967</td><td>NICOLAE Alyn Lulian</td><td>ROU</td><td class="hidden-xs">Europe</td><td>8</td><td>789</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#2967'>789</a></td></tr>
+<tr><td>225</td><td class="hidden-xs">6330</td><td>BOGDANOVIC Ivan</td><td>SRB</td><td class="hidden-xs">Europe</td><td>7</td><td>784</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#6330'>784</a></td></tr>
+<tr><td>226</td><td class="hidden-xs">5894</td><td><a href='moves_M10.htm#p5894'>MEDCALF Randall</a></td><td>USA</td><td class="hidden-xs">Americas</td><td>10</td><td>781</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#5894'>784</a></td></tr>
+<tr><td>227</td><td class="hidden-xs">5384</td><td><a href='moves_M6.htm#p5384'>USSENOV Kanat</a></td><td>KAZ</td><td class="hidden-xs">Asia</td><td>6</td><td>774</td><td class="hidden-xs"></td></tr>
+<tr><td>228</td><td class="hidden-xs">4777</td><td><a href='moves_M9.htm#p4777'>RIVERA VICENTE Shaquille Joel</a></td><td>PUR</td><td class="hidden-xs">Americas</td><td>9</td><td>766</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#4777'>772</a></td></tr>
+<tr><td>229</td><td class="hidden-xs">4274</td><td><a href='moves_M9.htm#p4274'>CALDEIRA GOMES Reginaldo</a></td><td>BRA</td><td class="hidden-xs">Americas</td><td>9</td><td>758</td><td class="hidden-xs"></td></tr>
+<tr><td>230</td><td class="hidden-xs">5517</td><td><a href='moves_M9.htm#p5517'>AZIZI Hilmi</a></td><td>INA</td><td class="hidden-xs">Asia</td><td>9</td><td>753</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#5517'>756</a></td></tr>
+<tr><td>231</td><td class="hidden-xs">3092</td><td>ETCHE FATTOH Elleingand Aka Charles</td><td>CIV</td><td class="hidden-xs">Africa</td><td>9</td><td>745</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#3092'>745</a></td></tr>
+<tr><td>232</td><td class="hidden-xs">2874</td><td>BHAMGARA Yesdi Aspi</td><td>IND</td><td class="hidden-xs">Asia</td><td>6</td><td>740</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#2874'>740</a></td></tr>
+<tr><td>233</td><td class="hidden-xs">6029</td><td><a href='moves_M7.htm#p6029'>BISHOP Theo</a></td><td>GBR</td><td class="hidden-xs">Europe</td><td>7</td><td>738</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#6029'>728</a></td></tr>
+<tr><td>234</td><td class="hidden-xs">5623</td><td>SOLIS ROODRIGUEZ Hernan Domingo</td><td>CRC</td><td class="hidden-xs">Americas</td><td>8</td><td>737</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#5623'>737</a></td></tr>
+<tr><td>235</td><td class="hidden-xs">2142</td><td>KOUADIO Kouame</td><td>CIV</td><td class="hidden-xs">Africa</td><td>8</td><td>736</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#2142'>736</a></td></tr>
+<tr><td>236</td><td class="hidden-xs">4640</td><td><a href='moves_M7.htm#p4640'>ORAZBEK Azamat</a></td><td>KAZ</td><td class="hidden-xs">Asia</td><td>7</td><td>733</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#4640'>819</a></td></tr>
+<tr><td>237</td><td class="hidden-xs">6247</td><td>ABOUZEID Ahmed</td><td>EGY</td><td class="hidden-xs">Africa</td><td>8</td><td>724</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#6247'>724</a></td></tr>
+<tr><td>238</td><td class="hidden-xs">1396</td><td>KOCEVSKI Strasko</td><td>MKD</td><td class="hidden-xs">Europe</td><td>10</td><td>717</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#1396'>717</a></td></tr>
+<tr><td>238</td><td class="hidden-xs">3833</td><td><a href='moves_M6.htm#p3833'>DEMOOR Rodrigo Ariel</a></td><td>ARG</td><td class="hidden-xs">Americas</td><td>6</td><td>717</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#3833'>720</a></td></tr>
+<tr><td>240</td><td class="hidden-xs">5161</td><td>ROJAS FONSECA Hernan</td><td>CRC</td><td class="hidden-xs">Americas</td><td>7</td><td>716</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#5161'>716</a></td></tr>
+<tr><td>241</td><td class="hidden-xs">5163</td><td>CASTILLO Ramon</td><td>CRC</td><td class="hidden-xs">Americas</td><td>9</td><td>715</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#5163'>715</a></td></tr>
+<tr><td>242</td><td class="hidden-xs">5915</td><td><a href='moves_M6.htm#p5915'>DOS SANTOS RODRIGUES Goutier</a></td><td>BRA</td><td class="hidden-xs">Americas</td><td>6</td><td>712</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#5915'>714</a></td></tr>
+<tr><td>243</td><td class="hidden-xs">3921</td><td><a href='moves_M9.htm#p3921'>REYES Nixon</a></td><td>CRC</td><td class="hidden-xs">Americas</td><td>9</td><td>710</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#3921'>713</a></td></tr>
+<tr><td>244</td><td class="hidden-xs">2392</td><td><a href='moves_M6.htm#p2392'>ABDELMAGID BASHIR Mahmoud</a></td><td>EGY</td><td class="hidden-xs">Africa</td><td>6</td><td>709</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#2392'>712</a></td></tr>
+<tr><td>245</td><td class="hidden-xs">6425</td><td><a href='moves_M9.htm#p6425'>ZIELINSKI Marcin</a></td><td>POL</td><td class="hidden-xs">Europe</td><td>9</td><td>697</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#6425'>703</a></td></tr>
+<tr><td>245</td><td class="hidden-xs">5611</td><td>PETROSYAN Tigran</td><td>ARM</td><td class="hidden-xs">Europe</td><td>9</td><td>697</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#5611'>697</a></td></tr>
+<tr><td>247</td><td class="hidden-xs">6024</td><td>QASEM Abdullah</td><td>KUW</td><td class="hidden-xs">Asia</td><td>9</td><td>694</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#6024'>694</a></td></tr>
+<tr><td>248</td><td class="hidden-xs">3932</td><td>GUJJAR Ranjit Singh</td><td>IND</td><td class="hidden-xs">Asia</td><td>9</td><td>693</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#3932'>693</a></td></tr>
+<tr><td>249</td><td class="hidden-xs">6160</td><td><a href='moves_M9.htm#p6160'>KAILIS Panteleimon</a></td><td>CYP</td><td class="hidden-xs">Europe</td><td>9</td><td>689</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#6160'>0</a></td></tr>
+<tr><td>250</td><td class="hidden-xs">4642</td><td>ADNAN Mohammed</td><td>IRQ</td><td class="hidden-xs">Asia</td><td>7</td><td>671</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#4642'>671</a></td></tr>
+<tr><td>251</td><td class="hidden-xs">5541</td><td><a href='moves_M6.htm#p5541'>VERA ANCHUNDIA Jim Jazmani</a></td><td>ECU</td><td class="hidden-xs">Americas</td><td>6</td><td>664</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#5541'>667</a></td></tr>
+<tr><td>252</td><td class="hidden-xs">5874</td><td>HAMMANNAVAR Sanjeev</td><td>IND</td><td class="hidden-xs">Asia</td><td>7</td><td>660</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#5874'>660</a></td></tr>
+<tr><td>252</td><td class="hidden-xs">4800</td><td>TONG Chi Yung</td><td>HKG</td><td class="hidden-xs">Asia</td><td>7</td><td>660</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#4800'>660</a></td></tr>
+<tr><td>254</td><td class="hidden-xs">5614</td><td>SEGUIN Gabriel</td><td>CAN</td><td class="hidden-xs">Americas</td><td>6</td><td>640</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#5614'>640</a></td></tr>
+<tr><td>255</td><td class="hidden-xs">6347</td><td><a href='moves_M8.htm#p6347'>OORD Paul van der</a></td><td>NED</td><td class="hidden-xs">Europe</td><td>8</td><td>638</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#6347'>656</a></td></tr>
+<tr><td>256</td><td class="hidden-xs">5217</td><td>ROMERO PARRENO Pablo</td><td>ESP</td><td class="hidden-xs">Europe</td><td>7</td><td>630</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#5217'>630</a></td></tr>
+<tr><td>257</td><td class="hidden-xs">2692</td><td><a href='moves_M7.htm#p2692'>AL NAJADAT Mohammad Abed</a></td><td>JOR</td><td class="hidden-xs">Asia</td><td>7</td><td>628</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#2692'>631</a></td></tr>
+<tr><td>258</td><td class="hidden-xs">3995</td><td>HAJERI Sanjeev Kumar</td><td>IND</td><td class="hidden-xs">Asia</td><td>7</td><td>624</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#3995'>624</a></td></tr>
+<tr><td>259</td><td class="hidden-xs">5562</td><td>MARTINEZ ALCALDE Emanuel Emiliano</td><td>ARG</td><td class="hidden-xs">Americas</td><td>7</td><td>615</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#5562'>615</a></td></tr>
+<tr><td>259</td><td class="hidden-xs">5558</td><td>CANTEROS Cristian Alberto</td><td>ARG</td><td class="hidden-xs">Americas</td><td>7</td><td>615</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#5558'>615</a></td></tr>
+<tr><td>261</td><td class="hidden-xs">5618</td><td>FERNANDEZ RAMIREZ Sebastian Jesus</td><td>CRC</td><td class="hidden-xs">Americas</td><td>10</td><td>613</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#5618'>613</a></td></tr>
+<tr><td>262</td><td class="hidden-xs">5477</td><td><a href='moves_M10.htm#p5477'>PUNKAEW Master Parinya</a></td><td>THA</td><td class="hidden-xs">Asia</td><td>10</td><td>611</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#5477'>614</a></td></tr>
+<tr><td>262</td><td class="hidden-xs">5878</td><td><a href='moves_M10.htm#p5878'>MUKHERJEE Jagannath</a></td><td>IND</td><td class="hidden-xs">Asia</td><td>10</td><td>611</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#5878'>614</a></td></tr>
+<tr><td>264</td><td class="hidden-xs">5794</td><td>LOPEZ Marlon</td><td>ESP</td><td class="hidden-xs">Europe</td><td>10</td><td>609</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#5794'>609</a></td></tr>
+<tr><td>264</td><td class="hidden-xs">4903</td><td>MENDEZ RAMIREZ Andres</td><td>CRC</td><td class="hidden-xs">Americas</td><td>8</td><td>609</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#4903'>609</a></td></tr>
+<tr><td>266</td><td class="hidden-xs">5622</td><td>ANCHIA Jason Jesus</td><td>CRC</td><td class="hidden-xs">Americas</td><td>8</td><td>608</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#5622'>608</a></td></tr>
+<tr><td>266</td><td class="hidden-xs">6095</td><td><a href='moves_M10.htm#p6095'>MICHAL Jan</a></td><td>CZE</td><td class="hidden-xs">Europe</td><td>10</td><td>608</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#6095'>609</a></td></tr>
+<tr><td>268</td><td class="hidden-xs">5630</td><td>BOROLEANU Robert Marian</td><td>ROU</td><td class="hidden-xs">Europe</td><td>8</td><td>605</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#5630'>605</a></td></tr>
+<tr><td>269</td><td class="hidden-xs">5488</td><td><a href='moves_M6.htm#p5488'>MAVRIS Eleftherios</a></td><td>GRE</td><td class="hidden-xs">Europe</td><td>6</td><td>600</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#5488'>607</a></td></tr>
+<tr><td>270</td><td class="hidden-xs">5604</td><td>MORA REGALADO Josue Damian</td><td>ESA</td><td class="hidden-xs">Americas</td><td>10</td><td>596</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#5604'>596</a></td></tr>
+<tr><td>271</td><td class="hidden-xs">6093</td><td>SCUTO Mateo</td><td>LUX</td><td class="hidden-xs">Europe</td><td>10</td><td>593</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#6093'>593</a></td></tr>
+<tr><td>272</td><td class="hidden-xs">6442</td><td>HEIN Phillippe</td><td>LUX</td><td class="hidden-xs">Europe</td><td>10</td><td>589</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#6442'>589</a></td></tr>
+<tr><td>273</td><td class="hidden-xs">5849</td><td>MANGEN Robert</td><td>LUX</td><td class="hidden-xs">Europe</td><td>8</td><td>585</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#5849'>585</a></td></tr>
+<tr><td>274</td><td class="hidden-xs">4901</td><td>SCRIVANO Daniel</td><td>USA</td><td class="hidden-xs">Americas</td><td>8</td><td>574</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#4901'>574</a></td></tr>
+<tr><td>275</td><td class="hidden-xs">6025</td><td><a href='moves_M8.htm#p6025'>ALRASHIDI Mohammad</a></td><td>KUW</td><td class="hidden-xs">Asia</td><td>8</td><td>570</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#6025'>573</a></td></tr>
+<tr><td>276</td><td class="hidden-xs">5553</td><td><a href='moves_M10.htm#p5553'>BRABROOK Neville James</a></td><td>USA</td><td class="hidden-xs">Americas</td><td>10</td><td>565</td><td class="hidden-xs"></td></tr>
+<tr><td>277</td><td class="hidden-xs">5841</td><td><a href='moves_M6.htm#p5841'>JELINEK Kristian</a></td><td>CZE</td><td class="hidden-xs">Europe</td><td>6</td><td>502</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#5841'>505</a></td></tr>
+<tr><td>278</td><td class="hidden-xs">2387</td><td>HAMADTOU Ibrahim</td><td>EGY</td><td class="hidden-xs">Africa</td><td>6</td><td>477</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#2387'>477</a></td></tr>
+<tr><td>279</td><td class="hidden-xs">6018</td><td>MAKELA Aaro Toivo Samuli</td><td>FIN</td><td class="hidden-xs">Europe</td><td>6</td><td>455</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#6018'>455</a></td></tr>
+<tr><td>280</td><td class="hidden-xs">5563</td><td>MURDOCH Angel Marcelo Ezequiel</td><td>ARG</td><td class="hidden-xs">Americas</td><td>6</td><td>441</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#5563'>441</a></td></tr>
+<tr><td>281</td><td class="hidden-xs">5876</td><td>PAL Ashok Kumar Parvanta</td><td>IND</td><td class="hidden-xs">Asia</td><td>6</td><td>437</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#5876'>437</a></td></tr>
+<tr><td>282</td><td class="hidden-xs">6046</td><td>OIUYEN Phitsadan</td><td>THA</td><td class="hidden-xs">Asia</td><td>6</td><td>433</td><td class="hidden-xs"><a href='../../2022-10-01/singles/Men_standing.htm#6046'>433</a></td></tr>
+</tbody></table>
+<h2>Active unrated players</h2>
+<table class="table table-striped table-condensed table-bordered"><thead>
+<tr><th>Player ID</th><th>Name</th><th>Country</th><th>Region</th></tr>
+</thead><tbody class="notranslate">
+<tr><td>6526</td><td>ABURAYYAN Ibrahim</td><td>JOR</td><td>Asia</td></tr>
+<tr><td>6583</td><td>AGARWAL Anshul</td><td>IND</td><td>Asia</td></tr>
+<tr><td>2369</td><td>AHMED Abdel Latif</td><td>EGY</td><td>Africa</td></tr>
+<tr><td>5955</td><td>AL MAJIDI Hasan Hamzah</td><td>IRQ</td><td>Asia</td></tr>
+<tr><td>5953</td><td>AL SHAIKHLI Abdulrahmn Salman</td><td>IRQ</td><td>Asia</td></tr>
+<tr><td>3349</td><td>ALABI Kayode</td><td>NGR</td><td>Africa</td></tr>
+<tr><td>4022</td><td>ALJERAIFANI Husam</td><td>KSA</td><td>Asia</td></tr>
+<tr><td>262</td><td>ALMEIDA Willian Gabriel</td><td>BRA</td><td>Americas</td></tr>
+<tr><td>3127</td><td>ALSHAMMARI Jazaa</td><td>KSA</td><td>Asia</td></tr>
+<tr><td>6567</td><td>ALTSHULER Samuel William</td><td>USA</td><td>Americas</td></tr>
+<tr><td>6504</td><td>ALZUABI Salem</td><td>KSA</td><td>Asia</td></tr>
+<tr><td>6669</td><td>ANTIC Milan</td><td>SRB</td><td>Europe</td></tr>
+<tr><td>6625</td><td>ARAUJO DO AMARAL Marcos Vinicius</td><td>BRA</td><td>Americas</td></tr>
+<tr><td>6548</td><td>ARIAS Fabian</td><td>CRC</td><td>Americas</td></tr>
+<tr><td>6710</td><td>ARNOLD CORREA Leonardo</td><td>BRA</td><td>Americas</td></tr>
+<tr><td>1153</td><td>ASSAF Nasser</td><td>JOR</td><td>Asia</td></tr>
+<tr><td>2022</td><td>AVETISYAN Hmayak</td><td>ARM</td><td>Europe</td></tr>
+<tr><td>6168</td><td>BAHAT Hadar</td><td>ISR</td><td>Europe</td></tr>
+<tr><td>6707</td><td>BARRIENTOS Fausto</td><td>ARG</td><td>Americas</td></tr>
+<tr><td>6776</td><td>BARROS REIS Demetrius</td><td>BRA</td><td>Americas</td></tr>
+<tr><td>6601</td><td>BARTOSIK Dominik</td><td>POL</td><td>Europe</td></tr>
+<tr><td>6004</td><td>BAYALA Ble Jean Pierre</td><td>CIV</td><td>Africa</td></tr>
+<tr><td>6333</td><td>BECIREVIC Alen</td><td>SLO</td><td>Europe</td></tr>
+<tr><td>5972</td><td>BEGLARYAN Gevorg</td><td>ARM</td><td>Europe</td></tr>
+<tr><td>6553</td><td>BELTETON Kevin</td><td>GUA</td><td>Americas</td></tr>
+<tr><td>3608</td><td>BERNAL GIL Jose David</td><td>COL</td><td>Americas</td></tr>
+<tr><td>6403</td><td>BEROIZA Andres</td><td>CHI</td><td>Americas</td></tr>
+<tr><td>6634</td><td>BIRMANCEVIC Nemanja</td><td>SRB</td><td>Europe</td></tr>
+<tr><td>6395</td><td>BRUSCHI Mirko</td><td>ITA</td><td>Europe</td></tr>
+<tr><td>6649</td><td>CABARKAPA Zoran</td><td>MNE</td><td>Europe</td></tr>
+<tr><td>5039</td><td>CANIZALES ALVAREZ Efrain Ricardo</td><td>VEN</td><td>Americas</td></tr>
+<tr><td>3843</td><td>CARDIM DOS SANTOS Marcelo</td><td>BRA</td><td>Americas</td></tr>
+<tr><td>6598</td><td>CARDOSO Joao</td><td>POR</td><td>Europe</td></tr>
+<tr><td>6125</td><td>CASAL CAPPILLO Cristian Cesar</td><td>CHI</td><td>Americas</td></tr>
+<tr><td>6641</td><td>CASTRO Miguel</td><td>COL</td><td>Americas</td></tr>
+<tr><td>6666</td><td>CEROVIC Miljan</td><td>BIH</td><td>Europe</td></tr>
+<tr><td>6701</td><td>CERPA YANEZ Jose Luis</td><td>CHI</td><td>Americas</td></tr>
+<tr><td>5933</td><td>CHAN Hon Man</td><td>HKG</td><td>Asia</td></tr>
+<tr><td>6022</td><td>CHAUHAN Yogesh Kumar</td><td>IND</td><td>Asia</td></tr>
+<tr><td>5639</td><td>CHEKHYOR Mohammed Kadhim</td><td>IRQ</td><td>Asia</td></tr>
+<tr><td>6558</td><td>CHEN Hsien Jue</td><td>TPE</td><td>Asia</td></tr>
+<tr><td>2460</td><td>CHOY Hing Lam</td><td>HKG</td><td>Asia</td></tr>
+<tr><td>6278</td><td>CIGOLOTTI Julien</td><td>FRA</td><td>Europe</td></tr>
+<tr><td>6594</td><td>CORDOBA Francisco</td><td>PAN</td><td>Americas</td></tr>
+<tr><td>6231</td><td>CORDOVA CARDONA Javier Mauricio</td><td>ESA</td><td>Americas</td></tr>
+<tr><td>6687</td><td>CROUSE Joseph Williqm</td><td>GBR</td><td>Europe</td></tr>
+<tr><td>6623</td><td>DA SILVA Ednei Carlos</td><td>BRA</td><td>Americas</td></tr>
+<tr><td>2823</td><td>DI PIETRANTONIO Cristian</td><td>ARG</td><td>Americas</td></tr>
+<tr><td>6720</td><td>DUARTE PARRACHO Bruno Miguel</td><td>POR</td><td>Europe</td></tr>
+<tr><td>6695</td><td>DUTRA BARSOTTI DE FREITAS Matheus</td><td>BRA</td><td>Americas</td></tr>
+<tr><td>6088</td><td>EKENGREN Styrbjorn</td><td>SWE</td><td>Europe</td></tr>
+<tr><td>6271</td><td>ELEZINY Ashraf</td><td>EGY</td><td>Africa</td></tr>
+<tr><td>6272</td><td>ELNAZLY Ahmed</td><td>EGY</td><td>Africa</td></tr>
+<tr><td>2376</td><td>EMAD Shaban</td><td>EGY</td><td>Africa</td></tr>
+<tr><td>1386</td><td>ESPINOSA URZUA Efrain Edgardo</td><td>MEX</td><td>Americas</td></tr>
+<tr><td>6771</td><td>EVANS Julio</td><td>PAN</td><td>Americas</td></tr>
+<tr><td>6496</td><td>FERDIANSYAH Muhammad Dicky</td><td>INA</td><td>Asia</td></tr>
+<tr><td>6556</td><td>FERNANDEZ Juan</td><td>GUA</td><td>Americas</td></tr>
+<tr><td>6744</td><td>FLINI Maximillian Cooper</td><td>GBR</td><td>Europe</td></tr>
+<tr><td>6617</td><td>FLORES CARDENAS Luis</td><td>MEX</td><td>Americas</td></tr>
+<tr><td>5720</td><td>GELENCSER Balint</td><td>HUN</td><td>Europe</td></tr>
+<tr><td>6071</td><td>GEOGHEGAN Sean</td><td>IRL</td><td>Europe</td></tr>
+<tr><td>6529</td><td>GILLES Corentin</td><td>FRA</td><td>Europe</td></tr>
+<tr><td>6620</td><td>GUEDES PEREIRA Marcelo</td><td>BRA</td><td>Americas</td></tr>
+<tr><td>6644</td><td>GUGOLJ Uros</td><td>MNE</td><td>Europe</td></tr>
+<tr><td>6516</td><td>GUILLAS Baptiste</td><td>FRA</td><td>Europe</td></tr>
+<tr><td>3141</td><td>HABSHAN Thamer</td><td>KSA</td><td>Asia</td></tr>
+<tr><td>440</td><td>HASSAN ALI Faraq Fouad</td><td>EGY</td><td>Africa</td></tr>
+<tr><td>5964</td><td>HAYEK Mahmoud Abed</td><td>JOR</td><td>Asia</td></tr>
+<tr><td>4905</td><td>HIDALGO HERRERA Alejandro</td><td>CRC</td><td>Americas</td></tr>
+<tr><td>6559</td><td>HSIEH Tsung Ying</td><td>TPE</td><td>Asia</td></tr>
+<tr><td>6332</td><td>HWANG Inchun</td><td>KOR</td><td>Asia</td></tr>
+<tr><td>5965</td><td>IKSAN Faisatul</td><td>INA</td><td>Asia</td></tr>
+<tr><td>6510</td><td>KHAMRAEV Izzatbek</td><td>UZB</td><td>Asia</td></tr>
+<tr><td>6708</td><td>KHAZANDJIAN Luciano</td><td>ARG</td><td>Americas</td></tr>
+<tr><td>6678</td><td>KOBAYASHI Kodai</td><td>JPN</td><td>Asia</td></tr>
+<tr><td>5190</td><td>KRIVOKAPIC Duro</td><td>MNE</td><td>Europe</td></tr>
+<tr><td>6431</td><td>KWAN Chi Him</td><td>HKG</td><td>Asia</td></tr>
+<tr><td>5932</td><td>LAU Yoho</td><td>HKG</td><td>Asia</td></tr>
+<tr><td>6469</td><td>LEE Caleb Jia Xuan</td><td>SGP</td><td>Asia</td></tr>
+<tr><td>6576</td><td>LEVI Yehonatan Chaim</td><td>ISR</td><td>Europe</td></tr>
+<tr><td>6329</td><td>LICHTIN Fabian</td><td>SUI</td><td>Europe</td></tr>
+<tr><td>3366</td><td>LOPEZ Lauquen</td><td>ARG</td><td>Americas</td></tr>
+<tr><td>6537</td><td>LOPEZ VELEZ Jeriel Gustavo</td><td>PUR</td><td>Americas</td></tr>
+<tr><td>6279</td><td>LOTTON Robin</td><td>FRA</td><td>Europe</td></tr>
+<tr><td>6688</td><td>MAGNUSSEN Krizander</td><td>NOR</td><td>Europe</td></tr>
+<tr><td>6497</td><td>MAMUNUDIN Rifki</td><td>INA</td><td>Asia</td></tr>
+<tr><td>493</td><td>MANNER Markku</td><td>FIN</td><td>Europe</td></tr>
+<tr><td>3952</td><td>MARQUES MATOS Anderson</td><td>BRA</td><td>Americas</td></tr>
+<tr><td>6635</td><td>MICOVIC Milan</td><td>SRB</td><td>Europe</td></tr>
+<tr><td>6648</td><td>MIHAILOVIC Slobodan</td><td>MNE</td><td>Europe</td></tr>
+<tr><td>5690</td><td>MORALES HERNANDEZ Martin Uriel</td><td>MEX</td><td>Americas</td></tr>
+<tr><td>6655</td><td>MORRISON Carter Allen</td><td>CAN</td><td>Americas</td></tr>
+<tr><td>3367</td><td>MUNOZ Marcos Antonio</td><td>ARG</td><td>Americas</td></tr>
+<tr><td>6679</td><td>MUSKA Jan</td><td>CZE</td><td>Europe</td></tr>
+<tr><td>6642</td><td>NARANJO Amilkar</td><td>COL</td><td>Americas</td></tr>
+<tr><td>5828</td><td>NEMA Bader</td><td>KUW</td><td>Asia</td></tr>
+<tr><td>2474</td><td>NEMEC Jaromir</td><td>CZE</td><td>Europe</td></tr>
+<tr><td>6631</td><td>NOVOTNY Tomas</td><td>CZE</td><td>Europe</td></tr>
+<tr><td>6691</td><td>NSUBUGA Yusuf</td><td>UGA</td><td>Africa</td></tr>
+<tr><td>6454</td><td>OLAFSSON Bjorgvin Ingi</td><td>ISL</td><td>Europe</td></tr>
+<tr><td>6775</td><td>OLIVEIRA Fernando</td><td>BRA</td><td>Americas</td></tr>
+<tr><td>3726</td><td>ONOFRE Gilberto</td><td>BRA</td><td>Americas</td></tr>
+<tr><td>6552</td><td>ORELLANA Marcos</td><td>GUA</td><td>Americas</td></tr>
+<tr><td>5192</td><td>PALJUSEVIC Pjetro</td><td>MNE</td><td>Europe</td></tr>
+<tr><td>6465</td><td>PARMAR Gajanan</td><td>IND</td><td>Asia</td></tr>
+<tr><td>6407</td><td>PAVEZ Lucas</td><td>CHI</td><td>Americas</td></tr>
+<tr><td>6651</td><td>PAVLOVIC Bogdan</td><td>MNE</td><td>Europe</td></tr>
+<tr><td>278</td><td>PELLETIER Martin</td><td>CAN</td><td>Americas</td></tr>
+<tr><td>6663</td><td>PEREZ SANCHEZ Mario Alberto</td><td>MEX</td><td>Americas</td></tr>
+<tr><td>6524</td><td>PIUNGSAMRAN Natthawat</td><td>THA</td><td>Asia</td></tr>
+<tr><td>6555</td><td>PLEITES David</td><td>GUA</td><td>Americas</td></tr>
+<tr><td>6394</td><td>PRADO MEDINA Daniel Ignacio</td><td>PER</td><td>Americas</td></tr>
+<tr><td>6232</td><td>PREZA Enrique</td><td>MEX</td><td>Americas</td></tr>
+<tr><td>6754</td><td>PRINTSMANN Martin</td><td>EST</td><td>Europe</td></tr>
+<tr><td>6563</td><td>PROPERJOHN Lennard</td><td>AUS</td><td>Oceania</td></tr>
+<tr><td>6515</td><td>RABILLARD Melvyn</td><td>FRA</td><td>Europe</td></tr>
+<tr><td>5864</td><td>RAINER Noah</td><td>AUT</td><td>Europe</td></tr>
+<tr><td>6487</td><td>RAMAZANI Arsham</td><td>IRI</td><td>Asia</td></tr>
+<tr><td>6499</td><td>RAMESH </td><td>IND</td><td>Asia</td></tr>
+<tr><td>6640</td><td>RAMIREZ Santiago</td><td>COL</td><td>Americas</td></tr>
+<tr><td>6488</td><td>RASTI Ali</td><td>IRI</td><td>Asia</td></tr>
+<tr><td>1395</td><td>RISTESKI Rubinco</td><td>MKD</td><td>Europe</td></tr>
+<tr><td>6534</td><td>RUSSO Javier Alejandro</td><td>ARG</td><td>Americas</td></tr>
+<tr><td>6444</td><td>SADECKY Peter</td><td>SVK</td><td>Europe</td></tr>
+<tr><td>6630</td><td>SAINOSKI Aksel</td><td>DEN</td><td>Europe</td></tr>
+<tr><td>6533</td><td>SANTILLAN Elbio Mariano</td><td>ARG</td><td>Americas</td></tr>
+<tr><td>3728</td><td>SARFARAZ Gibran Hussein</td><td>GUY</td><td>Americas</td></tr>
+<tr><td>6633</td><td>SCEKIC Srdan</td><td>SRB</td><td>Europe</td></tr>
+<tr><td>6599</td><td>SEFT Marcel</td><td>ROU</td><td>Europe</td></tr>
+<tr><td>6632</td><td>SENGERS Josephus Johannes Hendrikus</td><td>NED</td><td>Europe</td></tr>
+<tr><td>6765</td><td>SHACHAK Itay</td><td>ISR</td><td>Europe</td></tr>
+<tr><td>6587</td><td>SHARMA Prakhar</td><td>IND</td><td>Asia</td></tr>
+<tr><td>6512</td><td>SHEINFELD Yotam</td><td>ISR</td><td>Europe</td></tr>
+<tr><td>6690</td><td>SILVA Eurico Andre</td><td>POR</td><td>Europe</td></tr>
+<tr><td>6745</td><td>SINGH Mohit</td><td>GER</td><td>Europe</td></tr>
+<tr><td>6711</td><td>SKLIARSKY Eithan</td><td>ARG</td><td>Americas</td></tr>
+<tr><td>4997</td><td>SOWA Dawid Antoni</td><td>POL</td><td>Europe</td></tr>
+<tr><td>6475</td><td>SULTAN Linadr</td><td>PHI</td><td>Asia</td></tr>
+<tr><td>6381</td><td>TAKESHI Gabriel</td><td>BRA</td><td>Americas</td></tr>
+<tr><td>6501</td><td>TAMBE Vishwa Vijay</td><td>IND</td><td>Asia</td></tr>
+<tr><td>1142</td><td>TAYEM Mohammad</td><td>JOR</td><td>Asia</td></tr>
+<tr><td>6702</td><td>VALLE MENA Salvador</td><td>CHI</td><td>Americas</td></tr>
+<tr><td>6393</td><td>VARGAS TORRES Jose Andres</td><td>CRC</td><td>Americas</td></tr>
+<tr><td>6539</td><td>VERA POGUIO Luis Ernesto</td><td>ECU</td><td>Americas</td></tr>
+<tr><td>6703</td><td>VIDAL Vicente Sebastian</td><td>CHI</td><td>Americas</td></tr>
+<tr><td>6712</td><td>VILLARRUEL Ary Javier</td><td>ARG</td><td>Americas</td></tr>
+<tr><td>6755</td><td>VOICIS Valters</td><td>LAT</td><td>Europe</td></tr>
+<tr><td>6646</td><td>WAND Jonas Elias</td><td>GER</td><td>Europe</td></tr>
+<tr><td>5992</td><td>WEBER Mathew Lee</td><td>USA</td><td>Americas</td></tr>
+<tr><td>6238</td><td>WU Jiancheng</td><td>HKG</td><td>Asia</td></tr>
+<tr><td>5879</td><td>YADAV Ravinder</td><td>IND</td><td>Asia</td></tr>
+<tr><td>2996</td><td>YANEZ AMPUERO Guileermo Everth</td><td>PER</td><td>Americas</td></tr>
+<tr><td>6543</td><td>YEH Matthias</td><td>CAN</td><td>Americas</td></tr>
+</tbody></table>
+<div class="container-fluid"><div class="row"><div class="text-muted text-right">Generated on 2022-11-01 at 10:26</div></div></div>
+<!--#include virtual="/footer.htm" -->
+</body></html>

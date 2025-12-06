@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>ITTF Para Table Tennis Rating Audits - Women class 4 as of 2013-04-01</title>
+<link rel='stylesheet' href='../../css/normal.css' type='text/css' />
+<link rel="stylesheet" href="../rating.css" type="text/css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<script type="text/javascript" charset="utf-8" src="../../media/js/jquery.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../media/js/jquery.dataTables.min.js"></script>
+<script language="JavaScript" type="text/javascript">
+$(document).ready(function() {
+	var oTable = $('.lists').dataTable( {
+        "bPaginate": false,
+        "aoColumns": [
+                /* Rank */{"bSearchable": false},
+                /* Player ID */{"bSearchable": false},
+                /* Name */ null,
+	            /* Country */{"bSearchable": false, "bSortable": false },
+	            /* Region */{"bSearchable": false, "bSortable": false },
+                /* Rating */{"bSearchable": false}
+		]
+	} );
+	$('select#country').change(function () {
+            oTable.fnFilter($(this).val(), 3);
+    });
+	$('select#region').change(function () {
+            oTable.fnFilter($(this).val(), 4);
+    });
+} );
+</script>
+
+</head>
+<body>
+<div class="banner">
+  <div class='logo'><a href='../..'><img src='../../logos/colour/PTT-110px.png' alt='ITTF-PTT Logo' width='116' height='110' border='0' /></a></div>
+  <div class="banner_title">ITTF Para Table Tennis Rating Audits<br />Women class 4 as of 2013-04-01</div>
+</div><br />
+<div class="help">You can sort this table by clicking on column headers and filter data by searching on part of player's name.</div>
+<table class="lists"><thead>
+<tr><th>Rank</th><th>Player ID</th><th>Name</th><th>Country <select name="country" id="country"><option value="" selected="selected">Show all</option><optgroup label="Show only:"><option>AUT</option><option>BRA</option><option>CHN</option><option>EGY</option><option>FRA</option><option>GBR</option><option>GER</option><option>IRQ</option><option>ITA</option><option>JOR</option><option>KOR</option><option>ROU</option><option>SLO</option><option>SRB</option><option>TPE</option><option>USA</option></select></th><th>Region <select name="region" id="region"><option value="" selected="selected">Show all</option><optgroup label="Show only:"><option>Africa</option><option>Americas</option><option>Asia</option><option>Europe</option></select></th><th>Rating</th><th>Previous Rating</th></tr>
+</thead><tbody>
+<tr><td>1</td><td>2113</td><td>ZHOU Ying</td><td>CHN</td><td>Asia</td><td>1483</td><td>1483</td></tr>
+<tr><td>2</td><td>2090</td><td><a href='moves_F4.htm#p2090'>PERIC-RANKOVIC Borislava</a></td><td>SRB</td><td>Europe</td><td>1419</td><td>1407</td></tr>
+<tr><td>3</td><td>2456</td><td>MOON Sung Hye</td><td>KOR</td><td>Asia</td><td>1383</td><td>1383</td></tr>
+<tr><td>4</td><td>3164</td><td>ZHANG Miao</td><td>CHN</td><td>Asia</td><td>1367</td><td>1367</td></tr>
+<tr><td>5</td><td>2450</td><td>JUNG Ji Nam</td><td>KOR</td><td>Asia</td><td>1235</td><td>1235</td></tr>
+<tr><td>6</td><td>2274</td><td><a href='moves_F4.htm#p2274'>MATIC Nada</a></td><td>SRB</td><td>Europe</td><td>1223</td><td>1234</td></tr>
+<tr><td>7</td><td>589</td><td>GILROY Sue</td><td>GBR</td><td>Europe</td><td>1208</td><td>1208</td></tr>
+<tr><td>8</td><td>1031</td><td>ZORZETTO Valeria</td><td>ITA</td><td>Europe</td><td>1204</td><td>1204</td></tr>
+<tr><td>9</td><td>1691</td><td><a href='moves_F4.htm#p1691'>DOLINAR Andreja</a></td><td>SLO</td><td>Europe</td><td>1183</td><td>1168</td></tr>
+<tr><td>10</td><td>1125</td><td>AL-AZZAM Fatmeh</td><td>JOR</td><td>Asia</td><td>1173</td><td>1173</td></tr>
+<tr><td>11</td><td>2990</td><td>OLIVEIRA Joyce</td><td>BRA</td><td>Americas</td><td>1129</td><td>1129</td></tr>
+<tr><td>12</td><td>3704</td><td><a href='moves_F4.htm#p3704'>MIKOLASCHEK Sandra</a></td><td>GER</td><td>Europe</td><td>1114</td><td>1096</td></tr>
+<tr><td>13</td><td>2455</td><td>LEE Ya-Chu</td><td>TPE</td><td>Asia</td><td>1113</td><td>1113</td></tr>
+<tr><td>14</td><td>2767</td><td><a href='moves_F4.htm#p2767'>POPADIC Zorica</a></td><td>SRB</td><td>Europe</td><td>1085</td><td>1111</td></tr>
+<tr><td>15</td><td>2814</td><td>E'LEIMAT Faten</td><td>JOR</td><td>Asia</td><td>1035</td><td>1035</td></tr>
+<tr><td>16</td><td>1981</td><td>MITROVIC Sanja</td><td>SRB</td><td>Europe</td><td>1008</td><td>1008</td></tr>
+<tr><td>17</td><td>4364</td><td>AHMED Fadia</td><td>EGY</td><td>Africa</td><td>942</td><td>942</td></tr>
+<tr><td>18</td><td>1911</td><td>JOHNSON Jennifer</td><td>USA</td><td>Americas</td><td>938</td><td>938</td></tr>
+<tr><td>19</td><td>504</td><td><a href='moves_F4.htm#p504'>SIRGAND Monique</a></td><td>FRA</td><td>Europe</td><td>931</td><td>938</td></tr>
+<tr><td>20</td><td>2820</td><td><a href='moves_F4.htm#p2820'>MEGLIC Barbara</a></td><td>SLO</td><td>Europe</td><td>918</td><td>922</td></tr>
+<tr><td>21</td><td>3912</td><td><a href='moves_F4.htm#p3912'>KOLLER Heike</a></td><td>AUT</td><td>Europe</td><td>911</td><td>923</td></tr>
+<tr><td>22</td><td>1576</td><td>VARGATU Dorina</td><td>ROU</td><td>Europe</td><td>841</td><td>841</td></tr>
+<tr><td>23</td><td>2227</td><td>KADHUM Wasan</td><td>IRQ</td><td>Asia</td><td>826</td><td>826</td></tr>
+<tr><td>24</td><td>4477</td><td>PARK Jung Ok</td><td>KOR</td><td>Asia</td><td>803</td><td>803</td></tr>
+</tbody></table>
+<br /><div class="footer">Generated on 2013-04-08 at 22:45</div><br />
+<!--#include virtual="/footer.htm" -->
+</body></html>

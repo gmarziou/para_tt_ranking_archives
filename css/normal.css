@@ -1,0 +1,172 @@
+
+.news
+{
+    padding: 5px;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.title
+{
+    width: 100%;
+    text-align: center;
+    font-size: 51px;
+    font-style: italic;
+    font-weight: bold;
+    color: #000000;
+}
+ 
+div.logo 
+{
+    margin-right: 4px;   
+    margin-bottom: 4px;
+    float:left;
+    width:18%
+}
+div.tournament_logo 
+{
+    margin-right: 4px;   
+    margin-top: 16px;
+    float:right;
+    width:18%;
+    text-align: right;
+}
+
+.read-more
+{
+    padding: 0px;
+    font-weight: bold;
+    color: red;
+    right: 5px;
+	float: right;
+	margin: 0px;
+    cursor: pointer;
+    font-size: 16px;
+    top: 5px;
+}
+
+.show-less
+{
+    padding: 0px;
+    font-weight: bold;
+    color: red;
+	float: right;
+	margin: 0px;
+    right: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    top: 5px;
+}
+
+.news_element {
+    min-height: 160px;
+    max-height: 160px;
+    /* overflow: hidden; */
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding-bottom: 10px;
+}
+
+.modal-footer { padding: 15px 0px 0px 0px }
+
+.news_item, .news_item_important
+{
+    position: relative;
+    width: 348px;
+    float: left;
+    margin: 0px 0px 3px 4px;
+    background: url(http://ipttc.org/images/ITTF-trans.png) no-repeat white;
+    padding: 10px;
+    /* overflow: hidden; */
+    overflow-x: hidden;
+    overflow-y: auto;
+    min-height: 130px;
+    height: 130px;
+    border: 3px solid rgba(120, 120, 255, 0.5);
+    background: url(http://ipttc.org/images/ITTF-trans.png) no-repeat white;
+    background-position: 98% 90%;
+}
+
+.news_item_important
+{
+    border: 3px solid #F99;
+    background: url(http://ipttc.org/images/ITTF-trans-red.png) no-repeat white;
+    background-position: 98% 90%;
+}
+
+#shadow-box
+{
+    display: none;
+    background-color: white;
+    opacity: 0.9;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 99;
+}
+
+.news_image
+{
+    float: left;
+    vertical-align: text-top;
+    margin: 0px 10px 0px 0px;
+}
+/*
+ * Styles for ranking list
+ */
+
+
+#ranking-tournament table
+{
+    border: solid #666597;
+    border-top-width: 2px;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+    border-left-width: 2px;
+    border-collapse: collapse;
+    background-color: #f0f0f0;
+}
+
+#ranking-tournament tr
+{
+    text-align: center;
+    vertical-align: middle;
+}
+
+#ranking-tournament th
+{
+    text-align: center;
+    font-weight: bold;
+    padding: 4px;
+    border: solid black;
+    border-top-width: 0px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    background-color: #FFFFCC;
+}
+
+#ranking-tournament td
+{
+    border: solid black;
+    border-top-width: 0px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+}
+
+
+.shadow-boxed
+{
+    position: fixed;
+    z-index: 100;
+    width: 650px;
+}
+
+.player_display_area
+{
+    padding: 10px 0px 10px 0px;
+}
+/*# sourceMappingURL=normal.css.map */

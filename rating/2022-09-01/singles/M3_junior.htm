@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en"><head><title>ITTF Para Table Tennis Ranking Lists - U23 Men class 3 as of 2022-09-01 in singles</title>
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href='../../../media/css/footable/footable.core.min.css' rel='stylesheet' type='text/css' />
+<link rel='stylesheet' href='../../../css/styles.css' type='text/css' />
+<link rel='stylesheet' href='../../../rating/rating.css' type='text/css' />
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+   <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<script src="../../../media/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../../media/js/jquery.dataTables.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../../media/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../../media/js/footable.all.min.js" type="text/javascript" charset="utf-8"></script>
+<script language="JavaScript" type="text/javascript">
+$(document).ready(function() {
+	var oTable = $('.lists').dataTable( {
+        "bPaginate": false,
+        "aoColumns": [
+            /* Rank */ {"bSearchable": false},
+            /* Player ID */ {"bSearchable": false},
+            /* Name */ null,
+            /* Country */ {"bSearchable": false, "bSortable": false },
+            /* Region */ {"bSearchable": false, "bSortable": false },
+            /* singles_rating */ {"bSearchable": false},
+            /* Previous singles_rating */ {"bSearchable": false}
+		]
+	} );
+	$('select#country').change(function () {
+            oTable.fnFilter($(this).val(), 3);
+    });
+	$('select#region').change(function () {
+            oTable.fnFilter($(this).val(), 4);
+    });
+} );
+</script>
+
+</head>
+<body>
+  <!--#include virtual="/navbar.htm" -->
+
+  <div class="container-fluid">  
+     <div class="row">  
+        <div class="col-lg-2 col-sm-2 col-md-4 col-xs-4">  
+           <a href="/" title="Back to ITTF PTT home page"><div class="ptt-logo"></div></a>  
+   </div>
+   <h1 class='col-lg-10 col-sm-10 col-md-8 col-xs-8'>ITTF Para Table Tennis Ranking Lists<br/><small>U23 Men class 3 as of 2022-09-01 in singles</small></h1>
+   </div>
+</div>
+<br/>
+<div class="text-muted">You can sort this table by clicking on column headers and filter data by searching on part of player's name.</div>
+<table class="lists table table-striped table-condensed table-bordered"><thead>
+<tr><th>Rank</th><th>Player ID</th><th>Name</th><th>Country <select name="country" id="country"><option value="" selected="selected">Show all</option><optgroup label="Show only:" /><option>ARG</option><option>AUS</option><option>AUT</option><option>AZE</option><option>BEL</option><option>BRA</option><option>CAN</option><option>CHI</option><option>CHN</option><option>COL</option><option>CRC</option><option>CRO</option><option>CZE</option><option>EGY</option><option>ESP</option><option>FRA</option><option>GBR</option><option>GER</option><option>GUA</option><option>HKG</option><option>IRL</option><option>ISR</option><option>ITA</option><option>JOR</option><option>JPN</option><option>KOR</option><option>KUW</option><option>NGR</option><option>POL</option><option>ROU</option><option>RUS</option><option>SLO</option><option>SRB</option><option>SUI</option><option>SWE</option><option>THA</option><option>UAE</option><option>UKR</option><option>URU</option><option>USA</option><option>UZB</option></select></th><th>Region <select name="region" id="region"><option value="" selected="selected">Show all</option><optgroup label="Show only:" /><option>Africa</option><option>Americas</option><option>Asia</option><option>Europe</option><option>Oceania</option></select></th><th>Rating</th><th>Previous rating</th></tr>
+</thead><tbody class="notranslate">
+<tr id='4572'><td class=''>1</td><td>4572</td><td>VAN EMBURGH Jenson</td><td>USA</td><td>Americas</td><td>1270</td><td><a href='../../2022-08-01/singles/M3_junior.htm#4572'>1270</a></td></tr>
+<tr id='6026'><td class=''>2</td><td>6026</td><td>GONZALEZ Iker</td><td>ESP</td><td>Europe</td><td>688</td><td><a href='../../2022-08-01/singles/M3_junior.htm#6026'>688</a></td></tr>
+<tr id='5656'><td class=''>3</td><td>5656</td><td>KITAGAWA Yuichiro</td><td>JPN</td><td>Asia</td><td>593</td><td><a href='../../2022-08-01/singles/M3_junior.htm#5656'>593</a></td></tr>
+<tr id='4944'><td class=''>4</td><td>4944</td><td>BASA Nino</td><td>CRO</td><td>Europe</td><td>548</td><td><a href='../../2022-08-01/singles/M3_junior.htm#4944'>548</a></td></tr>
+</tbody></table>
+<h2>Active unrated players</h2>
+<table class="table table-striped table-condensed table-bordered"><thead>
+<tr><th>Player ID</th><th>Name</th><th>Country</th><th>Region</th></tr>
+</thead><tbody class="notranslate">
+<tr><td>6609</td><td>ABDELGAWAD Sabry</td><td>EGY</td><td>Africa</td></tr>
+<tr><td>6489</td><td>AL SHEHHI Thani Juman</td><td>UAE</td><td>Asia</td></tr>
+<tr><td>6509</td><td>ATAMURATOV Rasul</td><td>UZB</td><td>Asia</td></tr>
+<tr><td>6586</td><td>BABAYEV Sahib</td><td>AZE</td><td>Europe</td></tr>
+<tr><td>4635</td><td>BEN JABAL Mohammad</td><td>KUW</td><td>Asia</td></tr>
+<tr><td>6547</td><td>CESPEDES Emmanuel</td><td>CRC</td><td>Americas</td></tr>
+<tr><td>6089</td><td>CHAMOT Janusz</td><td>POL</td><td>Europe</td></tr>
+<tr><td>3364</td><td>GARAVENTO Lujan Nicolas</td><td>ARG</td><td>Americas</td></tr>
+<tr><td>6456</td><td>GREEN Andrew</td><td>GBR</td><td>Europe</td></tr>
+<tr><td>6614</td><td>KOCHLI Kevin</td><td>SUI</td><td>Europe</td></tr>
+<tr><td>6479</td><td>KONOVALOV Aleksei</td><td>RUS</td><td>Europe</td></tr>
+<tr><td>161</td><td>MAECK Antoine</td><td>BEL</td><td>Europe</td></tr>
+<tr><td>6546</td><td>MATA David</td><td>CRC</td><td>Americas</td></tr>
+<tr><td>6345</td><td>MELKUS Ivo</td><td>CZE</td><td>Europe</td></tr>
+<tr><td>3546</td><td>NETTO Orlando Rafael</td><td>ARG</td><td>Americas</td></tr>
+<tr><td>6478</td><td>NEYSTROEV Mikhail</td><td>RUS</td><td>Europe</td></tr>
+<tr><td>6474</td><td>QADAN Saber Mohammed</td><td>JOR</td><td>Asia</td></tr>
+<tr><td>3632</td><td>SALEH M-S Faheed</td><td>KUW</td><td>Asia</td></tr>
+<tr><td>4249</td><td>WENTZ Zachary</td><td>USA</td><td>Americas</td></tr>
+</tbody></table>
+<div class="container-fluid"><div class="row"><div class="text-muted text-right">Generated on 2022-09-06 at 18:16</div></div></div>
+<!--#include virtual="/footer.htm" -->
+</body></html>

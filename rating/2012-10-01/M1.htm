@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>ITTF Para Table Tennis Rating Audits - Men class 1 as of 2012-10-01</title>
+<link rel='stylesheet' href='../../css/normal.css' type='text/css' />
+<link rel="stylesheet" href="../rating.css" type="text/css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<script type="text/javascript" charset="utf-8" src="../../media/js/jquery.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../media/js/jquery.dataTables.min.js"></script>
+<script language="JavaScript" type="text/javascript">
+$(document).ready(function() {
+	var oTable = $('.lists').dataTable( {
+        "bPaginate": false,
+        "aoColumns": [
+                /* Rank */{"bSearchable": false},
+                /* Player ID */{"bSearchable": false},
+                /* Name */ null,
+	            /* Country */{"bSearchable": false, "bSortable": false },
+	            /* Region */{"bSearchable": false, "bSortable": false },
+                /* Rating */{"bSearchable": false}
+		]
+	} );
+	$('select#country').change(function () {
+            oTable.fnFilter($(this).val(), 3);
+    });
+	$('select#region').change(function () {
+            oTable.fnFilter($(this).val(), 4);
+    });
+} );
+</script>
+
+</head>
+<body>
+<div class="banner">
+  <div class='logo'><a href='../..'><img src='../../logos/colour/PTT-110px.png' alt='ITTF-PTT Logo' width='116' height='110' border='0' /></a></div>
+  <div class="banner_title">ITTF Para Table Tennis Rating Audits<br />Men class 1 as of 2012-10-01</div>
+</div><br />
+<div class="help">You can sort this table by clicking on column headers and filter data by searching on part of player's name.</div>
+<table class="lists"><thead>
+<tr><th>Rank</th><th>Player ID</th><th>Name</th><th>Country <select name="country" id="country"><option value="" selected="selected">Show all</option><optgroup label="Show only:"><option>ARG</option><option>AUT</option><option>BRA</option><option>CUB</option><option>FIN</option><option>FRA</option><option>GBR</option><option>GER</option><option>HUN</option><option>IRL</option><option>ITA</option><option>JOR</option><option>KOR</option><option>KUW</option><option>SUI</option><option>SVK</option><option>TPE</option><option>USA</option><option>VEN</option></select></th><th>Region <select name="region" id="region"><option value="" selected="selected">Show all</option><optgroup label="Show only:"><option>Americas</option><option>Asia</option><option>Europe</option></select></th><th>Rating</th><th>Previous Rating</th></tr>
+</thead><tbody>
+<tr><td>1</td><td>695</td><td><a href='moves_M1.htm#p695'>NIKELIS Holger</a></td><td>GER</td><td>Europe</td><td>1005</td><td>980</td></tr>
+<tr><td>2</td><td>1989</td><td><a href='moves_M1.htm#p1989'>DUCAY Jean-Francois</a></td><td>FRA</td><td>Europe</td><td>992</td><td>980</td></tr>
+<tr><td>3</td><td>94</td><td><a href='moves_M1.htm#p94'>VEVERA Andreas</a></td><td>AUT</td><td>Europe</td><td>952</td><td>969</td></tr>
+<tr><td>4</td><td>3076</td><td><a href='moves_M1.htm#p3076'>LEE Chang Ho</a></td><td>KOR</td><td>Asia</td><td>946</td><td>961</td></tr>
+<tr><td>5</td><td>1243</td><td>LEE Hae Kon</td><td>KOR</td><td>Asia</td><td>936</td><td>936</td></tr>
+<tr><td>6</td><td>608</td><td><a href='moves_M1.htm#p608'>DAVIES Paul</a></td><td>GBR</td><td>Europe</td><td>916</td><td>874</td></tr>
+<tr><td>7</td><td>2940</td><td><a href='moves_M1.htm#p2940'>DAVIES Robert</a></td><td>GBR</td><td>Europe</td><td>913</td><td>916</td></tr>
+<tr><td>8</td><td>2998</td><td>FERNANDEZ Yunier</td><td>CUB</td><td>Americas</td><td>882</td><td>882</td></tr>
+<tr><td>9</td><td>1246</td><td><a href='moves_M1.htm#p1246'>CHO Jae Kwan</a></td><td>KOR</td><td>Asia</td><td>850</td><td>868</td></tr>
+<tr><td>10</td><td>3031</td><td><a href='moves_M1.htm#p3031'>BORGATO Andrea</a></td><td>ITA</td><td>Europe</td><td>835</td><td>850</td></tr>
+<tr><td>11</td><td>523</td><td><a href='moves_M1.htm#p523'>GUEZENEC Jerome</a></td><td>FRA</td><td>Europe</td><td>833</td><td>851</td></tr>
+<tr><td>12</td><td>484</td><td>LAUNONEN Matti</td><td>FIN</td><td>Europe</td><td>780</td><td>780</td></tr>
+<tr><td>13</td><td>2662</td><td><a href='moves_M1.htm#p2662'>KELLER Silvio</a></td><td>SUI</td><td>Europe</td><td>746</td><td>723</td></tr>
+<tr><td>14</td><td>3544</td><td><a href='moves_M1.htm#p3544'>EBERHARDT Fernando</a></td><td>ARG</td><td>Americas</td><td>728</td><td>705</td></tr>
+<tr><td>15</td><td>2900</td><td>DARDAS Ibrahim</td><td>JOR</td><td>Asia</td><td>719</td><td>719</td></tr>
+<tr><td>16</td><td>4350</td><td>CUENCA Henry</td><td>CUB</td><td>Americas</td><td>700</td><td>700</td></tr>
+<tr><td>16</td><td>2270</td><td><a href='moves_M1.htm#p2270'>QUINLAN Philip</a></td><td>IRL</td><td>Europe</td><td>700</td><td>701</td></tr>
+<tr><td>18</td><td>3886</td><td>MAJOR Endre</td><td>HUN</td><td>Europe</td><td>685</td><td>685</td></tr>
+<tr><td>19</td><td>2214</td><td>PIZZURRO Marco</td><td>ITA</td><td>Europe</td><td>683</td><td>683</td></tr>
+<tr><td>20</td><td>2699</td><td>LATIF Hamed</td><td>KUW</td><td>Asia</td><td>670</td><td>670</td></tr>
+<tr><td>21</td><td>2509</td><td>LAI Chun-Jung</td><td>TPE</td><td>Asia</td><td>632</td><td>632</td></tr>
+<tr><td>22</td><td>3571</td><td>THOMAS Vincent</td><td>FRA</td><td>Europe</td><td>631</td><td>631</td></tr>
+<tr><td>23</td><td>220</td><td>SALES Francisco</td><td>BRA</td><td>Americas</td><td>626</td><td>626</td></tr>
+<tr><td>24</td><td>2298</td><td>POLKORAB Martin</td><td>SVK</td><td>Europe</td><td>623</td><td>623</td></tr>
+<tr><td>25</td><td>2991</td><td>TIRADO Jesus</td><td>VEN</td><td>Americas</td><td>621</td><td>621</td></tr>
+<tr><td>26</td><td>842</td><td>KAISER Janos</td><td>HUN</td><td>Europe</td><td>599</td><td>599</td></tr>
+<tr><td>27</td><td>3512</td><td>BARBIERIK Martin</td><td>SVK</td><td>Europe</td><td>596</td><td>596</td></tr>
+<tr><td>28</td><td>3905</td><td>DE PAULA Bruno</td><td>BRA</td><td>Americas</td><td>588</td><td>588</td></tr>
+<tr><td>29</td><td>4517</td><td>JUNQUEIRA Lucas</td><td>BRA</td><td>Americas</td><td>576</td><td>576</td></tr>
+<tr><td>30</td><td>3945</td><td>SOUZA Ivanildo</td><td>BRA</td><td>Americas</td><td>567</td><td>567</td></tr>
+<tr><td>31</td><td>1916</td><td>DE FRANCESCO Sebastian</td><td>USA</td><td>Americas</td><td>562</td><td>562</td></tr>
+<tr><td>32</td><td>28</td><td>VIGNOLES Miguel</td><td>ARG</td><td>Americas</td><td>559</td><td>559</td></tr>
+<tr><td>33</td><td>2329</td><td>PARODI Sebastian</td><td>ARG</td><td>Americas</td><td>542</td><td>542</td></tr>
+</tbody></table>
+<br /><div class="footer">Generated on 2012-10-02 at 11:18</div><br />
+<!--#include virtual="/footer.htm" -->
+</body></html>

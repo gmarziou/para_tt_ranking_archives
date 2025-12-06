@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ITTF PTT Ranking List</title>
+    <!--#include virtual="/head.htm" -->
+    <link href="rating.css" rel="stylesheet" type="text/css" />
+    <script src="../media/js/rotator.js"></script>
+    <script type="text/javascript">
+        var address = 'enaxvatf@vggs.pbz';
+        $(function () {
+            $('#email').attr('href', 'mailto:' + $.rotate13(address) + '?subject=Para%20ranking%20question');
+        });
+    </script>
+</head>
+
+<body>
+    <!--#include virtual="/navbar.htm" -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-2 col-sm-2 col-md-4 col-xs-4">
+                <a href="/" title="Back to ITTF PTT home page">
+                    <div class="ptt-logo"></div>
+                </a>
+            </div>
+            <h1 class='col-lg-10 col-sm-10 col-md-8 col-xs-8'>ITTF PTT Ranking List</h1>
+        </div>
+    </div>
+    <br />
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12">
+                <p>
+                    As of 2025, the new ranking will be published weekly <a href="https://www.ittf.com/ittf-world-para-ranking/">in the ITTF website</a>. 
+					You can also check the ranking regulations in the <a href="https://www.ittf.com/para-table-tennis/"> ITTF Para table tennis webpage</a>
+                </p>
+                <p>
+                    For any questions or for reporting errors please contact <strong><a id="email" href="#">Ranking Manager</a></strong> by e-mail.
+                    <br />
+                </p>
+                <hr/>
+                <p>
+                    Historical rankings:
+                    <ul>
+                        <li><a href="../ranking/index.htm">from 1997 to 2011</a></li>
+                        <li><a href="ranking_archives_2012_2024.htm">from 2012 to 2024</a></li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!--#include virtual="/footer.htm" -->
+</body>
+
+</html>

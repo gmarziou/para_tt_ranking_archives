@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en"><head><title>ITTF Para Table Tennis Ranking Lists - Women class 4 as of 2022-07-01 in mixed doubles</title>
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href='../../../media/css/footable/footable.core.min.css' rel='stylesheet' type='text/css' />
+<link rel='stylesheet' href='../../../css/styles.css' type='text/css' />
+<link rel='stylesheet' href='../../../rating/rating.css' type='text/css' />
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+   <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<script src="../../../media/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../../media/js/jquery.dataTables.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../../media/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../../media/js/footable.all.min.js" type="text/javascript" charset="utf-8"></script>
+<script language="JavaScript" type="text/javascript">
+$(document).ready(function() {
+	var oTable = $('.lists').dataTable( {
+        "bPaginate": false,
+        "aoColumns": [
+            /* Rank */ {"bSearchable": false},
+            /* Player ID */ {"bSearchable": false},
+            /* Name */ null,
+            /* Country */ {"bSearchable": false, "bSortable": false },
+            /* Region */ {"bSearchable": false, "bSortable": false },
+            /* singles_rating */ {"bSearchable": false},
+            /* Previous singles_rating */ {"bSearchable": false}
+		]
+	} );
+	$('select#country').change(function () {
+            oTable.fnFilter($(this).val(), 3);
+    });
+	$('select#region').change(function () {
+            oTable.fnFilter($(this).val(), 4);
+    });
+} );
+</script>
+
+</head>
+<body>
+  <!--#include virtual="/navbar.htm" -->
+
+  <div class="container-fluid">  
+     <div class="row">  
+        <div class="col-lg-2 col-sm-2 col-md-4 col-xs-4">  
+           <a href="/" title="Back to ITTF PTT home page"><div class="ptt-logo"></div></a>  
+   </div>
+   <h1 class='col-lg-10 col-sm-10 col-md-8 col-xs-8'>ITTF Para Table Tennis Ranking Lists<br/><small>Women class 4 as of 2022-07-01 in mixed doubles</small></h1>
+   </div>
+</div>
+<br/>
+<div class="text-muted">You can sort this table by clicking on column headers and filter data by searching on part of player's name.</div>
+<table class="lists table table-striped table-condensed table-bordered"><thead>
+<tr><th>Rank</th><th>Player ID</th><th>Name</th><th>Country <select name="country" id="country"><option value="" selected="selected">Show all</option><optgroup label="Show only:" /><option>AUS</option><option>BEL</option><option>BRA</option><option>CZE</option><option>EGY</option><option>ESP</option><option>FRA</option><option>GBR</option><option>GER</option><option>IND</option><option>IRQ</option><option>JOR</option><option>JPN</option><option>KOR</option><option>KSA</option><option>KUW</option><option>MEX</option><option>MNE</option><option>SLO</option><option>SRB</option><option>SVK</option><option>THA</option><option>TUR</option><option>USA</option></select></th><th>Region <select name="region" id="region"><option value="" selected="selected">Show all</option><optgroup label="Show only:" /><option>Africa</option><option>Americas</option><option>Asia</option><option>Europe</option><option>Oceania</option></select></th><th>Rating</th><th>Previous rating</th></tr>
+</thead><tbody class="notranslate">
+<tr class=''><td>1</td><td>3761</td><td>PATEL Bhavina HasmukhBhai</td><td>IND</td><td>Asia</td><td>1180</td><td><a href='../../2022-06-01/mixed_doubles/F4.htm#3761'>1180</a></td></tr>
+<tr class=''><td>2</td><td>3704</td><td><a href='moves_F4.htm#p3704'>MIKOLASCHEK Sandra</a></td><td>GER</td><td>Europe</td><td>1170</td><td><a href='../../2022-06-01/mixed_doubles/F4.htm#3704'>1160</a></td></tr>
+<tr class=''><td>3</td><td>3871</td><td>JAION Wijittra</td><td>THA</td><td>Asia</td><td>1138</td><td><a href='../../2022-06-01/mixed_doubles/F4.htm#3871'>1138</a></td></tr>
+<tr class=''><td>4</td><td>2090</td><td><a href='moves_F4.htm#p2090'>PERIC-RANKOVIC Borislava</a></td><td>SRB</td><td>Europe</td><td>1125</td><td><a href='../../2022-06-01/mixed_doubles/F4.htm#2090'>1117</a></td></tr>
+<tr class='rankup'><td>5</td><td>2274</td><td><a href='moves_F4.htm#p2274'>MATIC Nada</a></td><td>SRB</td><td>Europe</td><td>1107</td><td><a href='../../2022-06-01/mixed_doubles/F4.htm#2274'>1100</a></td></tr>
+<tr class='rankdown'><td>6</td><td>5486</td><td>OLUK Irem</td><td>TUR</td><td>Europe</td><td>1101</td><td><a href='../../2022-06-01/mixed_doubles/F4.htm#5486'>1101</a></td></tr>
+<tr class='rankup'><td>7</td><td>589</td><td><a href='moves_F4.htm#p589'>BAILEY Susan</a></td><td>GBR</td><td>Europe</td><td>1071</td><td><a href='../../2022-06-01/mixed_doubles/F4.htm#589'>1034</a></td></tr>
+<tr class='rankdown'><td>8</td><td>2990</td><td>DE OLIVEIRA Joyce</td><td>BRA</td><td>Americas</td><td>1056</td><td><a href='../../2022-06-01/mixed_doubles/F4.htm#2990'>1056</a></td></tr>
+<tr class='rankup'><td>9</td><td>2767</td><td><a href='moves_F4.htm#p2767'>POPADIC Zorica</a></td><td>SRB</td><td>Europe</td><td>1046</td><td></td></tr>
+<tr class='rankdown'><td>10</td><td>5781</td><td>SRINGAM Wassana</td><td>THA</td><td>Asia</td><td>1041</td><td><a href='../../2022-06-01/mixed_doubles/F4.htm#5781'>1041</a></td></tr>
+<tr class='rankdown'><td>11</td><td>1691</td><td>DOLINAR Andreja</td><td>SLO</td><td>Europe</td><td>970</td><td><a href='../../2022-06-01/mixed_doubles/F4.htm#1691'>970</a></td></tr>
+<tr class='rankdown'><td>12</td><td>2814</td><td>ELELIMAT Faten</td><td>JOR</td><td>Asia</td><td>945</td><td><a href='../../2022-06-01/mixed_doubles/F4.htm#2814'>945</a></td></tr>
+<tr class='rankup'><td>13</td><td>3735</td><td><a href='moves_F4.htm#p3735'>VERDIN Martha</a></td><td>MEX</td><td>Americas</td><td>941</td><td></td></tr>
+<tr class='rankdown'><td>14</td><td>5207</td><td>ARANCIC Kristina</td><td>SRB</td><td>Europe</td><td>922</td><td><a href='../../2022-06-01/mixed_doubles/F4.htm#5207'>922</a></td></tr>
+<tr class='rankdown'><td>15</td><td>1125</td><td>AL AZZAM Fatmeh</td><td>JOR</td><td>Asia</td><td>915</td><td><a href='../../2022-06-01/mixed_doubles/F4.htm#1125'>915</a></td></tr>
+<tr class='rankdown'><td>16</td><td>5200</td><td>DI TORO Lisa Daniela</td><td>AUS</td><td>Oceania</td><td>870</td><td><a href='../../2022-06-01/mixed_doubles/F4.htm#5200'>870</a></td></tr>
+<tr class='rankdown'><td>17</td><td>5453</td><td>KASHIWAGI Anzu</td><td>JPN</td><td>Asia</td><td>849</td><td><a href='../../2022-06-01/mixed_doubles/F4.htm#5453'>849</a></td></tr>
+<tr class='rankdown'><td>18</td><td>4242</td><td>AL WAELI Rusul</td><td>IRQ</td><td>Asia</td><td>847</td><td><a href='../../2022-06-01/mixed_doubles/F4.htm#4242'>847</a></td></tr>
+<tr class='rankdown'><td>19</td><td>5203</td><td><a href='moves_F4.htm#p5203'>GURESIC Slobodanka</a></td><td>MNE</td><td>Europe</td><td>802</td><td><a href='../../2022-06-01/mixed_doubles/F4.htm#5203'>803</a></td></tr>
+<tr class='rankdown'><td>20</td><td>6027</td><td>RUBIO Cristina</td><td>ESP</td><td>Europe</td><td>801</td><td><a href='../../2022-06-01/mixed_doubles/F4.htm#6027'>801</a></td></tr>
+<tr class='rankdown'><td>21</td><td>4290</td><td><a href='moves_F4.htm#p4290'>HABETINKOVA TOMIC Spomenka</a></td><td>CZE</td><td>Europe</td><td>797</td><td></td></tr>
+<tr class='rankdown'><td>22</td><td>5970</td><td><a href='moves_F4.htm#p5970'>ROLPH Valerie Ann</a></td><td>USA</td><td>Americas</td><td>793</td><td><a href='../../2022-06-01/mixed_doubles/F4.htm#5970'>794</a></td></tr>
+</tbody></table>
+<h2>Active unrated players</h2>
+<table class="table table-striped table-condensed table-bordered"><thead>
+<tr><th>Player ID</th><th>Name</th><th>Country</th><th>Region</th></tr>
+</thead><tbody class="notranslate">
+<tr><td>6419</td><td>ABDELHAK Maona</td><td>EGY</td><td>Africa</td></tr>
+<tr><td>6506</td><td>ALANAZI Ghaliah</td><td>KSA</td><td>Asia</td></tr>
+<tr><td>6574</td><td>ALRESHEEDI Ahad</td><td>KUW</td><td>Asia</td></tr>
+<tr><td>6299</td><td>AN Mi Hyeon</td><td>KOR</td><td>Asia</td></tr>
+<tr><td>6675</td><td>MIYAZAKI Ena</td><td>JPN</td><td>Asia</td></tr>
+<tr><td>6250</td><td>MOHAMED Lamiaa</td><td>EGY</td><td>Africa</td></tr>
+<tr><td>3762</td><td>RATHOD Ushabahen Ramjibhai</td><td>IND</td><td>Asia</td></tr>
+<tr><td>148</td><td>TOUSSAINT Sabine</td><td>BEL</td><td>Europe</td></tr>
+<tr><td>6605</td><td>VALENTOVA Jana</td><td>SVK</td><td>Europe</td></tr>
+<tr><td>6176</td><td>VAUTIER Flora</td><td>FRA</td><td>Europe</td></tr>
+</tbody></table>
+<div class="container-fluid"><div class="row"><div class="text-muted text-right">Generated on 2022-07-31 at 21:01</div></div></div>
+<!--#include virtual="/footer.htm" -->
+</body></html>

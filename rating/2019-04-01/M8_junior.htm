@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en"><head><title>ITTF Para Table Tennis Ranking Lists - Junior Men class 8 as of 2019-04-01</title>
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href='../../media/css/footable/footable.core.min.css' rel='stylesheet' type='text/css' />
+<link rel='stylesheet' href='../../css/styles.css' type='text/css' />
+<link rel="stylesheet" href="../rating.css" type="text/css" />
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+   <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<script src="../../media/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../media/js/jquery.dataTables.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../media/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../media/js/footable.all.min.js" type="text/javascript" charset="utf-8"></script>
+<script language="JavaScript" type="text/javascript">
+$(document).ready(function() {
+	var oTable = $('.lists').dataTable( {
+        "bPaginate": false,
+        "aoColumns": [
+            /* Rank */ {"bSearchable": false},
+            /* Player ID */ {"bSearchable": false},
+            /* Name */ null,
+            /* Country */ {"bSearchable": false, "bSortable": false },
+            /* Region */ {"bSearchable": false, "bSortable": false },
+            /* Rating */ {"bSearchable": false},
+            /* Previous Rating */ {"bSearchable": false}
+		]
+	} );
+	$('select#country').change(function () {
+            oTable.fnFilter($(this).val(), 3);
+    });
+	$('select#region').change(function () {
+            oTable.fnFilter($(this).val(), 4);
+    });
+} );
+</script>
+
+</head>
+<body>
+  <!--#include virtual="/navbar.htm" -->
+
+  <div class="container-fluid">  
+     <div class="row">  
+        <div class="col-lg-2 col-sm-2 col-md-4 col-xs-4">  
+           <a href="/" title="Back to ITTF PTT home page"><div class="ptt-logo"></div></a>  
+   </div>
+   <h1 class='col-lg-10 col-sm-10 col-md-8 col-xs-8'>ITTF Para Table Tennis Ranking Lists<br/><small>Junior Men class 8 as of 2019-04-01</small></h1>
+   </div>
+</div>
+<br/>
+<div class="text-muted">You can sort this table by clicking on column headers and filter data by searching on part of player's name.</div>
+<table class="lists table table-striped table-condensed table-bordered"><thead>
+<tr><th>Rank</th><th>Player ID</th><th>Name</th><th>Country <select name="country" id="country"><option value="" selected="selected">Show all</option><optgroup label="Show only:" /><option>ALG</option><option>ARG</option><option>AUS</option><option>BEL</option><option>BRA</option><option>CAN</option><option>CHI</option><option>CHN</option><option>CIV</option><option>COL</option><option>CRC</option><option>CRO</option><option>CZE</option><option>ECU</option><option>ESP</option><option>FIN</option><option>FRA</option><option>GBR</option><option>GER</option><option>HKG</option><option>HUN</option><option>INA</option><option>IND</option><option>IRI</option><option>ISR</option><option>ITA</option><option>JPN</option><option>KAZ</option><option>KOR</option><option>KUW</option><option>LUX</option><option>NED</option><option>NOR</option><option>POL</option><option>PUR</option><option>ROU</option><option>RUS</option><option>SGP</option><option>SRB</option><option>SVK</option><option>SWE</option><option>THA</option><option>TLS</option><option>TPE</option><option>UKR</option><option>USA</option><option>VIE</option></select></th><th>Region <select name="region" id="region"><option value="" selected="selected">Show all</option><optgroup label="Show only:" /><option>Africa</option><option>Americas</option><option>Asia</option><option>Europe</option><option>Oceania</option></select></th><th>Rating</th><th>Previous Rating</th></tr>
+</thead><tbody class="notranslate">
+<tr><td>1</td><td>4846</td><td><a href='moves_M8.htm#p4846'>SHILTON Billy</a></td><td>GBR</td><td>Europe</td><td>1419</td><td>1431</td></tr>
+<tr><td>2</td><td>5850</td><td>PENG Weinan</td><td>CHN</td><td>Asia</td><td>1416</td><td>1416</td></tr>
+<tr><td>3</td><td>5270</td><td>DEBEYSSAC Elias</td><td>FRA</td><td>Europe</td><td>1365</td><td>1365</td></tr>
+<tr><td>4</td><td>3946</td><td><a href='moves_M8.htm#p3946'>IAKOVLEV Artem</a></td><td>RUS</td><td>Europe</td><td>1264</td><td>1274</td></tr>
+<tr><td>5</td><td>5848</td><td><a href='moves_M8.htm#p5848'>VAKARASH Roman</a></td><td>UKR</td><td>Europe</td><td>1231</td><td>1212</td></tr>
+<tr><td>6</td><td>5128</td><td><a href='moves_M8.htm#p5128'>BERTHIER Clement</a></td><td>FRA</td><td>Europe</td><td>1198</td><td>1212</td></tr>
+<tr><td>7</td><td>3658</td><td><a href='moves_M8.htm#p3658'>PELLISSIER Nathan</a></td><td>AUS</td><td>Oceania</td><td>1085</td><td>1083</td></tr>
+<tr><td>8</td><td>4904</td><td>ROMAN CHINCHILLA Steven</td><td>CRC</td><td>Americas</td><td>1076</td><td>1076</td></tr>
+<tr><td>9</td><td>5034</td><td><a href='moves_M8.htm#p5034'>SABIO RUIZ Ricard</a></td><td>ESP</td><td>Europe</td><td>1075</td><td>1105</td></tr>
+<tr><td>10</td><td>4614</td><td>OLCZAK Mariusz</td><td>POL</td><td>Europe</td><td>1052</td><td>1052</td></tr>
+<tr><td>11</td><td>4936</td><td><a href='moves_M8.htm#p4936'>VAN DER BURG Roy</a></td><td>NED</td><td>Europe</td><td>990</td><td>894</td></tr>
+<tr><td>12</td><td>5023</td><td>JOHANSEN Fredrik</td><td>NOR</td><td>Europe</td><td>986</td><td>986</td></tr>
+<tr><td>13</td><td>5168</td><td><a href='moves_M8.htm#p5168'>WASSINK Devin Albert Jos</a></td><td>NED</td><td>Europe</td><td>966</td><td>937</td></tr>
+<tr><td>14</td><td>5439</td><td><a href='moves_M8.htm#p5439'>JENSEN WALLIN Axel</a></td><td>SWE</td><td>Europe</td><td>962</td><td>945</td></tr>
+<tr><td>15</td><td>5021</td><td>JACOBSEN Pablo</td><td>NOR</td><td>Europe</td><td>958</td><td>958</td></tr>
+<tr><td>16</td><td>4890</td><td><a href='moves_M8.htm#p4890'>CARON Curtis</a></td><td>CAN</td><td>Americas</td><td>916</td><td>933</td></tr>
+<tr><td>17</td><td>5033</td><td>SALOMONSEN Steffen</td><td>NOR</td><td>Europe</td><td>905</td><td>905</td></tr>
+<tr><td>18</td><td>5466</td><td><a href='moves_M8.htm#p5466'>HENRY Ryan Joseph</a></td><td>GBR</td><td>Europe</td><td>904</td><td>892</td></tr>
+<tr><td>19</td><td>4729</td><td>KISLITSYN Konstantin</td><td>RUS</td><td>Europe</td><td>886</td><td>886</td></tr>
+<tr><td>20</td><td>4774</td><td>SALAZAR PEREZ Gabriel Sebastian</td><td>ECU</td><td>Americas</td><td>873</td><td>873</td></tr>
+<tr><td>21</td><td>4149</td><td>JOHNSTONE Connor</td><td>AUS</td><td>Oceania</td><td>833</td><td>833</td></tr>
+<tr><td>22</td><td>5654</td><td><a href='moves_M8.htm#p5654'>ZOHIL Borna</a></td><td>CRO</td><td>Europe</td><td>815</td><td>0</td></tr>
+</tbody></table>
+<h2>Active unrated players</h2>
+<table class="table table-striped table-condensed table-bordered"><thead>
+<tr><th>Player ID</th><th>Name</th><th>Country</th><th>Region</th></tr>
+</thead><tbody class="notranslate">
+<tr><td>6025</td><td>ALRASHIDI Mohammad</td><td>KUW</td><td>Asia</td></tr>
+<tr><td>5622</td><td>ANCHIA Jason Jesus</td><td>CRC</td><td>Americas</td></tr>
+<tr><td>5630</td><td>BOROLEANU Robert Marian</td><td>ROU</td><td>Europe</td></tr>
+<tr><td>5950</td><td>FONG Wei Cheng</td><td>SGP</td><td>Asia</td></tr>
+<tr><td>6006</td><td>GORE Jeremy Clayton</td><td>USA</td><td>Americas</td></tr>
+<tr><td>5887</td><td>GRANKVIST Anton</td><td>SWE</td><td>Europe</td></tr>
+<tr><td>5944</td><td>HOSSEINIPOUR Seyed Amirhossein</td><td>IRI</td><td>Asia</td></tr>
+<tr><td>6019</td><td>JULMALA Juha Heikki</td><td>FIN</td><td>Europe</td></tr>
+<tr><td>5932</td><td>LAU Yoho</td><td>HKG</td><td>Asia</td></tr>
+<tr><td>5840</td><td>PALATKA Daniel</td><td>CZE</td><td>Europe</td></tr>
+<tr><td>5301</td><td>SPALEK Vit</td><td>CZE</td><td>Europe</td></tr>
+<tr><td>5952</td><td>VAIMAN Artyom</td><td>KAZ</td><td>Asia</td></tr>
+</tbody></table>
+<div class="container-fluid"><div class="row"><div class="text-muted text-right">Generated on 2019-04-07 at 20:58</div></div></div>
+<!--#include virtual="/footer.htm" -->
+</body></html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>ITTF Para Table Tennis Rating Audits as of 2012-01-01 - Women class 11</title>
+<link rel='stylesheet' href='../../css/normal.css' type='text/css' />
+<link rel="stylesheet" href="../rating.css" type="text/css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<script type="text/javascript" charset="utf-8" src="../../media/js/jquery.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../media/js/jquery.dataTables.min.js"></script>
+<script language="JavaScript" type="text/javascript">
+$(document).ready(function() {
+	var oTable = $('.lists').dataTable( {
+        "bPaginate": false,
+        "aoColumns": [
+                /* Rank */{"bSearchable": false},
+                /* Player ID */{"bSearchable": false},
+                /* Name */ null,
+	            /* Country */{"bSearchable": false, "bSortable": false },
+	            /* Region */{"bSearchable": false, "bSortable": false },
+                /* Rating */{"bSearchable": false}
+		]
+	} );
+	$('select#country').change(function () {
+            oTable.fnFilter($(this).val(), 3);
+    });
+	$('select#region').change(function () {
+            oTable.fnFilter($(this).val(), 4);
+    });
+} );
+</script>
+
+</head>
+<body>
+<div class="banner">
+  <div class='logo'><a href='../..'><img src='../../logos/colour/PTT-110px.png' alt='ITTF-PTT Logo' width='116' height='110' border='0' /></a></div>
+  <div class="banner_title">ITTF Para Table Tennis Rating Audits as of 2012-01-01<br />Women class 11</div>
+</div><br />
+<div class="help">You can sort this table by clicking on column headers and filter data by searching on part of player's name.</div>
+<table class="lists"><thead>
+<tr><th>Rank</th><th>Player ID</th><th>Name</th><th>Country <select name="country" id="country"><option value="" selected="selected">Show all</option><optgroup label="Show only:"><option>FRA</option><option>HKG</option><option>JPN</option><option>KOR</option><option>POL</option><option>RUS</option><option>UKR</option></select></th><th>Region <select name="region" id="region"><option value="" selected="selected">Show all</option><optgroup label="Show only:"><option>Asia</option><option>Europe</option></select></th><th>Rating</th></tr>
+</thead><tbody>
+<tr><td>1</td><td>1890</td><td><a href='moves_F11.htm#p1890'>KOSMINA Natalya</a></td><td>UKR</td><td>Europe</td><td>1200</td></tr>
+<tr><td>2</td><td>4085</td><td><a href='moves_F11.htm#p4085'>YEUNG Chi Ka</a></td><td>HKG</td><td>Asia</td><td>1190</td></tr>
+<tr><td>3</td><td>4333</td><td><a href='moves_F11.htm#p4333'>KOSACHEVA Anzhelika</a></td><td>RUS</td><td>Europe</td><td>1189</td></tr>
+<tr><td>4</td><td>1526</td><td><a href='moves_F11.htm#p1526'>SIEMIENIECKA Krystyna</a></td><td>POL</td><td>Europe</td><td>1139</td></tr>
+<tr><td>5</td><td>4093</td><td><a href='moves_F11.htm#p4093'>NOWACKA Dorota</a></td><td>POL</td><td>Europe</td><td>1136</td></tr>
+<tr><td>6</td><td>2011</td><td><a href='moves_F11.htm#p2011'>WONG Ka Man</a></td><td>HKG</td><td>Asia</td><td>1119</td></tr>
+<tr><td>7</td><td>4323</td><td><a href='moves_F11.htm#p4323'>JUNG Jiyoung</a></td><td>KOR</td><td>Asia</td><td>1093</td></tr>
+<tr><td>8</td><td>1178</td><td><a href='moves_F11.htm#p1178'>ITO Maki</a></td><td>JPN</td><td>Asia</td><td>1071</td></tr>
+<tr><td>9</td><td>4076</td><td><a href='moves_F11.htm#p4076'>ROUSSET Magali</a></td><td>FRA</td><td>Europe</td><td>1030</td></tr>
+<tr><td>10</td><td>2014</td><td><a href='moves_F11.htm#p2014'>SEO Yang Hee</a></td><td>KOR</td><td>Asia</td><td>1007</td></tr>
+<tr><td>11</td><td>1175</td><td><a href='moves_F11.htm#p1175'>KIMURA Harumi</a></td><td>JPN</td><td>Asia</td><td>962</td></tr>
+<tr><td>12</td><td>4320</td><td><a href='moves_F11.htm#p4320'>UEKITA Yuko</a></td><td>JPN</td><td>Asia</td><td>933</td></tr>
+<tr><td>13</td><td>4326</td><td><a href='moves_F11.htm#p4326'>DOBKO Monika</a></td><td>POL</td><td>Europe</td><td>903</td></tr>
+<tr><td>14</td><td>4072</td><td><a href='moves_F11.htm#p4072'>CATEAU Veronique</a></td><td>FRA</td><td>Europe</td><td>857</td></tr>
+</tbody></table>
+<br /><div class="footer">Generated on 2012-03-12 at 10:16</div><br />
+<!--#include virtual="/footer.htm" -->
+</body></html>

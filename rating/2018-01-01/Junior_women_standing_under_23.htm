@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en"><head><title>ITTF Para Table Tennis Ranking Lists - Junior women standing (under 23) as of 2018-01-01</title>
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href='../../media/css/bootstrap.min.css' rel='stylesheet' type='text/css' />
+<link href='../../media/css/bootstrap-theme.min.css' rel='stylesheet' type='text/css' />
+<link href='../../media/css/footable/footable.core.min.css' rel='stylesheet' type='text/css' />
+<link rel='stylesheet' href='../../css/styles.css' type='text/css' />
+<link rel="stylesheet" href="../rating.css" type="text/css" />
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+   <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<script src="../../media/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../media/js/jquery.dataTables.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../media/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../media/js/footable.all.min.js" type="text/javascript" charset="utf-8"></script>
+
+<script language="JavaScript" type="text/javascript">
+$(document).ready(function() {
+	var oTable = $('.lists').dataTable( {
+        "bPaginate": false,
+        "aoColumns": [
+            /* Rank */ {"bSearchable": false},
+            /* Player ID */ {"bSearchable": false},
+            /* Name */ null,
+            /* Country */ {"bSearchable": false, "bSortable": false },
+            /* Region */ {"bSearchable": false, "bSortable": false },
+            /* Class */ {"bSearchable": false, "bSortable": false },
+            /* Rating */ {"bSearchable": false},
+            /* Previous Rating */ {"bSearchable": false}
+    		]
+	} );           
+	$('select#country').change(function () {
+            oTable.fnFilter($(this).val(), 3);
+    });
+	$('select#region').change(function () {
+            oTable.fnFilter($(this).val(), 4);
+    });
+  $('select#class').change(function () {
+            oTable.fnFilter($(this).val(), 5);
+    });
+} );
+</script>
+
+</head>
+<body>
+  <!--#include virtual="/navbar.htm" -->
+
+  <div class="container-fluid">  
+     <div class="row">  
+        <div class="col-lg-2 col-sm-2 col-md-4 col-xs-4">  
+           <a href="/" title="Back to ITTF PTT home page"><div class="ptt-logo"></div></a>  
+   </div>
+   <h1 class='col-lg-10 col-sm-10 col-md-8 col-xs-8'>ITTF Para Table Tennis Ranking Lists<br/><small>Junior women standing (under 23) as of 2018-01-01</small></h1>
+   </div>
+</div>
+<br/>
+<div class="text-muted">You can sort this table by clicking on column headers and filter data by searching on part of player's name.</div>
+<table class="lists table table-striped table-condensed table-bordered"><thead>
+<tr><th>Rank</th><th class="hidden-xs">Player ID</th><th>Name</th><th>Country <select name="country" id="country"><option value="" selected="selected">Show all</option><optgroup label="Show only:" /><option>ARG</option><option>AUS</option><option>BEL</option><option>BRA</option><option>BUL</option><option>CAN</option><option>CHI</option><option>CHN</option><option>COL</option><option>CRC</option><option>CRO</option><option>DEN</option><option>EGY</option><option>ESP</option><option>FIJ</option><option>FRA</option><option>GBR</option><option>GER</option><option>GRE</option><option>HKG</option><option>HUN</option><option>INA</option><option>IND</option><option>IRI</option><option>IRQ</option><option>ISR</option><option>ITA</option><option>JPN</option><option>KAZ</option><option>KEN</option><option>KOR</option><option>MAC</option><option>MAS</option><option>MEX</option><option>NED</option><option>NGR</option><option>NOR</option><option>PHI</option><option>PLE</option><option>PNG</option><option>POL</option><option>ROU</option><option>RSA</option><option>RUS</option><option>SOL</option><option>SWE</option><option>THA</option><option>TPE</option><option>TUR</option><option>UKR</option><option>USA</option><option>VEN</option></select></th><th class="hidden-xs">Region <select name="region" id="region"><option value="" selected="selected">Show all</option><optgroup label="Show only:" /><option>Africa</option><option>Americas</option><option>Asia</option><option>Europe</option><option>Oceania</option></select></th><th>Class <select name="class" id="class"><option value="" selected="selected">Show all</option><optgroup label="Show only:" /><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option></select></th>
+<th>Rating</th><th class="hidden-xs">Previous Rating</th></tr>
+</thead><tbody class="notranslate">
+<tr><td>1</td><td class="hidden-xs">3846</td><td>COSTA ALEXANDRE Bruna</td><td>BRA</td><td class="hidden-xs">Americas</td><td>10</td><td>1672</td><td class="hidden-xs">1672</td></tr>
+<tr><td>2</td><td class="hidden-xs">3887</td><td>PEK Karolina</td><td>POL</td><td class="hidden-xs">Europe</td><td>9</td><td>1595</td><td class="hidden-xs">1595</td></tr>
+<tr><td>3</td><td class="hidden-xs">4716</td><td>WALLOE Sophie Amanda</td><td>DEN</td><td class="hidden-xs">Europe</td><td>10</td><td>1590</td><td class="hidden-xs">1590</td></tr>
+<tr><td>4</td><td class="hidden-xs">3758</td><td>MAO Jingdian</td><td>CHN</td><td class="hidden-xs">Asia</td><td>8</td><td>1582</td><td class="hidden-xs">1582</td></tr>
+<tr><td>5</td><td class="hidden-xs">3996</td><td>LIU Meng </td><td>CHN</td><td class="hidden-xs">Asia</td><td>9</td><td>1538</td><td class="hidden-xs">1538</td></tr>
+<tr><td>6</td><td class="hidden-xs">4760</td><td>RAUEN Danielle</td><td>BRA</td><td class="hidden-xs">Americas</td><td>9</td><td>1477</td><td class="hidden-xs">1477</td></tr>
+<tr><td>7</td><td class="hidden-xs">4448</td><td>DEMIR Merve</td><td>TUR</td><td class="hidden-xs">Europe</td><td>10</td><td>1436</td><td class="hidden-xs">1436</td></tr>
+<tr><td>8</td><td class="hidden-xs">3022</td><td>ERTIS Ümran</td><td>TUR</td><td class="hidden-xs">Europe</td><td>10</td><td>1422</td><td class="hidden-xs">1422</td></tr>
+<tr><td>9</td><td class="hidden-xs">3019</td><td>KORKUT Kubra</td><td>TUR</td><td class="hidden-xs">Europe</td><td>7</td><td>1403</td><td class="hidden-xs">1403</td></tr>
+<tr><td>10</td><td class="hidden-xs">4796</td><td>ZHAO Xiaojing</td><td>CHN</td><td class="hidden-xs">Asia</td><td>10</td><td>1399</td><td class="hidden-xs">1399</td></tr>
+<tr><td>11</td><td class="hidden-xs">4160</td><td>TEPELEA Ioana- Monica</td><td>ROU</td><td class="hidden-xs">Europe</td><td>10</td><td>1387</td><td class="hidden-xs">1387</td></tr>
+<tr><td>12</td><td class="hidden-xs">4347</td><td>TIAN Shiau Wen</td><td>TPE</td><td class="hidden-xs">Asia</td><td>10</td><td>1357</td><td class="hidden-xs">1357</td></tr>
+<tr><td>13</td><td class="hidden-xs">3169</td><td>TURKKAN Hilal</td><td>TUR</td><td class="hidden-xs">Europe</td><td>10</td><td>1350</td><td class="hidden-xs">1350</td></tr>
+<tr><td>14</td><td class="hidden-xs">4107</td><td><a href='moves_F9.htm#p4107'>MARQUES PARINOS Jennyfer</a></td><td>BRA</td><td class="hidden-xs">Americas</td><td>9</td><td>1314</td><td class="hidden-xs">1292</td></tr>
+<tr><td>15</td><td class="hidden-xs">4589</td><td><a href='moves_F10.htm#p4589'>DWI RADAYANA Shella</a></td><td>INA</td><td class="hidden-xs">Asia</td><td>10</td><td>1311</td><td class="hidden-xs">1313</td></tr>
+<tr><td>16</td><td class="hidden-xs">4595</td><td>REEG Marlene</td><td>GER</td><td class="hidden-xs">Europe</td><td>10</td><td>1305</td><td class="hidden-xs">1305</td></tr>
+<tr><td>17</td><td class="hidden-xs">5430</td><td><a href='moves_F10.htm#p5430'>TAKEUCHI Nozomi</a></td><td>JPN</td><td class="hidden-xs">Asia</td><td>10</td><td>1300</td><td class="hidden-xs">1282</td></tr>
+<tr><td>18</td><td class="hidden-xs">4594</td><td>KRAMM Lena</td><td>GER</td><td class="hidden-xs">Europe</td><td>9</td><td>1270</td><td class="hidden-xs">1270</td></tr>
+<tr><td>19</td><td class="hidden-xs">5823</td><td>KONG  Wenjie</td><td>CHN</td><td class="hidden-xs">Asia</td><td>10</td><td>1234</td><td class="hidden-xs">1234</td></tr>
+<tr><td>20</td><td class="hidden-xs">4163</td><td>SARATOVA Daria</td><td>RUS</td><td class="hidden-xs">Europe</td><td>10</td><td>1217</td><td class="hidden-xs">1217</td></tr>
+<tr><td>21</td><td class="hidden-xs">5822</td><td>LI  Guiying</td><td>CHN</td><td class="hidden-xs">Asia</td><td>8</td><td>1112</td><td class="hidden-xs">1112</td></tr>
+<tr><td>22</td><td class="hidden-xs">5403</td><td>ESPINOZA PEREZ Ailyn Paulina</td><td>CHI</td><td class="hidden-xs">Americas</td><td>10</td><td>1028</td><td class="hidden-xs">1028</td></tr>
+<tr><td>23</td><td class="hidden-xs">4279</td><td>PICKARD Felicity Lucy</td><td>GBR</td><td class="hidden-xs">Europe</td><td>6</td><td>1009</td><td class="hidden-xs">1009</td></tr>
+<tr><td>24</td><td class="hidden-xs">5650</td><td>ALIEVA Maliak</td><td>RUS</td><td class="hidden-xs">Europe</td><td>7</td><td>989</td><td class="hidden-xs">989</td></tr>
+<tr><td>25</td><td class="hidden-xs">5423</td><td><a href='moves_F8.htm#p5423'>TOMONO Yuri</a></td><td>JPN</td><td class="hidden-xs">Asia</td><td>8</td><td>948</td><td class="hidden-xs">980</td></tr>
+<tr><td>26</td><td class="hidden-xs">5436</td><td>SAND Smilla Agnes Linnea</td><td>SWE</td><td class="hidden-xs">Europe</td><td>7</td><td>924</td><td class="hidden-xs">924</td></tr>
+<tr><td>27</td><td class="hidden-xs">5417</td><td>ELLI Elena </td><td>ITA</td><td class="hidden-xs">Europe</td><td>8</td><td>912</td><td class="hidden-xs">912</td></tr>
+<tr><td>28</td><td class="hidden-xs">4937</td><td>HOCHDORFER Corinna</td><td>GER</td><td class="hidden-xs">Europe</td><td>7</td><td>893</td><td class="hidden-xs">893</td></tr>
+<tr><td>29</td><td class="hidden-xs">4805</td><td><a href='moves_F9.htm#p4805'>RESTY HANA</a></td><td>INA</td><td class="hidden-xs">Asia</td><td>9</td><td>887</td><td class="hidden-xs"></td></tr>
+<tr><td>30</td><td class="hidden-xs">4855</td><td>ENDRE Emelie</td><td>SWE</td><td class="hidden-xs">Europe</td><td>6</td><td>862</td><td class="hidden-xs">862</td></tr>
+<tr><td>31</td><td class="hidden-xs">5025</td><td><a href='moves_F6.htm#p5025'>TVEITEN Merethe</a></td><td>NOR</td><td class="hidden-xs">Europe</td><td>6</td><td>842</td><td class="hidden-xs">830</td></tr>
+<tr><td>32</td><td class="hidden-xs">5274</td><td><a href='moves_F7.htm#p5274'>KORNELIUSSEN Nora</a></td><td>NOR</td><td class="hidden-xs">Europe</td><td>7</td><td>801</td><td class="hidden-xs">817</td></tr>
+<tr><td>33</td><td class="hidden-xs">4445</td><td><a href='moves_F8.htm#p4445'>KLOMP Suzan</a></td><td>NED</td><td class="hidden-xs">Europe</td><td>8</td><td>785</td><td class="hidden-xs">775</td></tr>
+<tr><td>34</td><td class="hidden-xs">3744</td><td>SARKAR MaitTREYEE</td><td>IND</td><td class="hidden-xs">Asia</td><td>9</td><td>620</td><td class="hidden-xs">620</td></tr>
+<tr><td>35</td><td class="hidden-xs">5935</td><td>WONG SZE Gloria Gracia</td><td>MAS</td><td class="hidden-xs">Asia</td><td>10</td><td>0</td><td class="hidden-xs"></td></tr>
+<tr><td>35</td><td class="hidden-xs">5934</td><td><a href='moves_F7.htm#p5934'>CHIU  Kan Shan</a></td><td>HKG</td><td class="hidden-xs">Asia</td><td>7</td><td>0</td><td class="hidden-xs"></td></tr>
+<tr><td>35</td><td class="hidden-xs">5683</td><td>LACERDA Lethicia</td><td>BRA</td><td class="hidden-xs">Americas</td><td>8</td><td>0</td><td class="hidden-xs">0</td></tr>
+<tr><td>35</td><td class="hidden-xs">5655</td><td>LAUS  Anja</td><td>CRO</td><td class="hidden-xs">Europe</td><td>10</td><td>0</td><td class="hidden-xs">0</td></tr>
+<tr><td>35</td><td class="hidden-xs">3354</td><td>RIVERA ROLDAN Leidy Tatiana</td><td>COL</td><td class="hidden-xs">Americas</td><td>10</td><td>0</td><td class="hidden-xs">0</td></tr>
+<tr><td>35</td><td class="hidden-xs">5164</td><td>ARAYA ALVAREZ Aneth Priscila</td><td>CRC</td><td class="hidden-xs">Americas</td><td>7</td><td>0</td><td class="hidden-xs">0</td></tr>
+<tr><td>35</td><td class="hidden-xs">2962</td><td>VULTURAR Tabita</td><td>ROU</td><td class="hidden-xs">Europe</td><td>10</td><td>0</td><td class="hidden-xs">0</td></tr>
+<tr><td>35</td><td class="hidden-xs">5740</td><td><a href='moves_F7.htm#p5740'>AL GBURI Tuqa</a></td><td>IRQ</td><td class="hidden-xs">Asia</td><td>7</td><td>0</td><td class="hidden-xs"></td></tr>
+<tr><td>35</td><td class="hidden-xs">4228</td><td>FAZELNIA Ayda</td><td>IRI</td><td class="hidden-xs">Asia</td><td>8</td><td>0</td><td class="hidden-xs"></td></tr>
+<tr><td>35</td><td class="hidden-xs">5335</td><td>MNYANDU Sthabile Francisca</td><td>RSA</td><td class="hidden-xs">Africa</td><td>10</td><td>0</td><td class="hidden-xs">0</td></tr>
+<tr><td>35</td><td class="hidden-xs">5954</td><td>FARTTOOSI  Zainab Hasan </td><td>IRQ</td><td class="hidden-xs">Asia</td><td>6</td><td>0</td><td class="hidden-xs"></td></tr>
+<tr><td>35</td><td class="hidden-xs">5885</td><td>HANDEN  Anja</td><td>SWE</td><td class="hidden-xs">Europe</td><td>10</td><td>0</td><td class="hidden-xs">0</td></tr>
+<tr><td>35</td><td class="hidden-xs">5538</td><td>MAIA DE ALMEIDA Iolanda</td><td>BRA</td><td class="hidden-xs">Americas</td><td>10</td><td>0</td><td class="hidden-xs">0</td></tr>
+<tr><td>35</td><td class="hidden-xs">2956</td><td>CONSTANTIN Emilia </td><td>ROU</td><td class="hidden-xs">Europe</td><td>8</td><td>0</td><td class="hidden-xs">0</td></tr>
+<tr><td>35</td><td class="hidden-xs">5697</td><td>SALHAUGE Mie Schou</td><td>DEN</td><td class="hidden-xs">Europe</td><td>10</td><td>0</td><td class="hidden-xs">0</td></tr>
+<tr><td>35</td><td class="hidden-xs">5677</td><td>SCHEVINTT Aylen Daniela</td><td>ARG</td><td class="hidden-xs">Americas</td><td>7</td><td>0</td><td class="hidden-xs">0</td></tr>
+<tr><td>35</td><td class="hidden-xs">5863</td><td>HAUTIERE Lucie</td><td>FRA</td><td class="hidden-xs">Europe</td><td>8</td><td>0</td><td class="hidden-xs">0</td></tr>
+<tr><td>35</td><td class="hidden-xs">3356</td><td>VALBUENA DIAZ Juliana</td><td>COL</td><td class="hidden-xs">Americas</td><td>8</td><td>0</td><td class="hidden-xs">0</td></tr>
+<tr><td>35</td><td class="hidden-xs">5071</td><td>BADUOVA Eldana</td><td>KAZ</td><td class="hidden-xs">Asia</td><td>9</td><td>0</td><td class="hidden-xs"></td></tr>
+<tr><td>35</td><td class="hidden-xs">5015</td><td>SALTANOVSKA Marharyta</td><td>UKR</td><td class="hidden-xs">Europe</td><td>10</td><td>0</td><td class="hidden-xs">0</td></tr>
+<tr><td>35</td><td class="hidden-xs">5691</td><td>ZAPATA PINA Edith</td><td>MEX</td><td class="hidden-xs">Americas</td><td>10</td><td>0</td><td class="hidden-xs">0</td></tr>
+<tr><td>35</td><td class="hidden-xs">5930</td><td><a href='moves_F7.htm#p5930'>WONG Yue Ching</a></td><td>HKG</td><td class="hidden-xs">Asia</td><td>7</td><td>0</td><td class="hidden-xs"></td></tr>
+<tr><td>35</td><td class="hidden-xs">5699</td><td>CAPACHO LIZARAZO Edith Julieth</td><td>VEN</td><td class="hidden-xs">Americas</td><td>7</td><td>0</td><td class="hidden-xs">0</td></tr>
+<tr><td>35</td><td class="hidden-xs">5877</td><td>RAVI Baby Sahana</td><td>IND</td><td class="hidden-xs">Asia</td><td>9</td><td>0</td><td class="hidden-xs">0</td></tr>
+<tr><td>35</td><td class="hidden-xs">5764</td><td>BALELOA Sera</td><td>FIJ</td><td class="hidden-xs">Oceania</td><td>8</td><td>0</td><td class="hidden-xs">0</td></tr>
+<tr><td>35</td><td class="hidden-xs">4810</td><td><a href='moves_F10.htm#p4810'>MOHAMMADI FATEMEH</a></td><td>IRI</td><td class="hidden-xs">Asia</td><td>10</td><td>0</td><td class="hidden-xs"></td></tr>
+<tr><td>35</td><td class="hidden-xs">5137</td><td><a href='moves_F8.htm#p5137'>RAMIREZ OSTOS Laura Neged</a></td><td>COL</td><td class="hidden-xs">Americas</td><td>8</td><td>0</td><td class="hidden-xs"></td></tr>
+<tr><td>35</td><td class="hidden-xs">5886</td><td>STADLER Caisa</td><td>SWE</td><td class="hidden-xs">Europe</td><td>6</td><td>0</td><td class="hidden-xs">0</td></tr>
+<tr><td>35</td><td class="hidden-xs">5688</td><td>GONGORA MAGANA Jeanelly Scarlett</td><td>MEX</td><td class="hidden-xs">Americas</td><td>10</td><td>0</td><td class="hidden-xs">0</td></tr>
+<tr><td>35</td><td class="hidden-xs">5958</td><td>LAM Yan Yu</td><td>HKG</td><td class="hidden-xs">Asia</td><td>10</td><td>0</td><td class="hidden-xs"></td></tr>
+<tr><td>35</td><td class="hidden-xs">5030</td><td>GONZALEZ Pilar </td><td>ESP</td><td class="hidden-xs">Europe</td><td>7</td><td>0</td><td class="hidden-xs">0</td></tr>
+<tr><td>35</td><td class="hidden-xs">5473</td><td>KANG Hayoung</td><td>KOR</td><td class="hidden-xs">Asia</td><td>7</td><td>0</td><td class="hidden-xs">0</td></tr>
+<tr><td>35</td><td class="hidden-xs">5701</td><td>SOSA REYES Cindy Nazareth</td><td>VEN</td><td class="hidden-xs">Americas</td><td>10</td><td>0</td><td class="hidden-xs">0</td></tr>
+<tr><td>35</td><td class="hidden-xs">5496</td><td>YERUBAYEVA Zhuldyz</td><td>KAZ</td><td class="hidden-xs">Asia</td><td>7</td><td>0</td><td class="hidden-xs">0</td></tr>
+<tr><td>35</td><td class="hidden-xs">5537</td><td>DOS SANTOS BURLAMARQUI Melanie</td><td>BRA</td><td class="hidden-xs">Americas</td><td>10</td><td>0</td><td class="hidden-xs">0</td></tr>
+<tr><td>35</td><td class="hidden-xs">5951</td><td>ABLAKIMOVA  Adelya</td><td>KAZ</td><td class="hidden-xs">Asia</td><td>7</td><td>0</td><td class="hidden-xs"></td></tr>
+<tr><td>35</td><td class="hidden-xs">5498</td><td><a href='moves_F7.htm#p5498'>ORYNBAYEVA Raushan</a></td><td>KAZ</td><td class="hidden-xs">Asia</td><td>7</td><td>0</td><td class="hidden-xs">0</td></tr>
+<tr><td>35</td><td class="hidden-xs">5833</td><td>NIELSEN   Thea Amalie</td><td>DEN</td><td class="hidden-xs">Europe</td><td>10</td><td>0</td><td class="hidden-xs">0</td></tr>
+<tr><td>35</td><td class="hidden-xs">5394</td><td>FRUTOS Juliana Ailen </td><td>ARG</td><td class="hidden-xs">Americas</td><td>10</td><td>0</td><td class="hidden-xs">0</td></tr>
+</tbody></table>
+<div class="container-fluid"><div class="row"><div class="text-muted text-right">Generated on 2018-01-31 at 21:39</div></div></div>
+<!--#include virtual="/footer.htm" -->
+</body></html>

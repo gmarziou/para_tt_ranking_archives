@@ -1,0 +1,117 @@
+.footer {
+    font-size: smaller;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 40px;
+    color: #777;
+    border-top: 1px solid #e5e5e5;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+div.logo {
+    margin-right: 4px;
+    margin-bottom: 4px;
+    float: left;
+    width: 18%;
+}
+
+div.tournament_logo {
+    margin-right: 4px;
+    margin-top: 16px;
+    float: right;
+    width: 18%;
+    text-align: right;
+}
+
+/*
+ * Styles for ranking list
+ */
+
+#ranking-tournament table {
+    border: solid #666597;
+    border-top-width: 2px;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+    border-left-width: 2px;
+    border-collapse: collapse;
+    background-color: #f0f0f0;
+}
+
+#ranking-tournament tr {
+    text-align: center;
+    vertical-align: middle;
+}
+
+#ranking-tournament th {
+    text-align: center;
+    font-weight: bold;
+    padding: 4px;
+    border: solid black;
+    border-top-width: 0px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    background-color: #FFFFCC;
+}
+
+#ranking-tournament td {
+    border: solid black;
+    border-top-width: 0px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+}
+
+.footable > thead > tr > th {
+    background-color: #dce9f9;
+    background-image: linear-gradient(to bottom, #ebf3fc, #dce9f9);
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.8) inset;
+    border-top: none;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+body {
+    margin-top: 55px;
+}
+
+h1 {
+    font-size: 24px;
+}
+h3 {
+    font-size: 18px;
+}
+
+.navbar-text {
+    font-size: 24px;
+    margin-left: 90px;
+}
+
+.ptt-logo {
+    background-image: url("/logos/colour/PTT-80px.png");
+    width: 84px;
+    height: 80px;
+}
+
+
+@media (min-width: 768px) {
+    body {
+        margin-top: 65px; /* adjust this if the height of the menu bar changes */
+    }
+    h1 {
+        font-size: 36px;
+    }
+    h3 {
+        font-size: 24px;
+    }
+    .navbar-text {
+        font-size: 32px;
+    }
+
+    .ptt-logo {
+        background-image: url("/logos/colour/PTT-110px.png");
+        width: 116px;
+        height: 110px;
+    }
+}
+/*# sourceMappingURL=global-bs.css.map */

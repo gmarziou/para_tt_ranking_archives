@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en"><head><title>ITTF Para Table Tennis Rating Audits - Junior women in wheelchair (under 23) as of 2014-06-01</title>
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href='../../media/css/bootstrap.min.css' rel='stylesheet' type='text/css' />
+<link href='../../media/css/bootstrap-theme.min.css' rel='stylesheet' type='text/css' />
+<link href='../../media/css/footable/footable.core.min.css' rel='stylesheet' type='text/css' />
+<link rel='stylesheet' href='../../css/styles.css' type='text/css' />
+<link rel="stylesheet" href="../rating.css" type="text/css" />
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+   <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<script src="../../media/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../media/js/jquery.dataTables.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../media/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../media/js/footable.all.min.js" type="text/javascript" charset="utf-8"></script>
+
+<script language="JavaScript" type="text/javascript">
+$(document).ready(function() {
+	var oTable = $('.lists').dataTable( {
+        "bPaginate": false,
+        "aoColumns": [
+                /* Rank */{"bSearchable": false},
+                /* Player ID */{"bSearchable": false},
+                /* Name */ null,
+	            /* Country */{"bSearchable": false, "bSortable": false },
+	            /* Region */{"bSearchable": false, "bSortable": false },
+                /* Class */ {"bSearchable": false, "bSortable": false },
+                /* Rating */{"bSearchable": false}		]
+	} );           
+	$('select#country').change(function () {
+            oTable.fnFilter($(this).val(), 3);
+    });
+	$('select#region').change(function () {
+            oTable.fnFilter($(this).val(), 4);
+    });
+  $('select#class').change(function () {
+            oTable.fnFilter($(this).val(), 5);
+    });
+} );
+</script>
+
+</head>
+<body>
+  <!--#include virtual="/navbar.htm" -->
+
+  <div class="container-fluid">  
+     <div class="row">  
+        <div class="col-lg-2 col-sm-2 col-md-4 col-xs-4">  
+           <a href="/" title="Back to ITTF PTT home page"><div class="ptt-logo"></div></a>  
+   </div>
+   <h1 class='col-lg-10 col-sm-10 col-md-8 col-xs-8'>ITTF Para Table Tennis Rating Audits<br/><small>Junior women in wheelchair (under 23) as of 2014-06-01</small></h1>
+   </div>
+</div>
+<br/>
+<div class="text-muted">You can sort this table by clicking on column headers and filter data by searching on part of player's name.</div>
+<table class="lists table table-striped table-condensed table-bordered"><thead>
+<tr><th>Rank</th><th class="hidden-xs">Player ID</th><th>Name</th><th>Country <select name="country" id="country"><option value="" selected="selected">Show all</option><optgroup label="Show only:" /><option>ARG</option><option>AUS</option><option>AUT</option><option>BEL</option><option>BRA</option><option>CHN</option><option>CRO</option><option>CZE</option><option>EGY</option><option>FRA</option><option>GBR</option><option>GER</option><option>HKG</option><option>HUN</option><option>IND</option><option>IRI</option><option>IRL</option><option>IRQ</option><option>ISR</option><option>ITA</option><option>JOR</option><option>JPN</option><option>KOR</option><option>MEX</option><option>NED</option><option>NGR</option><option>NOR</option><option>POL</option><option>RUS</option><option>SLO</option><option>SRB</option><option>SVK</option><option>SWE</option><option>THA</option><option>TPE</option><option>TUR</option><option>USA</option><option>VIE</option></select></th><th class="hidden-xs">Region <select name="region" id="region"><option value="" selected="selected">Show all</option><optgroup label="Show only:" /><option>Africa</option><option>Americas</option><option>Asia</option><option>Europe</option><option>Oceania</option></select></th><th>Class <select name="class" id="class"><option value="" selected="selected">Show all</option><optgroup label="Show only:" /><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></th>
+<th>Rating</th><th class="hidden-xs">Previous Rating</th></tr>
+</thead><tbody>
+<tr><td>1</td><td class="hidden-xs">3164</td><td><a href='moves_F4.htm#p3164'>ZHANG Miao</a></td><td>CHN</td><td class="hidden-xs">Asia</td><td>4</td><td>1396</td><td class="hidden-xs">1345</td></tr>
+<tr><td>2</td><td class="hidden-xs">3576</td><td><a href='moves_F3.htm#p3576'>MUZINIC Andela</a></td><td>CRO</td><td class="hidden-xs">Europe</td><td>3</td><td>1367</td><td class="hidden-xs">1344</td></tr>
+<tr><td>3</td><td class="hidden-xs">3704</td><td><a href='moves_F4.htm#p3704'>MIKOLASCHEK Sandra</a></td><td>GER</td><td class="hidden-xs">Europe</td><td>4</td><td>1188</td><td class="hidden-xs">1179</td></tr>
+<tr><td>4</td><td class="hidden-xs">3683</td><td>TABIB Caroline</td><td>ISR</td><td class="hidden-xs">Europe</td><td>5</td><td>1130</td><td class="hidden-xs">1130</td></tr>
+<tr><td>5</td><td class="hidden-xs">3890</td><td>DUMAN Hatice</td><td>TUR</td><td class="hidden-xs">Europe</td><td>3</td><td>1126</td><td class="hidden-xs">1126</td></tr>
+<tr><td>6</td><td class="hidden-xs">2814</td><td>ELELIMAT Faten</td><td>JOR</td><td class="hidden-xs">Asia</td><td>4</td><td>1064</td><td class="hidden-xs">1064</td></tr>
+<tr><td>7</td><td class="hidden-xs">4741</td><td>ROSSI Giada</td><td>ITA</td><td class="hidden-xs">Europe</td><td>3</td><td>1012</td><td class="hidden-xs">1012</td></tr>
+<tr><td>8</td><td class="hidden-xs">4793</td><td>GU Xiaodan</td><td>CHN</td><td class="hidden-xs">Asia</td><td>4</td><td>1005</td><td class="hidden-xs">1005</td></tr>
+<tr><td>9</td><td class="hidden-xs">4005</td><td>GILANILARIMI Maryam</td><td>IRI</td><td class="hidden-xs">Asia</td><td>3</td><td>958</td><td class="hidden-xs">958</td></tr>
+<tr><td>10</td><td class="hidden-xs">4625</td><td>AL WAIELI Hadeel </td><td>IRQ</td><td class="hidden-xs">Asia</td><td>3</td><td>875</td><td class="hidden-xs">875</td></tr>
+<tr><td>11</td><td class="hidden-xs">4845</td><td>SHACKLETON Megan</td><td>GBR</td><td class="hidden-xs">Europe</td><td>4</td><td>865</td><td class="hidden-xs">865</td></tr>
+<tr><td>12</td><td class="hidden-xs">4227</td><td>ALIZADEHMEHDIMAHALEH Maryam</td><td>IRI</td><td class="hidden-xs">Asia</td><td>3</td><td>857</td><td class="hidden-xs">857</td></tr>
+<tr><td>13</td><td class="hidden-xs">4752</td><td>FRAGA SEVERO Thais</td><td>BRA</td><td class="hidden-xs">Americas</td><td>3</td><td>818</td><td class="hidden-xs">818</td></tr>
+<tr><td>14</td><td class="hidden-xs">4921</td><td>HENTIG Lisa Anna Maria </td><td>GER</td><td class="hidden-xs">Europe</td><td>5</td><td>797</td><td class="hidden-xs">797</td></tr>
+<tr><td>15</td><td class="hidden-xs">4221</td><td><a href='moves_F2.htm#p4221'>COBBEN Femke</a></td><td>NED</td><td class="hidden-xs">Europe</td><td>2</td><td>755</td><td class="hidden-xs">758</td></tr>
+<tr><td>16</td><td class="hidden-xs">4841</td><td>BOURON Lucie</td><td>GBR</td><td class="hidden-xs">Europe</td><td>3</td><td>601</td><td class="hidden-xs">601</td></tr>
+<tr><td>17</td><td class="hidden-xs">4854</td><td>JOHANSSON Ida Ellen Julia</td><td>SWE</td><td class="hidden-xs">Europe</td><td>5</td><td>585</td><td class="hidden-xs">585</td></tr>
+<tr><td>18</td><td class="hidden-xs">4864</td><td>OLIVEIRA Catia</td><td>BRA</td><td class="hidden-xs">Americas</td><td>2</td><td>558</td><td class="hidden-xs">558</td></tr>
+<tr><td>19</td><td class="hidden-xs">4827</td><td>RO CHAM AVUT</td><td>VIE</td><td class="hidden-xs">Asia</td><td>5</td><td>356</td><td class="hidden-xs">356</td></tr>
+</tbody></table>
+<div class="container-fluid"><div class="row"><div class="text-muted text-right">Generated on 2014-06-02 at 20:30</div></div></div>
+<!--#include virtual="/footer.htm" -->
+</body></html>

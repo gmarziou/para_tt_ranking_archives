@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en"><head><title>ITTF Para Table Tennis Ranking Lists - U23 Men class 4 as of 2023-12-01 in singles</title>
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href='../../../media/css/footable/footable.core.min.css' rel='stylesheet' type='text/css' />
+<link rel='stylesheet' href='../../../css/styles.css' type='text/css' />
+<link rel='stylesheet' href='../../../rating/rating.css' type='text/css' />
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+   <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<script src="../../../media/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../../media/js/jquery.dataTables.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../../media/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../../media/js/footable.all.min.js" type="text/javascript" charset="utf-8"></script>
+<script language="JavaScript" type="text/javascript">
+$(document).ready(function() {
+	var oTable = $('.lists').dataTable( {
+        "bPaginate": false,
+        "aoColumns": [
+            /* Rank */ {"bSearchable": false},
+            /* Player ID */ {"bSearchable": true},
+            /* Name */ null,
+            /* Country */ {"bSearchable": false, "bSortable": false },
+            /* Region */ {"bSearchable": false, "bSortable": false },
+            /* current rating */ {"bSearchable": false},
+            /* Previous rating */ {"bSearchable": false}
+		]
+	} );
+	$('select#country').change(function () {
+            oTable.fnFilter($(this).val(), 3);
+    });
+	$('select#region').change(function () {
+            oTable.fnFilter($(this).val(), 4);
+    });
+} );
+</script>
+
+</head>
+<body>
+  <!--#include virtual="/navbar.htm" -->
+
+  <div class="container-fluid">  
+     <div class="row">  
+        <div class="col-lg-2 col-sm-2 col-md-4 col-xs-4">  
+           <a href="/" title="Back to ITTF PTT home page"><div class="ptt-logo"></div></a>  
+   </div>
+   <h1 class='col-lg-10 col-sm-10 col-md-8 col-xs-8'>ITTF Para Table Tennis Ranking Lists<br/><small>U23 Men class 4 as of 2023-12-01 in singles</small></h1>
+   </div>
+</div>
+<br/>
+<div class="text-muted">You can sort this table by clicking on column headers and filter data by searching on part of player's name.</div>
+<table class="lists table table-striped table-condensed table-bordered"><thead>
+<tr><th>Rank</th><th>Player ID</th><th>Name</th><th>Country <select name="country" id="country"><option value="" selected="selected">Show all</option><optgroup label="Show only:" /><option>ARG</option><option>AUS</option><option>AUT</option><option>BEN</option><option>BRA</option><option>CAM</option><option>CAN</option><option>CHI</option><option>CHN</option><option>COL</option><option>CRC</option><option>CRO</option><option>CZE</option><option>ECU</option><option>EGY</option><option>ESP</option><option>FRA</option><option>GBR</option><option>GER</option><option>INA</option><option>IND</option><option>IRQ</option><option>ISR</option><option>JOR</option><option>JPN</option><option>KAZ</option><option>KGZ</option><option>KOR</option><option>KSA</option><option>MAC</option><option>MEX</option><option>MGL</option><option>NEP</option><option>NGR</option><option>NOR</option><option>PHI</option><option>POL</option><option>ROU</option><option>RSA</option><option>SOL</option><option>SRB</option><option>SVK</option><option>SWE</option><option>TGA</option><option>THA</option><option>TPE</option><option>TUR</option><option>TUV</option><option>UKR</option><option>USA</option><option>VEN</option></select></th><th>Region <select name="region" id="region"><option value="" selected="selected">Show all</option><optgroup label="Show only:" /><option>Africa</option><option>Americas</option><option>Asia</option><option>Europe</option><option>Oceania</option></select></th><th>Rating</th><th>Previous rating</th></tr>
+</thead><tbody class="notranslate">
+<tr id='7105'><td class=''>1</td><td>7105</td><td>HOU Qin</td><td>CHN</td><td>Asia</td><td>1158</td><td><a href='../../2023-11-01/singles/M4_junior.htm#7105'>1158</a></td></tr>
+<tr id='5421'><td class=''>2</td><td>5421</td><td><a href='moves_M4.htm#p5421'>SAITO Genki</a></td><td>JPN</td><td>Asia</td><td>1109</td><td><a href='../../2023-11-01/singles/M4_junior.htm#5421'>1094</a></td></tr>
+<tr id='5234'><td class=''>3</td><td>5234</td><td>VEGSUND Sebastian Brandal</td><td>NOR</td><td>Europe</td><td>782</td><td><a href='../../2023-11-01/singles/M4_junior.htm#5234'>782</a></td></tr>
+<tr id='5617'><td class=''>4</td><td>5617</td><td><a href='moves_M4.htm#p5617'>CHAVES QUIROS Sebastian</a></td><td>CRC</td><td>Americas</td><td>358</td><td><a href='../../2023-11-01/singles/M4_junior.htm#5617'>360</a></td></tr>
+<tr id='5737'><td class=''>5</td><td>5737</td><td><a href='moves_M4.htm#p5737'>CROWDEN Caleb Benjamin</a></td><td>AUS</td><td>Oceania</td><td>334</td><td><a href='../../2023-11-01/singles/M4_junior.htm#5737'>338</a></td></tr>
+<tr id='6505'><td class=''>6</td><td>6505</td><td><a href='moves_M4.htm#p6505'>ALSALHI Omar</a></td><td>KSA</td><td>Asia</td><td>312</td><td><a href='../../2023-11-01/singles/M4_junior.htm#6505'>315</a></td></tr>
+</tbody></table>
+<h2>Active unrated players</h2>
+<table class="table table-striped table-condensed table-bordered"><thead>
+<tr><th>Player ID</th><th>Name</th><th>Country</th><th>Region</th></tr>
+</thead><tbody class="notranslate">
+<tr><td>3649</td><td>ADDIS Christopher</td><td>AUS</td><td>Oceania</td></tr>
+<tr><td>6840</td><td>ADELUOLA Idowu</td><td>NGR</td><td>Africa</td></tr>
+<tr><td>7052</td><td>ALBARRACIN Claudio Norberto</td><td>ARG</td><td>Americas</td></tr>
+<tr><td>5328</td><td>ALHARBI Mohammed Hussain</td><td>KSA</td><td>Asia</td></tr>
+<tr><td>6673</td><td>ANDERSSON Henrik</td><td>AUT</td><td>Europe</td></tr>
+<tr><td>6733</td><td>BAIGABULOV Yerlan</td><td>KAZ</td><td>Asia</td></tr>
+<tr><td>6869</td><td>BAIRAMSHYN Vitalii</td><td>UKR</td><td>Europe</td></tr>
+<tr><td>7108</td><td>CHEMJONG Digam Sing</td><td>NEP</td><td>Asia</td></tr>
+<tr><td>5363</td><td>GONZALEZ GONZALEZ Juan Felipe</td><td>COL</td><td>Americas</td></tr>
+<tr><td>3001</td><td>GUZMAN JIMENEZ Esteban</td><td>COL</td><td>Americas</td></tr>
+<tr><td>7111</td><td>HINCAPIE SIERRA John Jairo</td><td>COL</td><td>Americas</td></tr>
+<tr><td>6742</td><td>HUANG Chien Fang</td><td>TPE</td><td>Asia</td></tr>
+<tr><td>7143</td><td>JATUTU Mylus Mamu</td><td>SOL</td><td>Oceania</td></tr>
+<tr><td>1285</td><td>KO Myeong-wook</td><td>KOR</td><td>Asia</td></tr>
+<tr><td>1841</td><td>LIU Ming Tang</td><td>TPE</td><td>Asia</td></tr>
+<tr><td>7079</td><td>MABASO Vusimuzi</td><td>RSA</td><td>Africa</td></tr>
+<tr><td>7100</td><td>MARTINEZ Racleo Jr</td><td>PHI</td><td>Asia</td></tr>
+<tr><td>6122</td><td>MAZO CANO Dragan</td><td>GER</td><td>Europe</td></tr>
+<tr><td>6557</td><td>MONCADA Gerardo</td><td>CRC</td><td>Americas</td></tr>
+<tr><td>6798</td><td>MONWANOU Victor Boduni Junior</td><td>BEN</td><td>Africa</td></tr>
+<tr><td>6803</td><td>OGOULADE Vital Smitch Babalola</td><td>BEN</td><td>Africa</td></tr>
+<tr><td>6817</td><td>OLATUNJI Babatunde</td><td>NGR</td><td>Africa</td></tr>
+<tr><td>6739</td><td>OTEPOV Meiirbek</td><td>KAZ</td><td>Asia</td></tr>
+<tr><td>4189</td><td>PARK Sang Gyu</td><td>KOR</td><td>Asia</td></tr>
+<tr><td>236</td><td>PESSOA DE FREITAS Ivanildo</td><td>BRA</td><td>Americas</td></tr>
+<tr><td>6926</td><td>RADULOVIC Andrej</td><td>SRB</td><td>Europe</td></tr>
+<tr><td>5372</td><td>SABRA Ibrahim Ahmad</td><td>JOR</td><td>Asia</td></tr>
+<tr><td>6872</td><td>SAHIROV Pavlo</td><td>UKR</td><td>Europe</td></tr>
+<tr><td>2833</td><td>SANDOVAL Noel</td><td>VEN</td><td>Americas</td></tr>
+<tr><td>7041</td><td>SARYBAEV Shaiyrbek</td><td>KGZ</td><td>Asia</td></tr>
+<tr><td>3421</td><td>SHERIF Mohamed</td><td>EGY</td><td>Africa</td></tr>
+<tr><td>6540</td><td>TAPIA MEJIA Emilio Alejandro</td><td>ECU</td><td>Americas</td></tr>
+<tr><td>7165</td><td>UATEA Taupaka</td><td>TUV</td><td>Oceania</td></tr>
+<tr><td>5777</td><td>VAKA Siaosi</td><td>TGA</td><td>Oceania</td></tr>
+<tr><td>6101</td><td>YOY Kosal</td><td>CAM</td><td>Asia</td></tr>
+<tr><td>379</td><td>ZMRZLY Karel</td><td>CZE</td><td>Europe</td></tr>
+</tbody></table>
+<div class="container-fluid"><div class="row"><div class="text-muted text-right">Generated on 2023-12-01 at 11:46</div></div></div>
+<!--#include virtual="/footer.htm" -->
+</body></html>

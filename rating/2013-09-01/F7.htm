@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>ITTF Para Table Tennis Rating Audits - Women class 7 as of 2013-09-01</title>
+<link rel='stylesheet' href='../../css/normal.css' type='text/css' />
+<link rel="stylesheet" href="../rating.css" type="text/css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<script type="text/javascript" charset="utf-8" src="../../media/js/jquery.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../media/js/jquery.dataTables.min.js"></script>
+<script language="JavaScript" type="text/javascript">
+$(document).ready(function() {
+	var oTable = $('.lists').dataTable( {
+        "bPaginate": false,
+        "aoColumns": [
+                /* Rank */{"bSearchable": false},
+                /* Player ID */{"bSearchable": false},
+                /* Name */ null,
+	            /* Country */{"bSearchable": false, "bSortable": false },
+	            /* Region */{"bSearchable": false, "bSortable": false },
+                /* Rating */{"bSearchable": false}
+		]
+	} );
+	$('select#country').change(function () {
+            oTable.fnFilter($(this).val(), 3);
+    });
+	$('select#region').change(function () {
+            oTable.fnFilter($(this).val(), 4);
+    });
+} );
+</script>
+
+</head>
+<body>
+<div class="banner">
+  <div class='logo'><a href='../..'><img src='../../logos/colour/PTT-110px.png' alt='ITTF-PTT Logo' width='116' height='110' border='0' /></a></div>
+  <div class="banner_title">ITTF Para Table Tennis Rating Audits<br />Women class 7 as of 2013-09-01</div>
+</div><br />
+<div class="help">You can sort this table by clicking on column headers and filter data by searching on part of player's name.</div>
+<table class="lists"><thead>
+<tr><th>Rank</th><th>Player ID</th><th>Name</th><th>Country <select name="country" id="country"><option value="" selected="selected">Show all</option><optgroup label="Show only:"><option>ARG</option><option>BRA</option><option>CHN</option><option>EGY</option><option>FRA</option><option>HUN</option><option>KOR</option><option>LAT</option><option>NED</option><option>ROU</option><option>RUS</option><option>SVK</option><option>TUR</option><option>UKR</option><option>USA</option></select></th><th>Region <select name="region" id="region"><option value="" selected="selected">Show all</option><optgroup label="Show only:"><option>Africa</option><option>Americas</option><option>Asia</option><option>Europe</option></select></th><th>Rating</th><th>Previous Rating</th></tr>
+</thead><tbody>
+<tr><td>1</td><td>2000</td><td>VAN ZON Kelly</td><td>NED</td><td>Europe</td><td>1465</td><td>1465</td></tr>
+<tr><td>2</td><td>1887</td><td>SAFONOVA Viktoriia</td><td>UKR</td><td>Europe</td><td>1395</td><td>1395</td></tr>
+<tr><td>3</td><td>1660</td><td>OVSYANNIKOVA Yulia</td><td>RUS</td><td>Europe</td><td>1358</td><td>1358</td></tr>
+<tr><td>4</td><td>3019</td><td>KORKUT Kubra</td><td>TUR</td><td>Europe</td><td>1357</td><td>1357</td></tr>
+<tr><td>5</td><td>1998</td><td>SCHRIJVER Wendy</td><td>NED</td><td>Europe</td><td>1276</td><td>1276</td></tr>
+<tr><td>6</td><td>19</td><td>MUNOZ Giselle</td><td>ARG</td><td>Americas</td><td>1208</td><td>1208</td></tr>
+<tr><td>7</td><td>2363</td><td><a href='moves_F7.htm#p2363'>MAHMOUD Faiza</a></td><td>EGY</td><td>Africa</td><td>1175</td><td>1195</td></tr>
+<tr><td>8</td><td>2096</td><td>BARNEOUD Anne</td><td>FRA</td><td>Europe</td><td>1165</td><td>1165</td></tr>
+<tr><td>9</td><td>2955</td><td>CONSTANTIN Gabriela</td><td>ROU</td><td>Europe</td><td>1124</td><td>1124</td></tr>
+<tr><td>10</td><td>4646</td><td><a href='moves_F7.htm#p4646'>WANG Rui</a></td><td>CHN</td><td>Asia</td><td>1121</td><td></td></tr>
+<tr><td>11</td><td>1717</td><td>MAUREROVA Michaela</td><td>SVK</td><td>Europe</td><td>1116</td><td>1116</td></tr>
+<tr><td>12</td><td>2097</td><td>VALDES Kateryna</td><td>UKR</td><td>Europe</td><td>1101</td><td>1101</td></tr>
+<tr><td>13</td><td>3799</td><td><a href='moves_F7.htm#p3799'>LEE Kun Woo</a></td><td>KOR</td><td>Asia</td><td>1099</td><td></td></tr>
+<tr><td>14</td><td>4398</td><td><a href='moves_F7.htm#p4398'>SEO Mi-Kyung</a></td><td>KOR</td><td>Asia</td><td>1050</td><td></td></tr>
+<tr><td>15</td><td>4122</td><td>MOLNAR Dora</td><td>HUN</td><td>Europe</td><td>1027</td><td>1027</td></tr>
+<tr><td>16</td><td>3054</td><td>VIEIRA Simone</td><td>BRA</td><td>Americas</td><td>1021</td><td>1021</td></tr>
+<tr><td>17</td><td>4577</td><td>UMSCHEID Sherri</td><td>USA</td><td>Americas</td><td>971</td><td>971</td></tr>
+<tr><td>18</td><td>4343</td><td>SIROTKINA Svetlana</td><td>LAT</td><td>Europe</td><td>800</td><td>800</td></tr>
+</tbody></table>
+<br /><div class="footer">Generated on 2013-09-11 at 22:56</div><br />
+<!--#include virtual="/footer.htm" -->
+</body></html>

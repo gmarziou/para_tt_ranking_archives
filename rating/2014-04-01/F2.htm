@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en"><head><title>ITTF Para Table Tennis Rating Audits - Women class 2 as of 2014-04-01</title>
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href='../../media/css/bootstrap.min.css' rel='stylesheet' type='text/css' />
+<link href='../../media/css/bootstrap-theme.min.css' rel='stylesheet' type='text/css' />
+<link href='../../media/css/footable/footable.core.min.css' rel='stylesheet' type='text/css' />
+<link rel='stylesheet' href='../../css/styles.css' type='text/css' />
+<link rel="stylesheet" href="../rating.css" type="text/css" />
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+   <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<script src="../../media/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../media/js/jquery.dataTables.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../media/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../media/js/footable.all.min.js" type="text/javascript" charset="utf-8"></script>
+<script language="JavaScript" type="text/javascript">
+$(document).ready(function() {
+	var oTable = $('.lists').dataTable( {
+        "bPaginate": false,
+        "aoColumns": [
+                /* Rank */{"bSearchable": false},
+                /* Player ID */{"bSearchable": false},
+                /* Name */ null,
+	            /* Country */{"bSearchable": false, "bSortable": false },
+	            /* Region */{"bSearchable": false, "bSortable": false },
+                /* Rating */{"bSearchable": false}
+		]
+	} );
+	$('select#country').change(function () {
+            oTable.fnFilter($(this).val(), 3);
+    });
+	$('select#region').change(function () {
+            oTable.fnFilter($(this).val(), 4);
+    });
+} );
+</script>
+
+</head>
+<body>
+  <!--#include virtual="/navbar.htm" -->
+
+  <div class="container-fluid">  
+     <div class="row">  
+        <div class="col-lg-2 col-sm-2 col-md-4 col-xs-4">  
+           <a href="/" title="Back to ITTF PTT home page"><div class="ptt-logo"></div></a>  
+   </div>
+   <h1 class='col-lg-10 col-sm-10 col-md-8 col-xs-8'>ITTF Para Table Tennis Rating Audits<br/><small>Women class 2 as of 2014-04-01</small></h1>
+   </div>
+</div>
+<br/>
+<div class="text-muted">You can sort this table by clicking on column headers and filter data by searching on part of player's name.</div>
+<table class="lists table table-striped table-condensed table-bordered"><thead>
+<tr><th>Rank</th><th>Player ID</th><th>Name</th><th>Country <select name="country" id="country"><option value="" selected="selected">Show all</option><optgroup label="Show only:" /><option>BRA</option><option>CHN</option><option>FRA</option><option>GER</option><option>HUN</option><option>IRL</option><option>IRQ</option><option>ISR</option><option>ITA</option><option>KOR</option><option>NED</option><option>RUS</option><option>SRB</option><option>THA</option><option>USA</option></select></th><th>Region <select name="region" id="region"><option value="" selected="selected">Show all</option><optgroup label="Show only:" /><option>Americas</option><option>Asia</option><option>Europe</option></select></th><th>Rating</th><th>Previous Rating</th></tr>
+</thead><tbody>
+<tr><td>1</td><td>2105</td><td>LIU Jing</td><td>CHN</td><td>Asia</td><td>1265</td><td>1265</td></tr>
+<tr><td>2</td><td>1656</td><td><a href='moves_F2.htm#p1656'>PUSHPASHEVA Nadezda</a></td><td>RUS</td><td>Europe</td><td>1264</td><td>1247</td></tr>
+<tr><td>3</td><td>500</td><td><a href='moves_F2.htm#p500'>LAFAYE MARZIOU Isabelle</a></td><td>FRA</td><td>Europe</td><td>1150</td><td>1137</td></tr>
+<tr><td>4</td><td>1019</td><td><a href='moves_F2.htm#p1019'>PODDA Clara</a></td><td>ITA</td><td>Europe</td><td>1140</td><td>1111</td></tr>
+<tr><td>5</td><td>498</td><td><a href='moves_F2.htm#p498'>SIREAU Florence</a></td><td>FRA</td><td>Europe</td><td>1085</td><td>1082</td></tr>
+<tr><td>6</td><td>499</td><td><a href='moves_F2.htm#p499'>CLOT Genevieve</a></td><td>FRA</td><td>Europe</td><td>1020</td><td>1012</td></tr>
+<tr><td>7</td><td>3874</td><td>MAENPUAK Wachirapond</td><td>THA</td><td>Asia</td><td>1013</td><td>1013</td></tr>
+<tr><td>8</td><td>3080</td><td>SEO Suyeon</td><td>KOR</td><td>Asia</td><td>998</td><td>998</td></tr>
+<tr><td>9</td><td>920</td><td>MC CARRON ROONEY Rena</td><td>IRL</td><td>Europe</td><td>954</td><td>954</td></tr>
+<tr><td>10</td><td>4660</td><td>KIM Aeran</td><td>KOR</td><td>Asia</td><td>913</td><td>913</td></tr>
+<tr><td>11</td><td>2975</td><td><a href='moves_F2.htm#p2975'>PRVULOVIC Ana</a></td><td>SRB</td><td>Europe</td><td>900</td><td></td></tr>
+<tr><td>12</td><td>4403</td><td>SEO Jinsook</td><td>KOR</td><td>Asia</td><td>896</td><td>896</td></tr>
+<tr><td>13</td><td>2297</td><td>NEUBIG Bianca</td><td>GER</td><td>Europe</td><td>883</td><td>883</td></tr>
+<tr><td>14</td><td>4224</td><td><a href='moves_F2.htm#p4224'>TUGENDHAFT ALBAG Yael</a></td><td>ISR</td><td>Europe</td><td>875</td><td>833</td></tr>
+<tr><td>15</td><td>2228</td><td>SALIH Salwa</td><td>IRQ</td><td>Asia</td><td>867</td><td>867</td></tr>
+<tr><td>16</td><td>2199</td><td>AZEVEDO Carla</td><td>BRA</td><td>Americas</td><td>860</td><td>860</td></tr>
+<tr><td>17</td><td>4659</td><td>KIM Seonhwan</td><td>KOR</td><td>Asia</td><td>800</td><td>800</td></tr>
+<tr><td>18</td><td>4221</td><td><a href='moves_F2.htm#p4221'>COBBEN Femke</a></td><td>NED</td><td>Europe</td><td>758</td><td>757</td></tr>
+<tr><td>19</td><td>3731</td><td>PROFITT Tara</td><td>USA</td><td>Americas</td><td>741</td><td>741</td></tr>
+<tr><td>20</td><td>831</td><td><a href='moves_F2.htm#p831'>KOVACS Ilona</a></td><td>HUN</td><td>Europe</td><td>716</td><td>729</td></tr>
+<tr><td>21</td><td>4864</td><td>OLIVEIRA Catia</td><td>BRA</td><td>Americas</td><td>558</td><td>558</td></tr>
+</tbody></table>
+<div class="container-fluid"><div class="row"><div class="text-muted text-right">Generated on 2014-04-13 at 23:29</div></div></div>
+<!--#include virtual="/footer.htm" -->
+</body></html>

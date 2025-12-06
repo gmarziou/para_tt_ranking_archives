@@ -1,0 +1,161 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>ITTF PTT rating system: answers to frequently asked questions</title>
+    <!--#include virtual="/head.htm" -->
+    <script src="../media/js/rotator.js"></script>
+    <script type="text/javascript">
+        var address = 'qwgg@kgen.pb.am';
+        $(function () {
+            $('#email').attr('href', 'mailto:' + $.rotate13(address) + '?subject=ITTF%20PTT%20rating%20system');
+        });
+    </script>
+    <style type="text/css">
+        .topic {
+            border: solid 1px;
+            border-color: Black;
+            padding: 5px;
+            margin-bottom: 1em;
+        }
+
+        .question {
+            font-weight: bold;
+            margin-bottom: 1em;
+        }
+
+        .answer {
+        }
+    </style>
+</head>
+<body>
+    <!--#include virtual="/navbar.htm" -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-2 col-sm-2 col-md-4 col-xs-4">
+                <a href="/" title="Back to ITTF PTT home page"><div class="ptt-logo"></div></a>
+            </div>
+            <h1 class='col-lg-10 col-sm-10 col-md-8 col-xs-8'>ITTF PTT rating system: answers to frequently asked questions</h1>
+        </div>
+    </div>
+    <br />
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12">
+                <p><small>Last update on <!--#echo var="LAST_MODIFIED" --></small></p>
+                <div class="topic">
+                    <div class="question">
+                        What is the initial rating of a new player?
+                    </div>
+                    <div class="answer">
+                        A new player becomes rated only after at least two winq against a player who are already
+                        on the rating list. The computer system at that time analyses all his/her recent
+                        results and calculates an appropriate initial rating.
+                    </div>
+                </div>
+                <div class="topic">
+                    <div class="question">
+                        Is there anything in this rating system to discourage top players from participating
+                        in tournaments once they have enough points?
+                    </div>
+                    <div class="answer">
+                        This potential issue is covered by 2 rules:
+                        <ol>
+                            <li>
+                                The rating system has a depreciation mechanism which decreases player's points by
+                                5% after 1 year of inactivity. We can adjust these 2 parameters to add more incentives
+                                to participate.
+                            </li>
+                            <li>
+                                In order to be selected for World Championships or Paralympic Games, each player
+                                must have achieved a minimal tournament credit based on tournament ranking factors.
+                                For example, to be selected for London 2012, the credit value has been set at 80
+                                (including regional championships) for the period from 4 November 2010 to 31 December
+                                2011, this means up to 4 factor 20 tournaments, the regional championships + 1 Fa40;
+                                the regional championships + 2 Fa20, 2 Fa40, 1 Fa40 + 2 Fa20.
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="topic">
+                    <div class="question">
+                        Why don't you count doubles?
+                    </div>
+                    <div class="answer">
+                        <p>
+                            Because it's like comparing apples and oranges : singles and doubles are different.
+                            Being good in doubles does not necessarily mean that you are good in singles and
+                            the reverse is also true. This is a rating system to rate individual players.
+                        </p>
+                        <p>
+                            Another reason is that in para table tennis, the difference in ability between 2
+                            players can be significant especially when several classes are combined. This is
+                            even more obvious when looking at standing players where quick moves are necessary
+                            to hit the ball alternately.
+                        </p>
+                        <p>
+                            Let's take the example of a class 10 player playing with a class 7 partner playing
+                            against another pair composed of 2 class 8 players. Now, let's say the class 10
+                            player runs quickly enough to compensate his/her partner's more limited motion and
+                            they win, how should their rating evolve? Is it fair to say that the class 7 should
+                            half of the points or should he get less but then by how much?
+                        </p>
+                    </div>
+                </div>
+                <div class="topic">
+                    <div class="question">
+                        Is there a risk that a strong team may drop the doubles game to play one more singles
+                        game?
+                    </div>
+                    <div class="answer">
+                        <p>
+                            This could be the case with the previous ranking system where a strong player could
+                            get points for winning against a weaker one. With the rating system, this is no
+                            longer the case.
+                        </p>
+                        <p>
+                            Let me take a real example from Lignano 2011 in TM9: UKR vs. ESP. The Ukrainian
+                            team was much stronger than the Spanish team, a difference more than 500 points
+                            in ratings.
+                        </p>
+                        <p>
+                            The results were as follows based on the rating system:
+                            <ol>
+                                <li>
+                                    KUBOV,Vadym (2058) wins against Martín,Francisco Manuel (1434) 3:0 ; 4,5,4 -> <strong>
+                                        no point
+                                    </strong>
+                                </li>
+                                <li>
+                                    SHCHEPANSKIY,Yuriy (2120) wins against Azcón,Joaquín (1523) 3:0 ; 3,8,7 -> <strong>
+                                        no point
+                                    </strong>
+                                </li>
+                            </ol>
+                            Now let's say that Ukrainian team decides to play one more single by dropping the
+                            double (in reality they won the double 3:1 and later on the gold medal). The result
+                            on the rating system would be:
+                            <ol start="4">
+                                <li>KUBOV,Vadym (2058) against Azcón,Joaquín (1523) -> <strong>no point</strong></li>
+                            </ol>
+                            So there is no interest in losing the doubles. Players are clever and they will
+                            not play more games for nothing. Of course, one could argue that the difference
+                            between the 2 teams was too big but remember that if the difference is smaller it
+                            means that the risk to lose is higher.
+                    </div>
+                </div>
+                <div class="topic">
+                    <div class="question">
+                        What happens in case of disqualification of a player?
+                    </div>
+                    <div class="answer">
+                        It can happen that a players gets disqualified after having played a match, for example for failing racket control.<br />
+                        If the disqualified player lost the match, the ratings will move as usual.<br />
+                        If the disqualified player won the match, the result will be inverted and ratings will move accordingly.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--#include virtual="/footer.htm" -->
+</body>
+</html>

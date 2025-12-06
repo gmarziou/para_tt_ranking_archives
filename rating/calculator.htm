@@ -1,0 +1,449 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>ITTF PTT rating calculator</title>
+	<script type="text/javascript">
+		function valid_ratings() {
+			var beforeWinner = document.querySelector("#beforeRatingWinner").value;
+			var beforeLoser = document.querySelector("#beforeRatingLoser").value;
+			var c = /[0-9]|./;
+			if (beforeWinner == "" || beforeLoser == "" || beforeWinner == "?" || beforeLoser == "?" || !c.test(
+					beforeWinner) || !c.test(beforeLoser)) {
+				return false
+			}
+			return true
+		}
+
+		function computeRatings() {
+			if (valid_ratings()) {
+
+				var weight = computeWeight(Number(document.querySelector("#tournament").value), document.querySelector(
+					"#event").value);
+
+				var sameCountry = document.querySelector("#sameCountry").value === 'true';
+
+				var beforeRatingWinner = Number(document.querySelector("#beforeRatingWinner").value);
+				var beforeRatingLoser = Number(document.querySelector("#beforeRatingLoser").value);
+
+				var pointsWinner, pointsLoser;
+				if (sameCountry) {
+					pointsWinner = Math.ceil(weight);
+					pointsLoser = 1;
+				} else {
+					var diffRating = beforeRatingWinner - beforeRatingLoser;
+					pointsWinner = Math.ceil(weight * computeOutcomeWinner(diffRating));
+					pointsLoser = computeOutcomeLoser(diffRating);
+				}
+
+				pointsLoser = adjustLoserPointsForClassDifference(pointsLoser);
+
+				var newRatingWinner = beforeRatingWinner + pointsWinner;
+				showRating("Winner", newRatingWinner, "+" + pointsWinner);
+
+				var newRatingLoser = beforeRatingLoser - pointsLoser;
+				showRating("Loser", newRatingLoser, "-" + pointsLoser);
+			} else {
+				document.querySelector("#rating-error").style.display = 'none';
+				return;
+			}
+		}
+
+		function switchPlayers() {
+			var beforeWinner = document.querySelector("#beforeRatingWinner").value;
+			var beforeLoser = document.querySelector("#beforeRatingLoser").value;
+			document.querySelector("#beforeRatingWinner").value = beforeLoser;
+			document.querySelector("#beforeRatingLoser").value = beforeWinner;
+			document.querySelector("#classDiff").value = 0;
+			computeRatings();
+		}
+
+
+		function resetRatings() {
+			document.querySelector("#ratingForm").reset();
+			document.querySelector("#rating-error").style.display = 'none';
+			document.querySelector("#afterExplanationWinner").style.display = 'none';
+			document.querySelector("#afterRatingWinner").style.display = 'none';
+			document.querySelector("#afterExplanationLoser").style.display = 'none';
+			document.querySelector("#afterRatingLoser").style.display = 'none';
+		}
+
+		function adjustLoserPointsForClassDifference(pointsLoser) {
+			var classDiff = Number(document.querySelector("#classDiff").value);
+
+			if (classDiff > 0) {
+				return Math.round(pointsLoser * (1 - (classDiff * 0.2)));
+			} else {
+				return pointsLoser;
+			}
+		}
+
+		function showRating(who, newRating, change) {
+			document.querySelector("#afterExplanation" + who).textContent = change;
+			document.querySelector("#afterExplanation" + who).style.display = 'block';
+			document.querySelector("#afterRating" + who).textContent = newRating;
+			document.querySelector("#afterRating" + who).style.display = 'block';
+		}
+
+		function computeWeight(a, b) {
+			if (a == 1) return 1;
+			if (b == "T") {
+				return a - .5
+			}
+			return a
+		}
+
+		function computeOutcomeWinner(diffRating) {
+			if (diffRating >= 0) {
+				// Normal outcome
+				if (diffRating < 25) {
+					return 12
+				} else if (diffRating < 50) {
+					return 10
+				} else if (diffRating < 100) {
+					return 7
+				} else if (diffRating < 150) {
+					return 4
+				} else if (diffRating < 200) {
+					return 3
+				} else if (diffRating < 250) {
+					return 2
+				} else {
+					return 1
+				}
+			} else {
+				// Upset outcome
+				diffRating = -diffRating;
+				if (diffRating < 25) {
+					return 12
+				} else if (diffRating < 50) {
+					return 15
+				} else if (diffRating < 100) {
+					return 18
+				} else if (diffRating < 150) {
+					return 22
+				} else if (diffRating < 200) {
+					return 30
+				} else if (diffRating < 250) {
+					return 39
+				} else {
+					return 48
+				}
+			}
+		}
+
+		function computeOutcomeLoser(diffRating) {
+			if (diffRating >= 0) {
+				// Normal outcome
+				if (diffRating < 25) {
+					return 4
+				} else if (diffRating < 50) {
+					return 3
+				} else if (diffRating < 100) {
+					return 3
+				} else if (diffRating < 150) {
+					return 2
+				} else if (diffRating < 200) {
+					return 2
+				} else if (diffRating < 250) {
+					return 1
+				} else {
+					return 1
+				}
+			} else {
+				// Upset outcome
+				diffRating = -diffRating;
+				if (diffRating < 25) {
+					return 4
+				} else if (diffRating < 50) {
+					return 5
+				} else if (diffRating < 100) {
+					return 6
+				} else if (diffRating < 150) {
+					return 8
+				} else if (diffRating < 200) {
+					return 10
+				} else if (diffRating < 250) {
+					return 13
+				} else {
+					return 16
+				}
+			}
+		}
+	</script>
+</head>
+<style type='text/css'>
+	<!--
+	body {
+		margin: 10px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 12px;
+		color: #000000;
+		background-color: #fff;
+	}
+
+	div,
+	input {
+		z-index: 1;
+	}
+
+	h2 {
+		padding: 0px;
+		margin: 0px;
+	}
+
+	.rating-area {
+		min-height: 300px;
+	}
+
+	#calculator {
+		background-color: #EEE;
+		padding-top: 10px;
+		width: 500px;
+		border: solid 1px #CCC;
+		margin: 0 auto;
+		position: relative;
+	}
+
+	#player-info {
+		width: 500px;
+	}
+
+	#afterExplanationWinner,
+	#afterExplanationLoser,
+	#afterRatingWinner,
+	#afterRatingLoser {
+		font-size: 27px;
+	}
+
+	input {
+		width: 100px;
+		font-weight: bold;
+		font-size: 1.5em;
+	}
+
+	.section {
+		margin: 0px 10px 0px 10px;
+		float: left;
+	}
+
+	.clear,
+	clear {
+		clear: left;
+	}
+
+	.centered {
+		text-align: center;
+	}
+
+	.half-block {
+		width: 50%;
+		float: left;
+		margin: 10px 0px 5px 0px;
+		font-weight: bold;
+		position: relative;
+	}
+
+	.full-block {
+		width: 100%;
+	}
+
+	.compute-button {
+		height: 40px;
+		position: absolute;
+		right: 190px;
+		top: 200px;
+		width: 115px;
+		font-weight: 600;
+		color: #fff;
+		background-color: #005043;
+		border-color: #00372e;
+		border-radius: 4px;
+		border-bottom-style: solid;
+		border-bottom-width: 1px;
+		cursor: pointer;
+	}
+
+	.switch-button {
+		color: #000000;
+		font-weight: 600;
+		cursor: pointer;
+	}
+
+	.big-arrow {
+		position: absolute;
+		top: 62px;
+		z-index: 0;
+		opacity: .25;
+	}
+
+	.winner-arrow {
+		position: absolute;
+		top: -2px;
+		z-index: -1;
+		opacity: .15;
+		left: 51px;
+	}
+
+	.winner-arrow .arrow-body {
+		background-color: blue;
+	}
+
+	.loser-arrow {
+		position: absolute;
+		top: -2px;
+		z-index: -1;
+		opacity: .15;
+		left: 51px;
+	}
+
+	.loser-arrow .arrow-body {
+		background-color: red;
+	}
+
+	.arrow-body {
+		height: 225px;
+		margin: 0 auto;
+		position: relative;
+		width: 75px;
+	}
+
+	.arrow-tip {
+		position: relative;
+		font-size: 150px;
+		top: -40px;
+	}
+
+	.winner {
+		color: blue;
+	}
+
+	.loser {
+		color: red;
+	}
+
+	#rating-error {
+		color: red;
+		display: none;
+		font-size: 14px;
+		font-weight: bold;
+		left: 186px;
+		position: absolute;
+		top: 112px;
+	}
+	-->
+</style>
+
+<body>
+	<div id='calculator' class='centered'>
+		<div class='rating-area'>
+			<div id="rating-error">&larr; Numbers only &rarr;</div>
+			<h1 style='text-shadow: 0px -2px -3px #FFF;'>Rating Calculator</h1>
+
+			<form id="ratingForm">
+				<!-- *** Player info *** -->
+				<div class='half-block rating'>
+					<div class='winner-arrow'>
+						<div class='arrow-body'></div>
+						<div class='winner arrow-tip'>&#9660;</div>
+					</div>
+					<h2>Winner</h2>
+					<h3>Initial rating</h3>
+					<input type="text" class="centered rating-input" id="beforeRatingWinner" placeholder="?"
+						maxlength="4" />
+				</div>
+				<div class='half-block rating'>
+					<div class='loser-arrow'>
+						<div class='arrow-body'></div>
+						<div class='loser arrow-tip'>&#9660;</div>
+					</div>
+					<h2>Loser</h2>
+					<h3>Initial rating</h3>
+					<input type="text" class="centered rating-input" id="beforeRatingLoser" placeholder="?"
+						maxlength="4" />
+				</div>
+				<div class='clear' />
+
+				<div id="country-container" class='half-block'>
+					<label>
+						Same country</label><br />
+					<select id="sameCountry">
+						<option value="false">No</option>
+						<option value="true">Yes</option>
+					</select>
+				</div>
+				<div id="class-container" class='half-block'>
+					<label>
+						Class difference with winner</label><br />
+					<select id="classDiff">
+						<option value="0">Same class</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+					</select>
+				</div>
+				<div class='clear' />
+
+				<!-- *** Match info *** -->
+				<div id="tournament-container" class='half-block'>
+					<label>
+						Tournament</label><br />
+					<select id="tournament" style="width: 130px">
+						<option value="1">Factor 20</option>
+						<option value="1.5">Factor 40</option>
+						<option value="1.5">Championships</option>
+					</select>
+				</div>
+				<div id="event-container" class='half-block'>
+					<label>
+						Event</label></br />
+					<select id="event">
+						<option value="S">Singles</option>
+						<option value="T">Team</option>
+					</select>
+				</div>
+
+
+				<div class='clear'></div>
+
+				<!-- *** Outcome explanation *** -->
+				<div id="afterExplanationWinner" class='half-block'></div>
+				<div id="afterExplanationLoser" class='half-block'></div>
+				<div class='clear' style='margin-bottom: 50px'></div>
+
+				<!-- *** Final ratings *** -->
+				<div id="afterRatingWinner" class='half-block'></div>
+				<div id="afterRatingLoser" class='half-block'></div>
+
+				<div class='full-block'>
+					<input class='compute-button' type="button" onclick="computeRatings()" value="Compute" id="run" />
+					<input class='switch-button' type="button" onclick="switchPlayers()" value="⇄" title="Switch winner and loser"/><br/>
+					<input class='reset-button' type="button" onclick="resetRatings()" value="Reset" />
+				</div>
+			</form>
+		</div>
+	</div>
+	<div style='margin-top: 60px; text-align: left; padding: 5px'>
+		<hr style='opacity: 0.15; margin-bottom: 10px' />
+		<div>Updated on 2023-03-04</div><br/>
+		<div>
+			<strong style='color:red'>Warning:</strong> Don&#39;t forget that players&#39; ratings are updated after
+			each
+			match. So winning against one player may not produce the same outcome at the beginning of a tournament or at
+			its
+			end.
+		</div>
+		<div>
+			<hr style='opacity: 0.15;  margin-bottom: 10px' />
+			<strong style='color:blue'>Tip:</strong> You don't need the Internet to use this calculator, once the page
+			has
+			been loaded in your browser you can use it offline as long as you don't close your browser.<br />
+			Also, this page can be saved from your browser into a folder on your
+			computer. Then, it can be executed offline by double clicking on the saved page.
+		</div>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en"><head><title>ITTF Para Table Tennis Ranking Lists - Women class 8 as of 2014-12-01</title>
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href='../../media/css/bootstrap.min.css' rel='stylesheet' type='text/css' />
+<link href='../../media/css/bootstrap-theme.min.css' rel='stylesheet' type='text/css' />
+<link href='../../media/css/footable/footable.core.min.css' rel='stylesheet' type='text/css' />
+<link rel='stylesheet' href='../../css/styles.css' type='text/css' />
+<link rel="stylesheet" href="../rating.css" type="text/css" />
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+   <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<script src="../../media/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../media/js/jquery.dataTables.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../media/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../media/js/footable.all.min.js" type="text/javascript" charset="utf-8"></script>
+<script language="JavaScript" type="text/javascript">
+$(document).ready(function() {
+	var oTable = $('.lists').dataTable( {
+        "bPaginate": false,
+        "aoColumns": [
+            /* Rank */ {"bSearchable": false},
+            /* Player ID */ {"bSearchable": false},
+            /* Name */ null,
+            /* Country */ {"bSearchable": false, "bSortable": false },
+            /* Region */ {"bSearchable": false, "bSortable": false },
+            /* Rating */ {"bSearchable": false},
+            /* Previous Rating */ {"bSearchable": false}
+		]
+	} );
+	$('select#country').change(function () {
+            oTable.fnFilter($(this).val(), 3);
+    });
+	$('select#region').change(function () {
+            oTable.fnFilter($(this).val(), 4);
+    });
+} );
+</script>
+
+</head>
+<body>
+  <!--#include virtual="/navbar.htm" -->
+
+  <div class="container-fluid">  
+     <div class="row">  
+        <div class="col-lg-2 col-sm-2 col-md-4 col-xs-4">  
+           <a href="/" title="Back to ITTF PTT home page"><div class="ptt-logo"></div></a>  
+   </div>
+   <h1 class='col-lg-10 col-sm-10 col-md-8 col-xs-8'>ITTF Para Table Tennis Ranking Lists<br/><small>Women class 8 as of 2014-12-01</small></h1>
+   </div>
+</div>
+<br/>
+<div class="text-muted">You can sort this table by clicking on column headers and filter data by searching on part of player's name.</div>
+<table class="lists table table-striped table-condensed table-bordered"><thead>
+<tr><th>Rank</th><th>Player ID</th><th>Name</th><th>Country <select name="country" id="country"><option value="" selected="selected">Show all</option><optgroup label="Show only:" /><option>BRA</option><option>CHN</option><option>FRA</option><option>GER</option><option>HUN</option><option>IND</option><option>JPN</option><option>KOR</option><option>LAT</option><option>NED</option><option>NOR</option><option>PHI</option><option>POL</option><option>ROU</option><option>RSA</option><option>RUS</option><option>SWE</option><option>THA</option></select></th><th>Region <select name="region" id="region"><option value="" selected="selected">Show all</option><optgroup label="Show only:" /><option>Africa</option><option>Americas</option><option>Asia</option><option>Europe</option></select></th><th>Rating</th><th>Previous Rating</th></tr>
+</thead><tbody>
+<tr><td>1</td><td>515</td><td>KAMKASOMPHOU Thu</td><td>FRA</td><td>Europe</td><td>1615</td><td>1615</td></tr>
+<tr><td>2</td><td>3758</td><td>MAO Jingdian</td><td>CHN</td><td>Asia</td><td>1546</td><td>1544</td></tr>
+<tr><td>3</td><td>3153</td><td>DAHLEN  Aida </td><td>NOR</td><td>Europe</td><td>1493</td><td>1493</td></tr>
+<tr><td>4</td><td>3711</td><td>WOLF Juliane</td><td>GER</td><td>Europe</td><td>1415</td><td>1415</td></tr>
+<tr><td>5</td><td>1755</td><td>BENGTSSON ROSENMEIER Marleen</td><td>SWE</td><td>Europe</td><td>1395</td><td>1395</td></tr>
+<tr><td>6</td><td>3582</td><td>JASTRZEBSKA Dajana</td><td>POL</td><td>Europe</td><td>1361</td><td>1361</td></tr>
+<tr><td>7</td><td>2512</td><td>PAN Mengyi</td><td>CHN</td><td>Asia</td><td>1355</td><td>1357</td></tr>
+<tr><td>8</td><td>2849</td><td><a href='moves_F8.htm#p2849'>MEDINA Josephine</a></td><td>PHI</td><td>Asia</td><td>1350</td><td>1321</td></tr>
+<tr><td>9</td><td>837</td><td>ARLOY Zsofia</td><td>HUN</td><td>Europe</td><td>1312</td><td>1312</td></tr>
+<tr><td>10</td><td>2349</td><td>RODRIGUEZ Jane Carla</td><td>BRA</td><td>Americas</td><td>1212</td><td>1212</td></tr>
+<tr><td>11</td><td>4464</td><td>LITVINENKO Elena</td><td>RUS</td><td>Europe</td><td>1155</td><td>1155</td></tr>
+<tr><td>12</td><td>4593</td><td>KANTHER Wiebke</td><td>GER</td><td>Europe</td><td>1154</td><td>1154</td></tr>
+<tr><td>13</td><td>4926</td><td>GILMANOVA  Diana</td><td>RUS</td><td>Europe</td><td>1075</td><td>1075</td></tr>
+<tr><td>14</td><td>4673</td><td>KOH Duk Ja</td><td>KOR</td><td>Asia</td><td>1033</td><td>1033</td></tr>
+<tr><td>15</td><td>3110</td><td>HRISCU Florentina</td><td>ROU</td><td>Europe</td><td>1022</td><td>1022</td></tr>
+<tr><td>16</td><td>5011</td><td>FUKANO Megumi</td><td>JPN</td><td>Asia</td><td>1019</td><td>1019</td></tr>
+<tr><td>17</td><td>5056</td><td>SUANGTHO Sumalee</td><td>THA</td><td>Asia</td><td>1016</td><td>1016</td></tr>
+<tr><td>18</td><td>4343</td><td>SIROTKINA Svetlana</td><td>LAT</td><td>Europe</td><td>982</td><td>982</td></tr>
+<tr><td>19</td><td>4445</td><td>KLOMP Suzan</td><td>NED</td><td>Europe</td><td>913</td><td>913</td></tr>
+<tr><td>20</td><td>4596</td><td>FARKAS Laszlóné</td><td>HUN</td><td>Europe</td><td>865</td><td>865</td></tr>
+<tr><td>21</td><td>4690</td><td>SUTAR Vaishnavi Vinayak</td><td>IND</td><td>Asia</td><td>686</td><td>686</td></tr>
+<tr><td>22</td><td>2221</td><td>FRANSMAN Claire</td><td>RSA</td><td>Africa</td><td>600</td><td>600</td></tr>
+</tbody></table>
+<div class="container-fluid"><div class="row"><div class="text-muted text-right">Generated on 2014-12-01 at 22:11</div></div></div>
+<!--#include virtual="/footer.htm" -->
+</body></html>

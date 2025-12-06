@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>ITTF Para Table Tennis Rating Audits - Women class 8 as of 2013-11-01</title>
+<link rel='stylesheet' href='../../css/normal.css' type='text/css' />
+<link rel="stylesheet" href="../rating.css" type="text/css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<script type="text/javascript" charset="utf-8" src="../../media/js/jquery.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../media/js/jquery.dataTables.min.js"></script>
+<script language="JavaScript" type="text/javascript">
+$(document).ready(function() {
+	var oTable = $('.lists').dataTable( {
+        "bPaginate": false,
+        "aoColumns": [
+                /* Rank */{"bSearchable": false},
+                /* Player ID */{"bSearchable": false},
+                /* Name */ null,
+	            /* Country */{"bSearchable": false, "bSortable": false },
+	            /* Region */{"bSearchable": false, "bSortable": false },
+                /* Rating */{"bSearchable": false}
+		]
+	} );
+	$('select#country').change(function () {
+            oTable.fnFilter($(this).val(), 3);
+    });
+	$('select#region').change(function () {
+            oTable.fnFilter($(this).val(), 4);
+    });
+} );
+</script>
+
+</head>
+<body>
+<div class="banner">
+  <div class='logo'><a href='../..'><img src='../../logos/colour/PTT-110px.png' alt='ITTF-PTT Logo' width='116' height='110' border='0' /></a></div>
+  <div class="banner_title">ITTF Para Table Tennis Rating Audits<br />Women class 8 as of 2013-11-01</div>
+</div><br />
+<div class="help">You can sort this table by clicking on column headers and filter data by searching on part of player's name.</div>
+<table class="lists"><thead>
+<tr><th>Rank</th><th>Player ID</th><th>Name</th><th>Country <select name="country" id="country"><option value="" selected="selected">Show all</option><optgroup label="Show only:"><option>BRA</option><option>CAN</option><option>CHN</option><option>CZE</option><option>FRA</option><option>GER</option><option>HUN</option><option>KOR</option><option>NED</option><option>NOR</option><option>PHI</option><option>POL</option><option>ROU</option><option>RUS</option><option>SWE</option></select></th><th>Region <select name="region" id="region"><option value="" selected="selected">Show all</option><optgroup label="Show only:"><option>Americas</option><option>Asia</option><option>Europe</option></select></th><th>Rating</th><th>Previous Rating</th></tr>
+</thead><tbody>
+<tr><td>1</td><td>515</td><td>KAMKASOMPHOU Thu</td><td>FRA</td><td>Europe</td><td>1610</td><td>1610</td></tr>
+<tr><td>2</td><td>3758</td><td><a href='moves_F8.htm#p3758'>MAO Jingdian</a></td><td>CHN</td><td>Asia</td><td>1521</td><td>1521</td></tr>
+<tr><td>3</td><td>3153</td><td>DAHLEN Aida</td><td>NOR</td><td>Europe</td><td>1501</td><td>1501</td></tr>
+<tr><td>4</td><td>3711</td><td>WOLF Juliane</td><td>GER</td><td>Europe</td><td>1390</td><td>1390</td></tr>
+<tr><td>5</td><td>1755</td><td>ROSENMEIER Marleen</td><td>SWE</td><td>Europe</td><td>1364</td><td>1364</td></tr>
+<tr><td>6</td><td>3582</td><td>JASTRZEBSKA Dajana</td><td>POL</td><td>Europe</td><td>1343</td><td>1343</td></tr>
+<tr><td>7</td><td>1756</td><td>ABRAHAMSSON Josefin</td><td>SWE</td><td>Europe</td><td>1328</td><td>1328</td></tr>
+<tr><td>8</td><td>837</td><td>ARLOY Zsofia</td><td>HUN</td><td>Europe</td><td>1309</td><td>1309</td></tr>
+<tr><td>9</td><td>2849</td><td>MEDINA Josephine</td><td>PHI</td><td>Asia</td><td>1295</td><td>1295</td></tr>
+<tr><td>10</td><td>2512</td><td><a href='moves_F8.htm#p2512'>PAN Mengyi</a></td><td>CHN</td><td>Asia</td><td>1265</td><td>1262</td></tr>
+<tr><td>11</td><td>2724</td><td>CHAN Stephanie</td><td>CAN</td><td>Americas</td><td>1248</td><td>1248</td></tr>
+<tr><td>12</td><td>2349</td><td>RODRIGUES Jane</td><td>BRA</td><td>Americas</td><td>1216</td><td>1216</td></tr>
+<tr><td>13</td><td>4593</td><td>KANTHER Wiebke</td><td>GER</td><td>Europe</td><td>1150</td><td>1150</td></tr>
+<tr><td>14</td><td>364</td><td>JANECKOVA Jaroslava</td><td>CZE</td><td>Europe</td><td>1149</td><td>1149</td></tr>
+<tr><td>15</td><td>4464</td><td>LITVINENKO Elena</td><td>RUS</td><td>Europe</td><td>1120</td><td>1120</td></tr>
+<tr><td>16</td><td>3779</td><td><a href='moves_F8.htm#p3779'>KIM Sung Ok</a></td><td>KOR</td><td>Asia</td><td>1080</td><td>1082</td></tr>
+<tr><td>17</td><td>3077</td><td>CHOI Yunghui</td><td>KOR</td><td>Asia</td><td>1057</td><td>1057</td></tr>
+<tr><td>18</td><td>3110</td><td>HRISCU Florentina</td><td>ROU</td><td>Europe</td><td>1047</td><td>1047</td></tr>
+<tr><td>19</td><td>4445</td><td>KLOMP Suzan</td><td>NED</td><td>Europe</td><td>932</td><td>932</td></tr>
+</tbody></table>
+<br /><div class="footer">Generated on 2013-11-08 at 00:28</div><br />
+<!--#include virtual="/footer.htm" -->
+</body></html>

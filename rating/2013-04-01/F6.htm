@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>ITTF Para Table Tennis Rating Audits - Women class 6 as of 2013-04-01</title>
+<link rel='stylesheet' href='../../css/normal.css' type='text/css' />
+<link rel="stylesheet" href="../rating.css" type="text/css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<script type="text/javascript" charset="utf-8" src="../../media/js/jquery.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../media/js/jquery.dataTables.min.js"></script>
+<script language="JavaScript" type="text/javascript">
+$(document).ready(function() {
+	var oTable = $('.lists').dataTable( {
+        "bPaginate": false,
+        "aoColumns": [
+                /* Rank */{"bSearchable": false},
+                /* Player ID */{"bSearchable": false},
+                /* Name */ null,
+	            /* Country */{"bSearchable": false, "bSortable": false },
+	            /* Region */{"bSearchable": false, "bSortable": false },
+                /* Rating */{"bSearchable": false}
+		]
+	} );
+	$('select#country').change(function () {
+            oTable.fnFilter($(this).val(), 3);
+    });
+	$('select#region').change(function () {
+            oTable.fnFilter($(this).val(), 4);
+    });
+} );
+</script>
+
+</head>
+<body>
+<div class="banner">
+  <div class='logo'><a href='../..'><img src='../../logos/colour/PTT-110px.png' alt='ITTF-PTT Logo' width='116' height='110' border='0' /></a></div>
+  <div class="banner_title">ITTF Para Table Tennis Rating Audits<br />Women class 6 as of 2013-04-01</div>
+</div><br />
+<div class="help">You can sort this table by clicking on column headers and filter data by searching on part of player's name.</div>
+<table class="lists"><thead>
+<tr><th>Rank</th><th>Player ID</th><th>Name</th><th>Country <select name="country" id="country"><option value="" selected="selected">Show all</option><optgroup label="Show only:"><option>AUS</option><option>BRA</option><option>CRO</option><option>GER</option><option>KOR</option><option>POL</option><option>RUS</option><option>UKR</option></select></th><th>Region <select name="region" id="region"><option value="" selected="selected">Show all</option><optgroup label="Show only:"><option>Americas</option><option>Asia</option><option>Europe</option><option>Oceania</option></select></th><th>Rating</th><th>Previous Rating</th></tr>
+</thead><tbody>
+<tr><td>1</td><td>1658</td><td><a href='moves_F6.htm#p1658'>CHEBANIKA Raisa</a></td><td>RUS</td><td>Europe</td><td>1371</td><td>1374</td></tr>
+<tr><td>2</td><td>4592</td><td><a href='moves_F6.htm#p4592'>PAOVIC Sandra</a></td><td>CRO</td><td>Europe</td><td>1338</td><td></td></tr>
+<tr><td>3</td><td>1888</td><td><a href='moves_F6.htm#p1888'>KLYMENKO Yuliya</a></td><td>UKR</td><td>Europe</td><td>1323</td><td>1328</td></tr>
+<tr><td>4</td><td>2470</td><td><a href='moves_F6.htm#p2470'>KHODZYNSKA Antonina</a></td><td>UKR</td><td>Europe</td><td>1316</td><td>1283</td></tr>
+<tr><td>5</td><td>3706</td><td><a href='moves_F6.htm#p3706'>GREBE Stephanie</a></td><td>GER</td><td>Europe</td><td>1226</td><td>1219</td></tr>
+<tr><td>6</td><td>2422</td><td>MARSZAL Katarzyna</td><td>POL</td><td>Europe</td><td>1206</td><td>1206</td></tr>
+<tr><td>7</td><td>2976</td><td>EIGNER Alicja</td><td>POL</td><td>Europe</td><td>1164</td><td>1164</td></tr>
+<tr><td>8</td><td>2545</td><td><a href='moves_F6.htm#p2545'>FATTAKHOVA Fatma</a></td><td>RUS</td><td>Europe</td><td>1090</td><td>1101</td></tr>
+<tr><td>9</td><td>3070</td><td>JANG Eun Bong</td><td>KOR</td><td>Asia</td><td>1082</td><td>1082</td></tr>
+<tr><td>10</td><td>4401</td><td><a href='moves_F6.htm#p4401'>LYTOVCHENKO Maryna</a></td><td>UKR</td><td>Europe</td><td>1053</td><td></td></tr>
+<tr><td>11</td><td>2210</td><td>ABREU Dina</td><td>BRA</td><td>Americas</td><td>1026</td><td>1026</td></tr>
+<tr><td>12</td><td>2503</td><td>MCDONNELL Rebecca</td><td>AUS</td><td>Oceania</td><td>1006</td><td>1006</td></tr>
+</tbody></table>
+<br /><div class="footer">Generated on 2013-04-08 at 22:45</div><br />
+<!--#include virtual="/footer.htm" -->
+</body></html>

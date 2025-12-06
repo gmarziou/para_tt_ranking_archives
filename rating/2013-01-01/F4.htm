@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en"><head><title>ITTF Para Table Tennis Ranking Lists - Women class 4 as of 2013-01-01</title>
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href='../../media/css/bootstrap.min.css' rel='stylesheet' type='text/css' />
+<link href='../../media/css/bootstrap-theme.min.css' rel='stylesheet' type='text/css' />
+<link href='../../media/css/footable/footable.core.min.css' rel='stylesheet' type='text/css' />
+<link rel='stylesheet' href='../../css/styles.css' type='text/css' />
+<link rel="stylesheet" href="../rating.css" type="text/css" />
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+   <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<script src="../../media/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../media/js/jquery.dataTables.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../media/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../media/js/footable.all.min.js" type="text/javascript" charset="utf-8"></script>
+<script language="JavaScript" type="text/javascript">
+$(document).ready(function() {
+	var oTable = $('.lists').dataTable( {
+        "bPaginate": false,
+        "aoColumns": [
+            /* Rank */ {"bSearchable": false},
+            /* Player ID */ {"bSearchable": false},
+            /* Name */ null,
+            /* Country */ {"bSearchable": false, "bSortable": false },
+            /* Region */ {"bSearchable": false, "bSortable": false },
+            /* Rating */ {"bSearchable": false},
+            /* Previous Rating */ {"bSearchable": false}
+		]
+	} );
+	$('select#country').change(function () {
+            oTable.fnFilter($(this).val(), 3);
+    });
+	$('select#region').change(function () {
+            oTable.fnFilter($(this).val(), 4);
+    });
+} );
+</script>
+
+</head>
+<body>
+  <!--#include virtual="/navbar.htm" -->
+
+  <div class="container-fluid">  
+     <div class="row">  
+        <div class="col-lg-2 col-sm-2 col-md-4 col-xs-4">  
+           <a href="/" title="Back to ITTF PTT home page"><div class="ptt-logo"></div></a>  
+   </div>
+   <h1 class='col-lg-10 col-sm-10 col-md-8 col-xs-8'>ITTF Para Table Tennis Ranking Lists<br/><small>Women class 4 as of 2013-01-01</small></h1>
+   </div>
+</div>
+<br/>
+<div class="text-muted">You can sort this table by clicking on column headers and filter data by searching on part of player's name.</div>
+<table class="lists table table-striped table-condensed table-bordered"><thead>
+<tr><th>Rank</th><th>Player ID</th><th>Name</th><th>Country <select name="country" id="country"><option value="" selected="selected">Show all</option><optgroup label="Show only:" /><option>AUT</option><option>BRA</option><option>CHN</option><option>EGY</option><option>FRA</option><option>GBR</option><option>GER</option><option>IRQ</option><option>ITA</option><option>JOR</option><option>KOR</option><option>NOR</option><option>ROU</option><option>SLO</option><option>SRB</option><option>TPE</option><option>USA</option></select></th><th>Region <select name="region" id="region"><option value="" selected="selected">Show all</option><optgroup label="Show only:" /><option>Africa</option><option>Americas</option><option>Asia</option><option>Europe</option></select></th><th>Rating</th><th>Previous Rating</th></tr>
+</thead><tbody>
+<tr><td>1</td><td>2113</td><td>ZHOU Ying</td><td>CHN</td><td>Asia</td><td>1483</td><td>1483</td></tr>
+<tr><td>2</td><td>2090</td><td>PERIC-RANKOVIC Borislava</td><td>SRB</td><td>Europe</td><td>1407</td><td>1407</td></tr>
+<tr><td>3</td><td>2456</td><td>MOON Sung-hae</td><td>KOR</td><td>Asia</td><td>1383</td><td>1383</td></tr>
+<tr><td>4</td><td>3164</td><td>ZHANG Miao</td><td>CHN</td><td>Asia</td><td>1367</td><td>1367</td></tr>
+<tr><td>5</td><td>2450</td><td>JUNG Ji-nam</td><td>KOR</td><td>Asia</td><td>1235</td><td>1235</td></tr>
+<tr><td>6</td><td>2274</td><td>MATIC Nada</td><td>SRB</td><td>Europe</td><td>1234</td><td>1234</td></tr>
+<tr><td>7</td><td>589</td><td>GILROY Susan</td><td>GBR</td><td>Europe</td><td>1208</td><td>1208</td></tr>
+<tr><td>8</td><td>1031</td><td>ZORZETTO Valeria</td><td>ITA</td><td>Europe</td><td>1204</td><td>1204</td></tr>
+<tr><td>9</td><td>1125</td><td>AL AZZAM Fatmeh</td><td>JOR</td><td>Asia</td><td>1173</td><td>1173</td></tr>
+<tr><td>10</td><td>1691</td><td>DOLINAR Andreja</td><td>SLO</td><td>Europe</td><td>1168</td><td>1168</td></tr>
+<tr><td>11</td><td>3810</td><td>LU Pi-chun</td><td>TPE</td><td>Asia</td><td>1142</td><td>1142</td></tr>
+<tr><td>12</td><td>2990</td><td>OLIVEIRA Joyce</td><td>BRA</td><td>Americas</td><td>1129</td><td>1129</td></tr>
+<tr><td>13</td><td>2455</td><td><a href='moves_F4.htm#p2455'>LEE Ya-chu</a></td><td>TPE</td><td>Asia</td><td>1113</td><td>1117</td></tr>
+<tr><td>14</td><td>2767</td><td>POPADIC Zorica</td><td>SRB</td><td>Europe</td><td>1111</td><td>1111</td></tr>
+<tr><td>15</td><td>3704</td><td>MIKOLASCHEK Sandra</td><td>GER</td><td>Europe</td><td>1096</td><td>1096</td></tr>
+<tr><td>16</td><td>2814</td><td>ELELIMAT Faten</td><td>JOR</td><td>Asia</td><td>1035</td><td>1035</td></tr>
+<tr><td>17</td><td>1981</td><td>MITROVIC Sanja</td><td>SRB</td><td>Europe</td><td>1008</td><td>1008</td></tr>
+<tr><td>18</td><td>4457</td><td>EVANS Rebekah</td><td>GBR</td><td>Europe</td><td>977</td><td>977</td></tr>
+<tr><td>19</td><td>2413</td><td>FEMTEHJEL Sabine Solveig </td><td>NOR</td><td>Europe</td><td>967</td><td>967</td></tr>
+<tr><td>20</td><td>4364</td><td>AHMED Fadia</td><td>EGY</td><td>Africa</td><td>942</td><td>942</td></tr>
+<tr><td>21</td><td>1911</td><td><a href='moves_F4.htm#p1911'>JOHNSON Jennifer</a></td><td>USA</td><td>Americas</td><td>938</td><td>950</td></tr>
+<tr><td>21</td><td>504</td><td>SIRGANT Monique</td><td>FRA</td><td>Europe</td><td>938</td><td>938</td></tr>
+<tr><td>23</td><td>3912</td><td>KOLLER Helke</td><td>AUT</td><td>Europe</td><td>923</td><td>923</td></tr>
+<tr><td>24</td><td>2820</td><td>MEGLIC Barbara</td><td>SLO</td><td>Europe</td><td>922</td><td>922</td></tr>
+<tr><td>25</td><td>1576</td><td>VARGATU Dorina</td><td>ROU</td><td>Europe</td><td>841</td><td>841</td></tr>
+<tr><td>26</td><td>2227</td><td>KADHUM Wasan A.</td><td>IRQ</td><td>Asia</td><td>826</td><td>826</td></tr>
+<tr><td>27</td><td>4477</td><td>PARK Jung Ok</td><td>KOR</td><td>Asia</td><td>803</td><td></td></tr>
+<tr><td>28</td><td>4441</td><td>SCHMIDT Carolin</td><td>GER</td><td>Europe</td><td>748</td><td></td></tr>
+</tbody></table>
+<div class="container-fluid"><div class="row"><div class="text-muted text-right">Generated on 2014-11-09 at 15:43</div></div></div>
+<!--#include virtual="/footer.htm" -->
+</body></html>

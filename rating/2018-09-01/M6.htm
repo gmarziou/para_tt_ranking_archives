@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en"><head><title>ITTF Para Table Tennis Ranking Lists - Men class 6 as of 2018-09-01</title>
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href='../../media/css/bootstrap.min.css' rel='stylesheet' type='text/css' />
+<link href='../../media/css/bootstrap-theme.min.css' rel='stylesheet' type='text/css' />
+<link href='../../media/css/footable/footable.core.min.css' rel='stylesheet' type='text/css' />
+<link rel='stylesheet' href='../../css/styles.css' type='text/css' />
+<link rel="stylesheet" href="../rating.css" type="text/css" />
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+   <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<script src="../../media/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../media/js/jquery.dataTables.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../media/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../media/js/footable.all.min.js" type="text/javascript" charset="utf-8"></script>
+<script language="JavaScript" type="text/javascript">
+$(document).ready(function() {
+	var oTable = $('.lists').dataTable( {
+        "bPaginate": false,
+        "aoColumns": [
+            /* Rank */ {"bSearchable": false},
+            /* Player ID */ {"bSearchable": false},
+            /* Name */ null,
+            /* Country */ {"bSearchable": false, "bSortable": false },
+            /* Region */ {"bSearchable": false, "bSortable": false },
+            /* Rating */ {"bSearchable": false},
+            /* Previous Rating */ {"bSearchable": false}
+		]
+	} );
+	$('select#country').change(function () {
+            oTable.fnFilter($(this).val(), 3);
+    });
+	$('select#region').change(function () {
+            oTable.fnFilter($(this).val(), 4);
+    });
+} );
+</script>
+
+</head>
+<body>
+  <!--#include virtual="/navbar.htm" -->
+
+  <div class="container-fluid">  
+     <div class="row">  
+        <div class="col-lg-2 col-sm-2 col-md-4 col-xs-4">  
+           <a href="/" title="Back to ITTF PTT home page"><div class="ptt-logo"></div></a>  
+   </div>
+   <h1 class='col-lg-10 col-sm-10 col-md-8 col-xs-8'>ITTF Para Table Tennis Ranking Lists<br/><small>Men class 6 as of 2018-09-01</small></h1>
+   </div>
+</div>
+<br/>
+<div class="text-muted">You can sort this table by clicking on column headers and filter data by searching on part of player's name.</div>
+<table class="lists table table-striped table-condensed table-bordered"><thead>
+<tr><th>Rank</th><th>Player ID</th><th>Name</th><th>Country <select name="country" id="country"><option value="" selected="selected">Show all</option><optgroup label="Show only:" /><option>ARG</option><option>AUS</option><option>BEL</option><option>BRA</option><option>CHI</option><option>CHN</option><option>COL</option><option>CRC</option><option>CRO</option><option>DEN</option><option>ESP</option><option>FIN</option><option>FRA</option><option>GBR</option><option>GER</option><option>GRE</option><option>INA</option><option>IND</option><option>IRI</option><option>IRQ</option><option>ISR</option><option>ITA</option><option>JPN</option><option>KAZ</option><option>KOR</option><option>POR</option><option>ROU</option><option>RSA</option><option>RUS</option><option>SRB</option><option>SUI</option><option>SVK</option><option>SWE</option><option>THA</option><option>UKR</option><option>USA</option></select></th><th>Region <select name="region" id="region"><option value="" selected="selected">Show all</option><optgroup label="Show only:" /><option>Africa</option><option>Americas</option><option>Asia</option><option>Europe</option><option>Oceania</option></select></th><th>Rating</th><th>Previous Rating</th></tr>
+</thead><tbody class="notranslate">
+<tr><td>1</td><td>474</td><td>VALERA Alvaro</td><td>ESP</td><td>Europe</td><td>1531</td><td>1531</td></tr>
+<tr><td>2</td><td>422</td><td>ROSENMEIER Peter</td><td>DEN</td><td>Europe</td><td>1440</td><td>1440</td></tr>
+<tr><td>3</td><td>1802</td><td>THAINIYOM Rungroj</td><td>THA</td><td>Asia</td><td>1421</td><td>1421</td></tr>
+<tr><td>4</td><td>3742</td><td>PARK Hong Kyu</td><td>KOR</td><td>Asia</td><td>1341</td><td>1341</td></tr>
+<tr><td>5</td><td>2481</td><td><a href='moves_M6.htm#p2481'>WETHERILL David Paul</a></td><td>GBR</td><td>Europe</td><td>1287</td><td>1252</td></tr>
+<tr><td>6</td><td>1581</td><td>SIMION Bobi</td><td>ROU</td><td>Europe</td><td>1285</td><td>1285</td></tr>
+<tr><td>7</td><td>644</td><td>KARABARDAK Paul Arif</td><td>GBR</td><td>Europe</td><td>1279</td><td>1279</td></tr>
+<tr><td>8</td><td>3045</td><td>GRUNDELER Bastien</td><td>FRA</td><td>Europe</td><td>1251</td><td>1251</td></tr>
+<tr><td>9</td><td>3641</td><td><a href='moves_M6.htm#p3641'>RAU Thomas</a></td><td>GER</td><td>Europe</td><td>1224</td><td>1208</td></tr>
+<tr><td>10</td><td>4795</td><td><a href='moves_M6.htm#p4795'>HUANG Jiaxin</a></td><td>CHN</td><td>Asia</td><td>1205</td><td>1188</td></tr>
+<tr><td>11</td><td>2209</td><td>DETTONI Cristian</td><td>CHI</td><td>Americas</td><td>1182</td><td>1182</td></tr>
+<tr><td>12</td><td>3065</td><td><a href='moves_M6.htm#p3065'>CHEN Chao  </a></td><td>CHN</td><td>Asia</td><td>1177</td><td>1175</td></tr>
+<tr><td>13</td><td>2913</td><td>ALECCI Raimondo</td><td>ITA</td><td>Europe</td><td>1170</td><td>1170</td></tr>
+<tr><td>14</td><td>468</td><td>SEOANE ALCAZAR Alberto</td><td>ESP</td><td>Europe</td><td>1157</td><td>1157</td></tr>
+<tr><td>15</td><td>4564</td><td><a href='moves_M6.htm#p4564'>SEIDENFELD Ian Philip</a></td><td>USA</td><td>Americas</td><td>1150</td><td>1123</td></tr>
+<tr><td>16</td><td>1004</td><td><a href='moves_M6.htm#p1004'>BOBROV Danny</a></td><td>ISR</td><td>Europe</td><td>1149</td><td>1159</td></tr>
+<tr><td>17</td><td>334</td><td>GREGOROVIC Vjekoslav</td><td>CRO</td><td>Europe</td><td>1142</td><td>1142</td></tr>
+<tr><td>17</td><td>4515</td><td>PINO LORCA Matias Nicolas</td><td>CHI</td><td>Americas</td><td>1142</td><td>1142</td></tr>
+<tr><td>19</td><td>4437</td><td><a href='moves_M6.htm#p4437'>KARP Viktor</a></td><td>UKR</td><td>Europe</td><td>1140</td><td>1187</td></tr>
+<tr><td>20</td><td>2062</td><td>ESAULOV Alexander</td><td>RUS</td><td>Europe</td><td>1132</td><td>1132</td></tr>
+<tr><td>21</td><td>3115</td><td>KNEUSS Valentin</td><td>SUI</td><td>Europe</td><td>1111</td><td>1111</td></tr>
+<tr><td>22</td><td>4612</td><td>PERRY Martin Robert</td><td>GBR</td><td>Europe</td><td>1092</td><td>1092</td></tr>
+<tr><td>23</td><td>5451</td><td><a href='moves_M6.htm#p5451'>SHICHINO Kazuki</a></td><td>JPN</td><td>Asia</td><td>1073</td><td>1119</td></tr>
+<tr><td>24</td><td>4203</td><td>LAUE Tim</td><td>GER</td><td>Europe</td><td>1067</td><td>1067</td></tr>
+<tr><td>25</td><td>4193</td><td>AZULAY Michael Robert Oskar</td><td>SWE</td><td>Europe</td><td>1047</td><td>1047</td></tr>
+<tr><td>26</td><td>5282</td><td>PARENZAN Matteo</td><td>ITA</td><td>Europe</td><td>1040</td><td>1040</td></tr>
+<tr><td>27</td><td>4344</td><td>MOUCHTHIS Georgios</td><td>GRE</td><td>Europe</td><td>1029</td><td>1029</td></tr>
+<tr><td>28</td><td>2089</td><td>GOFER Asaf Ayal</td><td>ISR</td><td>Europe</td><td>1019</td><td>1019</td></tr>
+<tr><td>29</td><td>4683</td><td><a href='moves_M6.htm#p4683'>HIRTH Trevor</a></td><td>AUS</td><td>Oceania</td><td>1012</td><td>1036</td></tr>
+<tr><td>30</td><td>2784</td><td><a href='moves_M6.htm#p2784'>ITAI Junki</a></td><td>JPN</td><td>Asia</td><td>1006</td><td>927</td></tr>
+<tr><td>31</td><td>4252</td><td>ARRATIA Ari</td><td>USA</td><td>Americas</td><td>986</td><td>986</td></tr>
+<tr><td>32</td><td>5851</td><td>MULLER Benedikt</td><td>GER</td><td>Europe</td><td>978</td><td>978</td></tr>
+<tr><td>33</td><td>3767</td><td>CSEMY Gabriel</td><td>SVK</td><td>Europe</td><td>977</td><td>977</td></tr>
+<tr><td>34</td><td>4852</td><td>NAGY Alexander</td><td>SVK</td><td>Europe</td><td>970</td><td>970</td></tr>
+<tr><td>35</td><td>5107</td><td>KIM SunGil</td><td>KOR</td><td>Asia</td><td>966</td><td>966</td></tr>
+<tr><td>36</td><td>1767</td><td>MOLANDER Peter</td><td>SWE</td><td>Europe</td><td>948</td><td>948</td></tr>
+<tr><td>37</td><td>4145</td><td><a href='moves_M6.htm#p4145'>HOLDBACK Connor</a></td><td>AUS</td><td>Oceania</td><td>912</td><td></td></tr>
+<tr><td>38</td><td>5123</td><td><a href='moves_M6.htm#p5123'>HERRAULT Esteban</a></td><td>FRA</td><td>Europe</td><td>907</td><td>834</td></tr>
+<tr><td>39</td><td>2572</td><td>ARGUELLO GARCIA Domingo</td><td>CRC</td><td>Americas</td><td>901</td><td>901</td></tr>
+<tr><td>40</td><td>1635</td><td>DU PLOOY Petrus Jacob</td><td>RSA</td><td>Africa</td><td>890</td><td>890</td></tr>
+<tr><td>41</td><td>5659</td><td>ANDRASIC Luka</td><td>SRB</td><td>Europe</td><td>865</td><td>865</td></tr>
+<tr><td>42</td><td>5076</td><td>DULAYAANUKIJ Thanapong</td><td>THA</td><td>Asia</td><td>837</td><td>837</td></tr>
+<tr><td>43</td><td>245</td><td>MEDINA Luiz Henrique</td><td>BRA</td><td>Americas</td><td>822</td><td>822</td></tr>
+<tr><td>44</td><td>4147</td><td><a href='moves_M6.htm#p4147'>HUSSAINI Yaser</a></td><td>AUS</td><td>Oceania</td><td>819</td><td>821</td></tr>
+<tr><td>45</td><td>4611</td><td>MCADAM Conor Kenneth</td><td>GBR</td><td>Europe</td><td>804</td><td>804</td></tr>
+<tr><td>46</td><td>5074</td><td>CHATZIKYRIAKOS Marios Kanellis</td><td>GRE</td><td>Europe</td><td>776</td><td>776</td></tr>
+<tr><td>47</td><td>4833</td><td>VERCAUTEREN Jozef Gerardine</td><td>BEL</td><td>Europe</td><td>721</td><td>721</td></tr>
+<tr><td>48</td><td>4834</td><td>DE MEIRICHY Kevin</td><td>BEL</td><td>Europe</td><td>662</td><td>662</td></tr>
+<tr><td>49</td><td>2577</td><td>HORN Patrick</td><td>AUS</td><td>Oceania</td><td>639</td><td>639</td></tr>
+</tbody></table>
+<h2>Active unrated players</h2>
+<table class="table table-striped table-condensed table-bordered"><thead>
+<tr><th>Player ID</th><th>Name</th><th>Country</th><th>Region</th></tr>
+</thead><tbody class="notranslate">
+<tr><td>5979</td><td>ALBERGHINI Francesco</td><td>ITA</td><td>Europe</td></tr>
+<tr><td>5883</td><td>BARBOSA Paulo</td><td>POR</td><td>Europe</td></tr>
+<tr><td>5340</td><td>BECK Tim</td><td>BEL</td><td>Europe</td></tr>
+<tr><td>5985</td><td>BOVE Marco</td><td>ITA</td><td>Europe</td></tr>
+<tr><td>5547</td><td>CUCAITA VARGAS David Ernesto</td><td>COL</td><td>Americas</td></tr>
+<tr><td>3833</td><td>DEMOOR Rodrigo Ariel</td><td>ARG</td><td>Americas</td></tr>
+<tr><td>5915</td><td>DOS SANTOS RODRIGUES Goutier</td><td>BRA</td><td>Americas</td></tr>
+<tr><td>6043</td><td>GHANBARI Mohammad</td><td>IRI</td><td>Asia</td></tr>
+<tr><td>6061</td><td>HIDAYAT Rahmad</td><td>INA</td><td>Asia</td></tr>
+<tr><td>6060</td><td>JERICO TILAAR Varly</td><td>INA</td><td>Asia</td></tr>
+<tr><td>5790</td><td>KHUSNULLIN Timur</td><td>RUS</td><td>Europe</td></tr>
+<tr><td>5793</td><td>LLAVE Asier</td><td>ESP</td><td>Europe</td></tr>
+<tr><td>6018</td><td>MAKELA Aaro Toivo Samuli</td><td>FIN</td><td>Europe</td></tr>
+<tr><td>5957</td><td>MALCHI Qutaiba Hamzah</td><td>IRQ</td><td>Asia</td></tr>
+<tr><td>5488</td><td>MAVRIS Eleftherios</td><td>GRE</td><td>Europe</td></tr>
+<tr><td>6046</td><td>OIUYEN Phitsadan</td><td>THA</td><td>Asia</td></tr>
+<tr><td>5876</td><td>PAL Ashok Kumar Parvanta</td><td>IND</td><td>Asia</td></tr>
+<tr><td>470</td><td>RODRIGUEZ Francisco Mario</td><td>ESP</td><td>Europe</td></tr>
+<tr><td>5852</td><td>SCHAFER Steffen</td><td>GER</td><td>Europe</td></tr>
+<tr><td>5539</td><td>SCHNEIDER Edward Andrew</td><td>USA</td><td>Americas</td></tr>
+<tr><td>5975</td><td>SKOP Gilad</td><td>ISR</td><td>Europe</td></tr>
+<tr><td>5411</td><td>TORRES OROSTICA Ignacio Hernan</td><td>CHI</td><td>Americas</td></tr>
+<tr><td>5384</td><td>USSENOV Kanat</td><td>KAZ</td><td>Asia</td></tr>
+</tbody></table>
+<div class="container-fluid"><div class="row"><div class="text-muted text-right">Generated on 2018-09-07 at 01:07</div></div></div>
+<!--#include virtual="/footer.htm" -->
+</body></html>

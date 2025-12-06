@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en"><head><title>ITTF Para Table Tennis Ranking Lists - Junior Women class 8 as of 2018-03-01</title>
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href='../../media/css/bootstrap.min.css' rel='stylesheet' type='text/css' />
+<link href='../../media/css/bootstrap-theme.min.css' rel='stylesheet' type='text/css' />
+<link href='../../media/css/footable/footable.core.min.css' rel='stylesheet' type='text/css' />
+<link rel='stylesheet' href='../../css/styles.css' type='text/css' />
+<link rel="stylesheet" href="../rating.css" type="text/css" />
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+   <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<script src="../../media/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../media/js/jquery.dataTables.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../media/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../media/js/footable.all.min.js" type="text/javascript" charset="utf-8"></script>
+<script language="JavaScript" type="text/javascript">
+$(document).ready(function() {
+	var oTable = $('.lists').dataTable( {
+        "bPaginate": false,
+        "aoColumns": [
+            /* Rank */ {"bSearchable": false},
+            /* Player ID */ {"bSearchable": false},
+            /* Name */ null,
+            /* Country */ {"bSearchable": false, "bSortable": false },
+            /* Region */ {"bSearchable": false, "bSortable": false },
+            /* Rating */ {"bSearchable": false},
+            /* Previous Rating */ {"bSearchable": false}
+		]
+	} );
+	$('select#country').change(function () {
+            oTable.fnFilter($(this).val(), 3);
+    });
+	$('select#region').change(function () {
+            oTable.fnFilter($(this).val(), 4);
+    });
+} );
+</script>
+
+</head>
+<body>
+  <!--#include virtual="/navbar.htm" -->
+
+  <div class="container-fluid">  
+     <div class="row">  
+        <div class="col-lg-2 col-sm-2 col-md-4 col-xs-4">  
+           <a href="/" title="Back to ITTF PTT home page"><div class="ptt-logo"></div></a>  
+   </div>
+   <h1 class='col-lg-10 col-sm-10 col-md-8 col-xs-8'>ITTF Para Table Tennis Ranking Lists<br/><small>Junior Women class 8 as of 2018-03-01</small></h1>
+   </div>
+</div>
+<br/>
+<div class="text-muted">You can sort this table by clicking on column headers and filter data by searching on part of player's name.</div>
+<table class="lists table table-striped table-condensed table-bordered"><thead>
+<tr><th>Rank</th><th>Player ID</th><th>Name</th><th>Country <select name="country" id="country"><option value="" selected="selected">Show all</option><optgroup label="Show only:" /><option>BRA</option><option>CHN</option><option>COL</option><option>FIJ</option><option>FRA</option><option>GER</option><option>HUN</option><option>IND</option><option>IRI</option><option>ITA</option><option>JPN</option><option>KEN</option><option>KOR</option><option>NED</option><option>NOR</option><option>PHI</option><option>PNG</option><option>ROU</option><option>RUS</option><option>THA</option><option>USA</option></select></th><th>Region <select name="region" id="region"><option value="" selected="selected">Show all</option><optgroup label="Show only:" /><option>Africa</option><option>Americas</option><option>Asia</option><option>Europe</option><option>Oceania</option></select></th><th>Rating</th><th>Previous Rating</th></tr>
+</thead><tbody class="notranslate">
+<tr><td>1</td><td>3758</td><td><a href='moves_F8.htm#p3758'>MAO Jingdian</a></td><td>CHN</td><td>Asia</td><td>1490</td><td>1582</td></tr>
+<tr><td>2</td><td>5423</td><td><a href='moves_F8.htm#p5423'>TOMONO Yuri</a></td><td>JPN</td><td>Asia</td><td>896</td><td>948</td></tr>
+<tr><td>3</td><td>5417</td><td><a href='moves_F8.htm#p5417'>ELLI Elena </a></td><td>ITA</td><td>Europe</td><td>862</td><td>912</td></tr>
+<tr><td>4</td><td>4445</td><td><a href='moves_F8.htm#p4445'>KLOMP Suzan</a></td><td>NED</td><td>Europe</td><td>746</td><td>785</td></tr>
+</tbody></table>
+<h2>Active unrated players</h2>
+<table class="table table-striped table-condensed table-bordered"><thead>
+<tr><th>Player ID</th><th>Name</th><th>Country</th><th>Region</th></tr>
+</thead><tbody class="notranslate">
+<tr><td>2956</td><td>CONSTANTIN Emilia </td><td>ROU</td><td>Europe</td></tr>
+<tr><td>4228</td><td>FAZELNIA Ayda</td><td>IRI</td><td>Asia</td></tr>
+<tr><td>5863</td><td>HAUTIERE Lucie</td><td>FRA</td><td>Europe</td></tr>
+<tr><td>5683</td><td>LACERDA Lethicia</td><td>BRA</td><td>Americas</td></tr>
+<tr><td>5137</td><td>RAMIREZ OSTOS Laura Neged</td><td>COL</td><td>Americas</td></tr>
+<tr><td>3356</td><td>VALBUENA DIAZ Juliana</td><td>COL</td><td>Americas</td></tr>
+</tbody></table>
+<div class="container-fluid"><div class="row"><div class="text-muted text-right">Generated on 2018-02-28 at 22:22</div></div></div>
+<!--#include virtual="/footer.htm" -->
+</body></html>

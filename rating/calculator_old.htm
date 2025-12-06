@@ -1,0 +1,251 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>ITTF PTT rating calculator</title>
+    <script type="text/javascript" charset="utf-8" src="../media/js/jquery.min.js"></script>
+<!--    <script type="text/javascript" charset="utf-8" src="../media/js/jquery-ui.min.js"></script> -->
+    <link rel="stylesheet" type="text/css" href="../css/normal.css" />
+    <script type="text/javascript">
+        $(function () {
+    //        $("#run").button();
+
+        });
+
+        /*
+        * Compute the rating evolution of 2 players after a match.
+        */
+        function computeRatings(select) {
+            var weight = computeWeight(Number($('#tournament').val()), $('#event').val());
+
+            var beforeWinner = Number($('#beforeRatingWinner').val());
+            var beforeLoser = Number($('#beforeRatingLoser').val());
+            var diff = beforeWinner - beforeLoser;
+
+            var outcome = computeOutcome(diff);
+
+            var after = Math.ceil(beforeWinner + (weight * outcome));
+            var explaination = beforeWinner + " + (" + weight + " * " + outcome + ")";
+            showRating("Winner", after, explaination)
+
+            after = beforeLoser - outcome;
+            explaination = beforeLoser + " - " + outcome;
+            showRating("Loser", after, explaination)
+        }
+
+
+        /*
+        * Format and output rating.
+        */
+        function showRating(player, rating, explaination) {
+            $('#afterExplanation' + player).html(explaination + "<br/>=");
+			$('#afterRating' + player).html(rating);
+        }
+
+        /*
+        * Compute the weight of the match depending on tournament weight and whether it was a team match.
+        */
+        function computeWeight(t_weight, event) {
+            if (t_weight == 1) return 1;
+
+            if (event == "T") {
+                // team event
+                return t_weight - 0.5;
+            }
+            return t_weight;
+        }
+
+        /*
+        * Compute the number of points exchanged.
+        */
+        function computeOutcome(diff) {
+            if (diff >= 0) {
+                // normal outcome
+                if (diff < 25) {
+                    return 8;
+                } else if (diff < 50) {
+                    return 7;
+                } else if (diff < 100) {
+                    return 5;
+                } else if (diff < 150) {
+                    return 3;
+                } else if (diff < 200) {
+                    return 2;
+                } else if (diff < 250) {
+                    return 1;
+                } else {
+                    return 0;
+                }
+            } else {
+                // upset outcome
+                diff = -diff;
+                if (diff < 25) {
+                    return 8;
+                } else if (diff < 50) {
+                    return 10;
+                } else if (diff < 100) {
+                    return 12;
+                } else if (diff < 150) {
+                    return 15;
+                } else if (diff < 200) {
+                    return 20;
+                } else if (diff < 250) {
+                    return 26;
+                } else {
+                    return 32;
+                }
+            }
+        }
+    </script>
+</head>
+<style type='text/css'>
+<!--
+
+#calculator { width: 500px; border: solid 1px #CCC; }
+input  { width: 100px; font-weight: bold; font-size: 1.5em; }
+.section { margin: 0px 10px 0px 10px; float: left; }
+.clear, clear { clear: left; }
+.centered { text-align: center;}
+.half-block { width: 50%; float: left; margin: 20px 0px 10px 0px;}
+.full-block { width: 100%; }
+#player-info { width: 500px; }
+.compute-button { width: 150px; height: 40px;}
+/* div { border: 1px solid pink;} */
+-->
+</style>
+<body>
+
+    <div id='calculator' class='centered'>
+
+		<!-- *** Player info *** -->
+	    <div class='half-block'>
+		    Winner<br />
+            <input type="text" class="centered" id="beforeRatingWinner" />
+        </div>
+        <div class='half-block'>
+			Loser<br />
+            <input type="text" class="centered" id="beforeRatingLoser" />
+        </div>
+		<div class='clear' />
+		
+		
+		<!-- *** Match info *** -->
+
+        <div id="tournament-container" class='half-block'>
+            <label>
+                Tournament</label><br />
+            <select id="tournament" style="width: 100px">
+                <option value="1">Factor 20</option>
+                <option value="1.5">Factor 40 or Championships</option>
+            </select>
+        </div>
+        <div id="event-container" class='half-block'>
+            <label>
+                Event</label></br/>
+            <select id="event">
+                <option value="S">Singles</option>
+                <option value="T">Team</option>
+            </select>
+        </div>
+		<div class='clear' />
+		
+		<!-- *** The most important button there is *** -->
+		<div class='full-block'>
+			<form>
+				<input class='compute-button' type="button" onclick="computeRatings()" value="Compute" id="run" />
+			</form>
+		</div>
+		<div class='clear' />
+		
+		<!-- *** Outcome explanation *** -->
+		<div id="afterExplanationWinner" class='half-block'></div>
+		<div id="afterExplanationLoser" class='half-block'></div>
+		<div class='clear' />
+		
+		<!-- *** Final ratings *** -->
+		<div id="afterRatingWinner" class='half-block'></div>
+		<div id="afterRatingLoser" class='half-block'></div>
+		<div class='clear' />
+    </div>
+<!--
+    <table>
+        <thead>
+            <tr>
+                <th>
+                </th>
+                <th>
+                    Winner
+                </th>
+                <th>
+                    Loser
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    Initial Rating
+                </td>
+                <td>
+                    <input type="text" id="beforeRatingWinner" />
+                </td>
+                <td>
+                    <input type="text" id="beforeRatingLoser" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Match type
+                </td>
+                <td colspan="2" align="center">
+                    <label>
+                        Tournament</label>
+                    <select id="tournament" style="width: 100px">
+                        <option value="1">Factor 20</option>
+                        <option value="1.5">Factor 40 or Championships</option>
+                    </select>
+                    <label>
+                        Event</label>
+                    <select id="event">
+                        <option value="S">Singles</option>
+                        <option value="T">Team</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+                <td colspan="2" align="center">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Final Rating
+                </td>
+                <td>
+                    <div id="afterRatingWinner">
+                    </div>
+                </td>
+                <td>
+                    <div id="afterRatingLoser">
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+-->
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <div>
+        <strong>Warning</strong>: Don&#39;t forget that players&#39; ratings are updated after each match. So winning against one player may not produce the same outcome at the beginning of a tournament or at its end.<br />
+        <hr />
+        <strong>Tip</strong>: you don't need Internet to use this calculator, once the page has been loaded
+        in your browser you can use it offline as long as you don't close your browser.<br />
+        Another possibility is to save this page from your browser into a folder on your
+        computer and then it can be executed offline by double clicking on the saved page.
+    </div>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en"><head><title>ITTF Para Table Tennis Ranking Lists - Men class 11 as of 2016-02-01</title>
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href='../../media/css/bootstrap.min.css' rel='stylesheet' type='text/css' />
+<link href='../../media/css/bootstrap-theme.min.css' rel='stylesheet' type='text/css' />
+<link href='../../media/css/footable/footable.core.min.css' rel='stylesheet' type='text/css' />
+<link rel='stylesheet' href='../../css/styles.css' type='text/css' />
+<link rel="stylesheet" href="../rating.css" type="text/css" />
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+   <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<script src="../../media/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../media/js/jquery.dataTables.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../media/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../media/js/footable.all.min.js" type="text/javascript" charset="utf-8"></script>
+<script language="JavaScript" type="text/javascript">
+$(document).ready(function() {
+	var oTable = $('.lists').dataTable( {
+        "bPaginate": false,
+        "aoColumns": [
+            /* Rank */ {"bSearchable": false},
+            /* Player ID */ {"bSearchable": false},
+            /* Name */ null,
+            /* Country */ {"bSearchable": false, "bSortable": false },
+            /* Region */ {"bSearchable": false, "bSortable": false },
+            /* Rating */ {"bSearchable": false},
+            /* Previous Rating */ {"bSearchable": false}
+		]
+	} );
+	$('select#country').change(function () {
+            oTable.fnFilter($(this).val(), 3);
+    });
+	$('select#region').change(function () {
+            oTable.fnFilter($(this).val(), 4);
+    });
+} );
+</script>
+
+</head>
+<body>
+  <!--#include virtual="/navbar.htm" -->
+
+  <div class="container-fluid">  
+     <div class="row">  
+        <div class="col-lg-2 col-sm-2 col-md-4 col-xs-4">  
+           <a href="/" title="Back to ITTF PTT home page"><div class="ptt-logo"></div></a>  
+   </div>
+   <h1 class='col-lg-10 col-sm-10 col-md-8 col-xs-8'>ITTF Para Table Tennis Ranking Lists<br/><small>Men class 11 as of 2016-02-01</small></h1>
+   </div>
+</div>
+<br/>
+<div class="text-muted">You can sort this table by clicking on column headers and filter data by searching on part of player's name.</div>
+<table class="lists table table-striped table-condensed table-bordered"><thead>
+<tr><th>Rank</th><th>Player ID</th><th>Name</th><th>Country <select name="country" id="country"><option value="" selected="selected">Show all</option><optgroup label="Show only:" /><option>AUS</option><option>AUT</option><option>BEL</option><option>BRA</option><option>CAN</option><option>CZE</option><option>ESP</option><option>FRA</option><option>GER</option><option>HKG</option><option>HUN</option><option>JPN</option><option>KOR</option><option>POL</option><option>RUS</option><option>TPE</option><option>TUR</option><option>UKR</option><option>USA</option><option>VEN</option></select></th><th>Region <select name="region" id="region"><option value="" selected="selected">Show all</option><optgroup label="Show only:" /><option>Americas</option><option>Asia</option><option>Europe</option><option>Oceania</option></select></th><th>Rating</th><th>Previous Rating</th></tr>
+</thead><tbody>
+<tr><td>1</td><td>4601</td><td><a href='moves_M11.htm#p4601'>VAN ACKER Florian </a></td><td>BEL</td><td>Europe</td><td>1582</td><td>1681</td></tr>
+<tr><td>2</td><td>2301</td><td><a href='moves_M11.htm#p2301'>PALOS Peter</a></td><td>HUN</td><td>Europe</td><td>1537</td><td>1631</td></tr>
+<tr><td>3</td><td>4080</td><td><a href='moves_M11.htm#p4080'>CUESTA MARTINEZ Eduardo</a></td><td>ESP</td><td>Europe</td><td>1533</td><td>1631</td></tr>
+<tr><td>4</td><td>4299</td><td><a href='moves_M11.htm#p4299'>PEREIRA-LEAL Pascal</a></td><td>FRA</td><td>Europe</td><td>1503</td><td>1595</td></tr>
+<tr><td>5</td><td>4739</td><td><a href='moves_M11.htm#p4739'>NAVROTSKYI Andrii</a></td><td>UKR</td><td>Europe</td><td>1475</td><td>1559</td></tr>
+<tr><td>6</td><td>5221</td><td><a href='moves_M11.htm#p5221'>CREANGE Lucas, Edouard</a></td><td>FRA</td><td>Europe</td><td>1470</td><td>1558</td></tr>
+<tr><td>7</td><td>4917</td><td><a href='moves_M11.htm#p4917'>VON EINEM Samuel Philip</a></td><td>AUS</td><td>Oceania</td><td>1459</td><td>1545</td></tr>
+<tr><td>8</td><td>4322</td><td><a href='moves_M11.htm#p4322'>SON Byeong-jun</a></td><td>KOR</td><td>Asia</td><td>1436</td><td>1518</td></tr>
+<tr><td>9</td><td>4574</td><td><a href='moves_M11.htm#p4574'>TAKEMORI Takeshi</a></td><td>JPN</td><td>Asia</td><td>1435</td><td>1517</td></tr>
+<tr><td>10</td><td>4675</td><td><a href='moves_M11.htm#p4675'>KIM Gi Tae</a></td><td>KOR</td><td>Asia</td><td>1399</td><td>1483</td></tr>
+<tr><td>11</td><td>4325</td><td><a href='moves_M11.htm#p4325'>SLOCINSKI Damian</a></td><td>POL</td><td>Europe</td><td>1391</td><td>1465</td></tr>
+<tr><td>12</td><td>4321</td><td><a href='moves_M11.htm#p4321'>LEE Byoung-ha</a></td><td>KOR</td><td>Asia</td><td>1356</td><td>1430</td></tr>
+<tr><td>13</td><td>4324</td><td><a href='moves_M11.htm#p4324'>BALUSZEK Kamil</a></td><td>POL</td><td>Europe</td><td>1344</td><td>1419</td></tr>
+<tr><td>14</td><td>2005</td><td><a href='moves_M11.htm#p2005'>TAKEDA Takashi</a></td><td>JPN</td><td>Asia</td><td>1331</td><td>1402</td></tr>
+<tr><td>15</td><td>4332</td><td><a href='moves_M11.htm#p4332'>GAYFULLIN Kemal</a></td><td>RUS</td><td>Europe</td><td>1326</td><td>1397</td></tr>
+<tr><td>16</td><td>4602</td><td><a href='moves_M11.htm#p4602'>MIYAUCHI Ryo</a></td><td>JPN</td><td>Asia</td><td>1275</td><td>1343</td></tr>
+<tr><td>17</td><td>4334</td><td><a href='moves_M11.htm#p4334'>OLCAS Garip</a></td><td>TUR</td><td>Europe</td><td>1264</td><td>1331</td></tr>
+<tr><td>18</td><td>5222</td><td><a href='moves_M11.htm#p5222'>ZHAO Antoine</a></td><td>FRA</td><td>Europe</td><td>1252</td><td>1319</td></tr>
+<tr><td>19</td><td>4731</td><td><a href='moves_M11.htm#p4731'>EFREMOV Alexandr</a></td><td>RUS</td><td>Europe</td><td>1202</td><td>1265</td></tr>
+<tr><td>20</td><td>4566</td><td><a href='moves_M11.htm#p4566'>CHU Wai Hin</a></td><td>HKG</td><td>Asia</td><td>1178</td><td>1240</td></tr>
+<tr><td>21</td><td>4652</td><td><a href='moves_M11.htm#p4652'>WAN Wai Lok</a></td><td>HKG</td><td>Asia</td><td>1148</td><td>1208</td></tr>
+<tr><td>22</td><td>5226</td><td><a href='moves_M11.htm#p5226'>KALPAKIDIS Alexandros</a></td><td>GER</td><td>Europe</td><td>1134</td><td>1194</td></tr>
+<tr><td>23</td><td>4304</td><td><a href='moves_M11.htm#p4304'>FREUND Hartmut</a></td><td>GER</td><td>Europe</td><td>1131</td><td>1190</td></tr>
+<tr><td>24</td><td>4676</td><td><a href='moves_M11.htm#p4676'>LEE Seung Ho</a></td><td>KOR</td><td>Asia</td><td>1122</td><td>1181</td></tr>
+<tr><td>25</td><td>4579</td><td><a href='moves_M11.htm#p4579'>HADDEN Benjamin</a></td><td>USA</td><td>Americas</td><td>1112</td><td>1174</td></tr>
+<tr><td>25</td><td>4576</td><td><a href='moves_M11.htm#p4576'>LEUNG Chung Yan</a></td><td>HKG</td><td>Asia</td><td>1112</td><td>1172</td></tr>
+<tr><td>27</td><td>4337</td><td><a href='moves_M11.htm#p4337'>MARTINEZ  BARRETO Denisos Jose</a></td><td>VEN</td><td>Americas</td><td>1111</td><td>1171</td></tr>
+<tr><td>28</td><td>5087</td><td><a href='moves_M11.htm#p5087'>TSOI Ming Fai</a></td><td>HKG</td><td>Asia</td><td>1106</td><td>1166</td></tr>
+<tr><td>29</td><td>4585</td><td><a href='moves_M11.htm#p4585'>TOCHIGI Jumpei</a></td><td>JPN</td><td>Asia</td><td>1102</td><td>1160</td></tr>
+<tr><td>30</td><td>4733</td><td><a href='moves_M11.htm#p4733'>POTAPOV Sergey</a></td><td>RUS</td><td>Europe</td><td>1101</td><td>1159</td></tr>
+<tr><td>31</td><td>4308</td><td><a href='moves_M11.htm#p4308'>WAN Kwok Ho</a></td><td>HKG</td><td>Asia</td><td>1100</td><td>1158</td></tr>
+<tr><td>32</td><td>142</td><td><a href='moves_M11.htm#p142'>TRNKA Michael</a></td><td>AUT</td><td>Europe</td><td>1094</td><td>1152</td></tr>
+<tr><td>33</td><td>4651</td><td><a href='moves_M11.htm#p4651'>FAN Ka Ho</a></td><td>HKG</td><td>Asia</td><td>1093</td><td>1151</td></tr>
+<tr><td>34</td><td>4404</td><td><a href='moves_M11.htm#p4404'>CARROLL Rory Lewis</a></td><td>AUS</td><td>Oceania</td><td>1049</td><td>1104</td></tr>
+<tr><td>35</td><td>4578</td><td><a href='moves_M11.htm#p4578'>THOMAS Tobias</a></td><td>GER</td><td>Europe</td><td>1038</td><td>1093</td></tr>
+<tr><td>36</td><td>264</td><td><a href='moves_M11.htm#p264'>MARTINS MACIEL Lucas  </a></td><td>BRA</td><td>Americas</td><td>1017</td><td>1071</td></tr>
+<tr><td>37</td><td>140</td><td><a href='moves_M11.htm#p140'>DASCHILL Günter</a></td><td>AUT</td><td>Europe</td><td>1012</td><td>1065</td></tr>
+<tr><td>38</td><td>141</td><td><a href='moves_M11.htm#p141'>WIESER Johann</a></td><td>AUT</td><td>Europe</td><td>1005</td><td>1058</td></tr>
+<tr><td>39</td><td>4712</td><td><a href='moves_M11.htm#p4712'>CHABICOVSKY Marek</a></td><td>CZE</td><td>Europe</td><td>971</td><td>1022</td></tr>
+<tr><td>40</td><td>4417</td><td><a href='moves_M11.htm#p4417'>HUANG Ta Yu</a></td><td>TPE</td><td>Asia</td><td>944</td><td>994</td></tr>
+<tr><td>41</td><td>4575</td><td><a href='moves_M11.htm#p4575'>DROZDOWSKI Mikhail Jon</a></td><td>CAN</td><td>Americas</td><td>933</td><td>982</td></tr>
+<tr><td>42</td><td>4604</td><td><a href='moves_M11.htm#p4604'>ANIL Yagiz</a></td><td>TUR</td><td>Europe</td><td>863</td><td>908</td></tr>
+</tbody></table>
+<h2>Active unrated players</h2>
+<table class="table table-striped table-condensed table-bordered"><thead>
+<tr><th>Player ID</th><th>Name</th><th>Country</th><th>Region</th></tr>
+</thead><tbody>
+<tr><td>5237</td><td>ARAKAKI So</td><td>JPN</td><td>Asia</td></tr>
+<tr><td>5230</td><td>CABEROGLU Utku  </td><td>TUR</td><td>Europe</td></tr>
+<tr><td>5244</td><td>CHOI Jae Hyeon  </td><td>KOR</td><td>Asia</td></tr>
+<tr><td>5143</td><td>KIM Chang Gi  </td><td>KOR</td><td>Asia</td></tr>
+<tr><td>4714</td><td>POKUTA  Jan</td><td>CZE</td><td>Europe</td></tr>
+<tr><td>5253</td><td>TAKAHASHI Toshiya</td><td>JPN</td><td>Asia</td></tr>
+<tr><td>5254</td><td>YAMASHITA Katsuya</td><td>JPN</td><td>Asia</td></tr>
+<tr><td>5255</td><td>YOSHIKAWA Aoto   </td><td>JPN</td><td>Asia</td></tr>
+</tbody></table>
+<div class="container-fluid"><div class="row"><div class="text-muted text-right">Generated on 2016-02-03 at 21:13</div></div></div>
+<!--#include virtual="/footer.htm" -->
+</body></html>

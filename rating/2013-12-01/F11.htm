@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>ITTF Para Table Tennis Rating Audits - Women class 11 as of 2013-12-01</title>
+<link rel='stylesheet' href='../../css/normal.css' type='text/css' />
+<link rel="stylesheet" href="../rating.css" type="text/css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<script type="text/javascript" charset="utf-8" src="../../media/js/jquery.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../media/js/jquery.dataTables.min.js"></script>
+<script language="JavaScript" type="text/javascript">
+$(document).ready(function() {
+	var oTable = $('.lists').dataTable( {
+        "bPaginate": false,
+        "aoColumns": [
+                /* Rank */{"bSearchable": false},
+                /* Player ID */{"bSearchable": false},
+                /* Name */ null,
+	            /* Country */{"bSearchable": false, "bSortable": false },
+	            /* Region */{"bSearchable": false, "bSortable": false },
+                /* Rating */{"bSearchable": false}
+		]
+	} );
+	$('select#country').change(function () {
+            oTable.fnFilter($(this).val(), 3);
+    });
+	$('select#region').change(function () {
+            oTable.fnFilter($(this).val(), 4);
+    });
+} );
+</script>
+
+</head>
+<body>
+<div class="banner">
+  <div class='logo'><a href='../..'><img src='../../logos/colour/PTT-110px.png' alt='ITTF-PTT Logo' width='116' height='110' border='0' /></a></div>
+  <div class="banner_title">ITTF Para Table Tennis Rating Audits<br />Women class 11 as of 2013-12-01</div>
+</div><br />
+<div class="help">You can sort this table by clicking on column headers and filter data by searching on part of player's name.</div>
+<table class="lists"><thead>
+<tr><th>Rank</th><th>Player ID</th><th>Name</th><th>Country <select name="country" id="country"><option value="" selected="selected">Show all</option><optgroup label="Show only:"><option>CZE</option><option>FRA</option><option>HKG</option><option>ITA</option><option>JPN</option><option>KOR</option><option>POL</option><option>RUS</option><option>TUR</option><option>UKR</option></select></th><th>Region <select name="region" id="region"><option value="" selected="selected">Show all</option><optgroup label="Show only:"><option>Asia</option><option>Europe</option></select></th><th>Rating</th><th>Previous Rating</th></tr>
+</thead><tbody>
+<tr><td>1</td><td>1890</td><td>KOSMINA Natalya</td><td>UKR</td><td>Europe</td><td>1281</td><td>1281</td></tr>
+<tr><td>2</td><td>4085</td><td><a href='moves_F11.htm#p4085'>YEUNG Chi Ka</a></td><td>HKG</td><td>Asia</td><td>1266</td><td>1259</td></tr>
+<tr><td>3</td><td>1526</td><td>SIEMIENIECKA Krystyna</td><td>POL</td><td>Europe</td><td>1175</td><td>1175</td></tr>
+<tr><td>4</td><td>1178</td><td>ITO Maki</td><td>JPN</td><td>Asia</td><td>1144</td><td>1144</td></tr>
+<tr><td>5</td><td>4093</td><td>NOWACKA Dorota</td><td>POL</td><td>Europe</td><td>1131</td><td>1131</td></tr>
+<tr><td>6</td><td>4333</td><td>KOSACHEVA Anzhelika</td><td>RUS</td><td>Europe</td><td>1127</td><td>1127</td></tr>
+<tr><td>7</td><td>2011</td><td><a href='moves_F11.htm#p2011'>WONG Ka Man</a></td><td>HKG</td><td>Asia</td><td>1125</td><td>1107</td></tr>
+<tr><td>8</td><td>4323</td><td><a href='moves_F11.htm#p4323'>JUNG Jiyoung</a></td><td>KOR</td><td>Asia</td><td>1069</td><td>1079</td></tr>
+<tr><td>9</td><td>4409</td><td><a href='moves_F11.htm#p4409'>NG Mui Wui</a></td><td>HKG</td><td>Asia</td><td>1020</td><td>1009</td></tr>
+<tr><td>10</td><td>1175</td><td><a href='moves_F11.htm#p1175'>KIMURA Harumi</a></td><td>JPN</td><td>Asia</td><td>1010</td><td>1005</td></tr>
+<tr><td>11</td><td>2014</td><td>SEO Yang Hee</td><td>KOR</td><td>Asia</td><td>1002</td><td>1002</td></tr>
+<tr><td>11</td><td>4732</td><td>CHUDINOVA Maria</td><td>RUS</td><td>Europe</td><td>1002</td><td>1002</td></tr>
+<tr><td>13</td><td>4076</td><td>ROUSSET Magali</td><td>FRA</td><td>Europe</td><td>986</td><td>986</td></tr>
+<tr><td>14</td><td>4326</td><td>DOBKO Monika</td><td>POL</td><td>Europe</td><td>975</td><td>975</td></tr>
+<tr><td>15</td><td>4318</td><td>KAWASAKI Ayumi</td><td>JPN</td><td>Asia</td><td>932</td><td>932</td></tr>
+<tr><td>16</td><td>4649</td><td><a href='moves_F11.htm#p4649'>LI Hiu Tung</a></td><td>HKG</td><td>Asia</td><td>921</td><td></td></tr>
+<tr><td>17</td><td>4073</td><td>DAVID Melanie</td><td>FRA</td><td>Europe</td><td>878</td><td>878</td></tr>
+<tr><td>18</td><td>4319</td><td><a href='moves_F11.htm#p4319'>MORITA Miho</a></td><td>JPN</td><td>Asia</td><td>854</td><td>868</td></tr>
+<tr><td>19</td><td>4072</td><td>CATEAU Veronique</td><td>FRA</td><td>Europe</td><td>853</td><td>853</td></tr>
+<tr><td>20</td><td>4562</td><td><a href='moves_F11.htm#p4562'>WONG Pui Kei</a></td><td>HKG</td><td>Asia</td><td>845</td><td>847</td></tr>
+<tr><td>21</td><td>4521</td><td><a href='moves_F11.htm#p4521'>CERVENAKOVA Marcela</a></td><td>CZE</td><td>Europe</td><td>827</td><td></td></tr>
+<tr><td>22</td><td>4711</td><td><a href='moves_F11.htm#p4711'>HORVATHOVA Marie</a></td><td>CZE</td><td>Europe</td><td>752</td><td></td></tr>
+<tr><td>23</td><td>4623</td><td><a href='moves_F11.htm#p4623'>SENTURK Sumeyye</a></td><td>TUR</td><td>Europe</td><td>725</td><td></td></tr>
+<tr><td>24</td><td>4715</td><td><a href='moves_F11.htm#p4715'>TELVAKOVA Kveta</a></td><td>CZE</td><td>Europe</td><td>715</td><td></td></tr>
+<tr><td>25</td><td>4677</td><td><a href='moves_F11.htm#p4677'>KIM Sung Yeon</a></td><td>KOR</td><td>Asia</td><td>702</td><td></td></tr>
+<tr><td>26</td><td>4743</td><td><a href='moves_F11.htm#p4743'>PINNA Alessandra</a></td><td>ITA</td><td>Europe</td><td>686</td><td></td></tr>
+<tr><td>27</td><td>4713</td><td><a href='moves_F11.htm#p4713'>KUNDEROVA Jarmila</a></td><td>CZE</td><td>Europe</td><td>675</td><td></td></tr>
+<tr><td>28</td><td>4742</td><td><a href='moves_F11.htm#p4742'>BORGOGNONE Noemi</a></td><td>ITA</td><td>Europe</td><td>650</td><td></td></tr>
+<tr><td>29</td><td>4678</td><td><a href='moves_F11.htm#p4678'>YUN Yeonghee</a></td><td>KOR</td><td>Asia</td><td>568</td><td></td></tr>
+</tbody></table>
+<br /><div class="footer">Generated on 2013-12-30 at 12:53</div><br />
+<!--#include virtual="/footer.htm" -->
+</body></html>

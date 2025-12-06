@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>ITTF Para Table Tennis Rating Audits - Women class 10 as of 2013-09-01</title>
+<link rel='stylesheet' href='../../css/normal.css' type='text/css' />
+<link rel="stylesheet" href="../rating.css" type="text/css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<script type="text/javascript" charset="utf-8" src="../../media/js/jquery.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../media/js/jquery.dataTables.min.js"></script>
+<script language="JavaScript" type="text/javascript">
+$(document).ready(function() {
+	var oTable = $('.lists').dataTable( {
+        "bPaginate": false,
+        "aoColumns": [
+                /* Rank */{"bSearchable": false},
+                /* Player ID */{"bSearchable": false},
+                /* Name */ null,
+	            /* Country */{"bSearchable": false, "bSortable": false },
+	            /* Region */{"bSearchable": false, "bSortable": false },
+                /* Rating */{"bSearchable": false}
+		]
+	} );
+	$('select#country').change(function () {
+            oTable.fnFilter($(this).val(), 3);
+    });
+	$('select#region').change(function () {
+            oTable.fnFilter($(this).val(), 4);
+    });
+} );
+</script>
+
+</head>
+<body>
+<div class="banner">
+  <div class='logo'><a href='../..'><img src='../../logos/colour/PTT-110px.png' alt='ITTF-PTT Logo' width='116' height='110' border='0' /></a></div>
+  <div class="banner_title">ITTF Para Table Tennis Rating Audits<br />Women class 10 as of 2013-09-01</div>
+</div><br />
+<div class="help">You can sort this table by clicking on column headers and filter data by searching on part of player's name.</div>
+<table class="lists"><thead>
+<tr><th>Rank</th><th>Player ID</th><th>Name</th><th>Country <select name="country" id="country"><option value="" selected="selected">Show all</option><optgroup label="Show only:"><option>AUS</option><option>BRA</option><option>CHN</option><option>EGY</option><option>FRA</option><option>GER</option><option>HUN</option><option>INA</option><option>IND</option><option>JPN</option><option>KOR</option><option>POL</option><option>RUS</option><option>TPE</option><option>TUR</option><option>VIE</option></select></th><th>Region <select name="region" id="region"><option value="" selected="selected">Show all</option><optgroup label="Show only:"><option>Africa</option><option>Americas</option><option>Asia</option><option>Europe</option><option>Oceania</option></select></th><th>Rating</th><th>Previous Rating</th></tr>
+</thead><tbody>
+<tr><td>1</td><td>1522</td><td>PARTYKA Natalia</td><td>POL</td><td>Europe</td><td>1833</td><td>1833</td></tr>
+<tr><td>2</td><td>2510</td><td>FAN Lei</td><td>CHN</td><td>Asia</td><td>1776</td><td>1776</td></tr>
+<tr><td>3</td><td>3759</td><td><a href='moves_F10.htm#p3759'>YANG Qian</a></td><td>CHN</td><td>Asia</td><td>1740</td><td>1734</td></tr>
+<tr><td>4</td><td>3741</td><td>TAPPER Melissa</td><td>AUS</td><td>Oceania</td><td>1683</td><td>1683</td></tr>
+<tr><td>5</td><td>3846</td><td>ALEXANDRE Bruna</td><td>BRA</td><td>Americas</td><td>1651</td><td>1651</td></tr>
+<tr><td>6</td><td>3743</td><td><a href='moves_F10.htm#p3743'>KIM Kun Hea</a></td><td>KOR</td><td>Asia</td><td>1582</td><td></td></tr>
+<tr><td>7</td><td>3022</td><td>ERTIS Umran</td><td>TUR</td><td>Europe</td><td>1543</td><td>1543</td></tr>
+<tr><td>8</td><td>1174</td><td><a href='moves_F10.htm#p1174'>KUDO Yasuko</a></td><td>JPN</td><td>Asia</td><td>1520</td><td></td></tr>
+<tr><td>9</td><td>517</td><td>LE MORVAN Audrey</td><td>FRA</td><td>Europe</td><td>1487</td><td>1487</td></tr>
+<tr><td>10</td><td>3169</td><td>TURKKAN Hilal</td><td>TUR</td><td>Europe</td><td>1410</td><td>1410</td></tr>
+<tr><td>11</td><td>2584</td><td>CAN Ebru</td><td>TUR</td><td>Europe</td><td>1369</td><td>1369</td></tr>
+<tr><td>12</td><td>4163</td><td>SARATOVA Daria</td><td>RUS</td><td>Europe</td><td>1342</td><td>1342</td></tr>
+<tr><td>13</td><td>4347</td><td><a href='moves_F10.htm#p4347'>TIAN Shiau-Wen</a></td><td>TPE</td><td>Asia</td><td>1336</td><td>1329</td></tr>
+<tr><td>14</td><td>2537</td><td>KARMAEVA Inna</td><td>RUS</td><td>Europe</td><td>1325</td><td>1325</td></tr>
+<tr><td>15</td><td>4448</td><td>DEMIR Merve</td><td>TUR</td><td>Europe</td><td>1298</td><td>1298</td></tr>
+<tr><td>16</td><td>4648</td><td><a href='moves_F10.htm#p4648'>XIONG Guiyang</a></td><td>CHN</td><td>Asia</td><td>1279</td><td></td></tr>
+<tr><td>17</td><td>4400</td><td><a href='moves_F10.htm#p4400'>JUNG Jin Mi</a></td><td>KOR</td><td>Asia</td><td>1274</td><td></td></tr>
+<tr><td>18</td><td>4589</td><td><a href='moves_F10.htm#p4589'>RADAYANA Sella Dwi</a></td><td>INA</td><td>Asia</td><td>1269</td><td></td></tr>
+<tr><td>19</td><td>3570</td><td>BICSAK Bettina</td><td>HUN</td><td>Europe</td><td>1244</td><td>1244</td></tr>
+<tr><td>20</td><td>4595</td><td>REEG Marlene</td><td>GER</td><td>Europe</td><td>1229</td><td>1229</td></tr>
+<tr><td>21</td><td>3917</td><td>SOLOVYEVA Marina</td><td>RUS</td><td>Europe</td><td>1168</td><td>1168</td></tr>
+<tr><td>22</td><td>4597</td><td>MITUTA Dorota</td><td>POL</td><td>Europe</td><td>1164</td><td>1164</td></tr>
+<tr><td>23</td><td>3093</td><td>MAGHRABY Angham</td><td>EGY</td><td>Africa</td><td>1162</td><td>1162</td></tr>
+<tr><td>24</td><td>4116</td><td>BENKE Maria</td><td>HUN</td><td>Europe</td><td>1157</td><td>1157</td></tr>
+<tr><td>25</td><td>4107</td><td>PARINOS Jennyfer</td><td>BRA</td><td>Americas</td><td>1144</td><td>1144</td></tr>
+<tr><td>26</td><td>3062</td><td><a href='moves_F10.htm#p3062'>LEE Chun Mi</a></td><td>KOR</td><td>Asia</td><td>1131</td><td></td></tr>
+<tr><td>27</td><td>2875</td><td><a href='moves_F10.htm#p2875'>VIET Thi Kim Van</a></td><td>VIE</td><td>Asia</td><td>1120</td><td></td></tr>
+<tr><td>28</td><td>4399</td><td><a href='moves_F10.htm#p4399'>LEE Kyung Sook</a></td><td>KOR</td><td>Asia</td><td>1114</td><td></td></tr>
+<tr><td>29</td><td>4691</td><td><a href='moves_F10.htm#p4691'>KUMAR Nikita</a></td><td>IND</td><td>Asia</td><td>1049</td><td></td></tr>
+<tr><td>30</td><td>4120</td><td>MARTON Evelin</td><td>HUN</td><td>Europe</td><td>1028</td><td>1028</td></tr>
+</tbody></table>
+<br /><div class="footer">Generated on 2013-09-11 at 22:56</div><br />
+<!--#include virtual="/footer.htm" -->
+</body></html>

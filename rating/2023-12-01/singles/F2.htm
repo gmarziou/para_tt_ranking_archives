@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en"><head><title>ITTF Para Table Tennis Ranking Lists - Women class 2 as of 2023-12-01 in singles</title>
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href='../../../media/css/footable/footable.core.min.css' rel='stylesheet' type='text/css' />
+<link rel='stylesheet' href='../../../css/styles.css' type='text/css' />
+<link rel='stylesheet' href='../../../rating/rating.css' type='text/css' />
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+   <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<script src="../../../media/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../../media/js/jquery.dataTables.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../../media/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../../media/js/footable.all.min.js" type="text/javascript" charset="utf-8"></script>
+<script language="JavaScript" type="text/javascript">
+$(document).ready(function() {
+	var oTable = $('.lists').dataTable( {
+        "bPaginate": false,
+        "aoColumns": [
+            /* Rank */ {"bSearchable": false},
+            /* Player ID */ {"bSearchable": true},
+            /* Name */ null,
+            /* Country */ {"bSearchable": false, "bSortable": false },
+            /* Region */ {"bSearchable": false, "bSortable": false },
+            /* current rating */ {"bSearchable": false},
+            /* Previous rating */ {"bSearchable": false}
+		]
+	} );
+	$('select#country').change(function () {
+            oTable.fnFilter($(this).val(), 3);
+    });
+	$('select#region').change(function () {
+            oTable.fnFilter($(this).val(), 4);
+    });
+} );
+</script>
+
+</head>
+<body>
+  <!--#include virtual="/navbar.htm" -->
+
+  <div class="container-fluid">  
+     <div class="row">  
+        <div class="col-lg-2 col-sm-2 col-md-4 col-xs-4">  
+           <a href="/" title="Back to ITTF PTT home page"><div class="ptt-logo"></div></a>  
+   </div>
+   <h1 class='col-lg-10 col-sm-10 col-md-8 col-xs-8'>ITTF Para Table Tennis Ranking Lists<br/><small>Women class 2 as of 2023-12-01 in singles</small></h1>
+   </div>
+</div>
+<br/>
+<div class="text-muted">You can sort this table by clicking on column headers and filter data by searching on part of player's name.</div>
+<table class="lists table table-striped table-condensed table-bordered"><thead>
+<tr><th>Rank</th><th>Player ID</th><th>Name</th><th>Country <select name="country" id="country"><option value="" selected="selected">Show all</option><optgroup label="Show only:" /><option>ARG</option><option>AUS</option><option>BRA</option><option>CHN</option><option>EGY</option><option>FRA</option><option>IND</option><option>ITA</option><option>KEN</option><option>KOR</option><option>KSA</option><option>NED</option><option>SGP</option><option>SRB</option><option>THA</option><option>USA</option></select></th><th>Region <select name="region" id="region"><option value="" selected="selected">Show all</option><optgroup label="Show only:" /><option>Africa</option><option>Americas</option><option>Asia</option><option>Europe</option><option>Oceania</option></select></th><th>Rating</th><th>Previous rating</th></tr>
+</thead><tbody class="notranslate">
+<tr id='3080'><td class=''>1</td><td>3080</td><td>SEO Su Yeon</td><td>KOR</td><td>Asia</td><td>1215</td><td><a href='../../2023-11-01/singles/F2.htm#3080'>1215</a></td></tr>
+<tr id='4741'><td class=''>2</td><td>4741</td><td><a href='moves_F2.htm#p4741'>ROSSI Giada</a></td><td>ITA</td><td>Europe</td><td>1187</td><td><a href='../../2023-11-01/singles/F2.htm#4741'>1180</a></td></tr>
+<tr id='2105'><td class=''>3</td><td>2105</td><td><a href='moves_F2.htm#p2105'>LIU Jing</a></td><td>CHN</td><td>Asia</td><td>1176</td><td><a href='../../2023-11-01/singles/F2.htm#2105'>1136</a></td></tr>
+<tr id='4864'><td class=''>4</td><td>4864</td><td><a href='moves_F2.htm#p4864'>DA SILVA OLIVEIRA Catia Christina</a></td><td>BRA</td><td>Americas</td><td>1098</td><td><a href='../../2023-11-01/singles/F2.htm#4864'>1121</a></td></tr>
+<tr id='5133'><td class='rankup'>5</td><td>5133</td><td><a href='moves_F2.htm#p5133'>GARRONE Maria Constanza</a></td><td>ARG</td><td>Americas</td><td>921</td><td><a href='../../2023-11-01/singles/F2.htm#5133'>922</a></td></tr>
+<tr id='2975'><td class='rankdown'>6</td><td>2975</td><td><a href='moves_F2.htm#p2975'>PRVULOVIC Ana</a></td><td>SRB</td><td>Europe</td><td>914</td><td><a href='../../2023-11-01/singles/F2.htm#2975'>926</a></td></tr>
+<tr id='3874'><td class=''>7</td><td>3874</td><td>BOOTWANSIRINA Chilchitraryak</td><td>THA</td><td>Asia</td><td>882</td><td><a href='../../2023-11-01/singles/F2.htm#3874'>882</a></td></tr>
+<tr id='6639'><td class=''>8</td><td>6639</td><td><a href='moves_F2.htm#p6639'>OLIVIER Maeva</a></td><td>FRA</td><td>Europe</td><td>865</td><td></td></tr>
+<tr id='500'><td class='rankdown'>9</td><td>500</td><td><a href='moves_F2.htm#p500'>LAFAYE Isabelle</a></td><td>FRA</td><td>Europe</td><td>819</td><td><a href='../../2023-11-01/singles/F2.htm#500'>836</a></td></tr>
+<tr id='4221'><td class='rankdown'>10</td><td>4221</td><td><a href='moves_F2.htm#p4221'>COBBEN Femke</a></td><td>NED</td><td>Europe</td><td>685</td><td><a href='../../2023-11-01/singles/F2.htm#4221'>684</a></td></tr>
+<tr id='6050'><td class='rankdown'>11</td><td>6050</td><td>TOH Claire</td><td>SGP</td><td>Asia</td><td>633</td><td><a href='../../2023-11-01/singles/F2.htm#6050'>633</a></td></tr>
+<tr id='3731'><td class='rankdown'>12</td><td>3731</td><td>PROFITT Tara</td><td>USA</td><td>Americas</td><td>456</td><td><a href='../../2023-11-01/singles/F2.htm#3731'>456</a></td></tr>
+<tr id='5917'><td class=''>13</td><td>5917</td><td><a href='moves_F2.htm#p5917'>FERREIRA DA SILVA Juliana Christina</a></td><td>BRA</td><td>Americas</td><td>392</td><td><a href='../../2023-11-01/singles/F2.htm#5917'>322</a></td></tr>
+<tr id='5503'><td class='rankdown'>14</td><td>5503</td><td>CHRISTINA LAU Lay Lian</td><td>SGP</td><td>Asia</td><td>335</td><td><a href='../../2023-11-01/singles/F2.htm#5503'>335</a></td></tr>
+<tr id='6193'><td class='rankdown'>15</td><td>6193</td><td><a href='moves_F2.htm#p6193'>SANDS Hayley</a></td><td>AUS</td><td>Oceania</td><td>306</td><td><a href='../../2023-11-01/singles/F2.htm#6193'>301</a></td></tr>
+<tr id='429'><td class='rankdown'>16</td><td>429</td><td>HUSSEIN Fatma</td><td>EGY</td><td>Africa</td><td>295</td><td><a href='../../2023-11-01/singles/F2.htm#429'>295</a></td></tr>
+<tr id='6612'><td class=''>17</td><td>6612</td><td><a href='moves_F2.htm#p6612'>AL TALA Zahra</a></td><td>KSA</td><td>Asia</td><td>291</td><td><a href='../../2023-11-01/singles/F2.htm#6612'>0</a></td></tr>
+</tbody></table>
+<h2>Active unrated players</h2>
+<table class="table table-striped table-condensed table-bordered"><thead>
+<tr><th>Player ID</th><th>Name</th><th>Country</th><th>Region</th></tr>
+</thead><tbody class="notranslate">
+<tr><td>6883</td><td>ABDELAAL Amal</td><td>EGY</td><td>Africa</td></tr>
+<tr><td>6878</td><td>ELGABRTY Shaymaa</td><td>EGY</td><td>Africa</td></tr>
+<tr><td>6650</td><td>KIM Hanna</td><td>KOR</td><td>Asia</td></tr>
+<tr><td>4659</td><td>KIM Seon Hwan</td><td>KOR</td><td>Asia</td></tr>
+<tr><td>7083</td><td>NZIOKI Annah Syombua</td><td>KEN</td><td>Africa</td></tr>
+<tr><td>6848</td><td>OLIVA Vittoria Anna Teresa</td><td>ITA</td><td>Europe</td></tr>
+<tr><td>6433</td><td>SAENSATHAN Suthida</td><td>THA</td><td>Asia</td></tr>
+<tr><td>6903</td><td>SANTOS Nicole</td><td>BRA</td><td>Americas</td></tr>
+<tr><td>6998</td><td>SHANKAR JANARDHANAMURTHY Rajalakshmi</td><td>IND</td><td>Asia</td></tr>
+</tbody></table>
+<div class="container-fluid"><div class="row"><div class="text-muted text-right">Generated on 2023-12-01 at 11:46</div></div></div>
+<!--#include virtual="/footer.htm" -->
+</body></html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>ITTF Para Table Tennis Rating Audits - Men class 2 as of 2013-05-01</title>
+<link rel='stylesheet' href='../../css/normal.css' type='text/css' />
+<link rel="stylesheet" href="../rating.css" type="text/css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<script type="text/javascript" charset="utf-8" src="../../media/js/jquery.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../media/js/jquery.dataTables.min.js"></script>
+<script language="JavaScript" type="text/javascript">
+$(document).ready(function() {
+	var oTable = $('.lists').dataTable( {
+        "bPaginate": false,
+        "aoColumns": [
+                /* Rank */{"bSearchable": false},
+                /* Player ID */{"bSearchable": false},
+                /* Name */ null,
+	            /* Country */{"bSearchable": false, "bSortable": false },
+	            /* Region */{"bSearchable": false, "bSortable": false },
+                /* Rating */{"bSearchable": false}
+		]
+	} );
+	$('select#country').change(function () {
+            oTable.fnFilter($(this).val(), 3);
+    });
+	$('select#region').change(function () {
+            oTable.fnFilter($(this).val(), 4);
+    });
+} );
+</script>
+
+</head>
+<body>
+<div class="banner">
+  <div class='logo'><a href='../..'><img src='../../logos/colour/PTT-110px.png' alt='ITTF-PTT Logo' width='116' height='110' border='0' /></a></div>
+  <div class="banner_title">ITTF Para Table Tennis Rating Audits<br />Men class 2 as of 2013-05-01</div>
+</div><br />
+<div class="help">You can sort this table by clicking on column headers and filter data by searching on part of player's name.</div>
+<table class="lists"><thead>
+<tr><th>Rank</th><th>Player ID</th><th>Name</th><th>Country <select name="country" id="country"><option value="" selected="selected">Show all</option><optgroup label="Show only:"><option>ARG</option><option>AUT</option><option>BRA</option><option>CAN</option><option>CHN</option><option>CRO</option><option>CZE</option><option>ESP</option><option>FRA</option><option>GBR</option><option>IRI</option><option>IRL</option><option>IRQ</option><option>ISR</option><option>ITA</option><option>KOR</option><option>MAC</option><option>MEX</option><option>POL</option><option>RUS</option><option>SRB</option><option>SUI</option><option>SVK</option><option>UKR</option><option>USA</option></select></th><th>Region <select name="region" id="region"><option value="" selected="selected">Show all</option><optgroup label="Show only:"><option>Americas</option><option>Asia</option><option>Europe</option></select></th><th>Rating</th><th>Previous Rating</th></tr>
+</thead><tbody>
+<tr><td>1</td><td>1256</td><td>KIM Kyung Mook</td><td>KOR</td><td>Asia</td><td>1186</td><td>1186</td></tr>
+<tr><td>2</td><td>1724</td><td>RIAPOS Jan</td><td>SVK</td><td>Europe</td><td>1143</td><td>1143</td></tr>
+<tr><td>3</td><td>2932</td><td>KIM Min Gyu</td><td>KOR</td><td>Asia</td><td>1138</td><td>1138</td></tr>
+<tr><td>4</td><td>528</td><td>MOLLIENS Stephane</td><td>FRA</td><td>Europe</td><td>1123</td><td>1123</td></tr>
+<tr><td>5</td><td>529</td><td>BOURY Vincent</td><td>FRA</td><td>Europe</td><td>1107</td><td>1107</td></tr>
+<tr><td>6</td><td>2213</td><td>LAMIRAULT Fabien</td><td>FRA</td><td>Europe</td><td>1095</td><td>1095</td></tr>
+<tr><td>7</td><td>3514</td><td>LUDROVSKY Martin</td><td>SVK</td><td>Europe</td><td>1058</td><td>1058</td></tr>
+<tr><td>8</td><td>1665</td><td>PODDUBNYY Sergey</td><td>RUS</td><td>Europe</td><td>1050</td><td>1050</td></tr>
+<tr><td>9</td><td>1252</td><td>KIM Kong Yong</td><td>KOR</td><td>Asia</td><td>1046</td><td>1046</td></tr>
+<tr><td>10</td><td>2922</td><td>SUCHANEK Jiri</td><td>CZE</td><td>Europe</td><td>1044</td><td>1044</td></tr>
+<tr><td>11</td><td>3807</td><td>CHA Soo Yong</td><td>KOR</td><td>Asia</td><td>1043</td><td>1043</td></tr>
+<tr><td>12</td><td>1726</td><td>REVUCKY Rastislav</td><td>SVK</td><td>Europe</td><td>1030</td><td>1030</td></tr>
+<tr><td>13</td><td>2938</td><td>GAO Yanming</td><td>CHN</td><td>Asia</td><td>1024</td><td>1024</td></tr>
+<tr><td>14</td><td>99</td><td>RUEP Hans</td><td>AUT</td><td>Europe</td><td>979</td><td>979</td></tr>
+<tr><td>15</td><td>4431</td><td>SONG Byung Jun</td><td>KOR</td><td>Asia</td><td>972</td><td>972</td></tr>
+<tr><td>16</td><td>2327</td><td>YEZYK Oleksandr</td><td>UKR</td><td>Europe</td><td>970</td><td>970</td></tr>
+<tr><td>17</td><td>3724</td><td>SOUZA Ronaldo</td><td>BRA</td><td>Americas</td><td>957</td><td>957</td></tr>
+<tr><td>18</td><td>222</td><td>ESPINDOLA Iranildo</td><td>BRA</td><td>Americas</td><td>956</td><td>956</td></tr>
+<tr><td>18</td><td>3881</td><td>CZUPER Rafal</td><td>POL</td><td>Europe</td><td>956</td><td>956</td></tr>
+<tr><td>20</td><td>1044</td><td>VELLA Giuseppe</td><td>ITA</td><td>Europe</td><td>944</td><td>944</td></tr>
+<tr><td>21</td><td>2858</td><td>JANFESHAN Hassan</td><td>IRI</td><td>Asia</td><td>943</td><td>943</td></tr>
+<tr><td>22</td><td>2750</td><td>PERLIC Goran</td><td>SRB</td><td>Europe</td><td>915</td><td>915</td></tr>
+<tr><td>23</td><td>2491</td><td>BEDOS Damien</td><td>FRA</td><td>Europe</td><td>914</td><td>914</td></tr>
+<tr><td>24</td><td>2941</td><td>SASTRE Iker</td><td>ESP</td><td>Europe</td><td>905</td><td>905</td></tr>
+<tr><td>25</td><td>2549</td><td>KOVALSKI Hemerson</td><td>BRA</td><td>Americas</td><td>811</td><td>811</td></tr>
+<tr><td>26</td><td>3845</td><td>COSTA Guilherme</td><td>BRA</td><td>Americas</td><td>808</td><td>808</td></tr>
+<tr><td>27</td><td>929</td><td>ROONEY Ronan</td><td>IRL</td><td>Europe</td><td>802</td><td>802</td></tr>
+<tr><td>28</td><td>3773</td><td>RADISIC Aleksandar</td><td>SRB</td><td>Europe</td><td>799</td><td>799</td></tr>
+<tr><td>29</td><td>3036</td><td>LICCIARDI Aldo</td><td>ITA</td><td>Europe</td><td>785</td><td>785</td></tr>
+<tr><td>30</td><td>2763</td><td>PETKOVIC Vladan</td><td>SRB</td><td>Europe</td><td>783</td><td>783</td></tr>
+<tr><td>31</td><td>4284</td><td><a href='moves_M2.htm#p4284'>AL-SAEDI Ali</a></td><td>IRQ</td><td>Asia</td><td>758</td><td>763</td></tr>
+<tr><td>32</td><td>2971</td><td>MICHAUD Julien</td><td>FRA</td><td>Europe</td><td>757</td><td>757</td></tr>
+<tr><td>33</td><td>3689</td><td>JAKIMCZUK Tomasz</td><td>POL</td><td>Europe</td><td>751</td><td>751</td></tr>
+<tr><td>34</td><td>2331</td><td>DUARTE Carlos</td><td>ARG</td><td>Americas</td><td>715</td><td>715</td></tr>
+<tr><td>35</td><td>2928</td><td>BRLENIC Nikola</td><td>CRO</td><td>Europe</td><td>702</td><td>702</td></tr>
+<tr><td>36</td><td>1725</td><td>BABELA Michal</td><td>SVK</td><td>Europe</td><td>693</td><td>693</td></tr>
+<tr><td>37</td><td>4503</td><td>BARUKH Chen</td><td>ISR</td><td>Europe</td><td>685</td><td>685</td></tr>
+<tr><td>38</td><td>3107</td><td>SEGREST James</td><td>USA</td><td>Americas</td><td>678</td><td>678</td></tr>
+<tr><td>39</td><td>4358</td><td>ZALDIVAR Gabriel</td><td>MEX</td><td>Americas</td><td>675</td><td>675</td></tr>
+<tr><td>40</td><td>4507</td><td>VERZINO Gianni</td><td>SUI</td><td>Europe</td><td>669</td><td>669</td></tr>
+<tr><td>41</td><td>3985</td><td>CHU Cheng Lao</td><td>MAC</td><td>Asia</td><td>662</td><td>662</td></tr>
+<tr><td>42</td><td>607</td><td>JEMIYO Oye</td><td>GBR</td><td>Europe</td><td>644</td><td>644</td></tr>
+<tr><td>43</td><td>3942</td><td>SEGUNDO Lacordaire</td><td>BRA</td><td>Americas</td><td>630</td><td>630</td></tr>
+<tr><td>44</td><td>3039</td><td>ANTONELLI Paolo</td><td>ITA</td><td>Europe</td><td>588</td><td>588</td></tr>
+<tr><td>45</td><td>4567</td><td>DIAZ DE LEON Gabriel</td><td>USA</td><td>Americas</td><td>578</td><td>578</td></tr>
+<tr><td>46</td><td>4502</td><td>JUDGE Colin</td><td>IRL</td><td>Europe</td><td>519</td><td>519</td></tr>
+<tr><td>47</td><td>2256</td><td>NA Jong Tae</td><td>KOR</td><td>Asia</td><td>470</td><td>470</td></tr>
+<tr><td>48</td><td>4568</td><td>SAINI Harmandeep</td><td>CAN</td><td>Americas</td><td>389</td><td>389</td></tr>
+</tbody></table>
+<br /><div class="footer">Generated on 2013-05-13 at 21:49</div><br />
+<!--#include virtual="/footer.htm" -->
+</body></html>

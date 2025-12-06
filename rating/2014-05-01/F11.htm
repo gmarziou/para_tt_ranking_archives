@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en"><head><title>ITTF Para Table Tennis Rating Audits - Women class 11 as of 2014-05-01</title>
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href='../../media/css/bootstrap.min.css' rel='stylesheet' type='text/css' />
+<link href='../../media/css/bootstrap-theme.min.css' rel='stylesheet' type='text/css' />
+<link href='../../media/css/footable/footable.core.min.css' rel='stylesheet' type='text/css' />
+<link rel='stylesheet' href='../../css/styles.css' type='text/css' />
+<link rel="stylesheet" href="../rating.css" type="text/css" />
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+   <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<script src="../../media/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../media/js/jquery.dataTables.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../media/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../media/js/footable.all.min.js" type="text/javascript" charset="utf-8"></script>
+<script language="JavaScript" type="text/javascript">
+$(document).ready(function() {
+	var oTable = $('.lists').dataTable( {
+        "bPaginate": false,
+        "aoColumns": [
+                /* Rank */{"bSearchable": false},
+                /* Player ID */{"bSearchable": false},
+                /* Name */ null,
+	            /* Country */{"bSearchable": false, "bSortable": false },
+	            /* Region */{"bSearchable": false, "bSortable": false },
+                /* Rating */{"bSearchable": false}
+		]
+	} );
+	$('select#country').change(function () {
+            oTable.fnFilter($(this).val(), 3);
+    });
+	$('select#region').change(function () {
+            oTable.fnFilter($(this).val(), 4);
+    });
+} );
+</script>
+
+</head>
+<body>
+  <!--#include virtual="/navbar.htm" -->
+
+  <div class="container-fluid">  
+     <div class="row">  
+        <div class="col-lg-2 col-sm-2 col-md-4 col-xs-4">  
+           <a href="/" title="Back to ITTF PTT home page"><div class="ptt-logo"></div></a>  
+   </div>
+   <h1 class='col-lg-10 col-sm-10 col-md-8 col-xs-8'>ITTF Para Table Tennis Rating Audits<br/><small>Women class 11 as of 2014-05-01</small></h1>
+   </div>
+</div>
+<br/>
+<div class="text-muted">You can sort this table by clicking on column headers and filter data by searching on part of player's name.</div>
+<table class="lists table table-striped table-condensed table-bordered"><thead>
+<tr><th>Rank</th><th>Player ID</th><th>Name</th><th>Country <select name="country" id="country"><option value="" selected="selected">Show all</option><optgroup label="Show only:" /><option>CZE</option><option>FRA</option><option>HKG</option><option>ITA</option><option>JPN</option><option>KOR</option><option>POL</option><option>RUS</option><option>TUR</option><option>UKR</option></select></th><th>Region <select name="region" id="region"><option value="" selected="selected">Show all</option><optgroup label="Show only:" /><option>Asia</option><option>Europe</option></select></th><th>Rating</th><th>Previous Rating</th></tr>
+</thead><tbody>
+<tr><td>1</td><td>1890</td><td>KOSMINA Natalya</td><td>UKR</td><td>Europe</td><td>1300</td><td>1300</td></tr>
+<tr><td>2</td><td>4085</td><td>YEUNG Chi Ka</td><td>HKG</td><td>Asia</td><td>1266</td><td>1266</td></tr>
+<tr><td>3</td><td>1526</td><td>SIEMIENIECKA Krystyna</td><td>POL</td><td>Europe</td><td>1201</td><td>1201</td></tr>
+<tr><td>4</td><td>1178</td><td>ITO Maki</td><td>JPN</td><td>Asia</td><td>1144</td><td>1144</td></tr>
+<tr><td>5</td><td>2011</td><td>WONG Ka Man</td><td>HKG</td><td>Asia</td><td>1125</td><td>1125</td></tr>
+<tr><td>6</td><td>4333</td><td>KOSACHEVA Anzhelika</td><td>RUS</td><td>Europe</td><td>1122</td><td>1122</td></tr>
+<tr><td>7</td><td>4093</td><td>NOWACKA Dorota</td><td>POL</td><td>Europe</td><td>1117</td><td>1117</td></tr>
+<tr><td>8</td><td>4925</td><td>PROKOFEVA  Elena</td><td>RUS</td><td>Europe</td><td>1073</td><td>1073</td></tr>
+<tr><td>9</td><td>4323</td><td>JUNG Ji Young</td><td>KOR</td><td>Asia</td><td>1069</td><td>1069</td></tr>
+<tr><td>10</td><td>4409</td><td>NG Mui Wui</td><td>HKG</td><td>Asia</td><td>1020</td><td>1020</td></tr>
+<tr><td>11</td><td>1175</td><td>KIMURA Harumi</td><td>JPN</td><td>Asia</td><td>1010</td><td>1010</td></tr>
+<tr><td>12</td><td>4732</td><td>CHUDINOVA Maria</td><td>RUS</td><td>Europe</td><td>1005</td><td>1005</td></tr>
+<tr><td>13</td><td>2014</td><td>SEO Yang Hee</td><td>KOR</td><td>Asia</td><td>1002</td><td>1002</td></tr>
+<tr><td>14</td><td>4076</td><td>ROUSSET Magali</td><td>FRA</td><td>Europe</td><td>991</td><td>991</td></tr>
+<tr><td>15</td><td>4326</td><td>DOBKO Monika Karolina </td><td>POL</td><td>Europe</td><td>947</td><td>947</td></tr>
+<tr><td>16</td><td>4318</td><td>KAWASAKI Ayumi</td><td>JPN</td><td>Asia</td><td>932</td><td>932</td></tr>
+<tr><td>17</td><td>4649</td><td>LI Hiu Tung</td><td>HKG</td><td>Asia</td><td>921</td><td>921</td></tr>
+<tr><td>18</td><td>4319</td><td>MORITA Miho</td><td>JPN</td><td>Asia</td><td>854</td><td>854</td></tr>
+<tr><td>19</td><td>4072</td><td>CATEAU Veronique</td><td>FRA</td><td>Europe</td><td>850</td><td>850</td></tr>
+<tr><td>20</td><td>4562</td><td>WONG  Pui Kei</td><td>HKG</td><td>Asia</td><td>845</td><td>845</td></tr>
+<tr><td>21</td><td>4521</td><td>CERVENAKOVA Marcela</td><td>CZE</td><td>Europe</td><td>827</td><td>827</td></tr>
+<tr><td>22</td><td>4711</td><td>HORVATHOVA Marie</td><td>CZE</td><td>Europe</td><td>752</td><td>752</td></tr>
+<tr><td>23</td><td>4945</td><td>KREFTA Renata</td><td>POL</td><td>Europe</td><td>745</td><td></td></tr>
+<tr><td>24</td><td>4623</td><td>SENTURK Sumeyye</td><td>TUR</td><td>Europe</td><td>725</td><td>725</td></tr>
+<tr><td>25</td><td>4715</td><td>TELVAKOVA Kveta </td><td>CZE</td><td>Europe</td><td>715</td><td>715</td></tr>
+<tr><td>26</td><td>4677</td><td>KIM  Sung Yeon</td><td>KOR</td><td>Asia</td><td>702</td><td>702</td></tr>
+<tr><td>27</td><td>4743</td><td>PINNA Alessandra</td><td>ITA</td><td>Europe</td><td>686</td><td>686</td></tr>
+<tr><td>28</td><td>4713</td><td>KUNDEROVA Jarmila</td><td>CZE</td><td>Europe</td><td>675</td><td>675</td></tr>
+<tr><td>29</td><td>4742</td><td>BORGOGNONE Noemi</td><td>ITA</td><td>Europe</td><td>650</td><td>650</td></tr>
+<tr><td>30</td><td>4678</td><td>YUN Yeong Hee</td><td>KOR</td><td>Asia</td><td>568</td><td>568</td></tr>
+<tr><td>31</td><td>4622</td><td>SAMSUNLU  Lara</td><td>TUR</td><td>Europe</td><td>450</td><td>450</td></tr>
+</tbody></table>
+<div class="container-fluid"><div class="row"><div class="text-muted text-right">Generated on 2014-05-26 at 23:34</div></div></div>
+<!--#include virtual="/footer.htm" -->
+</body></html>

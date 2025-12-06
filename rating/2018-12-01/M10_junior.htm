@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en"><head><title>ITTF Para Table Tennis Ranking Lists - Junior Men class 10 as of 2018-12-01</title>
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href='../../media/css/bootstrap.min.css' rel='stylesheet' type='text/css' />
+<link href='../../media/css/bootstrap-theme.min.css' rel='stylesheet' type='text/css' />
+<link href='../../media/css/footable/footable.core.min.css' rel='stylesheet' type='text/css' />
+<link rel='stylesheet' href='../../css/styles.css' type='text/css' />
+<link rel="stylesheet" href="../rating.css" type="text/css" />
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+   <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<script src="../../media/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../media/js/jquery.dataTables.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../media/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../media/js/footable.all.min.js" type="text/javascript" charset="utf-8"></script>
+<script language="JavaScript" type="text/javascript">
+$(document).ready(function() {
+	var oTable = $('.lists').dataTable( {
+        "bPaginate": false,
+        "aoColumns": [
+            /* Rank */ {"bSearchable": false},
+            /* Player ID */ {"bSearchable": false},
+            /* Name */ null,
+            /* Country */ {"bSearchable": false, "bSortable": false },
+            /* Region */ {"bSearchable": false, "bSortable": false },
+            /* Rating */ {"bSearchable": false},
+            /* Previous Rating */ {"bSearchable": false}
+		]
+	} );
+	$('select#country').change(function () {
+            oTable.fnFilter($(this).val(), 3);
+    });
+	$('select#region').change(function () {
+            oTable.fnFilter($(this).val(), 4);
+    });
+} );
+</script>
+
+</head>
+<body>
+  <!--#include virtual="/navbar.htm" -->
+
+  <div class="container-fluid">  
+     <div class="row">  
+        <div class="col-lg-2 col-sm-2 col-md-4 col-xs-4">  
+           <a href="/" title="Back to ITTF PTT home page"><div class="ptt-logo"></div></a>  
+   </div>
+   <h1 class='col-lg-10 col-sm-10 col-md-8 col-xs-8'>ITTF Para Table Tennis Ranking Lists<br/><small>Junior Men class 10 as of 2018-12-01</small></h1>
+   </div>
+</div>
+<br/>
+<div class="text-muted">You can sort this table by clicking on column headers and filter data by searching on part of player's name.</div>
+<table class="lists table table-striped table-condensed table-bordered"><thead>
+<tr><th>Rank</th><th>Player ID</th><th>Name</th><th>Country <select name="country" id="country"><option value="" selected="selected">Show all</option><optgroup label="Show only:" /><option>ALG</option><option>ARG</option><option>ARM</option><option>AUT</option><option>BEL</option><option>BRA</option><option>BUL</option><option>CAM</option><option>CHI</option><option>CHN</option><option>COL</option><option>CRC</option><option>CZE</option><option>ESA</option><option>ESP</option><option>FRA</option><option>GBR</option><option>GRE</option><option>GUY</option><option>INA</option><option>IND</option><option>IRI</option><option>IRQ</option><option>ITA</option><option>JPN</option><option>KAZ</option><option>KOR</option><option>KSA</option><option>LUX</option><option>MAS</option><option>MNE</option><option>NED</option><option>NEP</option><option>NGR</option><option>POL</option><option>PUR</option><option>RSA</option><option>RUS</option><option>SRB</option><option>SRI</option><option>THA</option><option>TPE</option><option>TUR</option><option>UAE</option><option>UKR</option><option>USA</option></select></th><th>Region <select name="region" id="region"><option value="" selected="selected">Show all</option><optgroup label="Show only:" /><option>Africa</option><option>Americas</option><option>Asia</option><option>Europe</option></select></th><th>Rating</th><th>Previous Rating</th></tr>
+</thead><tbody class="notranslate">
+<tr><td>1</td><td>3754</td><td>LIAN Hao</td><td>CHN</td><td>Asia</td><td>1703</td><td>1703</td></tr>
+<tr><td>2</td><td>4119</td><td>RADOVIC Filip</td><td>MNE</td><td>Europe</td><td>1629</td><td>1629</td></tr>
+<tr><td>3</td><td>4498</td><td><a href='moves_M10.htm#p4498'>BOHEAS Mateo</a></td><td>FRA</td><td>Europe</td><td>1615</td><td>1614</td></tr>
+<tr><td>4</td><td>3720</td><td>HERGELINK Bas</td><td>NED</td><td>Europe</td><td>1571</td><td>1571</td></tr>
+<tr><td>5</td><td>3698</td><td>MISZTAL Igor</td><td>POL</td><td>Europe</td><td>1546</td><td>1546</td></tr>
+<tr><td>6</td><td>5820</td><td>MAO Shubo</td><td>CHN</td><td>Asia</td><td>1508</td><td>1508</td></tr>
+<tr><td>7</td><td>4708</td><td>SILLAPAKONG Bunpot</td><td>THA</td><td>Asia</td><td>1387</td><td>1387</td></tr>
+<tr><td>8</td><td>5336</td><td>MARTINS FERREIRA Emanuel</td><td>NED</td><td>Europe</td><td>1334</td><td>1334</td></tr>
+<tr><td>9</td><td>5185</td><td><a href='moves_M10.htm#p5185'>CORDUA Lorenzo</a></td><td>ITA</td><td>Europe</td><td>1329</td><td>1327</td></tr>
+<tr><td>10</td><td>6053</td><td>SU Jin Sian</td><td>TPE</td><td>Asia</td><td>1306</td><td>1306</td></tr>
+<tr><td>11</td><td>5636</td><td>SHAFEEQ Abdulrahman Hikmat</td><td>IRQ</td><td>Asia</td><td>1214</td><td>1214</td></tr>
+<tr><td>12</td><td>6028</td><td><a href='moves_M10.htm#p6028'>CEPAS Ander</a></td><td>ESP</td><td>Europe</td><td>1208</td><td>0</td></tr>
+<tr><td>13</td><td>5663</td><td><a href='moves_M10.htm#p5663'>DIAKOUMAKOS Alexandros</a></td><td>GRE</td><td>Europe</td><td>1199</td><td>1200</td></tr>
+<tr><td>14</td><td>5579</td><td><a href='moves_M10.htm#p5579'>ECHAVEGUREN FARIAS Manuel Felipe</a></td><td>CHI</td><td>Americas</td><td>1162</td><td>1173</td></tr>
+<tr><td>15</td><td>4965</td><td><a href='moves_M10.htm#p4965'>VEGA GUTIERREZ Alvaro Hernan</a></td><td>CHI</td><td>Americas</td><td>1149</td><td>1131</td></tr>
+<tr><td>16</td><td>5660</td><td>STOCKDALE Jack</td><td>GBR</td><td>Europe</td><td>1147</td><td>1147</td></tr>
+<tr><td>17</td><td>5795</td><td><a href='moves_M10.htm#p5795'>MATARO Edgar</a></td><td>ESP</td><td>Europe</td><td>1037</td><td></td></tr>
+<tr><td>18</td><td>5229</td><td>KARPOV Ivan</td><td>RUS</td><td>Europe</td><td>979</td><td>979</td></tr>
+<tr><td>19</td><td>5337</td><td><a href='moves_M10.htm#p5337'>THAKKER Shae Sunjay</a></td><td>GBR</td><td>Europe</td><td>976</td><td>976</td></tr>
+<tr><td>20</td><td>4835</td><td>MYLONAS Adonis</td><td>BEL</td><td>Europe</td><td>951</td><td>951</td></tr>
+<tr><td>21</td><td>4819</td><td>MOHAMAD KAMAL SAUPI Ahmad Syahir</td><td>MAS</td><td>Asia</td><td>882</td><td>882</td></tr>
+<tr><td>22</td><td>5477</td><td>PUNKAEW Master Parinya</td><td>THA</td><td>Asia</td><td>731</td><td>731</td></tr>
+<tr><td>23</td><td>5613</td><td>RIVERA RIOS Kevin Jose</td><td>PUR</td><td>Americas</td><td>640</td><td>640</td></tr>
+</tbody></table>
+<h2>Active unrated players</h2>
+<table class="table table-striped table-condensed table-bordered"><thead>
+<tr><th>Player ID</th><th>Name</th><th>Country</th><th>Region</th></tr>
+</thead><tbody class="notranslate">
+<tr><td>5972</td><td>BEGLARYAN Gevorg</td><td>ARM</td><td>Europe</td></tr>
+<tr><td>5646</td><td>BINAJAN Abdullah</td><td>KSA</td><td>Asia</td></tr>
+<tr><td>5549</td><td>CALVACHE DIAZ Gustavo Alejandro</td><td>COL</td><td>Americas</td></tr>
+<tr><td>4771</td><td>DUQUE PUERTA Andres</td><td>COL</td><td>Americas</td></tr>
+<tr><td>5618</td><td>FERNANDEZ RAMIREZ Sebastian Jesus</td><td>CRC</td><td>Americas</td></tr>
+<tr><td>5794</td><td>LOPEZ Marlon</td><td>ESP</td><td>Europe</td></tr>
+<tr><td>5072</td><td>NASSIKHAN Makhanbet</td><td>KAZ</td><td>Asia</td></tr>
+<tr><td>6093</td><td>SCUTO Mateo</td><td>LUX</td><td>Europe</td></tr>
+<tr><td>6073</td><td>SHMUILO Ivan</td><td>RUS</td><td>Europe</td></tr>
+<tr><td>5949</td><td>ZOLFAGHARI ASHEGHABADI Omid</td><td>IRI</td><td>Asia</td></tr>
+</tbody></table>
+<div class="container-fluid"><div class="row"><div class="text-muted text-right">Generated on 2018-12-02 at 20:43</div></div></div>
+<!--#include virtual="/footer.htm" -->
+</body></html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en"><head><title>ITTF Para Table Tennis Ranking Lists - Junior Men class 9 as of 2018-12-01</title>
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href='../../media/css/bootstrap.min.css' rel='stylesheet' type='text/css' />
+<link href='../../media/css/bootstrap-theme.min.css' rel='stylesheet' type='text/css' />
+<link href='../../media/css/footable/footable.core.min.css' rel='stylesheet' type='text/css' />
+<link rel='stylesheet' href='../../css/styles.css' type='text/css' />
+<link rel="stylesheet" href="../rating.css" type="text/css" />
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+   <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<script src="../../media/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../media/js/jquery.dataTables.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../media/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../media/js/footable.all.min.js" type="text/javascript" charset="utf-8"></script>
+<script language="JavaScript" type="text/javascript">
+$(document).ready(function() {
+	var oTable = $('.lists').dataTable( {
+        "bPaginate": false,
+        "aoColumns": [
+            /* Rank */ {"bSearchable": false},
+            /* Player ID */ {"bSearchable": false},
+            /* Name */ null,
+            /* Country */ {"bSearchable": false, "bSortable": false },
+            /* Region */ {"bSearchable": false, "bSortable": false },
+            /* Rating */ {"bSearchable": false},
+            /* Previous Rating */ {"bSearchable": false}
+		]
+	} );
+	$('select#country').change(function () {
+            oTable.fnFilter($(this).val(), 3);
+    });
+	$('select#region').change(function () {
+            oTable.fnFilter($(this).val(), 4);
+    });
+} );
+</script>
+
+</head>
+<body>
+  <!--#include virtual="/navbar.htm" -->
+
+  <div class="container-fluid">  
+     <div class="row">  
+        <div class="col-lg-2 col-sm-2 col-md-4 col-xs-4">  
+           <a href="/" title="Back to ITTF PTT home page"><div class="ptt-logo"></div></a>  
+   </div>
+   <h1 class='col-lg-10 col-sm-10 col-md-8 col-xs-8'>ITTF Para Table Tennis Ranking Lists<br/><small>Junior Men class 9 as of 2018-12-01</small></h1>
+   </div>
+</div>
+<br/>
+<div class="text-muted">You can sort this table by clicking on column headers and filter data by searching on part of player's name.</div>
+<table class="lists table table-striped table-condensed table-bordered"><thead>
+<tr><th>Rank</th><th>Player ID</th><th>Name</th><th>Country <select name="country" id="country"><option value="" selected="selected">Show all</option><optgroup label="Show only:" /><option>ALG</option><option>ARM</option><option>BEL</option><option>BRA</option><option>CAN</option><option>CHI</option><option>CHN</option><option>CIV</option><option>COL</option><option>CRC</option><option>CZE</option><option>ESP</option><option>FIN</option><option>FRA</option><option>GBR</option><option>GER</option><option>HKG</option><option>HUN</option><option>INA</option><option>IRI</option><option>IRQ</option><option>ISR</option><option>ITA</option><option>JPN</option><option>KAZ</option><option>KOR</option><option>KUW</option><option>MAS</option><option>NED</option><option>NGR</option><option>PHI</option><option>POL</option><option>PUR</option><option>ROU</option><option>RUS</option><option>SGP</option><option>SVK</option><option>SWE</option><option>THA</option><option>TPE</option><option>UKR</option><option>USA</option></select></th><th>Region <select name="region" id="region"><option value="" selected="selected">Show all</option><optgroup label="Show only:" /><option>Africa</option><option>Americas</option><option>Asia</option><option>Europe</option></select></th><th>Rating</th><th>Previous Rating</th></tr>
+</thead><tbody class="notranslate">
+<tr><td>1</td><td>4938</td><td>DEVOS Laurens</td><td>BEL</td><td>Europe</td><td>1741</td><td>1741</td></tr>
+<tr><td>2</td><td>5425</td><td>GUSTAFSSON Daniel Sune Stefan</td><td>SWE</td><td>Europe</td><td>1528</td><td>1528</td></tr>
+<tr><td>3</td><td>3675</td><td>THOMPSON Ashley Facey</td><td>GBR</td><td>Europe</td><td>1511</td><td>1511</td></tr>
+<tr><td>4</td><td>5426</td><td><a href='moves_M9.htm#p5426'>KATS Lev</a></td><td>UKR</td><td>Europe</td><td>1439</td><td>1428</td></tr>
+<tr><td>5</td><td>5858</td><td><a href='moves_M9.htm#p5858'>STACEY Joshua</a></td><td>GBR</td><td>Europe</td><td>1412</td><td>1395</td></tr>
+<tr><td>6</td><td>4223</td><td>RUDDENKLAU Yannik Klaus</td><td>GER</td><td>Europe</td><td>1325</td><td>1325</td></tr>
+<tr><td>7</td><td>4701</td><td>CHEE Chao Ming</td><td>MAS</td><td>Asia</td><td>1315</td><td>1315</td></tr>
+<tr><td>8</td><td>5536</td><td>DOS SANTOS CARVALHO Lucas</td><td>BRA</td><td>Americas</td><td>1154</td><td>1154</td></tr>
+<tr><td>9</td><td>3944</td><td>LETELIER MENDOZA Valentin Rene</td><td>CHI</td><td>Americas</td><td>1145</td><td>1145</td></tr>
+<tr><td>10</td><td>5183</td><td>RETTER Barnabas</td><td>HUN</td><td>Europe</td><td>1055</td><td>1055</td></tr>
+<tr><td>11</td><td>5698</td><td>FEHLING Laurenz</td><td>GER</td><td>Europe</td><td>994</td><td>994</td></tr>
+<tr><td>12</td><td>4953</td><td>BALOBANOV Vladislav</td><td>RUS</td><td>Europe</td><td>964</td><td>964</td></tr>
+<tr><td>13</td><td>5657</td><td>TSUJIMURA Takumi</td><td>JPN</td><td>Asia</td><td>925</td><td>925</td></tr>
+<tr><td>14</td><td>4984</td><td>ALSANEA Ali</td><td>KUW</td><td>Asia</td><td>913</td><td>913</td></tr>
+<tr><td>15</td><td>5517</td><td>AZIZI Hilmi</td><td>INA</td><td>Asia</td><td>890</td><td>890</td></tr>
+<tr><td>16</td><td>4777</td><td>RIVERA VICENTE Shaquille Joel</td><td>PUR</td><td>Americas</td><td>618</td><td>618</td></tr>
+</tbody></table>
+<h2>Active unrated players</h2>
+<table class="table table-striped table-condensed table-bordered"><thead>
+<tr><th>Player ID</th><th>Name</th><th>Country</th><th>Region</th></tr>
+</thead><tbody class="notranslate">
+<tr><td>6097</td><td>ABE Hayuma</td><td>JPN</td><td>Asia</td></tr>
+<tr><td>5940</td><td>ARDAVAN Ali</td><td>IRI</td><td>Asia</td></tr>
+<tr><td>5639</td><td>CHEKHYOR Mohammed Kadhim</td><td>IRQ</td><td>Asia</td></tr>
+<tr><td>6051</td><td>CHIN Brady Zi Rong</td><td>MAS</td><td>Asia</td></tr>
+<tr><td>3310</td><td>CHINCHILLA RAMOS Julian Andres</td><td>COL</td><td>Americas</td></tr>
+<tr><td>6090</td><td>CWENAR Robert</td><td>POL</td><td>Europe</td></tr>
+<tr><td>5862</td><td>DIDIER Lucas</td><td>FRA</td><td>Europe</td></tr>
+<tr><td>5943</td><td>GHOLAMI Mohammaderfan</td><td>IRI</td><td>Asia</td></tr>
+<tr><td>5965</td><td>IKSAN Faisatul</td><td>INA</td><td>Asia</td></tr>
+<tr><td>5695</td><td>MONDEN Elias</td><td>GER</td><td>Europe</td></tr>
+<tr><td>6024</td><td>QASEM Abdullah</td><td>KUW</td><td>Asia</td></tr>
+<tr><td>5504</td><td>WONG Jamien</td><td>SGP</td><td>Asia</td></tr>
+</tbody></table>
+<div class="container-fluid"><div class="row"><div class="text-muted text-right">Generated on 2018-12-02 at 20:43</div></div></div>
+<!--#include virtual="/footer.htm" -->
+</body></html>

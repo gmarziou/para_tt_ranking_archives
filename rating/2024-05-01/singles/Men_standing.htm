@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en"><head><title>ITTF Para Table Tennis Ranking Lists - Men standing as of 2024-05-01 in singles</title>
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href='../../../media/css/footable/footable.core.min.css' rel='stylesheet' type='text/css' />
+<link rel='stylesheet' href='../../../css/styles.css' type='text/css' />
+<link rel='stylesheet' href='../../../rating/rating.css' type='text/css' />
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+   <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<script src="../../../media/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../../media/js/jquery.dataTables.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../../media/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../../media/js/footable.all.min.js" type="text/javascript" charset="utf-8"></script>
+
+<script language="JavaScript" type="text/javascript">
+$(document).ready(function() {
+	var oTable = $('.lists').dataTable( {
+        "bPaginate": false,
+        "aoColumns": [
+            /* Rank */ {"bSearchable": false},
+            /* Player ID */ {"bSearchable": true},
+            /* Name */ null,
+            /* Country */ {"bSearchable": false, "bSortable": false },
+            /* Region */ {"bSearchable": false, "bSortable": false },
+            /* Class */ {"bSearchable": false, "bSortable": false },
+            /* current rating */ {"bSearchable": false},
+            /* Previous rating */ {"bSearchable": false}
+    		]
+	} );           
+	$('select#country').change(function () {
+            oTable.fnFilter($(this).val(), 3);
+    });
+	$('select#region').change(function () {
+            oTable.fnFilter($(this).val(), 4);
+    });
+  $('select#class').change(function () {
+            oTable.fnFilter($(this).val(), 5);
+    });
+} );
+</script>
+
+</head>
+<body>
+  <!--#include virtual="/navbar.htm" -->
+
+  <div class="container-fluid">  
+     <div class="row">  
+        <div class="col-lg-2 col-sm-2 col-md-4 col-xs-4">  
+           <a href="/" title="Back to ITTF PTT home page"><div class="ptt-logo"></div></a>  
+   </div>
+   <h1 class='col-lg-10 col-sm-10 col-md-8 col-xs-8'>ITTF Para Table Tennis Ranking Lists<br/><small>Men standing as of 2024-05-01 in singles</small></h1>
+   </div>
+</div>
+<br/>
+<div class="text-muted">You can sort this table by clicking on column headers and filter data by searching on part of player's name.</div>
+<table class="lists table table-striped table-condensed table-bordered"><thead>
+<tr><th>Rank</th><th class="hidden-xs">Player ID</th><th>Name</th><th>Country <select name="country" id="country"><option value="" selected="selected">Show all</option><optgroup label="Show only:" /><option>AIN</option><option>ALG</option><option>ARG</option><option>ARM</option><option>AUS</option><option>AUT</option><option>BAN</option><option>BEL</option><option>BEN</option><option>BIH</option><option>BRA</option><option>BUL</option><option>CAN</option><option>CHI</option><option>CHN</option><option>CIV</option><option>CMR</option><option>COL</option><option>CRC</option><option>CRO</option><option>CUB</option><option>CYP</option><option>CZE</option><option>DEN</option><option>ECU</option><option>EGY</option><option>ESA</option><option>ESP</option><option>FIN</option><option>FRA</option><option>GBR</option><option>GEO</option><option>GER</option><option>GRE</option><option>GUA</option><option>GUY</option><option>HKG</option><option>HUN</option><option>INA</option><option>IND</option><option>IRI</option><option>IRL</option><option>IRQ</option><option>ISR</option><option>ITA</option><option>JOR</option><option>JPN</option><option>KAZ</option><option>KEN</option><option>KOR</option><option>KSA</option><option>KUW</option><option>LAT</option><option>LUX</option><option>MAS</option><option>MEX</option><option>MNE</option><option>MRI</option><option>NED</option><option>NEP</option><option>NGR</option><option>NOR</option><option>NZL</option><option>PAK</option><option>PAN</option><option>PER</option><option>PHI</option><option>PNG</option><option>POL</option><option>POR</option><option>PUR</option><option>PYF</option><option>ROU</option><option>RSA</option><option>SAM</option><option>SGP</option><option>SLO</option><option>SOL</option><option>SRB</option><option>SRI</option><option>SUI</option><option>SVK</option><option>SWE</option><option>SYR</option><option>THA</option><option>TLS</option><option>TPE</option><option>TUN</option><option>TUR</option><option>TUV</option><option>UGA</option><option>UKR</option><option>USA</option><option>UZB</option><option>VAN</option><option>VEN</option><option>VIE</option></select></th><th class="hidden-xs">Region <select name="region" id="region"><option value="" selected="selected">Show all</option><optgroup label="Show only:" /><option>Africa</option><option>Americas</option><option>Asia</option><option>Athletes Individuals</option><option>Europe</option><option>Oceania</option></select></th><th>Class <select name="class" id="class"><option value="" selected="selected">Show all</option><optgroup label="Show only:" /><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option></select></th>
+<th>Rating</th><th class="hidden-xs">Previous rating</th></tr>
+</thead><tbody class="notranslate">
+<tr><td>1</td><td class="hidden-xs">4166</td><td><a href='moves_M10.htm#p4166'>CHOJNOWSKI Patryk</a></td><td>POL</td><td class="hidden-xs">Europe</td><td>10</td><td>1765</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#4166'>1798</a></td></tr>
+<tr><td>2</td><td class="hidden-xs">4938</td><td><a href='moves_M9.htm#p4938'>DEVOS Laurens</a></td><td>BEL</td><td class="hidden-xs">Europe</td><td>9</td><td>1729</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#4938'>1801</a></td></tr>
+<tr><td>3</td><td class="hidden-xs">4738</td><td><a href='moves_M8.htm#p4738'>DIDUKH Viktor</a></td><td>UKR</td><td class="hidden-xs">Europe</td><td>8</td><td>1672</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#4738'>1702</a></td></tr>
+<tr><td>4</td><td class="hidden-xs">4119</td><td><a href='moves_M10.htm#p4119'>RADOVIC Filip</a></td><td>MNE</td><td class="hidden-xs">Europe</td><td>10</td><td>1635</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#4119'>1668</a></td></tr>
+<tr><td>5</td><td class="hidden-xs">4498</td><td><a href='moves_M10.htm#p4498'>BOHEAS Mateo</a></td><td>FRA</td><td class="hidden-xs">Europe</td><td>10</td><td>1611</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#4498'>1662</a></td></tr>
+<tr><td>6</td><td class="hidden-xs">2101</td><td><a href='moves_M9.htm#p2101'>MA Lin</a></td><td>AUS</td><td class="hidden-xs">Oceania</td><td>9</td><td>1588</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#2101'>1630</a></td></tr>
+<tr><td>7</td><td class="hidden-xs">478</td><td><a href='moves_M10.htm#p478'>RUIZ REYES Jose Manuel</a></td><td>ESP</td><td class="hidden-xs">Europe</td><td>10</td><td>1580</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#478'>1595</a></td></tr>
+<tr><td>8</td><td class="hidden-xs">5184</td><td><a href='moves_M10.htm#p5184'>GARDOS Krisztian</a></td><td>AUT</td><td class="hidden-xs">Europe</td><td>10</td><td>1571</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#5184'>1589</a></td></tr>
+<tr><td>9</td><td class="hidden-xs">5169</td><td><a href='moves_M9.htm#p5169'>MAI Ivan</a></td><td>UKR</td><td class="hidden-xs">Europe</td><td>9</td><td>1570</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#5169'>1591</a></td></tr>
+<tr><td>9</td><td class="hidden-xs">5426</td><td><a href='moves_M9.htm#p5426'>KATS Lev</a></td><td>UKR</td><td class="hidden-xs">Europe</td><td>9</td><td>1570</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#5426'>1588</a></td></tr>
+<tr><td>11</td><td class="hidden-xs">3698</td><td><a href='moves_M10.htm#p3698'>MISZTAL Igor</a></td><td>POL</td><td class="hidden-xs">Europe</td><td>10</td><td>1562</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#3698'>1595</a></td></tr>
+<tr><td>12</td><td class="hidden-xs">2680</td><td><a href='moves_M9.htm#p2680'>CARDONA Jorge</a></td><td>ESP</td><td class="hidden-xs">Europe</td><td>9</td><td>1561</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#2680'>1591</a></td></tr>
+<tr><td>13</td><td class="hidden-xs">5425</td><td><a href='moves_M9.htm#p5425'>GUSTAFSSON Daniel</a></td><td>SWE</td><td class="hidden-xs">Europe</td><td>9</td><td>1560</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#5425'>1605</a></td></tr>
+<tr><td>14</td><td class="hidden-xs">3754</td><td><a href='moves_M10.htm#p3754'>LIAN Hao</a></td><td>CHN</td><td class="hidden-xs">Asia</td><td>10</td><td>1559</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#3754'>1586</a></td></tr>
+<tr><td>15</td><td class="hidden-xs">2778</td><td><a href='moves_M8.htm#p2778'>NIKOLENKO Maksym</a></td><td>UKR</td><td class="hidden-xs">Europe</td><td>8</td><td>1557</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#2778'>1569</a></td></tr>
+<tr><td>16</td><td class="hidden-xs">4112</td><td><a href='moves_M9.htm#p4112'>WILSON Ross William</a></td><td>GBR</td><td class="hidden-xs">Europe</td><td>9</td><td>1555</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#4112'>1582</a></td></tr>
+<tr><td>16</td><td class="hidden-xs">5019</td><td><a href='moves_M10.htm#p5019'>BAKIC Luka</a></td><td>MNE</td><td class="hidden-xs">Europe</td><td>10</td><td>1555</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#5019'>1579</a></td></tr>
+<tr><td>18</td><td class="hidden-xs">5862</td><td><a href='moves_M9.htm#p5862'>DIDIER Lucas</a></td><td>FRA</td><td class="hidden-xs">Europe</td><td>9</td><td>1554</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#5862'>1590</a></td></tr>
+<tr><td>19</td><td class="hidden-xs">3676</td><td><a href='moves_M8.htm#p3676'>MC KIBBIN Aaron</a></td><td>GBR</td><td class="hidden-xs">Europe</td><td>8</td><td>1546</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#3676'>1579</a></td></tr>
+<tr><td>20</td><td class="hidden-xs">3753</td><td><a href='moves_M8.htm#p3753'>ZHAO Shuai</a></td><td>CHN</td><td class="hidden-xs">Asia</td><td>8</td><td>1545</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#3753'>1572</a></td></tr>
+<tr><td>20</td><td class="hidden-xs">6028</td><td><a href='moves_M9.htm#p6028'>CEPAS Ander</a></td><td>ESP</td><td class="hidden-xs">Europe</td><td>9</td><td>1545</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#6028'>1605</a></td></tr>
+<tr><td>22</td><td class="hidden-xs">5858</td><td><a href='moves_M9.htm#p5858'>STACEY Joshua</a></td><td>GBR</td><td class="hidden-xs">Europe</td><td>9</td><td>1538</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#5858'>1568</a></td></tr>
+<tr><td>23</td><td class="hidden-xs">2580</td><td><a href='moves_M8.htm#p2580'>GRUDZIEN Piotr</a></td><td>POL</td><td class="hidden-xs">Europe</td><td>8</td><td>1517</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#2580'>1547</a></td></tr>
+<tr><td>24</td><td class="hidden-xs">3119</td><td><a href='moves_M8.htm#p3119'>ANDERSSON Emil</a></td><td>SWE</td><td class="hidden-xs">Europe</td><td>8</td><td>1515</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#3119'>1569</a></td></tr>
+<tr><td>25</td><td class="hidden-xs">5128</td><td><a href='moves_M8.htm#p5128'>BERTHIER Clement</a></td><td>FRA</td><td class="hidden-xs">Europe</td><td>8</td><td>1513</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#5128'>1570</a></td></tr>
+<tr><td>26</td><td class="hidden-xs">6502</td><td><a href='moves_M10.htm#p6502'>FUNAYAMA Mahiro</a></td><td>JPN</td><td class="hidden-xs">Asia</td><td>10</td><td>1501</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#6502'>1570</a></td></tr>
+<tr><td>27</td><td class="hidden-xs">3574</td><td><a href='moves_M8.htm#p3574'>BOUVAIS Thomas</a></td><td>FRA</td><td class="hidden-xs">Europe</td><td>8</td><td>1493</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#3574'>1526</a></td></tr>
+<tr><td>28</td><td class="hidden-xs">4485</td><td><a href='moves_M9.htm#p4485'>IWABUCHI Koyo</a></td><td>JPN</td><td class="hidden-xs">Asia</td><td>9</td><td>1492</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#4485'>1534</a></td></tr>
+<tr><td>29</td><td class="hidden-xs">2771</td><td><a href='moves_M7.htm#p2771'>BAYLEY William John</a></td><td>GBR</td><td class="hidden-xs">Europe</td><td>7</td><td>1486</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#2771'>1540</a></td></tr>
+<tr><td>30</td><td class="hidden-xs">4717</td><td><a href='moves_M9.htm#p4717'>PEREZ GONZALEZ Juan Bautista</a></td><td>ESP</td><td class="hidden-xs">Europe</td><td>9</td><td>1485</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#4717'>1500</a></td></tr>
+<tr><td>31</td><td class="hidden-xs">4846</td><td><a href='moves_M8.htm#p4846'>SHILTON Billy</a></td><td>GBR</td><td class="hidden-xs">Europe</td><td>8</td><td>1478</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#4846'>1505</a></td></tr>
+<tr><td>32</td><td class="hidden-xs">3675</td><td><a href='moves_M9.htm#p3675'>FACEY Ashley</a></td><td>GBR</td><td class="hidden-xs">Europe</td><td>9</td><td>1465</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#3675'>1489</a></td></tr>
+<tr><td>33</td><td class="hidden-xs">6053</td><td><a href='moves_M10.htm#p6053'>SU Jin Sian</a></td><td>TPE</td><td class="hidden-xs">Asia</td><td>10</td><td>1445</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#6053'>1508</a></td></tr>
+<tr><td>34</td><td class="hidden-xs">1744</td><td><a href='moves_M8.htm#p1744'>CSEJTEY Richard</a></td><td>SVK</td><td class="hidden-xs">Europe</td><td>8</td><td>1427</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#1744'>1439</a></td></tr>
+<tr><td>35</td><td class="hidden-xs">5579</td><td><a href='moves_M10.htm#p5579'>ECHAVEGUREN FARIAS Manuel Felipe</a></td><td>CHI</td><td class="hidden-xs">Americas</td><td>10</td><td>1416</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#5579'>1467</a></td></tr>
+<tr><td>36</td><td class="hidden-xs">422</td><td><a href='moves_M6.htm#p422'>ROSENMEIER Peter</a></td><td>DEN</td><td class="hidden-xs">Europe</td><td>6</td><td>1412</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#422'>1469</a></td></tr>
+<tr><td>37</td><td class="hidden-xs">5180</td><td><a href='moves_M7.htm#p5180'>YAGI Katsuyoshi</a></td><td>JPN</td><td class="hidden-xs">Asia</td><td>7</td><td>1410</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#5180'>1452</a></td></tr>
+<tr><td>38</td><td class="hidden-xs">5850</td><td><a href='moves_M8.htm#p5850'>PENG Weinan</a></td><td>CHN</td><td class="hidden-xs">Asia</td><td>8</td><td>1408</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#5850'>1426</a></td></tr>
+<tr><td>39</td><td class="hidden-xs">5829</td><td><a href='moves_M8.htm#p5829'>WANGPHONPHATHANASIRI Phisit</a></td><td>THA</td><td class="hidden-xs">Asia</td><td>8</td><td>1404</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#5829'>1443</a></td></tr>
+<tr><td>40</td><td class="hidden-xs">1951</td><td><a href='moves_M9.htm#p1951'>LEIBOVITZ Tahl</a></td><td>USA</td><td class="hidden-xs">Americas</td><td>9</td><td>1403</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#1951'>1427</a></td></tr>
+<tr><td>40</td><td class="hidden-xs">5654</td><td><a href='moves_M8.htm#p5654'>ZOHIL Borna</a></td><td>CRO</td><td class="hidden-xs">Europe</td><td>8</td><td>1403</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#5654'>1424</a></td></tr>
+<tr><td>42</td><td class="hidden-xs">3750</td><td><a href='moves_M9.htm#p3750'>ZHAO Yi Qing</a></td><td>CHN</td><td class="hidden-xs">Asia</td><td>9</td><td>1394</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#3750'>1409</a></td></tr>
+<tr><td>42</td><td class="hidden-xs">3851</td><td><a href='moves_M7.htm#p3851'>MONTANUS Jean-paul</a></td><td>NED</td><td class="hidden-xs">Europe</td><td>7</td><td>1394</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#3851'>1430</a></td></tr>
+<tr><td>44</td><td class="hidden-xs">188</td><td><a href='moves_M8.htm#p188'>LEDOUX Marc Philippe</a></td><td>BEL</td><td class="hidden-xs">Europe</td><td>8</td><td>1392</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#188'>1422</a></td></tr>
+<tr><td>45</td><td class="hidden-xs">4466</td><td><a href='moves_M10.htm#p4466'>AKBAR Komet</a></td><td>INA</td><td class="hidden-xs">Asia</td><td>10</td><td>1386</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#4466'>1428</a></td></tr>
+<tr><td>45</td><td class="hidden-xs">874</td><td><a href='moves_M9.htm#p874'>BERECZKI Dezso</a></td><td>HUN</td><td class="hidden-xs">Europe</td><td>9</td><td>1386</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#874'>1395</a></td></tr>
+<tr><td>47</td><td class="hidden-xs">5442</td><td><a href='moves_M8.htm#p5442'>CHUDZICKI Maksym Hubert</a></td><td>POL</td><td class="hidden-xs">Europe</td><td>8</td><td>1384</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#5442'>1420</a></td></tr>
+<tr><td>48</td><td class="hidden-xs">7103</td><td><a href='moves_M9.htm#p7103'>LIU Chaodong</a></td><td>CHN</td><td class="hidden-xs">Asia</td><td>9</td><td>1383</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#7103'>1398</a></td></tr>
+<tr><td>49</td><td class="hidden-xs">5100</td><td><a href='moves_M10.htm#p5100'>LIN Chun Ting</a></td><td>TPE</td><td class="hidden-xs">Asia</td><td>10</td><td>1380</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#5100'>1392</a></td></tr>
+<tr><td>50</td><td class="hidden-xs">859</td><td>CSONKA Andras</td><td>HUN</td><td class="hidden-xs">Europe</td><td>8</td><td>1367</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#859'>1367</a></td></tr>
+<tr><td>51</td><td class="hidden-xs">5282</td><td><a href='moves_M6.htm#p5282'>PARENZAN Matteo</a></td><td>ITA</td><td class="hidden-xs">Europe</td><td>6</td><td>1360</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#5282'>1417</a></td></tr>
+<tr><td>52</td><td class="hidden-xs">1802</td><td><a href='moves_M6.htm#p1802'>THAINIYOM Rungroj</a></td><td>THA</td><td class="hidden-xs">Asia</td><td>6</td><td>1359</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#1802'>1413</a></td></tr>
+<tr><td>53</td><td class="hidden-xs">2380</td><td><a href='moves_M7.htm#p2380'>YOUSSEF Sayed</a></td><td>EGY</td><td class="hidden-xs">Africa</td><td>7</td><td>1355</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#2380'>1403</a></td></tr>
+<tr><td>54</td><td class="hidden-xs">3974</td><td><a href='moves_M7.htm#p3974'>YAN Shuo</a></td><td>CHN</td><td class="hidden-xs">Asia</td><td>7</td><td>1350</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#3974'>1371</a></td></tr>
+<tr><td>55</td><td class="hidden-xs">3972</td><td><a href='moves_M7.htm#p3972'>LIAO Keli</a></td><td>CHN</td><td class="hidden-xs">Asia</td><td>7</td><td>1343</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#3972'>1364</a></td></tr>
+<tr><td>56</td><td class="hidden-xs">4172</td><td><a href='moves_M7.htm#p4172'>PUNPOO Chalermpong</a></td><td>THA</td><td class="hidden-xs">Asia</td><td>7</td><td>1339</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#4172'>1387</a></td></tr>
+<tr><td>57</td><td class="hidden-xs">474</td><td><a href='moves_M6.htm#p474'>VALERA Alvaro</a></td><td>ESP</td><td class="hidden-xs">Europe</td><td>6</td><td>1336</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#474'>1372</a></td></tr>
+<tr><td>58</td><td class="hidden-xs">403</td><td><a href='moves_M10.htm#p403'>KARABEC Ivan</a></td><td>CZE</td><td class="hidden-xs">Europe</td><td>10</td><td>1331</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#403'>1340</a></td></tr>
+<tr><td>59</td><td class="hidden-xs">4708</td><td><a href='moves_M10.htm#p4708'>SILLAPAKONG Bunpot</a></td><td>THA</td><td class="hidden-xs">Asia</td><td>10</td><td>1324</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#4708'>1336</a></td></tr>
+<tr><td>59</td><td class="hidden-xs">6092</td><td><a href='moves_M10.htm#p6092'>WLODYKA Pawel</a></td><td>POL</td><td class="hidden-xs">Europe</td><td>10</td><td>1324</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#6092'>1336</a></td></tr>
+<tr><td>61</td><td class="hidden-xs">2898</td><td><a href='moves_M8.htm#p2898'>SUN Churen</a></td><td>CHN</td><td class="hidden-xs">Asia</td><td>8</td><td>1316</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#2898'>1319</a></td></tr>
+<tr><td>62</td><td class="hidden-xs">559</td><td><a href='moves_M7.htm#p559'>MESSI Stephane</a></td><td>FRA</td><td class="hidden-xs">Europe</td><td>7</td><td>1312</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#559'>1333</a></td></tr>
+<tr><td>63</td><td class="hidden-xs">5185</td><td>CORDUA Lorenzo</td><td>ITA</td><td class="hidden-xs">Europe</td><td>10</td><td>1309</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#5185'>1309</a></td></tr>
+<tr><td>64</td><td class="hidden-xs">6376</td><td><a href='moves_M7.htm#p6376'>SCHNAKE Bjoern</a></td><td>GER</td><td class="hidden-xs">Europe</td><td>7</td><td>1306</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#6376'>1324</a></td></tr>
+<tr><td>65</td><td class="hidden-xs">883</td><td><a href='moves_M10.htm#p883'>MASSAD Claudio</a></td><td>BRA</td><td class="hidden-xs">Americas</td><td>10</td><td>1303</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#883'>1324</a></td></tr>
+<tr><td>66</td><td class="hidden-xs">4857</td><td><a href='moves_M7.htm#p4857'>HANSSON Jonas</a></td><td>SWE</td><td class="hidden-xs">Europe</td><td>7</td><td>1300</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#4857'>1333</a></td></tr>
+<tr><td>67</td><td class="hidden-xs">473</td><td><a href='moves_M7.htm#p473'>MORALES Jordi</a></td><td>ESP</td><td class="hidden-xs">Europe</td><td>7</td><td>1299</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#473'>1326</a></td></tr>
+<tr><td>68</td><td class="hidden-xs">4489</td><td><a href='moves_M7.htm#p4489'>DEIGSLER Michal</a></td><td>POL</td><td class="hidden-xs">Europe</td><td>7</td><td>1293</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#4489'>1323</a></td></tr>
+<tr><td>69</td><td class="hidden-xs">2758</td><td><a href='moves_M7.htm#p2758'>DOURBECKER Kevin</a></td><td>FRA</td><td class="hidden-xs">Europe</td><td>7</td><td>1291</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#2758'>1330</a></td></tr>
+<tr><td>70</td><td class="hidden-xs">2293</td><td><a href='moves_M7.htm#p2293'>DESPINEUX Ben Ashok</a></td><td>BEL</td><td class="hidden-xs">Europe</td><td>7</td><td>1286</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#2293'>1292</a></td></tr>
+<tr><td>71</td><td class="hidden-xs">1453</td><td><a href='moves_M9.htm#p1453'>AGUNBIADE Tajudeen</a></td><td>NGR</td><td class="hidden-xs">Africa</td><td>9</td><td>1282</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#1453'>1291</a></td></tr>
+<tr><td>72</td><td class="hidden-xs">4492</td><td><a href='moves_M7.htm#p4492'>PEREIRA STROH Israel</a></td><td>BRA</td><td class="hidden-xs">Americas</td><td>7</td><td>1280</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#4492'>1328</a></td></tr>
+<tr><td>73</td><td class="hidden-xs">4019</td><td><a href='moves_M9.htm#p4019'>WONG Chi Yin</a></td><td>HKG</td><td class="hidden-xs">Asia</td><td>9</td><td>1268</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#4019'>1286</a></td></tr>
+<tr><td>74</td><td class="hidden-xs">6941</td><td>FAN Yufei</td><td>CHN</td><td class="hidden-xs">Asia</td><td>9</td><td>1262</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#6941'>1262</a></td></tr>
+<tr><td>75</td><td class="hidden-xs">5411</td><td><a href='moves_M6.htm#p5411'>TORRES OROSTICA Ignacio Hernan</a></td><td>CHI</td><td class="hidden-xs">Americas</td><td>6</td><td>1260</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#5411'>1338</a></td></tr>
+<tr><td>76</td><td class="hidden-xs">3641</td><td><a href='moves_M6.htm#p3641'>RAU Thomas</a></td><td>GER</td><td class="hidden-xs">Europe</td><td>6</td><td>1257</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#3641'>1269</a></td></tr>
+<tr><td>77</td><td class="hidden-xs">4804</td><td><a href='moves_M8.htm#p4804'>MULYO Banyu Tri</a></td><td>INA</td><td class="hidden-xs">Asia</td><td>8</td><td>1249</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#4804'>1267</a></td></tr>
+<tr><td>78</td><td class="hidden-xs">4564</td><td><a href='moves_M6.htm#p4564'>SEIDENFELD Ian Philip</a></td><td>USA</td><td class="hidden-xs">Americas</td><td>6</td><td>1241</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#4564'>1259</a></td></tr>
+<tr><td>79</td><td class="hidden-xs">3050</td><td><a href='moves_M10.htm#p3050'>CARBINATTI JUNIOR Carlos Alberto</a></td><td>BRA</td><td class="hidden-xs">Americas</td><td>10</td><td>1237</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#3050'>1243</a></td></tr>
+<tr><td>80</td><td class="hidden-xs">3733</td><td><a href='moves_M7.htm#p3733'>SALMIN FILHO Paulo Sergio</a></td><td>BRA</td><td class="hidden-xs">Americas</td><td>7</td><td>1233</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#3733'>1257</a></td></tr>
+<tr><td>81</td><td class="hidden-xs">6561</td><td><a href='moves_M9.htm#p6561'>HO Ka Sing</a></td><td>HKG</td><td class="hidden-xs">Asia</td><td>9</td><td>1227</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#6561'>1236</a></td></tr>
+<tr><td>82</td><td class="hidden-xs">5437</td><td><a href='moves_M7.htm#p5437'>GUSTAFSSON Sam Carl</a></td><td>SWE</td><td class="hidden-xs">Europe</td><td>7</td><td>1226</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#5437'>1238</a></td></tr>
+<tr><td>83</td><td class="hidden-xs">1581</td><td><a href='moves_M6.htm#p1581'>SIMION Bobi</a></td><td>ROU</td><td class="hidden-xs">Europe</td><td>6</td><td>1224</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#1581'>1245</a></td></tr>
+<tr><td>84</td><td class="hidden-xs">4612</td><td><a href='moves_M6.htm#p4612'>PERRY Martin Robert</a></td><td>GBR</td><td class="hidden-xs">Europe</td><td>6</td><td>1216</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#4612'>1249</a></td></tr>
+<tr><td>84</td><td class="hidden-xs">2290</td><td><a href='moves_M9.htm#p2290'>NOZDRUNOV Iurii</a></td><td>AIN</td><td class="hidden-xs">Athletes Individuals</td><td>9</td><td>1216</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#2290'>1225</a></td></tr>
+<tr><td>86</td><td class="hidden-xs">6342</td><td><a href='moves_M10.htm#p6342'>WAGNER Mio</a></td><td>GER</td><td class="hidden-xs">Europe</td><td>10</td><td>1209</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#6342'>1218</a></td></tr>
+<tr><td>87</td><td class="hidden-xs">5123</td><td><a href='moves_M6.htm#p5123'>HERRAULT Esteban</a></td><td>FRA</td><td class="hidden-xs">Europe</td><td>6</td><td>1208</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#5123'>1250</a></td></tr>
+<tr><td>88</td><td class="hidden-xs">6148</td><td><a href='moves_M8.htm#p6148'>MAKHULBEKOV Ali</a></td><td>KAZ</td><td class="hidden-xs">Asia</td><td>8</td><td>1202</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#6148'>1217</a></td></tr>
+<tr><td>88</td><td class="hidden-xs">4996</td><td>GORDON Aviv</td><td>ISR</td><td class="hidden-xs">Europe</td><td>9</td><td>1202</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#4996'>1202</a></td></tr>
+<tr><td>90</td><td class="hidden-xs">6680</td><td><a href='moves_M10.htm#p6680'>DE OLIVEIRA ANTUNES Gabriel</a></td><td>BRA</td><td class="hidden-xs">Americas</td><td>10</td><td>1200</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#6680'>1233</a></td></tr>
+<tr><td>91</td><td class="hidden-xs">6331</td><td>RADUKIC Aleksej</td><td>SRB</td><td class="hidden-xs">Europe</td><td>8</td><td>1199</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#6331'>1199</a></td></tr>
+<tr><td>92</td><td class="hidden-xs">1015</td><td>GLIKMAN Zeev</td><td>ISR</td><td class="hidden-xs">Europe</td><td>8</td><td>1196</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#1015'>1196</a></td></tr>
+<tr><td>92</td><td class="hidden-xs">3852</td><td><a href='moves_M7.htm#p3852'>JOZIC Pavao</a></td><td>CRO</td><td class="hidden-xs">Europe</td><td>7</td><td>1196</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#3852'>1199</a></td></tr>
+<tr><td>94</td><td class="hidden-xs">644</td><td><a href='moves_M6.htm#p644'>KARABARDAK Paul Arif</a></td><td>GBR</td><td class="hidden-xs">Europe</td><td>6</td><td>1195</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#644'>1213</a></td></tr>
+<tr><td>95</td><td class="hidden-xs">6688</td><td><a href='moves_M7.htm#p6688'>MAGNUSSEN Krizander</a></td><td>NOR</td><td class="hidden-xs">Europe</td><td>7</td><td>1194</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#6688'>1200</a></td></tr>
+<tr><td>95</td><td class="hidden-xs">1451</td><td><a href='moves_M10.htm#p1451'>OLUFEMI Alabi Olabiyi</a></td><td>NGR</td><td class="hidden-xs">Africa</td><td>10</td><td>1194</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#1451'>1212</a></td></tr>
+<tr><td>97</td><td class="hidden-xs">2209</td><td><a href='moves_M6.htm#p2209'>DETTONI Cristian</a></td><td>CHI</td><td class="hidden-xs">Americas</td><td>6</td><td>1192</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#2209'>1207</a></td></tr>
+<tr><td>98</td><td class="hidden-xs">4701</td><td>CHEE Chaoming</td><td>MAS</td><td class="hidden-xs">Asia</td><td>9</td><td>1191</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#4701'>1191</a></td></tr>
+<tr><td>99</td><td class="hidden-xs">2460</td><td><a href='moves_M7.htm#p2460'>CHOY Hing Lam</a></td><td>HKG</td><td class="hidden-xs">Asia</td><td>7</td><td>1187</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#2460'>1211</a></td></tr>
+<tr><td>100</td><td class="hidden-xs">1743</td><td>JAMBOR Miroslav</td><td>SVK</td><td class="hidden-xs">Europe</td><td>7</td><td>1180</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#1743'>1180</a></td></tr>
+<tr><td>101</td><td class="hidden-xs">6890</td><td><a href='moves_M10.htm#p6890'>GARCIA JARA Cristobal</a></td><td>CHI</td><td class="hidden-xs">Americas</td><td>10</td><td>1177</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#6890'>1183</a></td></tr>
+<tr><td>102</td><td class="hidden-xs">6643</td><td>TALEB Hamza</td><td>BEL</td><td class="hidden-xs">Europe</td><td>8</td><td>1176</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#6643'>1176</a></td></tr>
+<tr><td>102</td><td class="hidden-xs">865</td><td>ZBORAI Gyula Istvan</td><td>HUN</td><td class="hidden-xs">Europe</td><td>8</td><td>1176</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#865'>1176</a></td></tr>
+<tr><td>102</td><td class="hidden-xs">3946</td><td><a href='moves_M8.htm#p3946'>IAKOVLEV Artem</a></td><td>AIN</td><td class="hidden-xs">Athletes Individuals</td><td>8</td><td>1176</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#3946'>1185</a></td></tr>
+<tr><td>105</td><td class="hidden-xs">4408</td><td><a href='moves_M8.htm#p4408'>LAM Ka Wai</a></td><td>HKG</td><td class="hidden-xs">Asia</td><td>8</td><td>1175</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#4408'>1205</a></td></tr>
+<tr><td>105</td><td class="hidden-xs">4515</td><td><a href='moves_M6.htm#p4515'>PINO LORCA Matias Nicolas</a></td><td>CHI</td><td class="hidden-xs">Americas</td><td>6</td><td>1175</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#4515'>1208</a></td></tr>
+<tr><td>107</td><td class="hidden-xs">4193</td><td><a href='moves_M6.htm#p4193'>AZULAY Michael</a></td><td>SWE</td><td class="hidden-xs">Europe</td><td>6</td><td>1167</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#4193'>1203</a></td></tr>
+<tr><td>108</td><td class="hidden-xs">4387</td><td><a href='moves_M8.htm#p4387'>FARINLOYE Victor</a></td><td>NGR</td><td class="hidden-xs">Africa</td><td>8</td><td>1163</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#4387'>1181</a></td></tr>
+<tr><td>109</td><td class="hidden-xs">5680</td><td><a href='moves_M7.htm#p5680'>FONSECA Paulo Henrique</a></td><td>BRA</td><td class="hidden-xs">Americas</td><td>7</td><td>1156</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#5680'>1177</a></td></tr>
+<tr><td>110</td><td class="hidden-xs">6472</td><td><a href='moves_M8.htm#p6472'>DIAZ Alejandro</a></td><td>ESP</td><td class="hidden-xs">Europe</td><td>8</td><td>1151</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#6472'>1163</a></td></tr>
+<tr><td>111</td><td class="hidden-xs">4858</td><td><a href='moves_M8.htm#p4858'>WESTERBERG Nicklas</a></td><td>SWE</td><td class="hidden-xs">Europe</td><td>8</td><td>1150</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#4858'>1153</a></td></tr>
+<tr><td>112</td><td class="hidden-xs">2710</td><td><a href='moves_M10.htm#p2710'>ABDELWAHAB Abdelrahman</a></td><td>EGY</td><td class="hidden-xs">Africa</td><td>10</td><td>1143</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#2710'>1173</a></td></tr>
+<tr><td>113</td><td class="hidden-xs">4795</td><td><a href='moves_M6.htm#p4795'>HUANG Jiaxin</a></td><td>CHN</td><td class="hidden-xs">Asia</td><td>6</td><td>1142</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#4795'>1148</a></td></tr>
+<tr><td>114</td><td class="hidden-xs">4111</td><td><a href='moves_M9.htm#p4111'>PULPAN David</a></td><td>CZE</td><td class="hidden-xs">Europe</td><td>9</td><td>1134</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#4111'>1143</a></td></tr>
+<tr><td>114</td><td class="hidden-xs">5096</td><td><a href='moves_M9.htm#p5096'>PITIYAGE DON SILVA Dinesh Deshappriya</a></td><td>SRI</td><td class="hidden-xs">Asia</td><td>9</td><td>1134</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#5096'>1115</a></td></tr>
+<tr><td>116</td><td class="hidden-xs">5755</td><td><a href='moves_M10.htm#p5755'>PUERTO ALVAREZ Alvaro Francisco</a></td><td>COL</td><td class="hidden-xs">Americas</td><td>10</td><td>1133</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#5755'>1145</a></td></tr>
+<tr><td>117</td><td class="hidden-xs">6041</td><td><a href='moves_M9.htm#p6041'>DEHGHANPOUR Naser</a></td><td>IRI</td><td class="hidden-xs">Asia</td><td>9</td><td>1130</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#6041'>1139</a></td></tr>
+<tr><td>118</td><td class="hidden-xs">5536</td><td><a href='moves_M9.htm#p5536'>DOS SANTOS CARVALHO Lucas</a></td><td>BRA</td><td class="hidden-xs">Americas</td><td>9</td><td>1126</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#5536'>1153</a></td></tr>
+<tr><td>118</td><td class="hidden-xs">4123</td><td>VAN AMERONGEN Andrianus Johannes</td><td>NED</td><td class="hidden-xs">Europe</td><td>8</td><td>1126</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#4123'>1126</a></td></tr>
+<tr><td>120</td><td class="hidden-xs">6925</td><td>REINIG Jan</td><td>GER</td><td class="hidden-xs">Europe</td><td>9</td><td>1121</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#6925'>1121</a></td></tr>
+<tr><td>121</td><td class="hidden-xs">5186</td><td><a href='moves_M7.htm#p5186'>TRTNIK Luka</a></td><td>SLO</td><td class="hidden-xs">Europe</td><td>7</td><td>1115</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#5186'>1118</a></td></tr>
+<tr><td>122</td><td class="hidden-xs">5181</td><td><a href='moves_M7.htm#p5181'>KITA Hiromoto</a></td><td>JPN</td><td class="hidden-xs">Asia</td><td>7</td><td>1111</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#5181'>1120</a></td></tr>
+<tr><td>122</td><td class="hidden-xs">6029</td><td><a href='moves_M7.htm#p6029'>BISHOP Theo</a></td><td>GBR</td><td class="hidden-xs">Europe</td><td>7</td><td>1111</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#6029'>1117</a></td></tr>
+<tr><td>124</td><td class="hidden-xs">5787</td><td><a href='moves_M9.htm#p5787'>ADESOPE Abiola Wali</a></td><td>NGR</td><td class="hidden-xs">Africa</td><td>9</td><td>1109</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#5787'>1127</a></td></tr>
+<tr><td>124</td><td class="hidden-xs">2913</td><td><a href='moves_M6.htm#p2913'>ALECCI Raimondo</a></td><td>ITA</td><td class="hidden-xs">Europe</td><td>6</td><td>1109</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#2913'>1118</a></td></tr>
+<tr><td>126</td><td class="hidden-xs">386</td><td>HORUT Daniel</td><td>CZE</td><td class="hidden-xs">Europe</td><td>7</td><td>1102</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#386'>1102</a></td></tr>
+<tr><td>127</td><td class="hidden-xs">5074</td><td>CHATZIKYRIAKOS Marios Kanellis</td><td>GRE</td><td class="hidden-xs">Europe</td><td>6</td><td>1097</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#5074'>1097</a></td></tr>
+<tr><td>127</td><td class="hidden-xs">6477</td><td><a href='moves_M7.htm#p6477'>MEYER Henrik</a></td><td>GER</td><td class="hidden-xs">Europe</td><td>7</td><td>1097</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#6477'>1103</a></td></tr>
+<tr><td>129</td><td class="hidden-xs">3349</td><td><a href='moves_M6.htm#p3349'>ALABI Kayode</a></td><td>NGR</td><td class="hidden-xs">Africa</td><td>6</td><td>1096</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#3349'>1114</a></td></tr>
+<tr><td>130</td><td class="hidden-xs">3844</td><td><a href='moves_M8.htm#p3844'>GUARNIERI MANARA Luiz Filipe</a></td><td>BRA</td><td class="hidden-xs">Americas</td><td>8</td><td>1095</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#3844'>1119</a></td></tr>
+<tr><td>130</td><td class="hidden-xs">4904</td><td><a href='moves_M8.htm#p4904'>ROMAN CHINCHILLA Steven</a></td><td>CRC</td><td class="hidden-xs">Americas</td><td>8</td><td>1095</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#4904'>1131</a></td></tr>
+<tr><td>132</td><td class="hidden-xs">2993</td><td><a href='moves_M7.htm#p2993'>VARGAS PIRAJAN Jose David</a></td><td>COL</td><td class="hidden-xs">Americas</td><td>7</td><td>1089</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#2993'>1098</a></td></tr>
+<tr><td>133</td><td class="hidden-xs">5851</td><td><a href='moves_M6.htm#p5851'>MULLER Benedikt</a></td><td>GER</td><td class="hidden-xs">Europe</td><td>6</td><td>1088</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#5851'>1100</a></td></tr>
+<tr><td>134</td><td class="hidden-xs">3834</td><td><a href='moves_M10.htm#p3834'>NEIRA Dario Andres</a></td><td>ARG</td><td class="hidden-xs">Americas</td><td>10</td><td>1086</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#3834'>1095</a></td></tr>
+<tr><td>135</td><td class="hidden-xs">5281</td><td>COLETTA Leonardo Maria</td><td>ITA</td><td class="hidden-xs">Europe</td><td>8</td><td>1084</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#5281'>1084</a></td></tr>
+<tr><td>136</td><td class="hidden-xs">5171</td><td><a href='moves_M9.htm#p5171'>CHUKWUEMEKA Francis</a></td><td>NGR</td><td class="hidden-xs">Africa</td><td>9</td><td>1083</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#5171'>1092</a></td></tr>
+<tr><td>137</td><td class="hidden-xs">4344</td><td><a href='moves_M6.htm#p4344'>MOUCHTHIS Georgios</a></td><td>GRE</td><td class="hidden-xs">Europe</td><td>6</td><td>1080</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#4344'>1083</a></td></tr>
+<tr><td>138</td><td class="hidden-xs">3658</td><td><a href='moves_M8.htm#p3658'>PELLISSIER Nathan</a></td><td>AUS</td><td class="hidden-xs">Oceania</td><td>8</td><td>1079</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#3658'>1088</a></td></tr>
+<tr><td>139</td><td class="hidden-xs">6729</td><td><a href='moves_M10.htm#p6729'>DOLWANI Hitesh</a></td><td>IND</td><td class="hidden-xs">Asia</td><td>10</td><td>1067</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#6729'>1079</a></td></tr>
+<tr><td>140</td><td class="hidden-xs">5625</td><td><a href='moves_M7.htm#p5625'>CHEN Silu</a></td><td>HKG</td><td class="hidden-xs">Asia</td><td>7</td><td>1066</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#5625'>1072</a></td></tr>
+<tr><td>140</td><td class="hidden-xs">6371</td><td><a href='moves_M7.htm#p6371'>PAREDIS Yannick</a></td><td>NED</td><td class="hidden-xs">Europe</td><td>7</td><td>1066</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#6371'>1072</a></td></tr>
+<tr><td>142</td><td class="hidden-xs">6714</td><td><a href='moves_M8.htm#p6714'>MURODULLAEV Sunnatillo</a></td><td>UZB</td><td class="hidden-xs">Asia</td><td>8</td><td>1064</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#6714'>1050</a></td></tr>
+<tr><td>143</td><td class="hidden-xs">468</td><td><a href='moves_M6.htm#p468'>SEOANE ALCARAZ Alberto</a></td><td>ESP</td><td class="hidden-xs">Europe</td><td>6</td><td>1062</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#468'>1074</a></td></tr>
+<tr><td>144</td><td class="hidden-xs">6097</td><td><a href='moves_M9.htm#p6097'>ABE Hayuma</a></td><td>JPN</td><td class="hidden-xs">Asia</td><td>9</td><td>1059</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#6097'>1062</a></td></tr>
+<tr><td>145</td><td class="hidden-xs">5802</td><td><a href='moves_M9.htm#p5802'>KUSNANTO Kusnanto</a></td><td>INA</td><td class="hidden-xs">Asia</td><td>9</td><td>1049</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#5802'>1052</a></td></tr>
+<tr><td>146</td><td class="hidden-xs">3065</td><td><a href='moves_M6.htm#p3065'>CHEN Chao</a></td><td>CHN</td><td class="hidden-xs">Asia</td><td>6</td><td>1045</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#3065'>1048</a></td></tr>
+<tr><td>147</td><td class="hidden-xs">5636</td><td><a href='moves_M10.htm#p5636'>SHAFEEQ Abdulrahman Hikmat</a></td><td>IRQ</td><td class="hidden-xs">Asia</td><td>10</td><td>1042</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#5636'>1030</a></td></tr>
+<tr><td>148</td><td class="hidden-xs">6283</td><td>EMPIS Edgar</td><td>FRA</td><td class="hidden-xs">Europe</td><td>8</td><td>1040</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#6283'>1040</a></td></tr>
+<tr><td>149</td><td class="hidden-xs">2980</td><td><a href='moves_M8.htm#p2980'>TATEISHI Arufuahirokazu</a></td><td>JPN</td><td class="hidden-xs">Asia</td><td>8</td><td>1037</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#2980'>1052</a></td></tr>
+<tr><td>150</td><td class="hidden-xs">4391</td><td><a href='moves_M10.htm#p4391'>COGILL Theo</a></td><td>RSA</td><td class="hidden-xs">Africa</td><td>10</td><td>1036</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#4391'>1039</a></td></tr>
+<tr><td>151</td><td class="hidden-xs">4180</td><td><a href='moves_M8.htm#p4180'>CHARITSAT Komkrit</a></td><td>THA</td><td class="hidden-xs">Asia</td><td>8</td><td>1027</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#4180'>1033</a></td></tr>
+<tr><td>152</td><td class="hidden-xs">6183</td><td>EMINOVIC Haris</td><td>BIH</td><td class="hidden-xs">Europe</td><td>6</td><td>1025</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#6183'>1025</a></td></tr>
+<tr><td>153</td><td class="hidden-xs">4518</td><td><a href='moves_M7.htm#p4518'>KANIUKA Aleksy Nicolas</a></td><td>ARG</td><td class="hidden-xs">Americas</td><td>7</td><td>1023</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#4518'>1035</a></td></tr>
+<tr><td>154</td><td class="hidden-xs">3058</td><td>SON Jin-kwang</td><td>KOR</td><td class="hidden-xs">Asia</td><td>6</td><td>1020</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#3058'>1020</a></td></tr>
+<tr><td>155</td><td class="hidden-xs">5021</td><td><a href='moves_M8.htm#p5021'>JACOBSEN Pablo</a></td><td>NOR</td><td class="hidden-xs">Europe</td><td>8</td><td>1016</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#5021'>1019</a></td></tr>
+<tr><td>156</td><td class="hidden-xs">4936</td><td><a href='moves_M8.htm#p4936'>VAN DER BURG Roy</a></td><td>NED</td><td class="hidden-xs">Europe</td><td>8</td><td>1007</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#4936'>1010</a></td></tr>
+<tr><td>157</td><td class="hidden-xs">5943</td><td><a href='moves_M9.htm#p5943'>GHOLAMI Mohammaderfan</a></td><td>IRI</td><td class="hidden-xs">Asia</td><td>9</td><td>1005</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#5943'>1008</a></td></tr>
+<tr><td>158</td><td class="hidden-xs">6424</td><td><a href='moves_M6.htm#p6424'>MANTURZ Piotr</a></td><td>POL</td><td class="hidden-xs">Europe</td><td>6</td><td>996</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#6424'>1005</a></td></tr>
+<tr><td>159</td><td class="hidden-xs">5931</td><td><a href='moves_M7.htm#p5931'>TONG Chi Ming</a></td><td>HKG</td><td class="hidden-xs">Asia</td><td>7</td><td>994</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#5931'>1018</a></td></tr>
+<tr><td>160</td><td class="hidden-xs">4631</td><td><a href='moves_M9.htm#p4631'>EREKEYEV Talgat</a></td><td>KAZ</td><td class="hidden-xs">Asia</td><td>9</td><td>991</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#4631'>994</a></td></tr>
+<tr><td>161</td><td class="hidden-xs">6795</td><td><a href='moves_M9.htm#p6795'>DJITOUO SAHA FOTSO Alex</a></td><td>CMR</td><td class="hidden-xs">Africa</td><td>9</td><td>990</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#6795'>999</a></td></tr>
+<tr><td>162</td><td class="hidden-xs">6297</td><td>KANKINGKAM Phitak</td><td>THA</td><td class="hidden-xs">Asia</td><td>10</td><td>988</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#6297'>988</a></td></tr>
+<tr><td>163</td><td class="hidden-xs">1863</td><td><a href='moves_M8.htm#p1863'>HU Ming-Fu</a></td><td>TPE</td><td class="hidden-xs">Asia</td><td>8</td><td>987</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#1863'>990</a></td></tr>
+<tr><td>164</td><td class="hidden-xs">6676</td><td><a href='moves_M6.htm#p6676'>CHIHARA Takuro</a></td><td>JPN</td><td class="hidden-xs">Asia</td><td>6</td><td>983</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#6676'>989</a></td></tr>
+<tr><td>165</td><td class="hidden-xs">5173</td><td>BRAMMER Henrik</td><td>DEN</td><td class="hidden-xs">Europe</td><td>7</td><td>982</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#5173'>982</a></td></tr>
+<tr><td>165</td><td class="hidden-xs">4394</td><td><a href='moves_M8.htm#p4394'>YANG Gui Nam</a></td><td>KOR</td><td class="hidden-xs">Asia</td><td>8</td><td>982</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#4394'>985</a></td></tr>
+<tr><td>167</td><td class="hidden-xs">3934</td><td><a href='moves_M8.htm#p3934'>SATO Hiromi</a></td><td>JPN</td><td class="hidden-xs">Asia</td><td>8</td><td>979</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#3934'>982</a></td></tr>
+<tr><td>167</td><td class="hidden-xs">1336</td><td>ROSENAST Thomas</td><td>SUI</td><td class="hidden-xs">Europe</td><td>7</td><td>979</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#1336'>979</a></td></tr>
+<tr><td>169</td><td class="hidden-xs">4683</td><td><a href='moves_M6.htm#p4683'>HIRTH Trevor</a></td><td>AUS</td><td class="hidden-xs">Oceania</td><td>6</td><td>973</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#4683'>976</a></td></tr>
+<tr><td>170</td><td class="hidden-xs">2707</td><td><a href='moves_M9.htm#p2707'>HOSNY Hossam</a></td><td>EGY</td><td class="hidden-xs">Africa</td><td>9</td><td>972</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#2707'>984</a></td></tr>
+<tr><td>170</td><td class="hidden-xs">5250</td><td>SHIN Seung Weon</td><td>KOR</td><td class="hidden-xs">Asia</td><td>9</td><td>972</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#5250'>972</a></td></tr>
+<tr><td>172</td><td class="hidden-xs">4706</td><td><a href='moves_M7.htm#p4706'>THAPAENG Suriyone</a></td><td>THA</td><td class="hidden-xs">Asia</td><td>7</td><td>970</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#4706'>979</a></td></tr>
+<tr><td>173</td><td class="hidden-xs">5301</td><td><a href='moves_M8.htm#p5301'>SPALEK Vit</a></td><td>CZE</td><td class="hidden-xs">Europe</td><td>8</td><td>969</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#5301'>972</a></td></tr>
+<tr><td>174</td><td class="hidden-xs">5466</td><td><a href='moves_M8.htm#p5466'>HENRY Ryan Joseph</a></td><td>GBR</td><td class="hidden-xs">Europe</td><td>8</td><td>965</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#5466'>971</a></td></tr>
+<tr><td>175</td><td class="hidden-xs">5730</td><td><a href='moves_M7.htm#p5730'>SCHEIBER Christian</a></td><td>AUT</td><td class="hidden-xs">Europe</td><td>7</td><td>964</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#5730'>970</a></td></tr>
+<tr><td>176</td><td class="hidden-xs">4428</td><td><a href='moves_M8.htm#p4428'>PEREZ Alejandro</a></td><td>ARG</td><td class="hidden-xs">Americas</td><td>8</td><td>961</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#4428'>973</a></td></tr>
+<tr><td>177</td><td class="hidden-xs">5912</td><td>AL ADILEE Saeed</td><td>IRQ</td><td class="hidden-xs">Asia</td><td>7</td><td>956</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#5912'>956</a></td></tr>
+<tr><td>178</td><td class="hidden-xs">1427</td><td>HEIJNEN Tonnie</td><td>NED</td><td class="hidden-xs">Europe</td><td>9</td><td>954</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#1427'>954</a></td></tr>
+<tr><td>179</td><td class="hidden-xs">3115</td><td><a href='moves_M6.htm#p3115'>KNEUSS Valentin</a></td><td>SUI</td><td class="hidden-xs">Europe</td><td>6</td><td>953</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#3115'>962</a></td></tr>
+<tr><td>180</td><td class="hidden-xs">6181</td><td>RODRIGUEZ Gonzalo</td><td>ESP</td><td class="hidden-xs">Europe</td><td>7</td><td>952</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#6181'>952</a></td></tr>
+<tr><td>181</td><td class="hidden-xs">5880</td><td><a href='moves_M9.htm#p5880'>CHOUGULE Dattaprasad Jotiram</a></td><td>IND</td><td class="hidden-xs">Asia</td><td>9</td><td>948</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#5880'>954</a></td></tr>
+<tr><td>182</td><td class="hidden-xs">2376</td><td><a href='moves_M8.htm#p2376'>SHAABAN Emad</a></td><td>EGY</td><td class="hidden-xs">Africa</td><td>8</td><td>942</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#2376'>945</a></td></tr>
+<tr><td>182</td><td class="hidden-xs">6441</td><td>VRACAN Marko</td><td>CRO</td><td class="hidden-xs">Europe</td><td>8</td><td>942</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#6441'>942</a></td></tr>
+<tr><td>184</td><td class="hidden-xs">5715</td><td><a href='moves_M7.htm#p5715'>BAHAMONDES VEGA Claudio Benjamin</a></td><td>CHI</td><td class="hidden-xs">Americas</td><td>7</td><td>941</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#5715'>962</a></td></tr>
+<tr><td>185</td><td class="hidden-xs">5033</td><td>SALOMONSEN Steffen</td><td>NOR</td><td class="hidden-xs">Europe</td><td>8</td><td>938</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#5033'>938</a></td></tr>
+<tr><td>186</td><td class="hidden-xs">253</td><td><a href='moves_M8.htm#p253'>FERNANTO NASCIMENTO JUNIOR Joao</a></td><td>BRA</td><td class="hidden-xs">Americas</td><td>8</td><td>930</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#253'>936</a></td></tr>
+<tr><td>187</td><td class="hidden-xs">2377</td><td><a href='moves_M9.htm#p2377'>HUSSEIN HASSAN Hussein</a></td><td>EGY</td><td class="hidden-xs">Africa</td><td>9</td><td>928</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#2377'>937</a></td></tr>
+<tr><td>188</td><td class="hidden-xs">2416</td><td><a href='moves_M10.htm#p2416'>BOUMEDOUHA Karim</a></td><td>ALG</td><td class="hidden-xs">Africa</td><td>10</td><td>926</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#2416'>929</a></td></tr>
+<tr><td>189</td><td class="hidden-xs">2657</td><td><a href='moves_M6.htm#p2657'>PARK Joon Soo</a></td><td>KOR</td><td class="hidden-xs">Asia</td><td>6</td><td>915</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#2657'>918</a></td></tr>
+<tr><td>190</td><td class="hidden-xs">6563</td><td><a href='moves_M6.htm#p6563'>PROPERJOHN Lennard</a></td><td>AUS</td><td class="hidden-xs">Oceania</td><td>6</td><td>911</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#6563'>917</a></td></tr>
+<tr><td>190</td><td class="hidden-xs">5985</td><td><a href='moves_M6.htm#p5985'>BOVE Marco</a></td><td>ITA</td><td class="hidden-xs">Europe</td><td>6</td><td>911</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#5985'>914</a></td></tr>
+<tr><td>192</td><td class="hidden-xs">389</td><td><a href='moves_M7.htm#p389'>LAMBERT Zbynek</a></td><td>CZE</td><td class="hidden-xs">Europe</td><td>7</td><td>910</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#389'>919</a></td></tr>
+<tr><td>192</td><td class="hidden-xs">6061</td><td><a href='moves_M6.htm#p6061'>HIDAYAT Rahmad</a></td><td>INA</td><td class="hidden-xs">Asia</td><td>6</td><td>910</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#6061'>913</a></td></tr>
+<tr><td>194</td><td class="hidden-xs">5859</td><td>KIM Hyeonggwon</td><td>KOR</td><td class="hidden-xs">Asia</td><td>8</td><td>909</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#5859'>909</a></td></tr>
+<tr><td>195</td><td class="hidden-xs">1309</td><td>KIM Kwang-jin</td><td>KOR</td><td class="hidden-xs">Asia</td><td>8</td><td>903</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#1309'>903</a></td></tr>
+<tr><td>196</td><td class="hidden-xs">6333</td><td>BECIREVIC Alen</td><td>SLO</td><td class="hidden-xs">Europe</td><td>8</td><td>901</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#6333'>901</a></td></tr>
+<tr><td>197</td><td class="hidden-xs">5141</td><td><a href='moves_M6.htm#p5141'>LEE Se Ho</a></td><td>KOR</td><td class="hidden-xs">Asia</td><td>6</td><td>897</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#5141'>906</a></td></tr>
+<tr><td>198</td><td class="hidden-xs">5214</td><td><a href='moves_M7.htm#p5214'>HEMMI Kosuke</a></td><td>JPN</td><td class="hidden-xs">Asia</td><td>7</td><td>893</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#5214'>899</a></td></tr>
+<tr><td>199</td><td class="hidden-xs">4927</td><td>DE CHIARA Samuel</td><td>ITA</td><td class="hidden-xs">Europe</td><td>8</td><td>886</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#4927'>886</a></td></tr>
+<tr><td>200</td><td class="hidden-xs">2145</td><td>ELFAWI Ibrahim</td><td>EGY</td><td class="hidden-xs">Africa</td><td>9</td><td>885</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#2145'>885</a></td></tr>
+<tr><td>201</td><td class="hidden-xs">2979</td><td>KANEKO Kazuya</td><td>JPN</td><td class="hidden-xs">Asia</td><td>7</td><td>884</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#2979'>884</a></td></tr>
+<tr><td>201</td><td class="hidden-xs">2995</td><td><a href='moves_M10.htm#p2995'>MUNOZ BENITEZ Melvin</a></td><td>ESA</td><td class="hidden-xs">Americas</td><td>10</td><td>884</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#2995'>893</a></td></tr>
+<tr><td>203</td><td class="hidden-xs">5836</td><td><a href='moves_M8.htm#p5836'>IMAIZUMI Daichi</a></td><td>JPN</td><td class="hidden-xs">Asia</td><td>8</td><td>883</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#5836'>889</a></td></tr>
+<tr><td>203</td><td class="hidden-xs">6004</td><td>BAYALA Ble Jean Pierre</td><td>CIV</td><td class="hidden-xs">Africa</td><td>9</td><td>883</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#6004'>883</a></td></tr>
+<tr><td>205</td><td class="hidden-xs">2862</td><td>PHAM Van Hoang</td><td>VIE</td><td class="hidden-xs">Asia</td><td>8</td><td>879</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#2862'>879</a></td></tr>
+<tr><td>205</td><td class="hidden-xs">6695</td><td><a href='moves_M8.htm#p6695'>DUTRA BARSOTTI DE FREITAS Matheus</a></td><td>BRA</td><td class="hidden-xs">Americas</td><td>8</td><td>879</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#6695'>882</a></td></tr>
+<tr><td>207</td><td class="hidden-xs">5034</td><td>SABIO RUIZ Ricard</td><td>ESP</td><td class="hidden-xs">Europe</td><td>8</td><td>872</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#5034'>872</a></td></tr>
+<tr><td>208</td><td class="hidden-xs">6051</td><td>CHIN Brady Zi Rong</td><td>MAS</td><td class="hidden-xs">Asia</td><td>9</td><td>871</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#6051'>871</a></td></tr>
+<tr><td>209</td><td class="hidden-xs">5839</td><td>MAXA Lukas</td><td>CZE</td><td class="hidden-xs">Europe</td><td>8</td><td>870</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#5839'>870</a></td></tr>
+<tr><td>210</td><td class="hidden-xs">6805</td><td><a href='moves_M9.htm#p6805'>WATSON Logan Wade</a></td><td>USA</td><td class="hidden-xs">Americas</td><td>9</td><td>869</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#6805'>887</a></td></tr>
+<tr><td>211</td><td class="hidden-xs">5023</td><td>JOHANSEN Fredrik</td><td>NOR</td><td class="hidden-xs">Europe</td><td>8</td><td>857</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#5023'>857</a></td></tr>
+<tr><td>211</td><td class="hidden-xs">1868</td><td>HOU Ting-sung</td><td>TPE</td><td class="hidden-xs">Asia</td><td>8</td><td>857</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#1868'>857</a></td></tr>
+<tr><td>211</td><td class="hidden-xs">2062</td><td><a href='moves_M6.htm#p2062'>ESAULOV Alexander</a></td><td>AIN</td><td class="hidden-xs">Athletes Individuals</td><td>6</td><td>857</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#2062'>863</a></td></tr>
+<tr><td>214</td><td class="hidden-xs">6425</td><td>ZIELINSKI Marcin</td><td>POL</td><td class="hidden-xs">Europe</td><td>8</td><td>852</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#6425'>852</a></td></tr>
+<tr><td>215</td><td class="hidden-xs">4349</td><td><a href='moves_M9.htm#p4349'>CONCEICAO SEIXAS Flavio Alberto</a></td><td>BRA</td><td class="hidden-xs">Americas</td><td>9</td><td>851</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#4349'>854</a></td></tr>
+<tr><td>216</td><td class="hidden-xs">5107</td><td>KIM SunGil</td><td>KOR</td><td class="hidden-xs">Asia</td><td>6</td><td>847</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#5107'>847</a></td></tr>
+<tr><td>217</td><td class="hidden-xs">4245</td><td><a href='moves_M9.htm#p4245'>SYED Asad Hussain</a></td><td>CAN</td><td class="hidden-xs">Americas</td><td>9</td><td>842</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#4245'>845</a></td></tr>
+<tr><td>218</td><td class="hidden-xs">3310</td><td><a href='moves_M9.htm#p3310'>CHINCHILLA RAMOS Julian Andres</a></td><td>COL</td><td class="hidden-xs">Americas</td><td>9</td><td>840</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#3310'>849</a></td></tr>
+<tr><td>219</td><td class="hidden-xs">5337</td><td><a href='moves_M10.htm#p5337'>THAKKER Shae Sunjay</a></td><td>GBR</td><td class="hidden-xs">Europe</td><td>10</td><td>839</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#5337'>842</a></td></tr>
+<tr><td>220</td><td class="hidden-xs">3309</td><td>HENAO QUINTERO Diego Alejandro</td><td>COL</td><td class="hidden-xs">Americas</td><td>8</td><td>838</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#3309'>838</a></td></tr>
+<tr><td>221</td><td class="hidden-xs">6895</td><td><a href='moves_M8.htm#p6895'>DE SOUZA MASHKI Jean Carlos</a></td><td>BRA</td><td class="hidden-xs">Americas</td><td>8</td><td>835</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#6895'>841</a></td></tr>
+<tr><td>222</td><td class="hidden-xs">6707</td><td><a href='moves_M8.htm#p6707'>BARRIENTOS Fausto</a></td><td>ARG</td><td class="hidden-xs">Americas</td><td>8</td><td>829</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#6707'>835</a></td></tr>
+<tr><td>223</td><td class="hidden-xs">5245</td><td>KWON Sangyong</td><td>KOR</td><td class="hidden-xs">Asia</td><td>9</td><td>824</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#5245'>824</a></td></tr>
+<tr><td>224</td><td class="hidden-xs">4191</td><td>KEEREERUT Parinya Chuaigate</td><td>THA</td><td class="hidden-xs">Asia</td><td>8</td><td>821</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#4191'>821</a></td></tr>
+<tr><td>225</td><td class="hidden-xs">5379</td><td><a href='moves_M8.htm#p5379'>ARORA Kunal</a></td><td>IND</td><td class="hidden-xs">Asia</td><td>8</td><td>819</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#5379'>820</a></td></tr>
+<tr><td>226</td><td class="hidden-xs">252</td><td><a href='moves_M8.htm#p252'>DE MELO Francisco Wellington</a></td><td>BRA</td><td class="hidden-xs">Americas</td><td>8</td><td>818</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#252'>821</a></td></tr>
+<tr><td>227</td><td class="hidden-xs">6332</td><td><a href='moves_M7.htm#p6332'>HWANG Inchun</a></td><td>KOR</td><td class="hidden-xs">Asia</td><td>7</td><td>817</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#6332'>820</a></td></tr>
+<tr><td>228</td><td class="hidden-xs">6832</td><td><a href='moves_M8.htm#p6832'>FABIYI Oluwafemi Ebenezer</a></td><td>NGR</td><td class="hidden-xs">Africa</td><td>8</td><td>814</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#6832'>826</a></td></tr>
+<tr><td>228</td><td class="hidden-xs">4947</td><td>RADOVANOVIC Mihajlo</td><td>SRB</td><td class="hidden-xs">Europe</td><td>7</td><td>814</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#4947'>814</a></td></tr>
+<tr><td>230</td><td class="hidden-xs">2825</td><td><a href='moves_M9.htm#p2825'>COSTA RIBEIRO Mario Luis</a></td><td>BRA</td><td class="hidden-xs">Americas</td><td>9</td><td>806</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#2825'>809</a></td></tr>
+<tr><td>230</td><td class="hidden-xs">6407</td><td><a href='moves_M9.htm#p6407'>PAVEZ Lucas</a></td><td>CHI</td><td class="hidden-xs">Americas</td><td>9</td><td>806</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#6407'>812</a></td></tr>
+<tr><td>232</td><td class="hidden-xs">5682</td><td><a href='moves_M8.htm#p5682'>GRILO Lucas Fagundes</a></td><td>BRA</td><td class="hidden-xs">Americas</td><td>8</td><td>805</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#5682'>808</a></td></tr>
+<tr><td>233</td><td class="hidden-xs">6706</td><td><a href='moves_M6.htm#p6706'>AMORIM DE OLIVEIRA Felipe</a></td><td>BRA</td><td class="hidden-xs">Americas</td><td>6</td><td>804</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#6706'>810</a></td></tr>
+<tr><td>234</td><td class="hidden-xs">5616</td><td>VASQUEZ Jerry</td><td>USA</td><td class="hidden-xs">Americas</td><td>10</td><td>803</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#5616'>803</a></td></tr>
+<tr><td>234</td><td class="hidden-xs">6035</td><td>LEE Young Min</td><td>KOR</td><td class="hidden-xs">Asia</td><td>7</td><td>803</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#6035'>803</a></td></tr>
+<tr><td>236</td><td class="hidden-xs">4984</td><td><a href='moves_M9.htm#p4984'>ALSANEA Ali</a></td><td>KUW</td><td class="hidden-xs">Asia</td><td>9</td><td>802</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#4984'>805</a></td></tr>
+<tr><td>237</td><td class="hidden-xs">6744</td><td><a href='moves_M10.htm#p6744'>FLINT Maximillian Cooper</a></td><td>GBR</td><td class="hidden-xs">Europe</td><td>10</td><td>798</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#6744'>804</a></td></tr>
+<tr><td>238</td><td class="hidden-xs">6711</td><td><a href='moves_M9.htm#p6711'>SKLIARSKY Eithan</a></td><td>ARG</td><td class="hidden-xs">Americas</td><td>9</td><td>795</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#6711'>810</a></td></tr>
+<tr><td>239</td><td class="hidden-xs">4561</td><td><a href='moves_M8.htm#p4561'>MAKKAR Marco Sephom</a></td><td>USA</td><td class="hidden-xs">Americas</td><td>8</td><td>794</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#4561'>797</a></td></tr>
+<tr><td>240</td><td class="hidden-xs">4874</td><td>POLO ASTUDILLO Paul Leonardo</td><td>ECU</td><td class="hidden-xs">Americas</td><td>8</td><td>792</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#4874'>792</a></td></tr>
+<tr><td>241</td><td class="hidden-xs">6403</td><td>BEROIZA Andres</td><td>CHI</td><td class="hidden-xs">Americas</td><td>8</td><td>790</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#6403'>790</a></td></tr>
+<tr><td>242</td><td class="hidden-xs">4150</td><td>SHUKUNOBE Takumi</td><td>JPN</td><td class="hidden-xs">Asia</td><td>8</td><td>786</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#4150'>786</a></td></tr>
+<tr><td>242</td><td class="hidden-xs">2318</td><td>CASTRO Angel</td><td>MEX</td><td class="hidden-xs">Americas</td><td>7</td><td>786</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#2318'>786</a></td></tr>
+<tr><td>244</td><td class="hidden-xs">4615</td><td>EIER Dustin</td><td>NED</td><td class="hidden-xs">Europe</td><td>7</td><td>785</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#4615'>785</a></td></tr>
+<tr><td>244</td><td class="hidden-xs">6465</td><td><a href='moves_M8.htm#p6465'>PARMAR Gajanan</a></td><td>IND</td><td class="hidden-xs">Asia</td><td>8</td><td>785</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#6465'>791</a></td></tr>
+<tr><td>246</td><td class="hidden-xs">3046</td><td><a href='moves_M9.htm#p3046'>RIGGIO IFANGER Guilherme</a></td><td>BRA</td><td class="hidden-xs">Americas</td><td>9</td><td>782</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#3046'>788</a></td></tr>
+<tr><td>246</td><td class="hidden-xs">6096</td><td>HNIZDO Petr</td><td>CZE</td><td class="hidden-xs">Europe</td><td>6</td><td>782</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#6096'>782</a></td></tr>
+<tr><td>248</td><td class="hidden-xs">2658</td><td>KIM Young Sung</td><td>KOR</td><td class="hidden-xs">Asia</td><td>7</td><td>781</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#2658'>781</a></td></tr>
+<tr><td>249</td><td class="hidden-xs">4849</td><td>VAUGHAN Patrick</td><td>IRL</td><td class="hidden-xs">Europe</td><td>7</td><td>779</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#4849'>779</a></td></tr>
+<tr><td>250</td><td class="hidden-xs">2262</td><td>KENT Ian</td><td>CAN</td><td class="hidden-xs">Americas</td><td>8</td><td>777</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#2262'>777</a></td></tr>
+<tr><td>251</td><td class="hidden-xs">1299</td><td><a href='moves_M9.htm#p1299'>LETELIER POBLETE David Daniel</a></td><td>CHI</td><td class="hidden-xs">Americas</td><td>9</td><td>774</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#1299'>786</a></td></tr>
+<tr><td>252</td><td class="hidden-xs">4800</td><td><a href='moves_M7.htm#p4800'>TONG Chi Yung</a></td><td>HKG</td><td class="hidden-xs">Asia</td><td>7</td><td>769</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#4800'>772</a></td></tr>
+<tr><td>253</td><td class="hidden-xs">441</td><td><a href='moves_M7.htm#p441'>ABDELMONEIM Abousteit</a></td><td>EGY</td><td class="hidden-xs">Africa</td><td>7</td><td>766</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#441'>772</a></td></tr>
+<tr><td>254</td><td class="hidden-xs">2519</td><td>JUNG Suk-youn</td><td>KOR</td><td class="hidden-xs">Asia</td><td>10</td><td>763</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#2519'>763</a></td></tr>
+<tr><td>255</td><td class="hidden-xs">2784</td><td><a href='moves_M6.htm#p2784'>ITAI Junki</a></td><td>JPN</td><td class="hidden-xs">Asia</td><td>6</td><td>761</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#2784'>764</a></td></tr>
+<tr><td>256</td><td class="hidden-xs">4759</td><td>LASKOSKY Gustavo Alexandre</td><td>BRA</td><td class="hidden-xs">Americas</td><td>8</td><td>759</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#4759'>759</a></td></tr>
+<tr><td>257</td><td class="hidden-xs">4640</td><td><a href='moves_M7.htm#p4640'>ORAZBEK Azamat</a></td><td>KAZ</td><td class="hidden-xs">Asia</td><td>7</td><td>747</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#4640'>750</a></td></tr>
+<tr><td>258</td><td class="hidden-xs">6060</td><td>JERICO TILAAR Varly</td><td>INA</td><td class="hidden-xs">Asia</td><td>6</td><td>745</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#6060'>745</a></td></tr>
+<tr><td>259</td><td class="hidden-xs">4684</td><td><a href='moves_M7.htm#p4684'>BALLESTRINO Jake</a></td><td>AUS</td><td class="hidden-xs">Oceania</td><td>7</td><td>744</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#4684'>750</a></td></tr>
+<tr><td>260</td><td class="hidden-xs">5038</td><td>ALLEN Craig Mark</td><td>GBR</td><td class="hidden-xs">Europe</td><td>9</td><td>743</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#5038'>743</a></td></tr>
+<tr><td>261</td><td class="hidden-xs">4707</td><td><a href='moves_M9.htm#p4707'>SAMEE Sukij</a></td><td>THA</td><td class="hidden-xs">Asia</td><td>9</td><td>741</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#4707'>744</a></td></tr>
+<tr><td>262</td><td class="hidden-xs">6256</td><td>BASTARDO Mario Joao</td><td>POR</td><td class="hidden-xs">Europe</td><td>6</td><td>739</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#6256'>739</a></td></tr>
+<tr><td>263</td><td class="hidden-xs">2548</td><td>MOJTAHED Masoud</td><td>USA</td><td class="hidden-xs">Americas</td><td>7</td><td>738</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#2548'>738</a></td></tr>
+<tr><td>264</td><td class="hidden-xs">3055</td><td>KROTSCH Pablo</td><td>ARG</td><td class="hidden-xs">Americas</td><td>8</td><td>733</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#3055'>733</a></td></tr>
+<tr><td>265</td><td class="hidden-xs">4026</td><td>GAELA Benedicto</td><td>PHI</td><td class="hidden-xs">Asia</td><td>9</td><td>727</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#4026'>727</a></td></tr>
+<tr><td>266</td><td class="hidden-xs">2572</td><td><a href='moves_M6.htm#p2572'>ARGUELLO GARCIA Domingo</a></td><td>CRC</td><td class="hidden-xs">Americas</td><td>6</td><td>722</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#2572'>728</a></td></tr>
+<tr><td>267</td><td class="hidden-xs">5955</td><td>AL MAJIDI Hasan Hamzah</td><td>IRQ</td><td class="hidden-xs">Asia</td><td>8</td><td>719</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#5955'>719</a></td></tr>
+<tr><td>268</td><td class="hidden-xs">4177</td><td>NGOENKRACHANG Lertsak</td><td>THA</td><td class="hidden-xs">Asia</td><td>8</td><td>717</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#4177'>717</a></td></tr>
+<tr><td>269</td><td class="hidden-xs">5903</td><td><a href='moves_M10.htm#p5903'>ZERIGUI Madani</a></td><td>ALG</td><td class="hidden-xs">Africa</td><td>10</td><td>711</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#5903'>717</a></td></tr>
+<tr><td>269</td><td class="hidden-xs">6272</td><td><a href='moves_M10.htm#p6272'>ELNAZLY Ahmed</a></td><td>EGY</td><td class="hidden-xs">Africa</td><td>10</td><td>711</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#6272'>717</a></td></tr>
+<tr><td>271</td><td class="hidden-xs">5246</td><td>LEE Changsik</td><td>KOR</td><td class="hidden-xs">Asia</td><td>7</td><td>708</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#5246'>708</a></td></tr>
+<tr><td>271</td><td class="hidden-xs">5894</td><td><a href='moves_M10.htm#p5894'>MEDCALF Randall</a></td><td>USA</td><td class="hidden-xs">Americas</td><td>10</td><td>708</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#5894'>711</a></td></tr>
+<tr><td>273</td><td class="hidden-xs">6543</td><td>YEH Matthias</td><td>CAN</td><td class="hidden-xs">Americas</td><td>10</td><td>703</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#6543'>703</a></td></tr>
+<tr><td>274</td><td class="hidden-xs">4777</td><td><a href='moves_M9.htm#p4777'>RIVERA VICENTE Shaquille Joel</a></td><td>PUR</td><td class="hidden-xs">Americas</td><td>9</td><td>702</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#4777'>708</a></td></tr>
+<tr><td>274</td><td class="hidden-xs">6125</td><td>CASAL CAPPILLO Cristian Cesar</td><td>CHI</td><td class="hidden-xs">Americas</td><td>10</td><td>702</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#6125'>702</a></td></tr>
+<tr><td>276</td><td class="hidden-xs">6330</td><td>BOGDANOVIC Ivan</td><td>SRB</td><td class="hidden-xs">Europe</td><td>7</td><td>701</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#6330'>701</a></td></tr>
+<tr><td>277</td><td class="hidden-xs">6232</td><td>PREZA Enrique</td><td>MEX</td><td class="hidden-xs">Americas</td><td>8</td><td>698</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#6232'>698</a></td></tr>
+<tr><td>278</td><td class="hidden-xs">6576</td><td><a href='moves_M8.htm#p6576'>LEVI Yehonatan Chaim</a></td><td>ISR</td><td class="hidden-xs">Europe</td><td>8</td><td>696</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#6576'>702</a></td></tr>
+<tr><td>279</td><td class="hidden-xs">6640</td><td><a href='moves_M10.htm#p6640'>RAMIREZ Santiago</a></td><td>COL</td><td class="hidden-xs">Americas</td><td>10</td><td>690</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#6640'>696</a></td></tr>
+<tr><td>280</td><td class="hidden-xs">5770</td><td><a href='moves_M7.htm#p5770'>BRITZ Matthew Ryan</a></td><td>NZL</td><td class="hidden-xs">Oceania</td><td>7</td><td>688</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#5770'>697</a></td></tr>
+<tr><td>281</td><td class="hidden-xs">5229</td><td><a href='moves_M10.htm#p5229'>KARPOV Ivan</a></td><td>AIN</td><td class="hidden-xs">Athletes Individuals</td><td>10</td><td>685</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#5229'>688</a></td></tr>
+<tr><td>281</td><td class="hidden-xs">6247</td><td>ABOUZEID Ahmed</td><td>EGY</td><td class="hidden-xs">Africa</td><td>8</td><td>685</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#6247'>685</a></td></tr>
+<tr><td>283</td><td class="hidden-xs">6641</td><td><a href='moves_M7.htm#p6641'>CASTRO Miguel</a></td><td>COL</td><td class="hidden-xs">Americas</td><td>7</td><td>684</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#6641'>693</a></td></tr>
+<tr><td>284</td><td class="hidden-xs">5384</td><td><a href='moves_M6.htm#p5384'>USSENOV Kanat</a></td><td>KAZ</td><td class="hidden-xs">Asia</td><td>6</td><td>682</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#5384'>685</a></td></tr>
+<tr><td>285</td><td class="hidden-xs">6708</td><td><a href='moves_M7.htm#p6708'>KHAZANDJIAN Luciano</a></td><td>ARG</td><td class="hidden-xs">Americas</td><td>7</td><td>679</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#6708'>682</a></td></tr>
+<tr><td>286</td><td class="hidden-xs">6690</td><td>SILVA Eurico Andre</td><td>POR</td><td class="hidden-xs">Europe</td><td>8</td><td>677</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#6690'>677</a></td></tr>
+<tr><td>286</td><td class="hidden-xs">4274</td><td><a href='moves_M9.htm#p4274'>CALDEIRA GOMES Reginaldo</a></td><td>BRA</td><td class="hidden-xs">Americas</td><td>9</td><td>677</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#4274'>680</a></td></tr>
+<tr><td>288</td><td class="hidden-xs">2142</td><td><a href='moves_M8.htm#p2142'>KOUADIO Kouame</a></td><td>CIV</td><td class="hidden-xs">Africa</td><td>8</td><td>673</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#2142'>676</a></td></tr>
+<tr><td>289</td><td class="hidden-xs">4836</td><td><a href='moves_M8.htm#p4836'>MITEV Yordan</a></td><td>BUL</td><td class="hidden-xs">Europe</td><td>8</td><td>668</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#4836'>671</a></td></tr>
+<tr><td>290</td><td class="hidden-xs">6701</td><td><a href='moves_M7.htm#p6701'>CERPA YANEZ Jose Luis</a></td><td>CHI</td><td class="hidden-xs">Americas</td><td>7</td><td>667</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#6701'>670</a></td></tr>
+<tr><td>291</td><td class="hidden-xs">4147</td><td>HUSSAINI Yaser</td><td>AUS</td><td class="hidden-xs">Oceania</td><td>6</td><td>663</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#4147'>663</a></td></tr>
+<tr><td>292</td><td class="hidden-xs">6829</td><td><a href='moves_M6.htm#p6829'>ISA Mustapha Olamilekan</a></td><td>NGR</td><td class="hidden-xs">Africa</td><td>6</td><td>661</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#6829'>673</a></td></tr>
+<tr><td>293</td><td class="hidden-xs">4181</td><td>SANTAYA Panupong</td><td>THA</td><td class="hidden-xs">Asia</td><td>8</td><td>657</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#4181'>657</a></td></tr>
+<tr><td>294</td><td class="hidden-xs">2967</td><td>NICOLAE Alyn Lulian</td><td>ROU</td><td class="hidden-xs">Europe</td><td>8</td><td>649</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#2967'>649</a></td></tr>
+<tr><td>295</td><td class="hidden-xs">5874</td><td>HAMMANNAVAR Sanjeev</td><td>IND</td><td class="hidden-xs">Asia</td><td>7</td><td>648</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#5874'>648</a></td></tr>
+<tr><td>296</td><td class="hidden-xs">2874</td><td><a href='moves_M6.htm#p2874'>BHAMGARA Yesdi Aspi</a></td><td>IND</td><td class="hidden-xs">Asia</td><td>6</td><td>643</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#2874'>658</a></td></tr>
+<tr><td>296</td><td class="hidden-xs">2550</td><td><a href='moves_M8.htm#p2550'>ROJAS Edwin</a></td><td>PUR</td><td class="hidden-xs">Americas</td><td>8</td><td>643</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#2550'>646</a></td></tr>
+<tr><td>298</td><td class="hidden-xs">5562</td><td><a href='moves_M7.htm#p5562'>MARTINEZ ALCALDE Emanuel Emiliano</a></td><td>ARG</td><td class="hidden-xs">Americas</td><td>7</td><td>642</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#5562'>645</a></td></tr>
+<tr><td>299</td><td class="hidden-xs">5915</td><td>DOS SANTOS RODRIGUES Goutier</td><td>BRA</td><td class="hidden-xs">Americas</td><td>6</td><td>638</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#5915'>638</a></td></tr>
+<tr><td>300</td><td class="hidden-xs">2392</td><td><a href='moves_M7.htm#p2392'>BASHIR Mahmoud</a></td><td>EGY</td><td class="hidden-xs">Africa</td><td>7</td><td>636</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#2392'>639</a></td></tr>
+<tr><td>300</td><td class="hidden-xs">5068</td><td>O CALLAGHAN Conor Denis</td><td>IRL</td><td class="hidden-xs">Europe</td><td>6</td><td>636</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#5068'>636</a></td></tr>
+<tr><td>302</td><td class="hidden-xs">6567</td><td>ALTSHULER Samuel William</td><td>USA</td><td class="hidden-xs">Americas</td><td>6</td><td>633</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#6567'>633</a></td></tr>
+<tr><td>303</td><td class="hidden-xs">5613</td><td>RIVERA RIOS Kevin Jose</td><td>PUR</td><td class="hidden-xs">Americas</td><td>10</td><td>630</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#5613'>630</a></td></tr>
+<tr><td>304</td><td class="hidden-xs">1142</td><td><a href='moves_M6.htm#p1142'>TAYEM Mohammad</a></td><td>JOR</td><td class="hidden-xs">Asia</td><td>6</td><td>627</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#1142'>643</a></td></tr>
+<tr><td>305</td><td class="hidden-xs">3921</td><td>REYES Nixon</td><td>CRC</td><td class="hidden-xs">Americas</td><td>9</td><td>623</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#3921'>623</a></td></tr>
+<tr><td>306</td><td class="hidden-xs">3141</td><td>HABSHAN Thamer</td><td>KSA</td><td class="hidden-xs">Asia</td><td>9</td><td>618</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#3141'>618</a></td></tr>
+<tr><td>307</td><td class="hidden-xs">1582</td><td>MIRON Mihai</td><td>ROU</td><td class="hidden-xs">Europe</td><td>8</td><td>616</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#1582'>616</a></td></tr>
+<tr><td>308</td><td class="hidden-xs">6168</td><td>BAHAT Hadar</td><td>ISR</td><td class="hidden-xs">Europe</td><td>7</td><td>615</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#6168'>615</a></td></tr>
+<tr><td>309</td><td class="hidden-xs">2605</td><td>LIN Wo-chin</td><td>TPE</td><td class="hidden-xs">Asia</td><td>7</td><td>614</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#2605'>614</a></td></tr>
+<tr><td>310</td><td class="hidden-xs">3833</td><td><a href='moves_M6.htm#p3833'>DEMOOR Rodrigo Ariel</a></td><td>ARG</td><td class="hidden-xs">Americas</td><td>6</td><td>613</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#3833'>616</a></td></tr>
+<tr><td>311</td><td class="hidden-xs">3929</td><td>HUANG Samuel Chang</td><td>USA</td><td class="hidden-xs">Americas</td><td>10</td><td>604</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#3929'>604</a></td></tr>
+<tr><td>312</td><td class="hidden-xs">4642</td><td><a href='moves_M7.htm#p4642'>ADNAN Mohammed</a></td><td>IRQ</td><td class="hidden-xs">Asia</td><td>7</td><td>602</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#4642'>605</a></td></tr>
+<tr><td>313</td><td class="hidden-xs">6024</td><td>QASEM Abdullah</td><td>KUW</td><td class="hidden-xs">Asia</td><td>9</td><td>601</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#6024'>601</a></td></tr>
+<tr><td>314</td><td class="hidden-xs">3140</td><td><a href='moves_M8.htm#p3140'>SIRAJ Nasser Alhassany</a></td><td>KSA</td><td class="hidden-xs">Asia</td><td>8</td><td>597</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#3140'>0</a></td></tr>
+<tr><td>315</td><td class="hidden-xs">6093</td><td>SCUTO Mateo</td><td>LUX</td><td class="hidden-xs">Europe</td><td>10</td><td>596</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#6093'>596</a></td></tr>
+<tr><td>316</td><td class="hidden-xs">5794</td><td>LOPEZ Marlon</td><td>ESP</td><td class="hidden-xs">Europe</td><td>10</td><td>593</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#5794'>593</a></td></tr>
+<tr><td>317</td><td class="hidden-xs">5657</td><td>TSUJIMURA Takumi</td><td>JPN</td><td class="hidden-xs">Asia</td><td>9</td><td>585</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#5657'>585</a></td></tr>
+<tr><td>318</td><td class="hidden-xs">3366</td><td>LOPEZ Lauquen</td><td>ARG</td><td class="hidden-xs">Americas</td><td>9</td><td>582</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#3366'>582</a></td></tr>
+<tr><td>318</td><td class="hidden-xs">6687</td><td>CROUSE Joseph Williqm</td><td>GBR</td><td class="hidden-xs">Europe</td><td>9</td><td>582</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#6687'>582</a></td></tr>
+<tr><td>320</td><td class="hidden-xs">6559</td><td>HSIEH Tsung Ying</td><td>TPE</td><td class="hidden-xs">Asia</td><td>9</td><td>581</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#6559'>581</a></td></tr>
+<tr><td>321</td><td class="hidden-xs">5614</td><td><a href='moves_M6.htm#p5614'>SEGUIN Gabriel</a></td><td>CAN</td><td class="hidden-xs">Americas</td><td>6</td><td>564</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#5614'>567</a></td></tr>
+<tr><td>322</td><td class="hidden-xs">6347</td><td><a href='moves_M8.htm#p6347'>OORD Paul van der</a></td><td>NED</td><td class="hidden-xs">Europe</td><td>8</td><td>562</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#6347'>565</a></td></tr>
+<tr><td>323</td><td class="hidden-xs">5217</td><td>ROMERO PARRENO Pablo</td><td>ESP</td><td class="hidden-xs">Europe</td><td>7</td><td>560</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#5217'>560</a></td></tr>
+<tr><td>324</td><td class="hidden-xs">5108</td><td>KIM Teak Kon</td><td>KOR</td><td class="hidden-xs">Asia</td><td>7</td><td>552</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#5108'>552</a></td></tr>
+<tr><td>325</td><td class="hidden-xs">6095</td><td>MICHAL Jan</td><td>CZE</td><td class="hidden-xs">Europe</td><td>10</td><td>543</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#6095'>543</a></td></tr>
+<tr><td>326</td><td class="hidden-xs">6393</td><td>VARGAS TORRES Jose Andres</td><td>CRC</td><td class="hidden-xs">Americas</td><td>10</td><td>538</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#6393'>538</a></td></tr>
+<tr><td>327</td><td class="hidden-xs">6595</td><td>MARTINELLI Roberto</td><td>ITA</td><td class="hidden-xs">Europe</td><td>7</td><td>536</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#6595'>536</a></td></tr>
+<tr><td>328</td><td class="hidden-xs">5604</td><td><a href='moves_M10.htm#p5604'>MORA REGALADO Josue Damian</a></td><td>ESA</td><td class="hidden-xs">Americas</td><td>10</td><td>533</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#5604'>536</a></td></tr>
+<tr><td>329</td><td class="hidden-xs">5630</td><td>BOROLEANU Robert Marian</td><td>ROU</td><td class="hidden-xs">Europe</td><td>8</td><td>532</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#5630'>532</a></td></tr>
+<tr><td>330</td><td class="hidden-xs">5611</td><td>PETROSYAN Tigran</td><td>ARM</td><td class="hidden-xs">Europe</td><td>9</td><td>525</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#5611'>525</a></td></tr>
+<tr><td>331</td><td class="hidden-xs">5828</td><td><a href='moves_M8.htm#p5828'>NEMA Bader</a></td><td>KUW</td><td class="hidden-xs">Asia</td><td>8</td><td>522</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#5828'>498</a></td></tr>
+<tr><td>332</td><td class="hidden-xs">5878</td><td><a href='moves_M10.htm#p5878'>MUKHERJEE Jagannath</a></td><td>IND</td><td class="hidden-xs">Asia</td><td>10</td><td>521</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#5878'>524</a></td></tr>
+<tr><td>332</td><td class="hidden-xs">3127</td><td><a href='moves_M7.htm#p3127'>ALSHAMMARI Jazaa</a></td><td>KSA</td><td class="hidden-xs">Asia</td><td>7</td><td>521</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#3127'>527</a></td></tr>
+<tr><td>334</td><td class="hidden-xs">2869</td><td>MONTEIRO Avelino</td><td>POR</td><td class="hidden-xs">Europe</td><td>8</td><td>519</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#2869'>519</a></td></tr>
+<tr><td>334</td><td class="hidden-xs">6442</td><td>HEIN Phillippe</td><td>LUX</td><td class="hidden-xs">Europe</td><td>10</td><td>519</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#6442'>519</a></td></tr>
+<tr><td>336</td><td class="hidden-xs">2692</td><td><a href='moves_M7.htm#p2692'>AL NAJADAT Mohammad Abed</a></td><td>JOR</td><td class="hidden-xs">Asia</td><td>7</td><td>516</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#2692'>518</a></td></tr>
+<tr><td>336</td><td class="hidden-xs">6209</td><td><a href='moves_M7.htm#p6209'>ABBASI Achour</a></td><td>ALG</td><td class="hidden-xs">Africa</td><td>7</td><td>516</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#6209'>522</a></td></tr>
+<tr><td>338</td><td class="hidden-xs">5477</td><td>PUNKAEW Master Parinya</td><td>THA</td><td class="hidden-xs">Asia</td><td>10</td><td>512</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#5477'>512</a></td></tr>
+<tr><td>339</td><td class="hidden-xs">5558</td><td>CANTEROS Cristian Alberto</td><td>ARG</td><td class="hidden-xs">Americas</td><td>7</td><td>508</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#5558'>508</a></td></tr>
+<tr><td>340</td><td class="hidden-xs">6679</td><td>MUSKA Jan</td><td>CZE</td><td class="hidden-xs">Europe</td><td>9</td><td>506</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#6679'>506</a></td></tr>
+<tr><td>341</td><td class="hidden-xs">6071</td><td>GEOGHEGAN Sean</td><td>IRL</td><td class="hidden-xs">Europe</td><td>8</td><td>502</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#6071'>502</a></td></tr>
+<tr><td>342</td><td class="hidden-xs">5444</td><td>MARINOV Valentin</td><td>BUL</td><td class="hidden-xs">Europe</td><td>10</td><td>500</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#5444'>500</a></td></tr>
+<tr><td>343</td><td class="hidden-xs">6246</td><td><a href='moves_M6.htm#p6246'>ELSOKARY Marwan</a></td><td>EGY</td><td class="hidden-xs">Africa</td><td>6</td><td>495</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#6246'>504</a></td></tr>
+<tr><td>344</td><td class="hidden-xs">5992</td><td>WEBER Mathew Lee</td><td>USA</td><td class="hidden-xs">Americas</td><td>7</td><td>494</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#5992'>494</a></td></tr>
+<tr><td>345</td><td class="hidden-xs">6088</td><td>EKENGREN Styrbjorn</td><td>SWE</td><td class="hidden-xs">Europe</td><td>7</td><td>491</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#6088'>491</a></td></tr>
+<tr><td>346</td><td class="hidden-xs">6745</td><td>SINGH Mohit</td><td>GER</td><td class="hidden-xs">Europe</td><td>8</td><td>490</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#6745'>490</a></td></tr>
+<tr><td>347</td><td class="hidden-xs">5553</td><td>BRABROOK Neville James</td><td>USA</td><td class="hidden-xs">Americas</td><td>10</td><td>488</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#5553'>488</a></td></tr>
+<tr><td>347</td><td class="hidden-xs">6025</td><td><a href='moves_M8.htm#p6025'>ALRASHIDI Mohammad</a></td><td>KUW</td><td class="hidden-xs">Asia</td><td>8</td><td>488</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#6025'>469</a></td></tr>
+<tr><td>349</td><td class="hidden-xs">3728</td><td>SARFARAZ Gibran Hussein</td><td>GUY</td><td class="hidden-xs">Americas</td><td>10</td><td>487</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#3728'>487</a></td></tr>
+<tr><td>349</td><td class="hidden-xs">6231</td><td><a href='moves_M8.htm#p6231'>CORDOVA CARDONA Javier Mauricio</a></td><td>ESA</td><td class="hidden-xs">Americas</td><td>8</td><td>487</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#6231'>490</a></td></tr>
+<tr><td>351</td><td class="hidden-xs">6896</td><td>SALDAMHA SANTOS Ryan Victor</td><td>BRA</td><td class="hidden-xs">Americas</td><td>10</td><td>483</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#6896'>483</a></td></tr>
+<tr><td>352</td><td class="hidden-xs">5849</td><td>MANGEN Robert</td><td>LUX</td><td class="hidden-xs">Europe</td><td>8</td><td>482</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#5849'>482</a></td></tr>
+<tr><td>353</td><td class="hidden-xs">6501</td><td>TAMBE Vishwa Vijay</td><td>IND</td><td class="hidden-xs">Asia</td><td>10</td><td>479</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#6501'>479</a></td></tr>
+<tr><td>354</td><td class="hidden-xs">5639</td><td><a href='moves_M9.htm#p5639'>CHEKHYOR Mohammed Kadhim</a></td><td>IRQ</td><td class="hidden-xs">Asia</td><td>9</td><td>467</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#5639'>470</a></td></tr>
+<tr><td>355</td><td class="hidden-xs">6537</td><td><a href='moves_M9.htm#p6537'>LOPEZ VELEZ Jeriel Gustavo</a></td><td>PUR</td><td class="hidden-xs">Americas</td><td>9</td><td>466</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#6537'>469</a></td></tr>
+<tr><td>356</td><td class="hidden-xs">6526</td><td><a href='moves_M9.htm#p6526'>ABURAYYAN Ibrahim</a></td><td>JOR</td><td class="hidden-xs">Asia</td><td>9</td><td>465</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#6526'>0</a></td></tr>
+<tr><td>357</td><td class="hidden-xs">1450</td><td>OGUNSANYA Temitope Lanre</td><td>NGR</td><td class="hidden-xs">Africa</td><td>7</td><td>457</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#1450'>457</a></td></tr>
+<tr><td>358</td><td class="hidden-xs">6594</td><td>CORDOBA Francisco</td><td>PAN</td><td class="hidden-xs">Americas</td><td>7</td><td>453</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#6594'>453</a></td></tr>
+<tr><td>359</td><td class="hidden-xs">5932</td><td>LAU Yoho</td><td>HKG</td><td class="hidden-xs">Asia</td><td>7</td><td>435</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#5932'>435</a></td></tr>
+<tr><td>360</td><td class="hidden-xs">5072</td><td>NASSIKHAN Makhanbet</td><td>KAZ</td><td class="hidden-xs">Asia</td><td>10</td><td>428</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#5072'>428</a></td></tr>
+<tr><td>361</td><td class="hidden-xs">2387</td><td>HAMADTOU Ibrahim</td><td>EGY</td><td class="hidden-xs">Africa</td><td>6</td><td>408</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#2387'>408</a></td></tr>
+<tr><td>362</td><td class="hidden-xs">5964</td><td><a href='moves_M6.htm#p5964'>HAYEK Mahmoud Abed</a></td><td>JOR</td><td class="hidden-xs">Asia</td><td>6</td><td>407</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#5964'>383</a></td></tr>
+<tr><td>363</td><td class="hidden-xs">6018</td><td>MAKELA Aaro Toivo Samuli</td><td>FIN</td><td class="hidden-xs">Europe</td><td>6</td><td>401</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#6018'>401</a></td></tr>
+<tr><td>364</td><td class="hidden-xs">5563</td><td>MURDOCH Angel Marcelo Ezequiel</td><td>ARG</td><td class="hidden-xs">Americas</td><td>6</td><td>363</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#5563'>363</a></td></tr>
+<tr><td>365</td><td class="hidden-xs">6394</td><td>PRADO MEDINA Daniel Ignacio</td><td>PER</td><td class="hidden-xs">Americas</td><td>6</td><td>359</td><td class="hidden-xs"><a href='../../2024-04-01/singles/Men_standing.htm#6394'>359</a></td></tr>
+</tbody></table>
+<h2>Active unrated players</h2>
+<table class="table table-striped table-condensed table-bordered"><thead>
+<tr><th>Player ID</th><th>Name</th><th>Country</th><th>Region</th></tr>
+</thead><tbody class="notranslate">
+<tr><td>6409</td><td>ABARCA Santiago</td><td>CHI</td><td>Americas</td></tr>
+<tr><td>7051</td><td>ABID Walid</td><td>TUN</td><td>Africa</td></tr>
+<tr><td>6316</td><td>ABOULKHAIR Medhat</td><td>EGY</td><td>Africa</td></tr>
+<tr><td>1454</td><td>ADISA Tunde</td><td>NGR</td><td>Africa</td></tr>
+<tr><td>5667</td><td>AGARI Haoda</td><td>PNG</td><td>Oceania</td></tr>
+<tr><td>2130</td><td>AHOUANMENOU Martial</td><td>BEN</td><td>Africa</td></tr>
+<tr><td>4022</td><td>ALJERAIFANI Husam</td><td>KSA</td><td>Asia</td></tr>
+<tr><td>6664</td><td>ALMARAZ ARIAS Jesus Francisco</td><td>MEX</td><td>Americas</td></tr>
+<tr><td>7023</td><td>ALSALAMAH Meshari</td><td>KSA</td><td>Asia</td></tr>
+<tr><td>7013</td><td>ALSHUWAIHEEN Abdullah Mubarak</td><td>KSA</td><td>Asia</td></tr>
+<tr><td>6947</td><td>ALZEQ Hassan</td><td>JOR</td><td>Asia</td></tr>
+<tr><td>7099</td><td>ARANDIA Andrew Kevin</td><td>PHI</td><td>Asia</td></tr>
+<tr><td>6348</td><td>AREMU Mukaila</td><td>NGR</td><td>Africa</td></tr>
+<tr><td>7015</td><td>ASIRI Ali Mohammed</td><td>KSA</td><td>Asia</td></tr>
+<tr><td>1153</td><td>ASSAF Nasser</td><td>JOR</td><td>Asia</td></tr>
+<tr><td>2022</td><td>AVETISYAN Hmayak</td><td>ARM</td><td>Europe</td></tr>
+<tr><td>7016</td><td>BAHARI Abdulrahman Hassan</td><td>KSA</td><td>Asia</td></tr>
+<tr><td>7018</td><td>BAMUSA Abdulrahman Abdullah</td><td>KSA</td><td>Asia</td></tr>
+<tr><td>7126</td><td>BARBU Alain</td><td>FRA</td><td>Europe</td></tr>
+<tr><td>6370</td><td>BARTELINK GROENEVELD Israel</td><td>NED</td><td>Europe</td></tr>
+<tr><td>6601</td><td>BARTOSIK Dominik</td><td>POL</td><td>Europe</td></tr>
+<tr><td>5972</td><td>BEGLARYAN Gevorg</td><td>ARM</td><td>Europe</td></tr>
+<tr><td>6553</td><td>BELTETON Kevin</td><td>GUA</td><td>Americas</td></tr>
+<tr><td>5675</td><td>BEN Rodney Sam</td><td>VAN</td><td>Oceania</td></tr>
+<tr><td>7228</td><td>BIZHANOV Bekzat</td><td>KAZ</td><td>Asia</td></tr>
+<tr><td>6794</td><td>BOOKUN Ravindra</td><td>MRI</td><td>Africa</td></tr>
+<tr><td>6395</td><td>BRUSCHI Mirko</td><td>ITA</td><td>Europe</td></tr>
+<tr><td>7163</td><td>BU LUC Teva Yves</td><td>PYF</td><td>Oceania</td></tr>
+<tr><td>6222</td><td>BUGRA Alpaslan</td><td>TUR</td><td>Europe</td></tr>
+<tr><td>6649</td><td>CABARKAPA Zoran</td><td>MNE</td><td>Europe</td></tr>
+<tr><td>6986</td><td>CARDENAS VILLEGAS Roberth Alexander</td><td>VEN</td><td>Americas</td></tr>
+<tr><td>6666</td><td>CEROVIC Miljan</td><td>BIH</td><td>Europe</td></tr>
+<tr><td>7176</td><td>CHAMANAHALLI VENKATARAMANAPPA Rajanna</td><td>IND</td><td>Asia</td></tr>
+<tr><td>7035</td><td>CHANG Po Hsien</td><td>TPE</td><td>Asia</td></tr>
+<tr><td>6558</td><td>CHEN Hsien Jue</td><td>TPE</td><td>Asia</td></tr>
+<tr><td>6919</td><td>CHIAPERO Dante</td><td>ARG</td><td>Americas</td></tr>
+<tr><td>7116</td><td>DAGAR Yogesh</td><td>IND</td><td>Asia</td></tr>
+<tr><td>3669</td><td>DE CARVALHO Bernardo</td><td>TLS</td><td>Asia</td></tr>
+<tr><td>6844</td><td>DE LEON Javier</td><td>GUA</td><td>Americas</td></tr>
+<tr><td>2823</td><td>DI PIETRANTONIO Cristian</td><td>ARG</td><td>Americas</td></tr>
+<tr><td>7104</td><td>DING Hao</td><td>CHN</td><td>Asia</td></tr>
+<tr><td>6629</td><td>DUMITRU Gheorghe Valeriu</td><td>ROU</td><td>Europe</td></tr>
+<tr><td>7061</td><td>ESAU Nasr</td><td>RSA</td><td>Africa</td></tr>
+<tr><td>4375</td><td>ESSAM Mahmoud</td><td>EGY</td><td>Africa</td></tr>
+<tr><td>6771</td><td>EVANS Julio</td><td>PAN</td><td>Americas</td></tr>
+<tr><td>7030</td><td>FARAHAT Nawaf</td><td>KSA</td><td>Asia</td></tr>
+<tr><td>7084</td><td>GATOBU Newton</td><td>KEN</td><td>Africa</td></tr>
+<tr><td>5720</td><td>GELENCSER Balint</td><td>HUN</td><td>Europe</td></tr>
+<tr><td>6963</td><td>GODINES Michael</td><td>USA</td><td>Americas</td></tr>
+<tr><td>6906</td><td>GONZALEZ MEDINA Mario Alejandro</td><td>CUB</td><td>Americas</td></tr>
+<tr><td>6644</td><td>GUGOLJ Uros</td><td>MNE</td><td>Europe</td></tr>
+<tr><td>7117</td><td>GUPTA Anuj</td><td>IND</td><td>Asia</td></tr>
+<tr><td>7094</td><td>HAZOUME Finagnon Maura Gwladys</td><td>BEN</td><td>Africa</td></tr>
+<tr><td>7008</td><td>HUANG Ren Ting</td><td>TPE</td><td>Asia</td></tr>
+<tr><td>6980</td><td>HYUN Jinyoung</td><td>KOR</td><td>Asia</td></tr>
+<tr><td>5459</td><td>IBRAHIM Muhammad</td><td>PAK</td><td>Asia</td></tr>
+<tr><td>7085</td><td>ILAHUYA Milton</td><td>KEN</td><td>Africa</td></tr>
+<tr><td>6922</td><td>INFANTI Jenaro</td><td>ARG</td><td>Americas</td></tr>
+<tr><td>7092</td><td>JACKSON Keegan Thomas</td><td>NZL</td><td>Oceania</td></tr>
+<tr><td>6767</td><td>JANELIDZE Vladimer</td><td>GEO</td><td>Europe</td></tr>
+<tr><td>6849</td><td>JENSEN Nicklas Arleth</td><td>DEN</td><td>Europe</td></tr>
+<tr><td>5830</td><td>JI Changseok</td><td>KOR</td><td>Asia</td></tr>
+<tr><td>6979</td><td>JUNG Da Woon</td><td>KOR</td><td>Asia</td></tr>
+<tr><td>7225</td><td>KADYRBEK Nurkozha</td><td>KAZ</td><td>Asia</td></tr>
+<tr><td>7223</td><td>KADYRBEK Tokkozha</td><td>KAZ</td><td>Asia</td></tr>
+<tr><td>7220</td><td>KALMAN Sanzhar</td><td>KAZ</td><td>Asia</td></tr>
+<tr><td>7180</td><td>KAMCHAROEN Kitikan</td><td>THA</td><td>Asia</td></tr>
+<tr><td>6931</td><td>KHUDYAKOV Igor</td><td>KAZ</td><td>Asia</td></tr>
+<tr><td>4667</td><td>KIM Chang Hee</td><td>KOR</td><td>Asia</td></tr>
+<tr><td>7001</td><td>KIM Gyu Chul</td><td>KOR</td><td>Asia</td></tr>
+<tr><td>6298</td><td>KIM Jongtae</td><td>KOR</td><td>Asia</td></tr>
+<tr><td>6972</td><td>KIM Justin Minjae</td><td>USA</td><td>Americas</td></tr>
+<tr><td>3776</td><td>KIM Soo Eill</td><td>KOR</td><td>Asia</td></tr>
+<tr><td>5506</td><td>KIM Yeonghwan</td><td>KOR</td><td>Asia</td></tr>
+<tr><td>6937</td><td>KITIC Nabojsa</td><td>SRB</td><td>Europe</td></tr>
+<tr><td>6678</td><td>KOBAYASHI Kodai</td><td>JPN</td><td>Asia</td></tr>
+<tr><td>6460</td><td>KOWALSKI Kamil</td><td>POL</td><td>Europe</td></tr>
+<tr><td>6227</td><td>KRAFT Rafal</td><td>POL</td><td>Europe</td></tr>
+<tr><td>5190</td><td>KRIVOKAPIC Duro</td><td>MNE</td><td>Europe</td></tr>
+<tr><td>7224</td><td>KUANGEREYEV Mukhadiya</td><td>KAZ</td><td>Asia</td></tr>
+<tr><td>4688</td><td>KUMAR Sudipt</td><td>IND</td><td>Asia</td></tr>
+<tr><td>6431</td><td>KWAN Chi Him</td><td>HKG</td><td>Asia</td></tr>
+<tr><td>7205</td><td>KYDYRSHA Maksat</td><td>KAZ</td><td>Asia</td></tr>
+<tr><td>6968</td><td>LAABIDI Ammar</td><td>ALG</td><td>Africa</td></tr>
+<tr><td>7179</td><td>LAPOINTE Loik</td><td>CAN</td><td>Americas</td></tr>
+<tr><td>6469</td><td>LEE Caleb Jia Xuan</td><td>SGP</td><td>Asia</td></tr>
+<tr><td>3817</td><td>LEE Cheol</td><td>KOR</td><td>Asia</td></tr>
+<tr><td>6037</td><td>LEE Jae Suk</td><td>KOR</td><td>Asia</td></tr>
+<tr><td>6385</td><td>LEE Yongsup</td><td>KOR</td><td>Asia</td></tr>
+<tr><td>6961</td><td>LENDER Yosef</td><td>USA</td><td>Americas</td></tr>
+<tr><td>7036</td><td>LUO Wei Kai</td><td>TPE</td><td>Asia</td></tr>
+<tr><td>5284</td><td>MAGARELLI Lorenzo</td><td>ITA</td><td>Europe</td></tr>
+<tr><td>6928</td><td>MAJKIC Nemanja</td><td>SRB</td><td>Europe</td></tr>
+<tr><td>493</td><td>MANNER Markku</td><td>FIN</td><td>Europe</td></tr>
+<tr><td>7162</td><td>MARUAE Allgower Francois Hirama</td><td>PYF</td><td>Oceania</td></tr>
+<tr><td>6916</td><td>MASSAGUER OLIVERA Jorge Julio</td><td>CUB</td><td>Americas</td></tr>
+<tr><td>1554</td><td>MATEJEK Mariusz</td><td>POL</td><td>Europe</td></tr>
+<tr><td>5243</td><td>MATSUYAMA Junichi</td><td>JPN</td><td>Asia</td></tr>
+<tr><td>6915</td><td>MEAD Daniel Philip</td><td>GBR</td><td>Europe</td></tr>
+<tr><td>7158</td><td>MELANON Monchai</td><td>THA</td><td>Asia</td></tr>
+<tr><td>6635</td><td>MICOVIC Milan</td><td>SRB</td><td>Europe</td></tr>
+<tr><td>6648</td><td>MIHAILOVIC Slobodan</td><td>MNE</td><td>Europe</td></tr>
+<tr><td>7115</td><td>MONDAL Soumik</td><td>BAN</td><td>Asia</td></tr>
+<tr><td>7121</td><td>MUKABYA Dennis</td><td>UGA</td><td>Africa</td></tr>
+<tr><td>5497</td><td>MUKASHEV Aidos</td><td>KAZ</td><td>Asia</td></tr>
+<tr><td>3367</td><td>MUNOZ Marcos Antonio</td><td>ARG</td><td>Americas</td></tr>
+<tr><td>7207</td><td>MURATOV Daniyar</td><td>KAZ</td><td>Asia</td></tr>
+<tr><td>3095</td><td>MWANGI Edwin Muruah</td><td>KEN</td><td>Africa</td></tr>
+<tr><td>6964</td><td>MYRICK Tristan Anthony</td><td>USA</td><td>Americas</td></tr>
+<tr><td>7058</td><td>NOTSHE Samkele</td><td>RSA</td><td>Africa</td></tr>
+<tr><td>6631</td><td>NOVOTNY Tomas</td><td>CZE</td><td>Europe</td></tr>
+<tr><td>6691</td><td>NSUBUGA Yusuf</td><td>UGA</td><td>Africa</td></tr>
+<tr><td>6823</td><td>OBADELE Fuad</td><td>NGR</td><td>Africa</td></tr>
+<tr><td>6819</td><td>OLADIPUPO Abdusalam</td><td>NGR</td><td>Africa</td></tr>
+<tr><td>6552</td><td>ORELLANA Marcos</td><td>GUA</td><td>Americas</td></tr>
+<tr><td>6461</td><td>OSTOJA SOLECKI Jakub</td><td>POL</td><td>Europe</td></tr>
+<tr><td>7086</td><td>OTWAL Anthony Ojwang</td><td>KEN</td><td>Africa</td></tr>
+<tr><td>6551</td><td>OVALLE CAJAS Samuel David</td><td>GUA</td><td>Americas</td></tr>
+<tr><td>6813</td><td>OYADINRIN Felix Olatunbosun</td><td>NGR</td><td>Africa</td></tr>
+<tr><td>6909</td><td>PAEZ RUEDA Juan Jose</td><td>COL</td><td>Americas</td></tr>
+<tr><td>7206</td><td>PAK Damir</td><td>KAZ</td><td>Asia</td></tr>
+<tr><td>5192</td><td>PALJUSEVIC Pjetro</td><td>MNE</td><td>Europe</td></tr>
+<tr><td>6992</td><td>PARK Sang Chul</td><td>KOR</td><td>Asia</td></tr>
+<tr><td>7130</td><td>PHAM Minh Tuan</td><td>VIE</td><td>Asia</td></tr>
+<tr><td>6592</td><td>PIRZADA Muhammad Rizwan</td><td>USA</td><td>Americas</td></tr>
+<tr><td>6555</td><td>PLEITES David</td><td>GUA</td><td>Americas</td></tr>
+<tr><td>6927</td><td>PODBICANIN Hamed</td><td>SRB</td><td>Europe</td></tr>
+<tr><td>4600</td><td>PONTES BRANDAO Nuno Jose</td><td>POR</td><td>Europe</td></tr>
+<tr><td>5361</td><td>PRAHASTA Mohamad Rian</td><td>INA</td><td>Asia</td></tr>
+<tr><td>6885</td><td>RABUZIN Tomaz</td><td>SLO</td><td>Europe</td></tr>
+<tr><td>7106</td><td>RAI Bibek</td><td>NEP</td><td>Asia</td></tr>
+<tr><td>6965</td><td>RISTOLLARI George Krispandel</td><td>USA</td><td>Americas</td></tr>
+<tr><td>7048</td><td>ROMERO Brandon Martin</td><td>ARG</td><td>Americas</td></tr>
+<tr><td>4900</td><td>ROSENFELD Daniel</td><td>USA</td><td>Americas</td></tr>
+<tr><td>6962</td><td>ROTHENBERGER Cole Thomas</td><td>USA</td><td>Americas</td></tr>
+<tr><td>7170</td><td>ROY Henao</td><td>PNG</td><td>Oceania</td></tr>
+<tr><td>5938</td><td>ROZENBLAT Ilya</td><td>USA</td><td>Americas</td></tr>
+<tr><td>6989</td><td>RUBTSOV Mykyta</td><td>UKR</td><td>Europe</td></tr>
+<tr><td>6534</td><td>RUSSO Javier Alejandro</td><td>ARG</td><td>Americas</td></tr>
+<tr><td>6881</td><td>SADEK Karim</td><td>EGY</td><td>Africa</td></tr>
+<tr><td>3864</td><td>SAHARI Rami Hussain</td><td>KSA</td><td>Asia</td></tr>
+<tr><td>6948</td><td>SALAMEH basem</td><td>SYR</td><td>Asia</td></tr>
+<tr><td>6382</td><td>SALETTI Renato</td><td>BRA</td><td>Americas</td></tr>
+<tr><td>7189</td><td>SAMIE Amir</td><td>IRI</td><td>Asia</td></tr>
+<tr><td>6802</td><td>SANCHEZ ORTIZ Samuel Alexander</td><td>COL</td><td>Americas</td></tr>
+<tr><td>5909</td><td>SARMIENTO PINDO Diego Eduardo</td><td>ECU</td><td>Americas</td></tr>
+<tr><td>7168</td><td>SATINI Rodnet</td><td>SOL</td><td>Oceania</td></tr>
+<tr><td>6633</td><td>SCEKIC Srdan</td><td>SRB</td><td>Europe</td></tr>
+<tr><td>7195</td><td>SCHUEP Leon Wim</td><td>SUI</td><td>Europe</td></tr>
+<tr><td>6632</td><td>SENGERS Josephus Johannes Hendrikus</td><td>NED</td><td>Europe</td></tr>
+<tr><td>7114</td><td>SIEYES ORELLANA Carlos Felipe</td><td>CHI</td><td>Americas</td></tr>
+<tr><td>6884</td><td>SKJOLD HINZE Fredrik</td><td>NOR</td><td>Europe</td></tr>
+<tr><td>6967</td><td>SMAHI Nasr Eddine</td><td>ALG</td><td>Africa</td></tr>
+<tr><td>5772</td><td>SOA Tanielu</td><td>TUV</td><td>Oceania</td></tr>
+<tr><td>4997</td><td>SOWA Dawid Antoni</td><td>POL</td><td>Europe</td></tr>
+<tr><td>7053</td><td>SUKERMAN Ernesto</td><td>ARG</td><td>Americas</td></tr>
+<tr><td>6475</td><td>SULTAN Linadr</td><td>PHI</td><td>Asia</td></tr>
+<tr><td>7049</td><td>SZWARC WINNIK Ezequiel</td><td>ARG</td><td>Americas</td></tr>
+<tr><td>7139</td><td>TALO MAU DOS SANTOS Domingos</td><td>TLS</td><td>Asia</td></tr>
+<tr><td>6737</td><td>TAZHMIYEV Askhat</td><td>KAZ</td><td>Asia</td></tr>
+<tr><td>7202</td><td>THEOCHAROUS Andreas</td><td>CYP</td><td>Europe</td></tr>
+<tr><td>7044</td><td>THOMSON Daniel Robert</td><td>GBR</td><td>Europe</td></tr>
+<tr><td>5202</td><td>TOLEAFOA Milo</td><td>SAM</td><td>Oceania</td></tr>
+<tr><td>6054</td><td>UM Kihong</td><td>KOR</td><td>Asia</td></tr>
+<tr><td>5952</td><td>VAIMAN Artyom</td><td>KAZ</td><td>Asia</td></tr>
+<tr><td>6702</td><td>VALLE MENA Salvador</td><td>CHI</td><td>Americas</td></tr>
+<tr><td>7038</td><td>VANVOOREN Patrick Nick</td><td>BEL</td><td>Europe</td></tr>
+<tr><td>7142</td><td>VARI Floyd Luangi</td><td>SOL</td><td>Oceania</td></tr>
+<tr><td>6910</td><td>VELASQUEZ CHAMUL Erwin Leonel</td><td>GUA</td><td>Americas</td></tr>
+<tr><td>6539</td><td>VERA POGUIO Luis Ernesto</td><td>ECU</td><td>Americas</td></tr>
+<tr><td>6703</td><td>VIDAL Vicente Sebastian</td><td>CHI</td><td>Americas</td></tr>
+<tr><td>6712</td><td>VILLARRUEL Ary Javier</td><td>ARG</td><td>Americas</td></tr>
+<tr><td>6755</td><td>VOICIS Valters</td><td>LAT</td><td>Europe</td></tr>
+<tr><td>6646</td><td>WAND Jonas Elias</td><td>GER</td><td>Europe</td></tr>
+<tr><td>7043</td><td>WICKS Jacob Samuel</td><td>GBR</td><td>Europe</td></tr>
+<tr><td>6886</td><td>WONG Hiu Chun</td><td>HKG</td><td>Asia</td></tr>
+<tr><td>6981</td><td>WOO Kwanghyeok</td><td>KOR</td><td>Asia</td></tr>
+<tr><td>6238</td><td>WU Jiancheng</td><td>HKG</td><td>Asia</td></tr>
+<tr><td>2996</td><td>YANEZ AMPUERO Guileermo Everth</td><td>PER</td><td>Americas</td></tr>
+<tr><td>6728</td><td>YOGANAND SURESH Nithish</td><td>IND</td><td>Asia</td></tr>
+<tr><td>7193</td><td>ZAREI Hamed</td><td>USA</td><td>Americas</td></tr>
+<tr><td>6738</td><td>ZHAKANOV Yerzhan</td><td>KAZ</td><td>Asia</td></tr>
+<tr><td>7213</td><td>ZHAKYPBEK Raiymbek</td><td>KAZ</td><td>Asia</td></tr>
+</tbody></table>
+<div class="container-fluid"><div class="row"><div class="text-muted text-right">Generated on 2024-04-30 at 16:46</div></div></div>
+<!--#include virtual="/footer.htm" -->
+</body></html>
