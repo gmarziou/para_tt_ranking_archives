@@ -7898,7 +7898,7 @@ div.tournament_logo {
 }
 
 .ptt-logo {
-  background-image: url("/logos/colour/PTT-80px.png");
+  background-image: url("../logos/colour/PTT-80px.png");
   width: 80px;
   height: 80px;
 }
@@ -7909,7 +7909,7 @@ div.tournament_logo {
   }
 
   .ptt-logo {
-    background-image: url("/logos/colour/PTT-110px.png");
+    background-image: url("../logos/colour/PTT-110px.png");
     width: 110px;
     height: 110px;
   }
